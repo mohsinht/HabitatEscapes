@@ -42,7 +42,7 @@ body {
 }
 
 .header-section {
-  background-image: url(/assets/header_bg.jpg);
+  background-image: url(../assets/header_bg.jpg);
   background-position: center;
   background-size: cover;
   min-height: 82vh;
@@ -90,7 +90,23 @@ body {
   font-size: 60.33px;
   margin: 0;
 }
+
 .header-mid .title h3 {
   font-size: 23.5px;
   margin: 0;
+}
+
+.cta-container {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.cta-container button {
+  background: #86b7d9;
+  border: none;
+  color: white;
+  padding: 16px 47px;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
 }
