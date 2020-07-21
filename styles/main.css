@@ -18,6 +18,16 @@
   src: url(../assets/fonts/BrandonText-Bold.otf);
 }
 
+@font-face {
+  font-family: BrandonText-Medium;
+  src: url(../assets/fonts/BrandonText-Medium.otf);
+}
+
+@font-face {
+  font-family: RotisSerifCE;
+  src: url(../assets/fonts/RotisSerifCE.woff);
+}
+
 body {
   font-family: BrandonText-Regular;
 }
@@ -31,6 +41,13 @@ body {
   width: 80px;
 }
 
+.header-section {
+  background-image: url(/assets/header_bg.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 82vh;
+}
+
 .header-content {
   margin: 0px 20px;
 }
@@ -38,6 +55,7 @@ body {
 .site-menu {
   max-width: 38rem;
   margin: auto;
+  font-family: BrandonText-Light;
 }
 
 .menu-wrapper {
@@ -46,4 +64,33 @@ body {
 
 .header-col {
   font-size: 16px;
+}
+
+.header.transparent {
+  color: white;
+  border-bottom: 1px solid #ffffff4a;
+}
+
+.menu-wrapper.transparent {
+  border-bottom: none;
+}
+
+.menu-wrapper.transparent a {
+  color: white;
+}
+
+.header-mid .title {
+  font-family: RotisSerifCE;
+  text-align: center;
+  color: white;
+  margin-top: 5rem;
+}
+
+.header-mid .title h1 {
+  font-size: 60.33px;
+  margin: 0;
+}
+.header-mid .title h3 {
+  font-size: 23.5px;
+  margin: 0;
 }
