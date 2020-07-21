@@ -45,7 +45,7 @@ body {
   background-image: url(../assets/header_bg.jpg);
   background-position: center;
   background-size: cover;
-  min-height: 82vh;
+  min-height: 100vh;
 }
 
 .header-content {
@@ -109,4 +109,14 @@ body {
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 2px;
+}
+
+.booking-block {
+  background: white;
+  text-align: center;
+  max-width: 615px;
+  align-items: center;
+  box-shadow: 4px 3px 4px #00000021;
+  margin: auto;
+  margin-top: 6rem;
 }
