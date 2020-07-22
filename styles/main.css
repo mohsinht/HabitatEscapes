@@ -167,16 +167,28 @@ body {
 }
 
 .intro-img2 img {
-  width: 280px;
+  width: 21vw;
   margin-left: -15px;
   margin-top: 43px;
+  max-width: 280px;
 }
 
 .intro-img1 img {
-  width: 280px;
+  width: 21vw;
+  max-width: 280px;
 }
 
 .intro-img {
   max-width: 600px;
   margin: auto;
+}
+
+.properties-section .intro-top-img,
+.properties-section .intro-heading {
+  text-align: center;
+}
+
+.properties-section {
+  padding: 80px 20px;
+  background: #ecf2e9;
 }
