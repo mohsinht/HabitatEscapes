@@ -101,7 +101,8 @@ body {
   margin-top: 4rem;
 }
 
-.cta-container button {
+.cta-container button,
+.intro-cta button {
   background: #86b7d9;
   border: none;
   color: white;
@@ -109,6 +110,10 @@ body {
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 2px;
+}
+
+.intro-cta {
+  margin-top: 48px;
 }
 
 .booking-block {
@@ -119,4 +124,44 @@ body {
   box-shadow: 4px 3px 4px #00000021;
   margin: auto;
   margin-top: 6rem;
+  min-height: 100px;
+}
+
+.booking-block .avl-btn {
+  margin: auto;
+  height: 100px;
+  text-transform: uppercase;
+  color: white;
+  background: #86b7d9;
+  border: none;
+  font-size: 14px;
+  letter-spacing: 1;
+  letter-spacing: 2px;
+  min-width: min-content;
+  margin-left: 14.7px;
+}
+
+.intro-section.row {
+  margin-right: 0px;
+  text-align: center;
+  padding: 80px 10px;
+}
+
+.intro-title {
+  font-family: RotisSerifCE;
+  line-height: 2.5rem;
+}
+
+.intro-sub {
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-top: 23px;
+  letter-spacing: 2px;
+  font-family: BrandonText-Light;
+}
+
+.intro-detail {
+  max-width: 420px;
+  margin: auto;
+  margin-top: 36px;
 }
