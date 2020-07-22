@@ -165,3 +165,18 @@ body {
   margin: auto;
   margin-top: 36px;
 }
+
+.intro-img2 img {
+  width: 280px;
+  margin-left: -15px;
+  margin-top: 43px;
+}
+
+.intro-img1 img {
+  width: 280px;
+}
+
+.intro-img {
+  max-width: 600px;
+  margin: auto;
+}
