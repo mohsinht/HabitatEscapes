@@ -262,11 +262,11 @@ body {
 }
 
 .destination-img1 {
-  background-image: url(/assets//destination_img1.jpg);
+  background-image: url(../assets//destination_img1.jpg);
 }
 
 .destination-img2 {
-  background-image: url(/assets//destination_img2.jpg);
+  background-image: url(../assets//destination_img2.jpg);
 }
 
 .destination-images,
@@ -276,22 +276,22 @@ body {
 }
 
 .inspiration-img1 {
-  background-image: url(/assets/inspiration_img1.jpg);
+  background-image: url(../assets/inspiration_img1.jpg);
   min-height: 24rem;
   background-size: cover;
 }
 
 .inspiration-img2 {
-  background-image: url(/assets/inspiration_img2.jpg);
+  background-image: url(../assets/inspiration_img2.jpg);
 }
 .inspiration-img3 {
-  background-image: url(/assets/inspiration_img3.jpg);
+  background-image: url(../assets/inspiration_img3.jpg);
 }
 .inspiration-img4 {
-  background-image: url(/assets/inspiration_img4.jpg);
+  background-image: url(../assets/inspiration_img4.jpg);
 }
 .inspiration-img5 {
-  background-image: url(/assets/inspiration_img5.jpg);
+  background-image: url(../assets/inspiration_img5.jpg);
 }
 
 .inspiration-img2,
@@ -319,13 +319,13 @@ body {
 }
 
 .activity-img1 {
-  background-image: url(/assets/activity_img1.jpg);
+  background-image: url(../assets/activity_img1.jpg);
 }
 .activity-img2 {
-  background-image: url(/assets/activity_img2.jpg);
+  background-image: url(../assets/activity_img2.jpg);
 }
 .activity-img3 {
-  background-image: url(/assets/activity_img3.jpg);
+  background-image: url(../assets/activity_img3.jpg);
 }
 
 .activity-img1,
