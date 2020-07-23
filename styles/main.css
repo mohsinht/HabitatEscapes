@@ -179,7 +179,7 @@ body {
 }
 
 .intro-img {
-  max-width: 34rem;
+  max-width: 38rem;
   margin: auto;
 }
 
@@ -234,7 +234,7 @@ body {
 }
 
 .property-card img {
-  min-height: 16.39rem;
+  min-height: 18rem;
 }
 
 .property-card .fa-star {
