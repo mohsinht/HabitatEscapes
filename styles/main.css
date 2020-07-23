@@ -270,7 +270,8 @@ body {
 }
 
 .destination-images,
-.inspiration-grid {
+.inspiration-grid,
+.subscription-form {
   max-width: 75rem;
   margin: auto;
 }
@@ -365,4 +366,16 @@ body {
   margin-bottom: 1.5rem;
   margin-top: 1rem;
   font-family: BrandonText-Light;
+}
+
+.subscription-form .form-control {
+  height: 3.2rem;
+}
+
+.footer-top {
+  margin-left: 0px;
+  margin-right: 0px;
+  background: #50545b;
+  color: white;
+  padding-top: 1rem;
 }
