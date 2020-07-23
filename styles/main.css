@@ -34,11 +34,11 @@ body {
 
 .header {
   line-height: 1;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 0.05rem solid #ffffff4a;
 }
 
 .header-logo {
-  width: 80px;
+  width: 5rem;
 }
 
 .header-section {
@@ -49,7 +49,7 @@ body {
 }
 
 .header-content {
-  margin: 0px 20px;
+  margin: 0rem 0.5rem;
 }
 
 .site-menu {
@@ -59,16 +59,16 @@ body {
 }
 
 .menu-wrapper {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 0.05rem solid #e5e5e5;
 }
 
 .header-col {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .header.transparent {
   color: white;
-  border-bottom: 1px solid #ffffff4a;
+  border-bottom: 0.05rem solid #ffffff4a;
 }
 
 .menu-wrapper.transparent {
@@ -87,12 +87,12 @@ body {
 }
 
 .header-mid .title h1 {
-  font-size: 60.33px;
+  font-size: 3.8rem;
   margin: 0;
 }
 
 .header-mid .title h3 {
-  font-size: 23.5px;
+  font-size: 1.46rem;
   margin: 0;
 }
 
@@ -106,9 +106,9 @@ body {
   background: #86b7d9;
   border: none;
   color: white;
-  padding: 16px 47px;
+  padding: 1rem 2.8rem;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 0.9rem;
   letter-spacing: 2px;
 }
 
@@ -134,7 +134,7 @@ body {
   color: white;
   background: #86b7d9;
   border: none;
-  font-size: 14px;
+  font-size: 0.875rem;
   letter-spacing: 1;
   letter-spacing: 2px;
   min-width: min-content;
@@ -179,7 +179,7 @@ body {
 }
 
 .intro-img {
-  max-width: 600px;
+  max-width: 34rem;
   margin: auto;
 }
 
@@ -191,4 +191,52 @@ body {
 .properties-section {
   padding: 80px 20px;
   background: #ecf2e9;
+}
+
+.property-card h1 {
+  font-family: RotisSerifCE;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+  font-size: 1.65rem;
+}
+
+.property-card .heart-icon {
+  font-size: 1.3rem;
+  padding-top: 0.25rem;
+  color: #c25e84;
+}
+
+.property-card .property-code {
+  font-size: 1rem;
+  color: #a9acb1;
+}
+
+.property-card .property-address {
+  font-size: 1rem;
+  padding-left: 0.5rem;
+}
+
+.property-card .property-rate {
+  font-family: BrandonText-Medium;
+  font-size: 0.8rem;
+  padding-left: 1.45rem;
+}
+
+.property-card .property-rooms {
+  font-family: BrandonText-Light;
+  padding-right: 1.45rem;
+  font-size: 0.8rem;
+}
+
+.property-horizontal-list {
+  max-width: 75rem;
+  margin: auto;
+}
+
+.property-card img {
+  min-height: 16.39rem;
+}
+
+.property-card .fa-star {
+  color: #ebb75c;
 }
