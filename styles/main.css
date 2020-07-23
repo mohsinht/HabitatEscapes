@@ -268,7 +268,46 @@ body {
   background-image: url(/assets//destination_img2.jpg);
 }
 
-.destination-images {
+.destination-images,
+.inspiration-grid {
   max-width: 75rem;
   margin: auto;
+}
+
+.inspiration-img1 {
+  background-image: url(/assets/inspiration_img1.jpg);
+  min-height: 24rem;
+  background-size: cover;
+}
+
+.inspiration-img2 {
+  background-image: url(/assets/inspiration_img2.jpg);
+}
+.inspiration-img3 {
+  background-image: url(/assets/inspiration_img3.jpg);
+}
+.inspiration-img4 {
+  background-image: url(/assets/inspiration_img4.jpg);
+}
+.inspiration-img5 {
+  background-image: url(/assets/inspiration_img5.jpg);
+}
+
+.inspiration-img2,
+.inspiration-img3,
+.inspiration-img4,
+.inspiration-img5 {
+  min-height: 11.5rem;
+  background-size: cover;
+  margin-bottom: 1rem;
+}
+
+.inspiration-img {
+  font-family: RotisSerifCE;
+  font-size: 1.5rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
