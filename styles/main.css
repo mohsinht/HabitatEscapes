@@ -372,10 +372,38 @@ body {
   height: 3.2rem;
 }
 
-.footer-top {
+.footer-top,
+.footer-main,
+.footer-bottom {
   margin-left: 0px;
   margin-right: 0px;
   background: #50545b;
   color: white;
   padding-top: 1rem;
+}
+
+.footer-main {
+  background: #2e3036;
+}
+.footer-bottom {
+  background: #202226;
+  font-size: 0.8rem;
+}
+
+.footer-main h1 {
+  font-family: RotisSerifCE;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.footer-main p {
+  font-family: BrandonText-Light;
+}
+
+.footer-details {
+  max-width: 30rem;
+}
+
+.bolded-text {
+  font-family: BrandonText-Bold !important;
 }
