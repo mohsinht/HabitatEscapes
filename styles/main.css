@@ -439,6 +439,12 @@ body {
   font-size: 2rem;
 }
 
+.property-section-h2 {
+  font-family: RotisSerifCE;
+  line-height: 4.5rem;
+  font-size: 2rem;
+  text-align: center;
+}
 .property-short-description {
   font-family: BrandonText-Medium;
   font-size: 1rem;
@@ -467,6 +473,13 @@ body {
   /* background-color: white; */
 }
 
+.property-virtualtour-subheading {
+  font-family: RotisSerifCE;
+  /* line-height: 4.5rem; */
+  font-size: 1.5rem;
+  color:black;
+}
+
 .property-accordian {
   /* border:none; */
   border-style:none;
@@ -484,4 +497,8 @@ body {
 }
 .property-accordians-margin {
   margin-top: 2rem;
+}
+
+.property-visitorfeedback-carousel-inner {
+  text-align: center;
 }
