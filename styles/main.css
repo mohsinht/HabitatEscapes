@@ -34,8 +34,25 @@
   src: url(../assets/fonts/RotisSerifCE.woff);
 }
 
+:root {
+  --font-headings: RotisSerifCE;
+  --color-primary: #86b7d9;
+}
+
 body {
   font-family: BrandonText-Regular;
+}
+
+a,
+button {
+    transition: all 0.25s ease-in;
+}
+a:hover {
+  text-decoration: none;
+}
+
+button:focus {
+  outline: 0;
 }
 
 .header {
@@ -99,7 +116,7 @@ body {
 }
 
 .header-mid .title {
-  font-family: RotisSerifCE;
+  font-family: var(--font-headings);
   text-align: center;
   color: white;
   margin-top: 5rem;
@@ -122,7 +139,7 @@ body {
 
 .cta-container button,
 .intro-cta button {
-  background: #86b7d9;
+  background: var(--color-primary);
   border: none;
   color: white;
   padding: 1rem 2.8rem;
@@ -151,7 +168,7 @@ body {
   height: 100px;
   text-transform: uppercase;
   color: white;
-  background: #86b7d9;
+  background: var(--color-primary);
   border: none;
   font-size: 0.875rem;
   letter-spacing: 1;
@@ -167,7 +184,7 @@ body {
 }
 
 .intro-title {
-  font-family: RotisSerifCE;
+  font-family: var(--font-headings);
   line-height: 2.5rem;
 }
 
@@ -213,7 +230,7 @@ body {
 }
 
 .property-card h1 {
-  font-family: RotisSerifCE;
+  font-family: var(--font-headings);
   padding-left: 0.5rem;
   padding-top: 0.5rem;
   font-size: 1.65rem;
@@ -272,7 +289,7 @@ body {
 
 .destination-box h1 {
   margin-top: 1rem;
-  font-family: RotisSerifCE;
+  font-family: var(--font-headings);
   font-size: 1.5rem;
 }
 
@@ -324,7 +341,7 @@ body {
 }
 
 .inspiration-img {
-  font-family: RotisSerifCE;
+  font-family: var(--font-headings);
   font-size: 1.5rem;
   color: white;
   display: flex;
@@ -364,7 +381,7 @@ body {
 }
 
 .activity-text h1 {
-  font-family: RotisSerifCE;
+  font-family: var(--font-headings);
   color: white;
   font-size: 1.5rem;
   padding-left: 1rem;
@@ -410,7 +427,7 @@ body {
 }
 
 .footer-main h1 {
-  font-family: RotisSerifCE;
+  font-family: var(--font-headings);
   color: white;
   font-size: 1.2rem;
 }
@@ -447,13 +464,13 @@ body {
 }
 
 .property-overview-heading {
-  font-family: RotisSerifCE;
+  font-family: var(--font-headings);
   line-height: 4.5rem;
   font-size: 2rem;
 }
 
 .property-section-h2 {
-  font-family: RotisSerifCE;
+  font-family: var(--font-headings);
   line-height: 4.5rem;
   font-size: 2rem;
   text-align: center;
@@ -478,7 +495,7 @@ body {
   width: 3rem;
 }
 .property_features_heading {
-  font-family: RotisSerifCE;
+  font-family: var(--font-headings);
   /* line-height: 4.5rem; */
   font-size: 1.7rem;
   color:black;
@@ -487,7 +504,7 @@ body {
 }
 
 .property-virtualtour-subheading {
-  font-family: RotisSerifCE;
+  font-family: var(--font-headings);
   /* line-height: 4.5rem; */
   font-size: 1.5rem;
   color:black;
