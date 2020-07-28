@@ -432,3 +432,56 @@ body {
 .activitynevent-card {
   border: none;
 }
+
+.property-overview-heading {
+  font-family: RotisSerifCE;
+  line-height: 4.5rem;
+  font-size: 2rem;
+}
+
+.property-short-description {
+  font-family: BrandonText-Medium;
+  font-size: 1rem;
+}
+
+.property-long-description, 
+.property-text {
+  font-family: BrandonText-Light;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.property-icons {
+  font-size: 1.5rem;
+  /* margin: .5rem; */
+  margin-bottom: 2rem;
+  /* margin-right: 1.5rem; */
+  width: 3rem;
+}
+.property_features_heading {
+  font-family: RotisSerifCE;
+  /* line-height: 4.5rem; */
+  font-size: 1.7rem;
+  color:black;
+  /* text-decoration: none; */
+  /* background-color: white; */
+}
+
+.property-accordian {
+  /* border:none; */
+  border-style:none;
+  background-color: white;
+  padding:0;
+  
+}
+
+.property-accordian-card-body {
+  padding-left: 0rem;
+  padding-bottom: 0rem;
+}
+.property-accordian-header-border {
+  border-bottom-style: solid;
+}
+.property-accordians-margin {
+  margin-top: 2rem;
+}
