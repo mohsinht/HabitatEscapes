@@ -18,6 +18,20 @@
 .text-primary {
     color: var(--color-primary) !important;
 }
+.bg-primary {
+    color: #fff;
+    background-color: var(--color-primary) !important;
+}
+.bg-gray {
+    background-color: #ddd;
+}
+.bg-gray-light {
+    background-color: #f0f0f0;
+}
+
+.form-control {
+    border-radius: 0;
+}
 
 img {
     max-width: 100%;
@@ -86,12 +100,14 @@ img {
     padding-bottom: 20px;
 }
 
+/*** Activity Block
+------------------------------- */
 .activity-block {
     margin-bottom: 1.5rem;
 }
 .activity-block + .activity-block {
     padding-top: 1.5rem;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #eee;
 }
 .activity-block-top::before,
 .activity-block-top::after {
@@ -126,26 +142,13 @@ img {
     padding-right: 30px;
     position: relative;
 }
-.button-iconic {
-    width: 25px;
-    height: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.75em;
-    background-color: transparent;
-    border: 1px solid #ddd;
-    border-radius: 50%;
+.activity-incremental .button-iconic {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
 }
-.button-iconic:hover {
-    color: var(--color-primary);
-    box-shadow: 0 0 5px rgba(0,0,0,0.20);
-}
-.button-iconic.increment {
+.activity-incremental .button-iconic.increment {
     left: auto;
     right: 0;
 }
@@ -163,6 +166,130 @@ img {
 }
 .activity-block-detail {
     padding-top: 1rem;
+}
+
+
+/* button iconic */
+.button-iconic {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75em;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+}
+.button-iconic:hover {
+    color: var(--color-primary);
+    box-shadow: 0 0 5px rgba(0,0,0,0.20);
+}
+
+
+/*** Activity Block
+------------------------------- */
+.axtra-list-block {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    flex-direction: row;
+}
+.axtra-list-block .text {
+    flex: 1;
+}
+.axtra-list-block .title {
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+.axtra-list-block .extra-incremental {
+    width: 150px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-left: 10px;
+    position: relative;
+}
+.axtra-list-block .extra-incremental .button-iconic {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.axtra-list-block .extra-incremental .button-iconic.increment {
+    left: auto;
+    right: 0;
+}
+.axtra-list-block .action {
+    margin-left: 10px;
+}
+
+.button-bar {
+    margin-left: -5px;
+    margin-right: -5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.button-bar.flex-end {
+    justify-content: flex-end;
+}
+.button-bar .btn {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+.booking-stats-block {
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
+    border-radius: .25rem;
+}
+.booking-stats-block .heading {
+    padding: .75rem 1.25rem;
+}
+.booking-stats-block .card:first-of-type {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.button-accordion {
+    width: 100%;
+    padding-right: 25px;
+    text-align: left;
+    background-color: transparent;
+    border: 0;
+    display: block;
+    position: relative;
+}
+.button-accordion[aria-expanded="true"] .fas {
+    transform: translateY(-50%) rotate(-180deg);
+}
+.button-accordion .fas,
+.button-accordion .fa {
+    font-size: .8em;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.25s ease-in;
+}
+
+.booking-stats-block .stat p {
+    margin-bottom: 0.5rem;
+}
+.booking-stats-block .bar-e2e {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.bar-stat {
+    padding: 0.8rem 1.25rem;
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
+}
+.bar-border-top {
+    border-top: 1px solid #eee;
 }
 
 
