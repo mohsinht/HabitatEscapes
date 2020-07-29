@@ -45,6 +45,7 @@ body {
 
 .header-logo {
   width: 5rem;
+  height: 4rem;
 }
 
 .header-section {
@@ -68,6 +69,10 @@ body {
   border-bottom: 0.05rem solid #e5e5e5;
 }
 
+.dropdown-toggle::after {
+  display: none;
+}
+
 .header-col {
   font-size: 1rem;
 }
@@ -80,6 +85,7 @@ body {
 .header.solid {
   background: white;
   border-bottom: 0.05rem solid #5654544a;
+  padding-top: 5px;
 }
 
 .menu-wrapper.transparent {
@@ -428,8 +434,8 @@ body {
 }
 
 /* added by ghufran */
-.breadcrumb-item+.breadcrumb-item::before {
-  content: ">";
+.breadcrumb-item + .breadcrumb-item::before {
+  content: '>';
 }
 
 /* .breadcrumb {background-color: none;} */
@@ -463,7 +469,7 @@ body {
   font-size: 1rem;
 }
 
-.property-long-description, 
+.property-long-description,
 .property-text {
   font-family: BrandonText-Light;
   font-size: 1rem;
@@ -481,7 +487,7 @@ body {
   font-family: RotisSerifCE;
   /* line-height: 4.5rem; */
   font-size: 1.7rem;
-  color:black;
+  color: black;
   /* text-decoration: none; */
   /* background-color: white; */
 }
@@ -490,15 +496,14 @@ body {
   font-family: RotisSerifCE;
   /* line-height: 4.5rem; */
   font-size: 1.5rem;
-  color:black;
+  color: black;
 }
 
 .property-accordian {
   /* border:none; */
-  border-style:none;
+  border-style: none;
   background-color: white;
-  padding:0;
-  
+  padding: 0;
 }
 
 .property-accordian-card-body {
@@ -523,19 +528,76 @@ body {
 .property-section-margins {
   padding-bottom: 20px;
   padding-top: 20px;
-  
 }
 
-.iframe-youtube-container{
+.iframe-youtube-container {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; 
+  padding-bottom: 56.25%;
   height: 0;
 }
-.iframe-youtube-container iframe{
+.iframe-youtube-container iframe {
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
+
+/* .navbar .dropdown {
+  position: static;
+}
+.navbar .dropdown-menu {
+  width: 100%;
+  left: 0;
+  right: 0;
+  /*  height of nav-item  */
+  top: 45px;
+}
+
+/* .navbar .dropdown:hover .dropdown-menu,
+.navbar .dropdown .dropdown-menu:hover {
+  display: block !important;
+} */
+.navbar .dropdown-menu {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+}
+
+.nav.nav-tabs {
+  float: left;
+  display: block;
+  margin-right: 20px;
+  border-bottom: 0;
+  border-right: 1px solid #ddd;
+  padding-right: 15px;
+}
+.nav-tabs .nav-link {
+  border: 1px solid transparent;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  background: #ccc;
+}
+.nav-tabs .nav-link.active {
+  color: #495057;
+  background-color: #007bff !important;
+  border-color: transparent !important;
+}
+.nav-tabs .nav-link {
+  border: 1px solid transparent;
+  border-top-left-radius: 0rem !important;
+  border-top-right-radius: 0rem !important;
+}
+.tab-content > .active {
+  display: block;
+  background: #007bff;
+  min-height: 165px;
+}
+.nav.nav-tabs {
+  float: left;
+  display: block;
+  margin-right: 20px;
+  border-bottom: 0;
+  border-right: 1px solid transparent;
+  padding-right: 15px;
+} */
