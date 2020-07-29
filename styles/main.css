@@ -534,6 +534,8 @@ button:focus {
 }
 
 .property-visitorfeedback-carousel-comment {
+  font-family: BrandonText-LightItalic;
+  margin-top: 1.3rem;
   padding-left: 100px;
   padding-right: 100px;
 }
@@ -555,4 +557,39 @@ button:focus {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.property-activity-findoutmore {
+  font-family: BrandonText-Medium; 
+  font-size: .9rem;
+}
+
+.property-visitor-name {
+  font-family: var(--font-headings);
+  font-size: 1.2rem;
+  margin-top: 1.3rem;
+  margin-bottom: 1.2rem;
+}
+
+.starred {
+  color: #EBB75C; 
+}
+
+.property-name1 {
+  font-family: var(--font-headings);
+  font-size: 3rem;
+  color:white;
+  text-align: left;
+}
+.property-name2 {
+  font-family: BrandonText-Thin;
+  font-size: 2rem;
+  color:white;
+}
+
+.property-name-address {
+  font-family: BrandonText-Medium;
+  font-size: 1.2rem;
+  color:white;
+  text-align: left;
 }
