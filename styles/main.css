@@ -34,8 +34,25 @@
   src: url(../assets/fonts/RotisSerifCE.woff);
 }
 
+:root {
+  --font-headings: RotisSerifCE;
+  --color-primary: #86b7d9;
+}
+
 body {
   font-family: BrandonText-Regular;
+}
+
+a,
+button {
+  transition: all 0.25s ease-in;
+}
+a:hover {
+  text-decoration: none;
+}
+
+button:focus {
+  outline: 0;
 }
 
 .header {
@@ -105,7 +122,7 @@ body {
 }
 
 .header-mid .title {
-  font-family: RotisSerifCE;
+  font-family: var(--font-headings);
   text-align: center;
   color: white;
   margin-top: 5rem;
@@ -128,7 +145,7 @@ body {
 
 .cta-container button,
 .intro-cta button {
-  background: #86b7d9;
+  background: var(--color-primary);
   border: none;
   color: white;
   padding: 1rem 2.8rem;
@@ -157,7 +174,7 @@ body {
   height: 100px;
   text-transform: uppercase;
   color: white;
-  background: #86b7d9;
+  background: var(--color-primary);
   border: none;
   font-size: 0.875rem;
   letter-spacing: 1;
@@ -173,7 +190,7 @@ body {
 }
 
 .intro-title {
-  font-family: RotisSerifCE;
+  font-family: var(--font-headings);
   line-height: 2.5rem;
 }
 
@@ -219,7 +236,7 @@ body {
 }
 
 .property-card h1 {
-  font-family: RotisSerifCE;
+  font-family: var(--font-headings);
   padding-left: 0.5rem;
   padding-top: 0.5rem;
   font-size: 1.65rem;
@@ -278,7 +295,7 @@ body {
 
 .destination-box h1 {
   margin-top: 1rem;
-  font-family: RotisSerifCE;
+  font-family: var(--font-headings);
   font-size: 1.5rem;
 }
 
@@ -330,7 +347,7 @@ body {
 }
 
 .inspiration-img {
-  font-family: RotisSerifCE;
+  font-family: var(--font-headings);
   font-size: 1.5rem;
   color: white;
   display: flex;
@@ -370,7 +387,7 @@ body {
 }
 
 .activity-text h1 {
-  font-family: RotisSerifCE;
+  font-family: var(--font-headings);
   color: white;
   font-size: 1.5rem;
   padding-left: 1rem;
@@ -416,7 +433,7 @@ body {
 }
 
 .footer-main h1 {
-  font-family: RotisSerifCE;
+  font-family: var(--font-headings);
   color: white;
   font-size: 1.2rem;
 }
@@ -453,13 +470,13 @@ body {
 }
 
 .property-overview-heading {
-  font-family: RotisSerifCE;
+  font-family: var(--font-headings);
   line-height: 4.5rem;
   font-size: 2rem;
 }
 
 .property-section-h2 {
-  font-family: RotisSerifCE;
+  font-family: var(--font-headings);
   line-height: 4.5rem;
   font-size: 2rem;
   text-align: center;
@@ -484,7 +501,7 @@ body {
   width: 3rem;
 }
 .property_features_heading {
-  font-family: RotisSerifCE;
+  font-family: var(--font-headings);
   /* line-height: 4.5rem; */
   font-size: 1.7rem;
   color: black;
@@ -493,7 +510,7 @@ body {
 }
 
 .property-virtualtour-subheading {
-  font-family: RotisSerifCE;
+  font-family: var(--font-headings);
   /* line-height: 4.5rem; */
   font-size: 1.5rem;
   color: black;
@@ -522,6 +539,8 @@ body {
 }
 
 .property-visitorfeedback-carousel-comment {
+  font-family: BrandonText-LightItalic;
+  margin-top: 1.3rem;
   padding-left: 100px;
   padding-right: 100px;
 }
@@ -544,60 +563,37 @@ body {
   height: 100%;
 }
 
-.navbar .dropdown {
-  position: static;
-}
-.navbar .dropdown-menu {
-  width: 100%;
-  left: 0;
-  right: 0;
-  /*  height of nav-item  */
-  top: 45px;
+.property-activity-findoutmore {
+  font-family: BrandonText-Medium;
+  font-size: 0.9rem;
 }
 
-/* .navbar .dropdown:hover .dropdown-menu,
-.navbar .dropdown .dropdown-menu:hover {
-  display: block !important;
-} */
-.navbar .dropdown-menu {
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  background-color: #fff;
+.property-visitor-name {
+  font-family: var(--font-headings);
+  font-size: 1.2rem;
+  margin-top: 1.3rem;
+  margin-bottom: 1.2rem;
 }
 
-.nav.nav-tabs {
-  float: left;
-  display: block;
-  margin-right: 20px;
-  border-bottom: 0;
-  border-right: 1px solid #ddd;
-  padding-right: 15px;
+.starred {
+  color: #ebb75c;
 }
-.nav-tabs .nav-link {
-  border: 1px solid transparent;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
-  background: #ccc;
+
+.property-name1 {
+  font-family: var(--font-headings);
+  font-size: 3rem;
+  color: white;
+  text-align: left;
 }
-.nav-tabs .nav-link.active {
-  color: #495057;
-  background-color: #007bff !important;
-  border-color: transparent !important;
+.property-name2 {
+  font-family: BrandonText-Thin;
+  font-size: 2rem;
+  color: white;
 }
-.nav-tabs .nav-link {
-  border: 1px solid transparent;
-  border-top-left-radius: 0rem !important;
-  border-top-right-radius: 0rem !important;
-}
-.tab-content > .active {
-  display: block;
-  background: #007bff;
-  min-height: 165px;
-}
-.nav.nav-tabs {
-  float: left;
-  display: block;
-  margin-right: 20px;
-  border-bottom: 0;
-  border-right: 1px solid transparent;
-  padding-right: 15px;
+
+.property-name-address {
+  font-family: BrandonText-Medium;
+  font-size: 1.2rem;
+  color: white;
+  text-align: left;
 }

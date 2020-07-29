@@ -24,6 +24,9 @@
       crossorigin="anonymous"
     />
 
+    <!-- Datepicker CSS -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ab-datepicker@latest/css/datepicker.css" type="text/css" /> -->
+
     <link rel="stylesheet" href="./styles/main.css" />
 
     <title>Habitat Escapes | Properties</title>
@@ -86,51 +89,59 @@
       <!-- breadcrumb end -->
 
       <!-- carousel begin -->
-      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <div id="propertyCarousel" class="carousel slide" data-ride="carousel">
         <!-- <ol class="carousel-indicators">
-          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          <li data-target="#propertyCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#propertyCarousel" data-slide-to="1"></li>
+          <li data-target="#propertyCarousel" data-slide-to="2"></li>
         </ol> -->
         <div class="carousel-inner">
           <div class="carousel-item active" data-interval="2000">
             <img src="./assets/property1.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Howells Barn (HB)</h5>
-              <p>Lower Mill Estates, The Cotswolds</p>
+            
+            <div class="carousel-caption d-none d-md-block" >
+              <div class="property-name1">Howells Barn 
+                <span class="property-name2">(HB)</span>
+
+              </div>
+              <div class="property-name-address">Lower Mill Estates, The Cotswolds</div>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" data-interval="2000">
+            <img src="./assets/property2.png" class="d-block w-100" alt="...">
+            
+            <div class="carousel-caption d-none d-md-block" >
+              <div class="property-name1">Howells Barn 
+                <span class="property-name2">(HB)</span>
+
+              </div>
+              <div class="property-name-address">Lower Mill Estates, The Cotswolds</div>
+            </div>
+          </div>
+          <!-- <div class="carousel-item">
             <img src="./assets/property2.png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block" data-interval="2000">
               <h5>Howells Barn (HB)</h5>
               <p>Lower Mill Estates, The Cotswolds</p>
             </div>
           </div>
-          <!-- <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            </div>
-          </div> -->
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        </div> -->
+        <a class="carousel-control-prev" href="#propertyCarousel" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#propertyCarousel" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
 
       <!--/.Controls-->
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"> <img class="d-block w-100" src="./assets/property1.png"
+      <!-- <ol class="carousel-indicators">
+        <li data-target="#propertyCarousel" data-slide-to="0" class="active"> <img class="d-block w-100" src="./assets/property1.png"
             class="img-fluid"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="1"><img class="d-block w-100" src="./assets/property2.png"
+        <li data-target="#propertyCarousel" data-slide-to="1"><img class="d-block w-100" src="./assets/property2.png"
             class="img-fluid"></li>
-      </ol>
+      </ol> -->
 
       </div>      
       <!-- carousel end -->
@@ -300,6 +311,7 @@
 
           <!-- Datepicker starts here -->
           <div class="col-sm-12 col-md-4">Date picker here ...</div>
+          <!-- <div class="col-sm-12 col-md-4"><div id="tdate"></div></div> -->
           <!-- Datepicker ends here -->
         </div>
         <!-- row for Overview, Accordian and Calendar ends here -->
@@ -354,37 +366,33 @@
             <div class="carousel-item active">
               <!-- <img src="..." class="d-block w-100" alt="..."> -->
               
-              <div class="d-none d-md-block" >
+              <div class="d-block" >
                 <img src="./assets/visitor1.png" /> 
-                <div>Ben Sherman, Newcastle</div>
-                <div style="color: yellow;">
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
+                <div class="property-visitor-name">Ben Sherman, Newcastle</div>
+                <div>
+                  <i class="fas fa-star starred"></i>
+                  <i class="fas fa-star starred"></i>
+                  <i class="fas fa-star starred"></i>
+                  <i class="fas fa-star starred"></i>
+                  <i class="fas fa-star starred"></i>
                 </div>
                 <div class="property-visitorfeedback-carousel-comment">Pellentesque ut neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Nullam vel sem. Phasellus accumsan cursus velit. Vivamus consectetuer hendrerit lacus.leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Sed lectus.</div>
-                <p></p>
-                <p></p>
               </div>
             </div>
             <div class="carousel-item">
               <!-- <img src="..." class="d-block w-100" alt="..."> -->
               
-              <div class="d-none d-md-block">
+              <div class="d-block">
                 <img src="./assets/visitor2.png" /> 
-                <div>Ben Sherman 2, Newcastle</div>
-                <div style="color: yellow;">
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
+                <div class="property-visitor-name">Ben Sherman 2, Newcastle</div>
+                <div>
+                  <i class="fas fa-star starred"></i>
+                  <i class="fas fa-star starred"></i>
+                  <i class="fas fa-star starred"></i>
+                  <i class="fas fa-star starred"></i>
+                  <i class="fas fa-star"></i>
                 </div>
                 <div class="property-visitorfeedback-carousel-comment">Pellentesque 2 ut neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Nullam vel sem. Phasellus accumsan cursus velit. Vivamus consectetuer hendrerit lacus.leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Sed lectus.</div>
-                <p></p>
-                <p></p>
               </div>
             </div>
 
@@ -414,25 +422,48 @@
             <div class="card activitynevent-card">
               <img src="./assets/Activities1.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Water Sports</h5>
-                <p class="card-text">Aenean imperdiet. Vestibulum suscipit nulla quis orci Nam pretium turpis et arcu. Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis eul.</p>
-                <a href="#"><p class="card-text">Find out more</p></a>
+                <div class="row">
+                  <div class="col-sm-8">
+                    <div class="card-title property-virtualtour-subheading">Water Sports</div>
+                  </div>
+                  <div class="col-sm-4 text-right">
+                    <span class="property-long-description">POA</span>
+                  </div>
+                </div>
+                <!-- <h5 class="card-title">Water Sports</h5> -->
+                <p class="card-text property-long-description">Aenean imperdiet. Vestibulum suscipit nulla quis orci Nam pretium turpis et arcu. Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis eul.</p>
+                <a href="#"><span class="card-text property-activity-findoutmore">Find out more</span></a>
               </div>
             </div>
             <div class="card activitynevent-card">
               <img src="./assets/Activities2.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Summer Event</h5>
-                <p class="card-text">Aenean imperdiet. Vestibulum suscipit nulla quis orci Nam pretium turpis et arcu. Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis eul.</p>
-                <a href="#"><p class="card-text">Find out more</p></a>
+                <div class="row">
+                  <div class="col-sm-8">
+                    <div class="card-title property-virtualtour-subheading">Summer Event</div>
+                  </div>
+                  <div class="col-sm-4 text-right">
+                    <span class="property-long-description">£25.00pp</span>
+                  </div>
+                </div>
+                <p class="card-text property-long-description">Aenean imperdiet. Vestibulum suscipit nulla quis orci Nam pretium turpis et arcu. Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis eul.</p>
+                <a href="#"><p class="card-text property-activity-findoutmore">Find out more</p></a>
               </div>
             </div>
             <div class="card activitynevent-card">
               <img src="./assets/Activities3.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Family Swim</h5>
-                <p class="card-text">Aenean imperdiet. Vestibulum suscipit nulla quis orci Nam pretium turpis et arcu. Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis eul.</p>
-                <a href="#"><p class="card-text">Find out more</p></a>
+                <div class="row">
+                  <div class="col-sm-8">
+                    <div class="card-title property-virtualtour-subheading">Family Swim</div>
+                  </div>
+                  <div class="col-sm-4 text-right">
+                    <span class="property-long-description">£5.00pp</span>
+                  </div>
+                </div>
+
+                <p class="card-text property-long-description">Aenean imperdiet. Vestibulum suscipit nulla quis orci Nam pretium turpis et arcu. Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis eul.</p>
+                <a href="#"><p class="card-text property-activity-findoutmore">Find out more</p></a>
               </div>
             </div>
           </div>
@@ -665,6 +696,11 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/ab-datepicker@latest"></script> -->
     <script src="scripts/main.js"></script>
+    <!-- <script src="scripts/property_detail.js"></script> -->
+
+    
   </body>
 </html>
