@@ -596,3 +596,15 @@ button:focus {
   color: white;
   text-align: left;
 }
+
+.dropdown-row {
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/* shows the dropdown menu on hover */
+.navbar .dropdown:hover .dropdown-menu,
+.navbar .dropdown .dropdown-menu:hover {
+  display: block !important;
+}
