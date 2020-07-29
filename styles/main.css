@@ -669,3 +669,9 @@ button:focus {
   text-transform: uppercase;
   font-size: 0.6rem;
 }
+
+.footer-main .intro-cta button {
+  padding: 0.8rem 1rem;
+
+  font-size: 0.7rem;
+}
