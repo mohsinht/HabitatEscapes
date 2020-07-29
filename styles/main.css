@@ -663,3 +663,9 @@ button:focus {
 .nav-item {
   padding-left: 10px;
 }
+
+.destination-box .intro-cta button {
+  padding: 1rem 1.8rem;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+}
