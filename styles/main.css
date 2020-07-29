@@ -544,7 +544,7 @@ body {
   height: 100%;
 }
 
-/* .navbar .dropdown {
+.navbar .dropdown {
   position: static;
 }
 .navbar .dropdown-menu {
@@ -600,4 +600,4 @@ body {
   border-bottom: 0;
   border-right: 1px solid transparent;
   padding-right: 15px;
-} */
+}
