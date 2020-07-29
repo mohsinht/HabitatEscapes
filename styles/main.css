@@ -675,3 +675,31 @@ button:focus {
 
   font-size: 0.7rem;
 }
+
+
+.relative-container {
+  position: relative;
+}
+
+.center-text-image {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  
+}
+
+.center-text-image-h1 {
+  font-family: var(--font-headings);
+  font-size: 3.2rem;
+  color: white;
+}
+.center-text-image-p {
+  font-family: BrandonText-Medium;
+  font-size: 1.2rem;
+  color:white;
+}
+
+.full-width {
+  width: 100%;
+}
