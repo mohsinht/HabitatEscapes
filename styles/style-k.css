@@ -252,6 +252,10 @@ img {
 }
 .booking-stats-block .heading {
     padding: .75rem 1.25rem;
+    border-bottom: 1px solid #eee;
+}
+.booking-stats-block .card {
+    border: 0;
 }
 .booking-stats-block .card:first-of-type {
     border-top-left-radius: 0;
