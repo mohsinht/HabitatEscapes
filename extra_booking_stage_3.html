@@ -27,9 +27,9 @@
       </div>
       <nav class="steps-nav">
         <ul class="list-steps-nav">
-          <li class="active">Recommended Extras</li>
+          <li>Recommended Extras</li>
           <li>Your Details</li>
-          <li>Payment</li>
+          <li class="active">Payment</li>
           <li>Confirmation</li>
         </ul>
       </nav>
@@ -40,10 +40,10 @@
 
     <div class="page-banner">
       <div class="banner-image">
-        <img src="./assets/banner-1.jpg" class="d-block w-100" alt="...">
+        <img src="./assets/banner-3.jpg" class="d-block w-100" alt="...">
       </div>
       <header class="banner-header text-center">
-        <h1 class="text-heading text-white">Recommended extras</h1>
+        <h1 class="text-heading text-white">Make your payment</h1>
       </header>
     </div><!-- /page-banner -->
 
@@ -51,160 +51,177 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8">
-            <div class="mb-5">
-              <header class="mb-2">
-                <h3 class="text-heading">Recommended Extras</h3>
+            <div class="mb-4">
+              <header class="mb-4">
+                <h3 class="text-heading">Payment details</h3>
               </header>
-              <p>Non porro pariatur incidunt voluptates illum accusantium vero itaque nemo enim! Earum similique
-                necessitatibus asperiores consectetur tempora reprehenderit ab, delectus unde sint. Tempore nostrum
-                ut, nulla porro harum asperiores facilis eveniet debitis aspernatur obcaecati exercitationem? Officia,
-                dignissimos nihil?</p>
-            </div>
-
-            <div class="mb-5">
-              <div class="activity-block">
-                <div class="activity-block-top">
-                  <figure class="image">
-                    <img src="./assets/inspiration_img3.jpg" alt="...">
-                  </figure>
-                  <div class="text">
-                    <header class="activity-header mb-3">
-                      <h5 class="title text-heading">Active Escapes Week Package - Single</h5>
-                    </header>
-                    <div class="activity-incremental mb-3">
-                      <div class="activity-incremental-text">
-                        <span class="incremental-count">0</span>
-                        - Active Escapes Week Package
+              <form action="#" class="booking-detail-form">
+                
+                <div class="mb-4">
+                  <header class="mb-4">
+                    <h5 class="text-heading mb-0">Amount to pay now</h5>
+                    <p>How would you like to pay?</p>
+                  </header>
+                  
+                  <div class="form-check mb-2">
+                    <input class="form-check-input" type="radio" name="payment-method-input" id="radio-payment-full" value="full">
+                    <label class="form-check-label" for="radio-payment-full">
+                      Payment full (£1725)
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="payment-method-input" id="radio-payment-deposit" value="deposit">
+                    <label class="form-check-label" for="radio-payment-deposit">
+                      Deposit (£150)
+                    </label>
+                    <small class="form-text text-muted">Balance to be paid by 20 August 2020</small>
+                  </div>
+  
+                  <div class="mt-2 mb-2">
+                    <hr>
+                  </div>
+  
+                  <header>
+                    <h5 class="text-heading">Payment Method</h5>
+                  </header>
+  
+                  <div class="row">
+                    <div class="col-md-10">
+  
+                      <div class="check-creditcard-block">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="payment-method-input" id="radio-payment-creditcard" value="credit-card">
+                          <label class="form-check-label label-credit-card-icons" for="radio-payment-creditcard">
+                            <span>Credit Card</span>
+                            <div class="creditcard-icons">
+                              <img src="./assets/icon-visa.jpg" alt="...">
+                              <img src="./assets/icon-mastercard.jpg" alt="...">
+                              <img src="./assets/icon-maestro.jpg" alt="...">
+                              <img src="./assets/icon-american-express.jpg" alt="...">
+                            </div>
+                          </label>
+                        </div>
                       </div>
-                      <button class="button-iconic decrement"><i class="fas fa-minus"></i></button>
-                      <button class="button-iconic increment"><i class="fas fa-plus"></i></button>
+  
                     </div>
-                    <button class="link-more text-primary" data-toggle="collapse"
-                      data-target="#collapse-activity-1">View more Info <i class="fas fa-chevron-down"></i></button>
                   </div>
-                  <div class="action">
-                    <button class="btn btn-primary">Add Activity</button>
-                  </div>
-                </div>
-                <div id="collapse-activity-1" class="collapse activity-block-detail">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ut deleniti aliquam commodi quam
-                  mollitia quod recusandae animi totam voluptate accusamus id, officiis cumque, in tempora vitae
-                  voluptatum eveniet ipsum.
-                </div>
-              </div>
 
-              <div class="activity-block">
-                <div class="activity-block-top">
-                  <figure class="image">
-                    <img src="./assets/inspiration_img3.jpg" alt="...">
-                  </figure>
-                  <div class="text">
-                    <header class="activity-header mb-3">
-                      <h5 class="title text-heading">Active Escapes Week Package - Single</h5>
-                    </header>
-                    <div class="activity-incremental mb-3">
-                      <div class="activity-incremental-text">
-                        <span class="incremental-count">0</span>
-                        - Active Escapes Week Package
+                </div>  
+                
+                <div class="row">
+                  <div class="col-md-10">
+                    
+                    <div class="form-group">
+                      <label>Name on card<span class="text-danger">*</span></label>
+                      <input type="text" class="form-control" placeholder="Add your name">
+                    </div>
+
+                    <div class="form-group">
+                      <label>Card number<span class="text-danger">*</span></label>
+                      <input type="text" class="form-control" placeholder="Add your card number">
+                    </div>
+
+                    <label>Start Date <small>(optional)</small></label>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <select class="form-control">
+                            <option value="month">Select Month</option>
+                            <option value="jan">January</option>
+                            <option value="feb">February</option>
+                            <option value="mar">March</option>
+                            <option value="apr">April</option>
+                            <option value="may">May</option>
+                            <option value="jun">June</option>
+                            <option value="jul">July</option>
+                            <option value="aug">August</option>
+                            <option value="sep">September</option>
+                            <option value="oct">October</option>
+                            <option value="nov">November</option>
+                            <option value="dec">December</option>
+                          </select>
+                        </div>  
                       </div>
-                      <button class="button-iconic decrement"><i class="fas fa-minus"></i></button>
-                      <button class="button-iconic increment"><i class="fas fa-plus"></i></button>
-                    </div>
-                    <button class="link-more text-primary" data-toggle="collapse"
-                      data-target="#collapse-activity-2">View more Info <i class="fas fa-chevron-down"></i></button>
-                  </div>
-                  <div class="action">
-                    <button class="btn btn-primary">Add Activity</button>
-                  </div>
-                </div>
-                <div id="collapse-activity-2" class="collapse activity-block-detail">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ut deleniti aliquam commodi quam
-                  mollitia quod recusandae animi totam voluptate accusamus id, officiis cumque, in tempora vitae
-                  voluptatum eveniet ipsum.
-                </div>
-              </div>
-
-              <div class="activity-block">
-                <div class="activity-block-top">
-                  <figure class="image">
-                    <img src="./assets/inspiration_img3.jpg" alt="...">
-                  </figure>
-                  <div class="text">
-                    <header class="activity-header mb-3">
-                      <h5 class="title text-heading">Active Escapes Week Package - Single</h5>
-                    </header>
-                    <div class="activity-incremental mb-3">
-                      <div class="activity-incremental-text">
-                        <span class="incremental-count">0</span>
-                        - Active Escapes Week Package
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <select class="form-control">
+                            <option value="year">Select Year</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                          </select>
+                        </div>  
                       </div>
-                      <button class="button-iconic decrement"><i class="fas fa-minus"></i></button>
-                      <button class="button-iconic increment"><i class="fas fa-plus"></i></button>
                     </div>
-                    <button class="link-more text-primary" data-toggle="collapse"
-                      data-target="#collapse-activity-3">View more Info <i class="fas fa-chevron-down"></i></button>
-                  </div>
-                  <div class="action">
-                    <button class="btn btn-primary">Add Activity</button>
-                  </div>
-                </div>
-                <div id="collapse-activity-3" class="collapse activity-block-detail">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ut deleniti aliquam commodi quam
-                  mollitia quod recusandae animi totam voluptate accusamus id, officiis cumque, in tempora vitae
-                  voluptatum eveniet ipsum.
-                </div>
-              </div>
-            </div>
 
-            <div class="extra-list-area mb-4">
-              <header class="mb-2">
-                <h3 class="text-heading">Optional Extras</h3>
-              </header>
+                    <label>Expiry Date <small>(optional)</small></label>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <select class="form-control">
+                            <option value="month">Select Month</option>
+                            <option value="jan">January</option>
+                            <option value="feb">February</option>
+                            <option value="mar">March</option>
+                            <option value="apr">April</option>
+                            <option value="may">May</option>
+                            <option value="jun">June</option>
+                            <option value="jul">July</option>
+                            <option value="aug">August</option>
+                            <option value="sep">September</option>
+                            <option value="oct">October</option>
+                            <option value="nov">November</option>
+                            <option value="dec">December</option>
+                          </select>
+                        </div>  
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <select class="form-control">
+                            <option value="year">Select Year</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                          </select>
+                        </div>  
+                      </div>
+                    </div>
 
-              <div class="axtra-list-block">
-                <div class="text">
-                  <h5 class="title text-heading">Add a dog - £35.00</h5>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Security Code<span class="text-danger">*</span></label>
+                          <input type="text" class="form-control" placeholder="Add your card number">
+                        </div>    
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Issue number <small>(optional)</small></label>
+                          <input type="text" class="form-control" placeholder="Add your issue number">
+                        </div>    
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
-                <div class="extra-incremental">
-                  <button class="button-iconic decrement"><i class="fas fa-minus"></i></button>
-                  <input type="number" class="form-control" value="0">
-                  <button class="button-iconic increment"><i class="fas fa-plus"></i></button>
+
+                <div class="mt-4 mb-4">
+                  <hr>
                 </div>
-                <div class="action">
-                  <button class="btn btn-primary">Add Extra</button>
+
+                <div class="form-group form-check mb-4">
+                  <input type="checkbox" class="form-check-input" id="agree-tnc-check">
+                  <label class="form-check-label" for="agree-tnc-check">I have read and understand the</label> <a href="#" class="text-underline">Terms &amp; Conditions</a>
                 </div>
-              </div><!-- axtra-list-block -->
-              <div class="axtra-list-block">
-                <div class="text">
-                  <h5 class="title text-heading">Welcome Prosecco - £22.00</h5>
+
+                <div class="mt-4 mb-4">
+                  <hr>
                 </div>
-                <div class="extra-incremental">
-                  <button class="button-iconic decrement"><i class="fas fa-minus"></i></button>
-                  <input type="number" class="form-control" value="0">
-                  <button class="button-iconic increment"><i class="fas fa-plus"></i></button>
-                </div>
-                <div class="action">
-                  <button class="btn btn-primary">Add Extra</button>
-                </div>
-              </div><!-- axtra-list-block -->
-              <div class="axtra-list-block">
-                <div class="text">
-                  <h5 class="title text-heading">Midweek Housekeeping - £25.00</h5>
-                </div>
-                <div class="extra-incremental">
-                  <button class="button-iconic decrement"><i class="fas fa-minus"></i></button>
-                  <input type="number" class="form-control" value="0">
-                  <button class="button-iconic increment"><i class="fas fa-plus"></i></button>
-                </div>
-                <div class="action">
-                  <button class="btn btn-primary">Add Extra</button>
-                </div>
-              </div><!-- axtra-list-block -->
+
+              </form>
             </div>
 
             <div class="button-bar flex-end">
-              <button class="btn btn-primary">Save booking for later <i
-                  class="fa fa-long-arrow-alt-right ml-2"></i></button>
               <button class="btn btn-success">Countinue with booking <i
                   class="fa fa-long-arrow-alt-right ml-2"></i></button>
             </div><!-- button-bar -->

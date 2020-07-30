@@ -674,3 +674,62 @@ button:focus {
   padding: 0.8rem 1rem;
   font-size: 0.7rem;
 }
+
+
+.relative-container {
+  position: relative;
+}
+
+.center-text-image {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  
+}
+
+.center-text-image-h1 {
+  font-family: var(--font-headings);
+  font-size: 3.2rem;
+  color: white;
+}
+.center-text-image-p {
+  font-family: BrandonText-Medium;
+  font-size: 1.2rem;
+  color:white;
+}
+
+.full-width {
+  width: 100%;
+}
+
+/* Activity Detail Card on Activity page */
+.adc-title {
+  font-family: var(--font-headings);
+  font-size: 1.8rem;
+  /* line-height: 2.5rem; */
+}
+
+.adc-sub-heading {
+  font-family: BrandonText-Light;
+  font-size: .8rem;
+}
+
+.adc-sub-value {
+  font-family: BrandonText-Light;
+  font-size: 1rem;
+  color: var(--color-primary)
+}
+
+.adc-price {
+  font-family: var(--font-headings);
+  font-size: 1.5rem;
+}
+
+.adc-cta {
+  background-color: var(--color-primary);
+  color:white;
+  font-family: BrandonText-Medium;
+  font-size: 0.8rem;
+  width: 100%;
+}
