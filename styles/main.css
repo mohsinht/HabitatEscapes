@@ -737,7 +737,7 @@ button:focus {
   background: white;
   position: fixed;
   margin: 0rem 0rem;
-  padding: 1rem;
+  padding: 0.1rem 1rem 0.5rem 1rem;
   top: 0px;
   z-index: 10000;
   width: -webkit-fill-available;
