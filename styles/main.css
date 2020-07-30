@@ -675,7 +675,6 @@ button:focus {
   font-size: 0.7rem;
 }
 
-
 .relative-container {
   position: relative;
 }
@@ -685,7 +684,6 @@ button:focus {
   top: 30%;
   width: 100%;
   text-align: center;
-  
 }
 
 .center-text-image-h1 {
@@ -696,7 +694,7 @@ button:focus {
 .center-text-image-p {
   font-family: BrandonText-Medium;
   font-size: 1.2rem;
-  color:white;
+  color: white;
 }
 
 .full-width {
@@ -712,13 +710,13 @@ button:focus {
 
 .adc-sub-heading {
   font-family: BrandonText-Light;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .adc-sub-value {
   font-family: BrandonText-Light;
   font-size: 1rem;
-  color: var(--color-primary)
+  color: var(--color-primary);
 }
 
 .adc-price {
@@ -728,8 +726,19 @@ button:focus {
 
 .adc-cta {
   background-color: var(--color-primary);
-  color:white;
+  color: white;
   font-family: BrandonText-Medium;
   font-size: 0.8rem;
+  width: 100%;
+}
+
+.filter-header {
+  background: white;
+  position: fixed;
+  margin: 0rem 0rem;
+  padding: 1rem;
+  top: 0px;
+  z-index: 10000;
+  width: -webkit-fill-available;
   width: 100%;
 }
