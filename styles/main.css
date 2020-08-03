@@ -830,3 +830,36 @@ button:focus {
 }
 
 /* FAQ page CSS ends here */
+
+/* Contact US page begins here */
+.contactus-option-icon {
+  font-size: 2rem;
+  width: 100%;
+  text-align: left;
+}
+
+.contactus-option-h3 {
+  font-family: var(--font-headings);
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 700px) {
+  .contactus-options {
+    padding-right: 10%;
+    padding-left: 20%;
+  }
+}
+
+.contactus-option-desc {
+  font-family: BrandonText-Light;
+  font-size: 1rem;
+  
+}
+.contactus-text {
+  font-family: BrandonText-Medium;
+  font-size: 1rem;
+}
+.contactus-social-icons {
+  font-size: 2rem;
+}
+/* Contact Us page ends here */
