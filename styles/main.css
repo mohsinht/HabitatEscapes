@@ -882,3 +882,8 @@ button:focus {
 .team-card {
   box-shadow: 3px 8px 13px #0000001f;
 }
+
+.footer-main .header-logo {
+  width: 5rem;
+  height: 5.4rem;
+}
