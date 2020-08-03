@@ -689,7 +689,6 @@ button:focus {
 
 .center-text-image-h1 {
   font-family: var(--font-headings);
-  font-size: 3.2rem;
   color: white;
 }
 .center-text-image-p {
@@ -752,11 +751,36 @@ button:focus {
   padding-top: 2rem;
   
 }
+.tnc-help {
+  text-align: center;
+}
+.tnc-help-title {
+  font-family: var(--font-headings);
+  font-size: 1.8rem;
+  
+}
 
+.tnc-help-subheading {
+  font-family: BrandonText-Medium;
+  font-size: 1rem;
+  
+}
 .tnc-cta {
   background-color: var(--color-primary);
   color: white;
   font-family: BrandonText-Medium;
   font-size: 0.8rem;
+  margin-top: 2rem;
   
 }
+
+@media screen and (min-width: 700px) {
+  .tnc-help-align {
+    margin-top: 10rem;
+  }
+
+  .center-text-image-h1-lg {
+    font-size: 3.2rem;
+  }
+}
+
