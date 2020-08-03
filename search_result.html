@@ -13,6 +13,7 @@
         integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/slick.css">
     <link rel="stylesheet" href="./styles/style-k.css" />
 
 </head>
@@ -21,7 +22,8 @@
     <div class="page-wrapper">
         <header class="site-header">
             <div class="hd-signup">
-                <a href="mailto:abc@mail.com" class="hd-contact-link"><i class="far fa-envelope pr-1"></i> Newsletter Sign up</a>
+                <a href="mailto:abc@mail.com" class="hd-contact-link"><i class="far fa-envelope pr-1"></i> Newsletter
+                    Sign up</a>
             </div>
             <div class="site-logo">
                 <a class="site-logo-link" href="index.html">
@@ -38,16 +40,2149 @@
                 </ul>
             </div>
         </header><!-- /site-header -->
-        <div class="site-navigation">
-            
-        </div>
+
+        <div class="property-search-bar">
+            <div class="container">
+                <div class="property-search-bar-content">
+                    <div class="option-block">
+                        <div class="option-label">Location</div>
+                        <div class="option-selection">
+                            <div class="select-box">
+                                <select>
+                                    <option value="pick-location">Pick Location</option>
+                                    <option value="1">Location One</option>
+                                    <option value="2">Location Two</option>
+                                    <option value="3">Location Three</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div><!-- /option-block -->
+
+                    <div class="option-block">
+                        <div class="option-label">Date</div>
+                        <div class="option-selection-dual">
+                            <input type="number" class="form-control selected-digit" value="15" min="1" max="31" />
+                            <div class="select-box-vertical">
+                                <select>
+                                    <option value="pick-location">Month</option>
+                                    <option value="1">Jan</option>
+                                    <option value="2">Feb</option>
+                                    <option value="3">Mar</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div><!-- /option-block -->
+
+                    <div class="option-block">
+                        <div class="option-label">Guests</div>
+                        <div class="option-selection-dual">
+                            <input type="number" class="form-control selected-digit" value="1" min="0" />
+                            <div class="number-controls-vertical">
+                                <button class="button-iconic increment"><i class="fas fa-chevron-up"></i></button>
+                                <button class="button-iconic decrement"><i class="fas fa-chevron-down"></i></button>
+                            </div>
+                        </div>
+                    </div><!-- /option-block -->
+
+                    <div class="option-block">
+                        <div class="option-label">Duration</div>
+                        <div class="option-selection-dual">
+                            <input type="number" class="form-control selected-digit" value="4" min="0" />
+                            <div class="number-controls-vertical">
+                                <button class="button-iconic increment"><i class="fas fa-chevron-up"></i></button>
+                                <button class="button-iconic  decrement"><i class="fas fa-chevron-down"></i></button>
+                            </div>
+                        </div>
+                    </div><!-- /option-block -->
+
+                    <div class="control">
+                        <button class="btn btn-primary">Update <i class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /property-search-bar -->
+
+        <div class="property-search-result-bar">
+            <div class="container">
+                Based on your search - 9 results
+            </div>
+        </div><!-- /property-search-result-bar -->
+        <div class="search-filter-bar">
+            <div class="container">
+                <div class="filter-contents">
+                    <div class="search-filters">
+                        <strong class="mr-3 text-nowrap">Filter by</strong>
+                        <div class="input-group mr-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-users"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="sleeps">
+                        </div>
+
+                        <div class="input-group mr-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Property Type">
+                            <div class="input-group-append">
+                                <button type="button"
+                                    class="btn btn-caret btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item active" href="#">Option 1</a>
+                                    <a class="dropdown-item" href="#">Option 2</a>
+                                    <a class="dropdown-item" href="#">Option 3</a>
+                                    <div role="separator" class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Option 4</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="text-sm text-nowrap text-underline">Other Options</a>
+                    </div><!-- /search-filters -->
+
+                    <div class="search-sorts">
+                        <strong class="mr-3 text-nowrap">Sort by</strong>
+                        <div class="input-group mr-2">
+                            <input type="text" class="form-control" placeholder="Property Type">
+                            <div class="input-group-append">
+                                <button type="button"
+                                    class="btn btn-caret btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item active" href="#">Option 1</a>
+                                    <a class="dropdown-item" href="#">Option 2</a>
+                                    <a class="dropdown-item" href="#">Option 3</a>
+                                    <div role="separator" class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Option 4</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /search-sorts -->
+                </div>
+            </div>
+        </div><!-- /search-filter-bar -->
 
         <main role="main">
             <div class="container">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod incidunt placeat omnis aspernatur mollitia
-                dicta ipsum at quas eos asperiores, aut doloribus facere sint voluptate voluptatum odit suscipit aperiam
-                praesentium?
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="property-info-box mb-4">
+                            <div class="slider"
+                                data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "autoplay": "true"}'>
+                                <div class="slider-image">
+                                    <img src="./assets/property_img1.jpg" alt="...">
+                                </div>
+                                <div class="slider-image">
+                                    <img src="./assets/property_img1.jpg" alt="...">
+                                </div>
+                            </div>
+                            <div class="property-info-block slider-synced" data-for=".prop-panel-1"
+                                data-nav=".prop-tabs-1">
+                                <div class="property-tabs prop-tabs-1">
+                                    <div>
+                                        <div class="tab disabled">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong>Sold Out</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong>£1,600</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong><del>Was £1,600</del></strong></div>
+                                            <div class="text-danger"><strong>Now £1,600</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab disabled">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong>Sold Out</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong>£1,600</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong><del>Was £1,600</del></strong></div>
+                                            <div class="text-danger"><strong>Now £1,600</strong></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="property-panel prop-panel-1">
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">The Hide <small class="text-muted">(H130)</small>
+                                            </h5>
+                                            <small class="sleep-stat">Sleeps 2</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>4.48</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success" disabled>Sold Out <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">Keynes Cottage <small
+                                                    class="text-muted">(H130)</small></h5>
+                                            <small class="sleep-stat">Sleeps 3</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>3.50</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success">Book Now <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">Kingfisher Lodge <small
+                                                    class="text-muted">(H130)</small></h5>
+                                            <small class="sleep-stat">Sleeps 5</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>4.7</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success">Book Now <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">The Hide <small class="text-muted">(H130)</small>
+                                            </h5>
+                                            <small class="sleep-stat">Sleeps 2</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>4.48</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success" disabled>Sold Out <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">Keynes Cottage <small
+                                                    class="text-muted">(H130)</small></h5>
+                                            <small class="sleep-stat">Sleeps 3</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>3.50</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success">Book Now <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">Kingfisher Lodge <small
+                                                    class="text-muted">(H130)</small></h5>
+                                            <small class="sleep-stat">Sleeps 5</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>4.7</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success">Book Now <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- /.property-info-block -->
+                        </div><!-- /property-info-box -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="property-info-box mb-4">
+                            <div class="slider"
+                                data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "autoplay": "true"}'>
+                                <div class="slider-image">
+                                    <img src="./assets/property_img1.jpg" alt="...">
+                                </div>
+                                <div class="slider-image">
+                                    <img src="./assets/property_img1.jpg" alt="...">
+                                </div>
+                            </div>
+                            <div class="property-info-block slider-synced" data-for=".prop-panel-2"
+                                data-nav=".prop-tabs-2">
+                                <div class="property-tabs prop-tabs-2">
+                                    <div>
+                                        <div class="tab disabled">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong>Sold Out</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong>£1,600</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong><del>Was £1,600</del></strong></div>
+                                            <div class="text-danger"><strong>Now £1,600</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab disabled">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong>Sold Out</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong>£1,600</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong><del>Was £1,600</del></strong></div>
+                                            <div class="text-danger"><strong>Now £1,600</strong></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="property-panel prop-panel-2">
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">The Hide <small class="text-muted">(H130)</small>
+                                            </h5>
+                                            <small class="sleep-stat">Sleeps 2</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>4.48</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success" disabled>Sold Out <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">Keynes Cottage <small
+                                                    class="text-muted">(H130)</small></h5>
+                                            <small class="sleep-stat">Sleeps 3</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>3.50</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success">Book Now <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">Kingfisher Lodge <small
+                                                    class="text-muted">(H130)</small></h5>
+                                            <small class="sleep-stat">Sleeps 5</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>4.7</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success">Book Now <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">The Hide <small class="text-muted">(H130)</small>
+                                            </h5>
+                                            <small class="sleep-stat">Sleeps 2</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>4.48</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success" disabled>Sold Out <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">Keynes Cottage <small
+                                                    class="text-muted">(H130)</small></h5>
+                                            <small class="sleep-stat">Sleeps 3</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>3.50</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success">Book Now <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">Kingfisher Lodge <small
+                                                    class="text-muted">(H130)</small></h5>
+                                            <small class="sleep-stat">Sleeps 5</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>4.7</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success">Book Now <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- /.property-info-block -->
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="property-info-box mb-4">
+                            <div class="slider"
+                                data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "autoplay": "true"}'>
+                                <div class="slider-image">
+                                    <img src="./assets/property_img1.jpg" alt="...">
+                                </div>
+                                <div class="slider-image">
+                                    <img src="./assets/property_img1.jpg" alt="...">
+                                </div>
+                            </div>
+                            <div class="property-info-block slider-synced" data-for=".prop-panel-3"
+                                data-nav=".prop-tabs-3">
+                                <div class="property-tabs prop-tabs-3">
+                                    <div>
+                                        <div class="tab disabled">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong>Sold Out</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong>£1,600</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong><del>Was £1,600</del></strong></div>
+                                            <div class="text-danger"><strong>Now £1,600</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab disabled">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong>Sold Out</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong>£1,600</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong><del>Was £1,600</del></strong></div>
+                                            <div class="text-danger"><strong>Now £1,600</strong></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="property-panel prop-panel-3">
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">The Hide <small class="text-muted">(H130)</small>
+                                            </h5>
+                                            <small class="sleep-stat">Sleeps 2</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>4.48</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success" disabled>Sold Out <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">Keynes Cottage <small
+                                                    class="text-muted">(H130)</small></h5>
+                                            <small class="sleep-stat">Sleeps 3</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>3.50</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success">Book Now <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">Kingfisher Lodge <small
+                                                    class="text-muted">(H130)</small></h5>
+                                            <small class="sleep-stat">Sleeps 5</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>4.7</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success">Book Now <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">The Hide <small class="text-muted">(H130)</small>
+                                            </h5>
+                                            <small class="sleep-stat">Sleeps 2</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>4.48</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success" disabled>Sold Out <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">Keynes Cottage <small
+                                                    class="text-muted">(H130)</small></h5>
+                                            <small class="sleep-stat">Sleeps 3</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>3.50</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success">Book Now <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">Kingfisher Lodge <small
+                                                    class="text-muted">(H130)</small></h5>
+                                            <small class="sleep-stat">Sleeps 5</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>4.7</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success">Book Now <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- /.property-info-block -->
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="property-info-box mb-4">
+                            <div class="slider"
+                                data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "autoplay": "true"}'>
+                                <div class="slider-image">
+                                    <img src="./assets/property_img1.jpg" alt="...">
+                                </div>
+                                <div class="slider-image">
+                                    <img src="./assets/property_img1.jpg" alt="...">
+                                </div>
+                            </div>
+                            <div class="property-info-block slider-synced" data-for=".prop-panel-4"
+                                data-nav=".prop-tabs-4">
+                                <div class="property-tabs prop-tabs-4">
+                                    <div>
+                                        <div class="tab disabled">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong>Sold Out</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong>£1,600</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong><del>Was £1,600</del></strong></div>
+                                            <div class="text-danger"><strong>Now £1,600</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab disabled">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong>Sold Out</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong>£1,600</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong><del>Was £1,600</del></strong></div>
+                                            <div class="text-danger"><strong>Now £1,600</strong></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="property-panel prop-panel-4">
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">The Hide <small class="text-muted">(H130)</small>
+                                            </h5>
+                                            <small class="sleep-stat">Sleeps 2</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>4.48</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success" disabled>Sold Out <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">Keynes Cottage <small
+                                                    class="text-muted">(H130)</small></h5>
+                                            <small class="sleep-stat">Sleeps 3</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>3.50</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success">Book Now <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">Kingfisher Lodge <small
+                                                    class="text-muted">(H130)</small></h5>
+                                            <small class="sleep-stat">Sleeps 5</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>4.7</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success">Book Now <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">The Hide <small class="text-muted">(H130)</small>
+                                            </h5>
+                                            <small class="sleep-stat">Sleeps 2</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>4.48</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success" disabled>Sold Out <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">Keynes Cottage <small
+                                                    class="text-muted">(H130)</small></h5>
+                                            <small class="sleep-stat">Sleeps 3</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>3.50</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success">Book Now <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">Kingfisher Lodge <small
+                                                    class="text-muted">(H130)</small></h5>
+                                            <small class="sleep-stat">Sleeps 5</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>4.7</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success">Book Now <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- /.property-info-block -->
+                        </div><!-- /property-info-box -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="property-info-box mb-4">
+                            <div class="slider"
+                                data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "autoplay": "true"}'>
+                                <div class="slider-image">
+                                    <img src="./assets/property_img1.jpg" alt="...">
+                                </div>
+                                <div class="slider-image">
+                                    <img src="./assets/property_img1.jpg" alt="...">
+                                </div>
+                            </div>
+                            <div class="property-info-block slider-synced" data-for=".prop-panel-5"
+                                data-nav=".prop-tabs-5">
+                                <div class="property-tabs prop-tabs-5">
+                                    <div>
+                                        <div class="tab disabled">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong>Sold Out</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong>£1,600</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong><del>Was £1,600</del></strong></div>
+                                            <div class="text-danger"><strong>Now £1,600</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab disabled">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong>Sold Out</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong>£1,600</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong><del>Was £1,600</del></strong></div>
+                                            <div class="text-danger"><strong>Now £1,600</strong></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="property-panel prop-panel-5">
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">The Hide <small class="text-muted">(H130)</small>
+                                            </h5>
+                                            <small class="sleep-stat">Sleeps 2</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>4.48</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success" disabled>Sold Out <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">Keynes Cottage <small
+                                                    class="text-muted">(H130)</small></h5>
+                                            <small class="sleep-stat">Sleeps 3</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>3.50</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success">Book Now <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">Kingfisher Lodge <small
+                                                    class="text-muted">(H130)</small></h5>
+                                            <small class="sleep-stat">Sleeps 5</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>4.7</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success">Book Now <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">The Hide <small class="text-muted">(H130)</small>
+                                            </h5>
+                                            <small class="sleep-stat">Sleeps 2</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>4.48</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success" disabled>Sold Out <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">Keynes Cottage <small
+                                                    class="text-muted">(H130)</small></h5>
+                                            <small class="sleep-stat">Sleeps 3</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>3.50</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success">Book Now <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">Kingfisher Lodge <small
+                                                    class="text-muted">(H130)</small></h5>
+                                            <small class="sleep-stat">Sleeps 5</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>4.7</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success">Book Now <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- /.property-info-block -->
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="property-info-box mb-4">
+                            <div class="slider"
+                                data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "autoplay": "true"}'>
+                                <div class="slider-image">
+                                    <img src="./assets/property_img1.jpg" alt="...">
+                                </div>
+                                <div class="slider-image">
+                                    <img src="./assets/property_img1.jpg" alt="...">
+                                </div>
+                            </div>
+                            <div class="property-info-block slider-synced" data-for=".prop-panel-6"
+                                data-nav=".prop-tabs-6">
+                                <div class="property-tabs prop-tabs-6">
+                                    <div>
+                                        <div class="tab disabled">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong>Sold Out</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong>£1,600</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong><del>Was £1,600</del></strong></div>
+                                            <div class="text-danger"><strong>Now £1,600</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab disabled">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong>Sold Out</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong>£1,600</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong><del>Was £1,600</del></strong></div>
+                                            <div class="text-danger"><strong>Now £1,600</strong></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="property-panel prop-panel-6">
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">The Hide <small class="text-muted">(H130)</small>
+                                            </h5>
+                                            <small class="sleep-stat">Sleeps 2</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>4.48</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success" disabled>Sold Out <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">Keynes Cottage <small
+                                                    class="text-muted">(H130)</small></h5>
+                                            <small class="sleep-stat">Sleeps 3</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>3.50</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success">Book Now <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">Kingfisher Lodge <small
+                                                    class="text-muted">(H130)</small></h5>
+                                            <small class="sleep-stat">Sleeps 5</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>4.7</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success">Book Now <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">The Hide <small class="text-muted">(H130)</small>
+                                            </h5>
+                                            <small class="sleep-stat">Sleeps 2</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>4.48</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success" disabled>Sold Out <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">Keynes Cottage <small
+                                                    class="text-muted">(H130)</small></h5>
+                                            <small class="sleep-stat">Sleeps 3</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>3.50</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success">Book Now <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">Kingfisher Lodge <small
+                                                    class="text-muted">(H130)</small></h5>
+                                            <small class="sleep-stat">Sleeps 5</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>4.7</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success">Book Now <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- /.property-info-block -->
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="property-info-box mb-4">
+                            <div class="slider"
+                                data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "autoplay": "true"}'>
+                                <div class="slider-image">
+                                    <img src="./assets/property_img1.jpg" alt="...">
+                                </div>
+                                <div class="slider-image">
+                                    <img src="./assets/property_img1.jpg" alt="...">
+                                </div>
+                            </div>
+                            <div class="property-info-block slider-synced" data-for=".prop-panel-7"
+                                data-nav=".prop-tabs-7">
+                                <div class="property-tabs prop-tabs-7">
+                                    <div>
+                                        <div class="tab disabled">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong>Sold Out</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong>£1,600</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong><del>Was £1,600</del></strong></div>
+                                            <div class="text-danger"><strong>Now £1,600</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab disabled">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong>Sold Out</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong>£1,600</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong><del>Was £1,600</del></strong></div>
+                                            <div class="text-danger"><strong>Now £1,600</strong></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="property-panel prop-panel-7">
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">The Hide <small class="text-muted">(H130)</small>
+                                            </h5>
+                                            <small class="sleep-stat">Sleeps 2</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>4.48</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success" disabled>Sold Out <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">Keynes Cottage <small
+                                                    class="text-muted">(H130)</small></h5>
+                                            <small class="sleep-stat">Sleeps 3</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>3.50</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success">Book Now <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">Kingfisher Lodge <small
+                                                    class="text-muted">(H130)</small></h5>
+                                            <small class="sleep-stat">Sleeps 5</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>4.7</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success">Book Now <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">The Hide <small class="text-muted">(H130)</small>
+                                            </h5>
+                                            <small class="sleep-stat">Sleeps 2</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>4.48</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success" disabled>Sold Out <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">Keynes Cottage <small
+                                                    class="text-muted">(H130)</small></h5>
+                                            <small class="sleep-stat">Sleeps 3</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>3.50</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success">Book Now <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">Kingfisher Lodge <small
+                                                    class="text-muted">(H130)</small></h5>
+                                            <small class="sleep-stat">Sleeps 5</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>4.7</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success">Book Now <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- /.property-info-block -->
+                        </div><!-- /property-info-box -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="property-info-box mb-4">
+                            <div class="slider"
+                                data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "autoplay": "true"}'>
+                                <div class="slider-image">
+                                    <img src="./assets/property_img1.jpg" alt="...">
+                                </div>
+                                <div class="slider-image">
+                                    <img src="./assets/property_img1.jpg" alt="...">
+                                </div>
+                            </div>
+                            <div class="property-info-block slider-synced" data-for=".prop-panel-8"
+                                data-nav=".prop-tabs-8">
+                                <div class="property-tabs prop-tabs-8">
+                                    <div>
+                                        <div class="tab disabled">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong>Sold Out</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong>£1,600</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong><del>Was £1,600</del></strong></div>
+                                            <div class="text-danger"><strong>Now £1,600</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab disabled">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong>Sold Out</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong>£1,600</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong><del>Was £1,600</del></strong></div>
+                                            <div class="text-danger"><strong>Now £1,600</strong></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="property-panel prop-panel-8">
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">The Hide <small class="text-muted">(H130)</small>
+                                            </h5>
+                                            <small class="sleep-stat">Sleeps 2</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>4.48</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success" disabled>Sold Out <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">Keynes Cottage <small
+                                                    class="text-muted">(H130)</small></h5>
+                                            <small class="sleep-stat">Sleeps 3</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>3.50</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success">Book Now <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">Kingfisher Lodge <small
+                                                    class="text-muted">(H130)</small></h5>
+                                            <small class="sleep-stat">Sleeps 5</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>4.7</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success">Book Now <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">The Hide <small class="text-muted">(H130)</small>
+                                            </h5>
+                                            <small class="sleep-stat">Sleeps 2</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>4.48</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success" disabled>Sold Out <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">Keynes Cottage <small
+                                                    class="text-muted">(H130)</small></h5>
+                                            <small class="sleep-stat">Sleeps 3</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>3.50</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success">Book Now <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">Kingfisher Lodge <small
+                                                    class="text-muted">(H130)</small></h5>
+                                            <small class="sleep-stat">Sleeps 5</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>4.7</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success">Book Now <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- /.property-info-block -->
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="property-info-box mb-4">
+                            <div class="slider"
+                                data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "autoplay": "true"}'>
+                                <div class="slider-image">
+                                    <img src="./assets/property_img1.jpg" alt="...">
+                                </div>
+                                <div class="slider-image">
+                                    <img src="./assets/property_img1.jpg" alt="...">
+                                </div>
+                            </div>
+                            <div class="property-info-block slider-synced" data-for=".prop-panel-9"
+                                data-nav=".prop-tabs-9">
+                                <div class="property-tabs prop-tabs-9">
+                                    <div>
+                                        <div class="tab disabled">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong>Sold Out</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong>£1,600</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong><del>Was £1,600</del></strong></div>
+                                            <div class="text-danger"><strong>Now £1,600</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab disabled">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong>Sold Out</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong>£1,600</strong></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tab">
+                                            <div>Fri, 24 Jul</div>
+                                            <div>4 nights</div>
+                                            <div><strong><del>Was £1,600</del></strong></div>
+                                            <div class="text-danger"><strong>Now £1,600</strong></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="property-panel prop-panel-9">
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">The Hide <small class="text-muted">(H130)</small>
+                                            </h5>
+                                            <small class="sleep-stat">Sleeps 2</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>4.48</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success" disabled>Sold Out <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">Keynes Cottage <small
+                                                    class="text-muted">(H130)</small></h5>
+                                            <small class="sleep-stat">Sleeps 3</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>3.50</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success">Book Now <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">Kingfisher Lodge <small
+                                                    class="text-muted">(H130)</small></h5>
+                                            <small class="sleep-stat">Sleeps 5</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>4.7</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success">Book Now <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">The Hide <small class="text-muted">(H130)</small>
+                                            </h5>
+                                            <small class="sleep-stat">Sleeps 2</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>4.48</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success" disabled>Sold Out <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">Keynes Cottage <small
+                                                    class="text-muted">(H130)</small></h5>
+                                            <small class="sleep-stat">Sleeps 3</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>3.50</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success">Book Now <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <header class="tab-head">
+                                            <h5 class="text-heading">Kingfisher Lodge <small
+                                                    class="text-muted">(H130)</small></h5>
+                                            <small class="sleep-stat">Sleeps 5</small>
+                                        </header>
+                                        <p>Lower Mill Estate, The Cotsworlds</p>
+                                        <footer class="mb-1">
+                                            <div class="prop-foot-left">
+                                                <i class="fas fa-star text-warning mr-1"></i>
+                                                <span>4.7</span>
+                                            </div>
+                                            <div class="prop-foot-right">
+                                                <i class="fas fa-fire"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-paw"></i>
+                                            </div>
+                                        </footer>
+                                        <div class="button-bar">
+                                            <button class="btn btn-outline-primary">View Details <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i>
+                                            </button>
+                                            <button class="btn btn-success">Book Now <i
+                                                    class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- /.property-info-block -->
+                        </div>
+                    </div>
+
+                </div>
             </div>
+
+            <!-- SUBSCRIPTION SECTION START -->
+            <div class="subscription-section text-center pt-4 pb-4">
+                <div class="intro-heading pt-4">
+                    <h1 class="intro-title">Sign up for exclusive</br>offers from us </h1>
+                </div>
+
+                <div class='subscription-form row'>
+                    <div class="col-md-4 intro-cta">
+                        <input class="form-control" placeholder="Your Name" />
+                    </div>
+                    <div class="col-md-4 intro-cta">
+                        <input class="form-control" placeholder="Email" />
+                    </div>
+                    <div class="col-md-4">
+                        <div class="intro-cta text-center">
+                            <button>
+                                Subscribe Now <i class="fa fa-long-arrow-alt-right pl-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SUBSCRIPTION SECTION END -->
+
+
         </main>
     </div>
 
@@ -136,9 +2271,13 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+    <script src="./scripts/slick.min.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 

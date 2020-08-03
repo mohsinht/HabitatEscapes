@@ -24,4 +24,36 @@ $(document).ready(function () {
     $('.menu-wrapper').addClass('transparent');
     $('#header-logo').attr('src', 'assets/logo_white.png');
   });
+
+  $('.slider').slick();
+
+  if ( $('.slider-synced').length ) {
+
+    $('.slider-synced').each(function() {
+      var sliderFor = $(this).data("for");
+      var sliderNav = $(this).data("nav");
+        
+      $(sliderFor).slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: sliderNav
+      });
+      $(sliderNav).slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: sliderFor,
+        dots: false,
+        centerMode: false,
+        focusOnSelect: true
+      });
+
+    });
+
+
+  }
+  
+
+
 });
