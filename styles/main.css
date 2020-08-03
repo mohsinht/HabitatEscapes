@@ -743,3 +743,12 @@ button:focus {
   width: -webkit-fill-available;
   width: 100%;
 }
+
+/* Terms and Conditions */
+.tnc-tabcontent-heading {
+  font-family: var(--font-headings);
+  line-height: 4.5rem;
+  font-size: 2rem;
+  padding-top: 2rem;
+  
+}
