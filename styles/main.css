@@ -784,3 +784,49 @@ button:focus {
   }
 }
 
+/* FAQ page CSS starts here */
+.faq a {
+  font-family: BrandonText-Medium;
+  font-size: 1rem;
+}
+/* for FAQ page */
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: var(--color-primary)
+}
+/* for FAQ page */
+.tab-content > .active
+{
+  background-color: white;
+  /* background: white; */
+}
+
+.faq-tab-content {
+  border-left-style: solid;
+  border-color: #ddd;
+  padding-left: 2rem;
+  /* margin-left: 2rem; */
+}
+
+.faq-questions {
+  font-family: BrandonText-Medium;
+  font-size: 1rem;
+  border-bottom-style: solid;
+  border-color: #ddd;
+  /* margin-left: 2rem; */
+  padding-bottom: 1rem;
+}
+.faq-answers {
+  margin-top: 1rem;
+  font-family: BrandonText-Light;
+  font-size: 1rem;
+}
+.faq-answers .faq-question {
+  font-family: BrandonText-Medium;
+  font-size: 1rem;
+  /* padding-bottom: 1rem; */
+}
+.faq-answers .faq-answer {
+  margin-top: 1rem;
+}
+
+/* FAQ page CSS ends here */
