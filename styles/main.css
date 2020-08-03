@@ -55,6 +55,11 @@ button:focus {
   outline: 0;
 }
 
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 .header {
   line-height: 1;
   border-bottom: 0.05rem solid #ffffff4a;
@@ -689,7 +694,6 @@ button:focus {
 
 .center-text-image-h1 {
   font-family: var(--font-headings);
-  font-size: 3.2rem;
   color: white;
 }
 .center-text-image-p {
@@ -742,4 +746,144 @@ button:focus {
   z-index: 10000;
   width: -webkit-fill-available;
   width: 100%;
+}
+
+/* Terms and Conditions */
+.tnc-tabcontent-heading {
+  font-family: var(--font-headings);
+  line-height: 4.5rem;
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+.tnc-help {
+  text-align: center;
+}
+.tnc-help-title {
+  font-family: var(--font-headings);
+  font-size: 1.8rem;
+}
+
+.tnc-help-subheading {
+  font-family: BrandonText-Medium;
+  font-size: 1rem;
+}
+.tnc-cta {
+  background-color: var(--color-primary);
+  color: white;
+  font-family: BrandonText-Medium;
+  font-size: 0.8rem;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 700px) {
+  .tnc-help-align {
+    margin-top: 10rem;
+  }
+
+  .center-text-image-h1-lg {
+    font-size: 3.2rem;
+  }
+}
+
+/* FAQ page CSS starts here */
+.faq a {
+  font-family: BrandonText-Medium;
+  font-size: 1rem;
+}
+/* for FAQ page */
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: var(--color-primary);
+}
+/* for FAQ page */
+.tab-content > .active {
+  background-color: white;
+  /* background: white; */
+}
+
+.faq-tab-content {
+  border-left-style: solid;
+  border-color: #ddd;
+  padding-left: 2rem;
+  /* margin-left: 2rem; */
+}
+
+.faq-questions {
+  font-family: BrandonText-Medium;
+  font-size: 1rem;
+  border-bottom-style: solid;
+  border-color: #ddd;
+  /* margin-left: 2rem; */
+  padding-bottom: 1rem;
+}
+.faq-answers {
+  margin-top: 1rem;
+  font-family: BrandonText-Light;
+  font-size: 1rem;
+}
+.faq-answers .faq-question {
+  font-family: BrandonText-Medium;
+  font-size: 1rem;
+  /* padding-bottom: 1rem; */
+}
+.faq-answers .faq-answer {
+  margin-top: 1rem;
+}
+
+/* FAQ page CSS ends here */
+
+/* Contact US page begins here */
+.contactus-option-icon {
+  font-size: 2rem;
+  width: 100%;
+  text-align: left;
+}
+
+.contactus-option-h3 {
+  font-family: var(--font-headings);
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 700px) {
+  .contactus-options {
+    padding-right: 10%;
+    padding-left: 20%;
+  }
+}
+
+.contactus-option-desc {
+  font-family: BrandonText-Light;
+  font-size: 1rem;
+}
+.contactus-text {
+  font-family: BrandonText-Medium;
+  font-size: 1rem;
+}
+.contactus-social-icons {
+  font-size: 2rem;
+}
+/* Contact Us page ends here */
+
+.team-card .team-name {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: var(--font-headings);
+}
+.team-card .team-desg {
+  font-size: 1rem;
+  /* font-style: italic;  */
+}
+.team-card img {
+  padding: 0.8rem 0.8rem 0rem 0.8rem;
+}
+.team-card .card-body {
+  padding: 0.8rem;
+}
+.team-card {
+  box-shadow: 3px 8px 13px #0000001f;
+}
+
+.footer-main .header-logo {
+  width: 5rem;
+  height: 5.4rem;
 }
