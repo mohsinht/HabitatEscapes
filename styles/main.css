@@ -55,6 +55,11 @@ button:focus {
   outline: 0;
 }
 
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 .header {
   line-height: 1;
   border-bottom: 0.05rem solid #ffffff4a;
@@ -749,7 +754,6 @@ button:focus {
   line-height: 4.5rem;
   font-size: 2rem;
   padding-top: 2rem;
-  
 }
 .tnc-help {
   text-align: center;
@@ -757,13 +761,11 @@ button:focus {
 .tnc-help-title {
   font-family: var(--font-headings);
   font-size: 1.8rem;
-  
 }
 
 .tnc-help-subheading {
   font-family: BrandonText-Medium;
   font-size: 1rem;
-  
 }
 .tnc-cta {
   background-color: var(--color-primary);
@@ -771,7 +773,6 @@ button:focus {
   font-family: BrandonText-Medium;
   font-size: 0.8rem;
   margin-top: 2rem;
-  
 }
 
 @media screen and (min-width: 700px) {
@@ -790,12 +791,12 @@ button:focus {
   font-size: 1rem;
 }
 /* for FAQ page */
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-  background-color: var(--color-primary)
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: var(--color-primary);
 }
 /* for FAQ page */
-.tab-content > .active
-{
+.tab-content > .active {
   background-color: white;
   /* background: white; */
 }
@@ -853,7 +854,6 @@ button:focus {
 .contactus-option-desc {
   font-family: BrandonText-Light;
   font-size: 1rem;
-  
 }
 .contactus-text {
   font-family: BrandonText-Medium;
@@ -863,3 +863,22 @@ button:focus {
   font-size: 2rem;
 }
 /* Contact Us page ends here */
+
+.team-card .team-name {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: var(--font-headings);
+}
+.team-card .team-desg {
+  font-size: 1rem;
+  /* font-style: italic;  */
+}
+.team-card img {
+  padding: 0.8rem 0.8rem 0rem 0.8rem;
+}
+.team-card .card-body {
+  padding: 0.8rem;
+}
+.team-card {
+  box-shadow: 3px 8px 13px #0000001f;
+}
