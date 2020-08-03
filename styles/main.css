@@ -752,3 +752,11 @@ button:focus {
   padding-top: 2rem;
   
 }
+
+.tnc-cta {
+  background-color: var(--color-primary);
+  color: white;
+  font-family: BrandonText-Medium;
+  font-size: 0.8rem;
+  
+}
