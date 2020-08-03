@@ -483,12 +483,6 @@ button:focus {
   font-size: 2rem;
 }
 
-.property-section-h2 {
-  font-family: var(--font-headings);
-  line-height: 4.5rem;
-  font-size: 2rem;
-  text-align: center;
-}
 .property-short-description {
   font-family: BrandonText-Medium;
   font-size: 1rem;
