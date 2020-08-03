@@ -255,6 +255,10 @@ img {
 .text-heading {
     font-family: var(--font-headings);
 }
+.text-heading small {
+    font-family: BrandonText-Thin;
+    font-size: 60%;
+}
 
 [role="main"] {
     padding-top: 20px;
@@ -693,13 +697,13 @@ img {
     align-items: center;
 }
 .property-panel .button-bar {
-    display: flex;
-    flex-direction: row;
+    margin-left: 0;
+    margin-right: 0;
     justify-content: space-between;
-    align-items: center;
 }
 .property-panel .button-bar .btn {
     flex: 1;
+    font-size: .8em;
 }
 .property-panel .tab-head {
     position: relative;
@@ -708,6 +712,81 @@ img {
     position: absolute;
     right: 0;
     top: 5px;
+}
+
+.main-slider-wrapper {
+    position: relative;
+}
+.main-slider-wrapper .slider-thumbs .thumb {
+    margin: 4px 2px;
+    opacity: .25;
+    cursor: pointer;
+    transition: opacity 0.25s ease-in;
+}
+.main-slider-wrapper .slider-thumbs .thumb.slick-current {
+    opacity: 1;
+}
+.main-slider-wrapper .slider-thumbs-count {
+    padding: .2rem .5rem;
+    color: #fff;
+    font-size: .8rem;
+    background-color: #000;
+    position: absolute;
+    right: 0;
+    bottom: 1rem;
+}
+
+
+.main-slide {
+    position: relative;
+    background-color: #000;
+}
+.main-slide .image {
+    opacity: .8;
+}
+.main-slide .slider-caption {
+    padding: 1.5rem 2rem;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.main-slide .slider-caption .slider-heading {
+    font-family: var(--font-headings);
+}
+.main-slide .slider-caption .slider-heading .title {
+    margin-bottom: 0;
+}
+.main-slide .slider-caption .slider-heading small {
+    font-family: BrandonText-Thin;
+    font-size: 70%;
+}
+.main-slide .slider-caption .caption-text {
+    font-family: BrandonText-Medium;
+    font-size: 1.2rem;
+    text-align: left;
+}
+.main-slide .slider-caption .property-stats {
+    position: absolute;
+    right: 1.5rem;
+    bottom: 2rem;
+}
+.main-slide .slider-tag {
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    font-size: .8em;
+    position: absolute;
+    left: 1.5rem;
+    top: 2rem;
+}
+
+.visitor-slider .slick-arrow {
+    color: inherit;
+}
+.visitor-block img {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (min-width: 768px) {

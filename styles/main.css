@@ -587,24 +587,6 @@ button:focus {
   color: #ebb75c;
 }
 
-.property-name1 {
-  font-family: var(--font-headings);
-  font-size: 3rem;
-  color: white;
-  text-align: left;
-}
-.property-name2 {
-  font-family: BrandonText-Thin;
-  font-size: 2rem;
-  color: white;
-}
-
-.property-name-address {
-  font-family: BrandonText-Medium;
-  font-size: 1.2rem;
-  color: white;
-  text-align: left;
-}
 
 .dropdown-row {
   width: 100%;
