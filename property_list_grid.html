@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Habitat Escapes | Properties</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./styles/slick.css">
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/style-k.css" />
+
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="site-header">
+            <div class="hd-signup">
+                <a href="mailto:abc@mail.com" class="hd-contact-link"><i class="far fa-envelope pr-1"></i> Newsletter
+                    Sign up</a>
+            </div>
+            <div class="site-logo">
+                <a class="site-logo-link" href="index.html">
+                    <img class="logo" src="assets/logo_colored.png" />
+                </a>
+            </div>
+            <div class="hd-links">
+                <ul class="list-hd-links">
+                    <li>
+                        <a href="tel:+44 (0) 1285 869 489">+44 (0) 1285 869 489</a>
+                    </li>
+                    <li><a href="#"><i class="far fa-heart"></i></a></li>
+                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                </ul>
+            </div>
+        </header><!-- /site-header -->
+
+        <div class="property-search-bar">
+            <div class="container">
+                <div class="property-search-bar-content">
+                    <div class="option-block">
+                        <div class="option-label">Location</div>
+                        <div class="option-selection">
+                            <div class="select-box">
+                                <select>
+                                    <option value="pick-location">Pick Location</option>
+                                    <option value="1">Location One</option>
+                                    <option value="2">Location Two</option>
+                                    <option value="3">Location Three</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div><!-- /option-block -->
+
+                    <div class="option-block">
+                        <div class="option-label">Date</div>
+                        <div class="option-selection-dual">
+                            <input type="number" class="form-control selected-digit" value="15" min="1" max="31" />
+                            <div class="select-box-vertical">
+                                <select>
+                                    <option value="pick-location">Month</option>
+                                    <option value="1">Jan</option>
+                                    <option value="2">Feb</option>
+                                    <option value="3">Mar</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div><!-- /option-block -->
+
+                    <div class="option-block">
+                        <div class="option-label">Guests</div>
+                        <div class="option-selection-dual">
+                            <input type="number" class="form-control selected-digit" value="1" min="0" />
+                            <div class="number-controls-vertical">
+                                <button class="button-iconic increment"><i class="fas fa-chevron-up"></i></button>
+                                <button class="button-iconic decrement"><i class="fas fa-chevron-down"></i></button>
+                            </div>
+                        </div>
+                    </div><!-- /option-block -->
+
+                    <div class="option-block">
+                        <div class="option-label">Duration</div>
+                        <div class="option-selection-dual">
+                            <input type="number" class="form-control selected-digit" value="4" min="0" />
+                            <div class="number-controls-vertical">
+                                <button class="button-iconic increment"><i class="fas fa-chevron-up"></i></button>
+                                <button class="button-iconic  decrement"><i class="fas fa-chevron-down"></i></button>
+                            </div>
+                        </div>
+                    </div><!-- /option-block -->
+
+                    <div class="control">
+                        <button class="btn btn-primary">Update <i class="fa fa-long-arrow-alt-right ml-2"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /property-search-bar -->
+
+        <div class="page-banner">
+            <div class="banner-image">
+                <img src="./assets/banner-1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <header class="banner-header text-center">
+                <h1 class="text-heading text-white">Lower Mill Estate</h1>
+                <p class="h4 text-white">The Cotswolds</p>
+            </header>
+        </div><!-- /page-banner -->
+
+        <div class="breadcrumb-bar mb-2">
+            <div class="container">
+                <nav class="breadcrumb-nav" aria-label="breadcrumb">
+                    <ol class="breadcrumb bg-white">
+                        <li class="breadcrumb-item"><a href="#">Lower Mill Estate</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">The Properties</li>
+                    </ol>
+                </nav>
+            </div>
+        </div><!-- //.breadcrumb-bar -->
+
+        <div class="search-filter-bar">
+            <div class="container">
+                <div class="filter-contents">
+                    <div class="search-filters">
+                        <strong class="mr-3 text-nowrap">Filter by</strong>
+                        <div class="input-group mr-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-users"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="sleeps">
+                        </div>
+
+                        <div class="input-group mr-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Property Type">
+                            <div class="input-group-append">
+                                <button type="button"
+                                    class="btn btn-caret btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item active" href="#">Option 1</a>
+                                    <a class="dropdown-item" href="#">Option 2</a>
+                                    <a class="dropdown-item" href="#">Option 3</a>
+                                    <div role="separator" class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Option 4</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="text-sm text-nowrap text-underline">Other Options</a>
+                    </div><!-- /search-filters -->
+
+                    <div class="search-sorts">
+                        <strong class="mr-3 text-nowrap">Sort by</strong>
+                        <div class="input-group mr-2">
+                            <input type="text" class="form-control" placeholder="Property Type">
+                            <div class="input-group-append">
+                                <button type="button"
+                                    class="btn btn-caret btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item active" href="#">Option 1</a>
+                                    <a class="dropdown-item" href="#">Option 2</a>
+                                    <a class="dropdown-item" href="#">Option 3</a>
+                                    <div role="separator" class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Option 4</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /search-sorts -->
+                </div>
+            </div>
+        </div><!-- /search-filter-bar -->
+
+        <main role="main">
+            <div class="container">
+                <header class="heading mb-4 text-center">
+                    <h3 class="title text-heading">Popular Properties</h3>
+                </header>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="property-info-box box hoverable mb-4">
+                            <div class="box-image">
+                                <div class="box-tag bg-warning">New</div>
+                                <div class="slider"
+                                    data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "autoplay": "true"}'>
+                                    <div class="slider-image">
+                                        <img src="./assets/property_img1.jpg" alt="...">
+                                    </div>
+                                    <div class="slider-image">
+                                        <img src="./assets/property_img1.jpg" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="property-info-block box-text">
+                                <div class="property-block-text">
+                                    <header class="block-head">
+                                        <h5 class="text-heading"><a href="property_detail.html">The Hide <small class="text-muted">(H130)</small></a>
+                                        </h5>
+                                        <span class="floating text-danger"><i class="far fa-heart"></i></span>
+                                    </header>
+                                    <p>Lower Mill Estate, The Cotsworlds</p>
+                                    <div class="flex-bar mb-3">
+                                        <strong>2 nights from £800</strong>
+                                        <small>Sleeps 2</small>
+                                    </div>
+                                    <p class="text-sm">Adipisicing elit corrupti architecto animi blanditiis nihil quia deserunt veniam molestias itaque necessitatibus ad totam, inventore eveniet facere eius tempore eos illo nisi! Saepe.</p>
+                                    <footer class="mb-1">
+                                        <div class="prop-foot-left">
+                                            <i class="fas fa-star text-warning mr-1"></i>
+                                            <span>4.48</span>
+                                        </div>
+                                        <div class="prop-foot-right">
+                                            <i class="fas fa-fire"></i>
+                                            <i class="fas fa-wifi"></i>
+                                            <i class="fas fa-paw"></i>
+                                        </div>
+                                    </footer>
+                                </div>
+                            </div><!-- /.property-info-block -->
+                        </div><!-- /property-info-box box hoverable -->
+                    </div>
+                    <div class="col-md-6">
+                        <div class="property-info-box box hoverable mb-4">
+                            <div class="box-image">
+                                <div class="box-tag bg-warning">Just Added</div>
+                                <div class="slider"
+                                    data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "autoplay": "true"}'>
+                                    <div class="slider-image">
+                                        <img src="./assets/property_img1.jpg" alt="...">
+                                    </div>
+                                    <div class="slider-image">
+                                        <img src="./assets/property_img1.jpg" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="property-info-block box-text">
+                                <div class="property-block-text">
+                                    <header class="block-head">
+                                        <h5 class="text-heading"><a href="property_detail.html">Kingfisher Lodge <small class="text-muted">(H130)</small></a>
+                                        </h5>
+                                        <span class="floating text-danger"><i class="far fa-heart"></i></span>
+                                    </header>
+                                    <p>Lower Mill Estate, The Cotsworlds</p>
+                                    <div class="flex-bar mb-3">
+                                        <strong>2 nights from £800</strong>
+                                        <small>Sleeps 2</small>
+                                    </div>
+                                    <p class="text-sm">Adipisicing elit corrupti architecto animi blanditiis nihil quia deserunt veniam molestias itaque necessitatibus ad totam, inventore eveniet facere eius tempore eos illo nisi! Saepe.</p>
+                                    <footer class="mb-1">
+                                        <div class="prop-foot-left">
+                                            <i class="fas fa-star text-warning mr-1"></i>
+                                            <span>4.48</span>
+                                        </div>
+                                        <div class="prop-foot-right">
+                                            <i class="fas fa-fire"></i>
+                                            <i class="fas fa-wifi"></i>
+                                            <i class="fas fa-paw"></i>
+                                        </div>
+                                    </footer>
+                                </div>
+                            </div><!-- /.property-info-block -->
+                        </div><!-- /property-info-box box hoverable -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="property-info-box box hoverable mb-4">
+                            <div class="box-image">
+                                <div class="slider"
+                                    data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "autoplay": "true"}'>
+                                    <div class="slider-image">
+                                        <img src="./assets/property_img1.jpg" alt="...">
+                                    </div>
+                                    <div class="slider-image">
+                                        <img src="./assets/property_img1.jpg" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="property-info-block box-text">
+                                <div class="property-block-text">
+                                    <header class="block-head">
+                                        <h5 class="text-heading"><a href="property_detail.html">Keynes Cottage <small class="text-muted">(H130)</small></a>
+                                        </h5>
+                                        <span class="floating text-danger"><i class="far fa-heart"></i></span>
+                                    </header>
+                                    <p>Lower Mill Estate, The Cotsworlds</p>
+                                    <div class="flex-bar mb-3">
+                                        <strong>2 nights from £800</strong>
+                                        <small>Sleeps 2</small>
+                                    </div>
+                                    <footer class="mb-1">
+                                        <div class="prop-foot-left">
+                                            <i class="fas fa-star text-warning mr-1"></i>
+                                            <span>4.48</span>
+                                        </div>
+                                        <div class="prop-foot-right">
+                                            <i class="fas fa-fire"></i>
+                                            <i class="fas fa-wifi"></i>
+                                            <i class="fas fa-paw"></i>
+                                        </div>
+                                    </footer>
+                                </div>
+                            </div><!-- /.property-info-block -->
+                        </div><!-- /property-info-box box hoverable -->
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="property-info-box box hoverable mb-4">
+                            <div class="box-image">
+                                <div class="box-tag bg-warning">Great Deal</div>
+                                <div class="slider"
+                                    data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "autoplay": "true"}'>
+                                    <div class="slider-image">
+                                        <img src="./assets/property_img1.jpg" alt="...">
+                                    </div>
+                                    <div class="slider-image">
+                                        <img src="./assets/property_img1.jpg" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="property-info-block box-text">
+                                <div class="property-block-text">
+                                    <header class="block-head">
+                                        <h5 class="text-heading"><a href="property_detail.html">The Hide <small class="text-muted">(H130)</small></a>
+                                        </h5>
+                                        <span class="floating text-danger"><i class="far fa-heart"></i></span>
+                                    </header>
+                                    <p>Lower Mill Estate, The Cotsworlds</p>
+                                    <div class="flex-bar mb-3">
+                                        <strong>2 nights from £800</strong>
+                                        <small>Sleeps 2</small>
+                                    </div>
+                                    <footer class="mb-1">
+                                        <div class="prop-foot-left">
+                                            <i class="fas fa-star text-warning mr-1"></i>
+                                            <span>4.48</span>
+                                        </div>
+                                        <div class="prop-foot-right">
+                                            <i class="fas fa-fire"></i>
+                                            <i class="fas fa-wifi"></i>
+                                            <i class="fas fa-paw"></i>
+                                        </div>
+                                    </footer>
+                                </div>
+                            </div><!-- /.property-info-block -->
+                        </div><!-- /property-info-box box hoverable -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="property-info-box box hoverable mb-4">
+                            <div class="box-image">
+                                <div class="slider"
+                                    data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "autoplay": "true"}'>
+                                    <div class="slider-image">
+                                        <img src="./assets/property_img1.jpg" alt="...">
+                                    </div>
+                                    <div class="slider-image">
+                                        <img src="./assets/property_img1.jpg" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="property-info-block box-text">
+                                <div class="property-block-text">
+                                    <header class="block-head">
+                                        <h5 class="text-heading"><a href="property_detail.html">The Hide <small class="text-muted">(H130)</small></a>
+                                        </h5>
+                                        <span class="floating text-danger"><i class="far fa-heart"></i></span>
+                                    </header>
+                                    <p>Lower Mill Estate, The Cotsworlds</p>
+                                    <div class="flex-bar mb-3">
+                                        <strong>2 nights from £800</strong>
+                                        <small>Sleeps 2</small>
+                                    </div>
+                                    <footer class="mb-1">
+                                        <div class="prop-foot-left">
+                                            <i class="fas fa-star text-warning mr-1"></i>
+                                            <span>4.48</span>
+                                        </div>
+                                        <div class="prop-foot-right">
+                                            <i class="fas fa-fire"></i>
+                                            <i class="fas fa-wifi"></i>
+                                            <i class="fas fa-paw"></i>
+                                        </div>
+                                    </footer>
+                                </div>
+                            </div><!-- /.property-info-block -->
+                        </div><!-- /property-info-box box hoverable -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="property-info-box box hoverable mb-4">
+                            <div class="box-image">
+                                <div class="slider"
+                                    data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "autoplay": "true"}'>
+                                    <div class="slider-image">
+                                        <img src="./assets/property_img1.jpg" alt="...">
+                                    </div>
+                                    <div class="slider-image">
+                                        <img src="./assets/property_img1.jpg" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="property-info-block box-text">
+                                <div class="property-block-text">
+                                    <header class="block-head">
+                                        <h5 class="text-heading"><a href="property_detail.html">The Hide <small class="text-muted">(H130)</small></a>
+                                        </h5>
+                                        <span class="floating text-danger"><i class="far fa-heart"></i></span>
+                                    </header>
+                                    <p>Lower Mill Estate, The Cotsworlds</p>
+                                    <div class="flex-bar mb-3">
+                                        <strong>2 nights from £800</strong>
+                                        <small>Sleeps 2</small>
+                                    </div>
+                                    <footer class="mb-1">
+                                        <div class="prop-foot-left">
+                                            <i class="fas fa-star text-warning mr-1"></i>
+                                            <span>4.48</span>
+                                        </div>
+                                        <div class="prop-foot-right">
+                                            <i class="fas fa-fire"></i>
+                                            <i class="fas fa-wifi"></i>
+                                            <i class="fas fa-paw"></i>
+                                        </div>
+                                    </footer>
+                                </div>
+                            </div><!-- /.property-info-block -->
+                        </div><!-- /property-info-box box hoverable -->
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="property-info-box box hoverable mb-4">
+                            <div class="box-image">
+                                <div class="slider"
+                                    data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "autoplay": "true"}'>
+                                    <div class="slider-image">
+                                        <img src="./assets/property_img1.jpg" alt="...">
+                                    </div>
+                                    <div class="slider-image">
+                                        <img src="./assets/property_img1.jpg" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="property-info-block box-text">
+                                <div class="property-block-text">
+                                    <header class="block-head">
+                                        <h5 class="text-heading"><a href="property_detail.html">The Hide <small class="text-muted">(H130)</small></a>
+                                        </h5>
+                                        <span class="floating text-danger"><i class="far fa-heart"></i></span>
+                                    </header>
+                                    <p>Lower Mill Estate, The Cotsworlds</p>
+                                    <div class="flex-bar mb-3">
+                                        <strong>2 nights from £800</strong>
+                                        <small>Sleeps 2</small>
+                                    </div>
+                                    <footer class="mb-1">
+                                        <div class="prop-foot-left">
+                                            <i class="fas fa-star text-warning mr-1"></i>
+                                            <span>4.48</span>
+                                        </div>
+                                        <div class="prop-foot-right">
+                                            <i class="fas fa-fire"></i>
+                                            <i class="fas fa-wifi"></i>
+                                            <i class="fas fa-paw"></i>
+                                        </div>
+                                    </footer>
+                                </div>
+                            </div><!-- /.property-info-block -->
+                        </div><!-- /property-info-box box hoverable -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="property-info-box box hoverable mb-4">
+                            <div class="box-image">
+                                <div class="slider"
+                                    data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "autoplay": "true"}'>
+                                    <div class="slider-image">
+                                        <img src="./assets/property_img1.jpg" alt="...">
+                                    </div>
+                                    <div class="slider-image">
+                                        <img src="./assets/property_img1.jpg" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="property-info-block box-text">
+                                <div class="property-block-text">
+                                    <header class="block-head">
+                                        <h5 class="text-heading"><a href="property_detail.html">The Hide <small class="text-muted">(H130)</small></a>
+                                        </h5>
+                                        <span class="floating text-danger"><i class="far fa-heart"></i></span>
+                                    </header>
+                                    <p>Lower Mill Estate, The Cotsworlds</p>
+                                    <div class="flex-bar mb-3">
+                                        <strong>2 nights from £800</strong>
+                                        <small>Sleeps 2</small>
+                                    </div>
+                                    <footer class="mb-1">
+                                        <div class="prop-foot-left">
+                                            <i class="fas fa-star text-warning mr-1"></i>
+                                            <span>4.48</span>
+                                        </div>
+                                        <div class="prop-foot-right">
+                                            <i class="fas fa-fire"></i>
+                                            <i class="fas fa-wifi"></i>
+                                            <i class="fas fa-paw"></i>
+                                        </div>
+                                    </footer>
+                                </div>
+                            </div><!-- /.property-info-block -->
+                        </div><!-- /property-info-box box hoverable -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="property-info-box box hoverable mb-4">
+                            <div class="box-image">
+                                <div class="slider"
+                                    data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "autoplay": "true"}'>
+                                    <div class="slider-image">
+                                        <img src="./assets/property_img1.jpg" alt="...">
+                                    </div>
+                                    <div class="slider-image">
+                                        <img src="./assets/property_img1.jpg" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="property-info-block box-text">
+                                <div class="property-block-text">
+                                    <header class="block-head">
+                                        <h5 class="text-heading"><a href="property_detail.html">The Hide <small class="text-muted">(H130)</small></a>
+                                        </h5>
+                                        <span class="floating text-danger"><i class="far fa-heart"></i></span>
+                                    </header>
+                                    <p>Lower Mill Estate, The Cotsworlds</p>
+                                    <div class="flex-bar mb-3">
+                                        <strong>2 nights from £800</strong>
+                                        <small>Sleeps 2</small>
+                                    </div>
+                                    <footer class="mb-1">
+                                        <div class="prop-foot-left">
+                                            <i class="fas fa-star text-warning mr-1"></i>
+                                            <span>4.48</span>
+                                        </div>
+                                        <div class="prop-foot-right">
+                                            <i class="fas fa-fire"></i>
+                                            <i class="fas fa-wifi"></i>
+                                            <i class="fas fa-paw"></i>
+                                        </div>
+                                    </footer>
+                                </div>
+                            </div><!-- /.property-info-block -->
+                        </div><!-- /property-info-box box hoverable -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="property-info-box box hoverable mb-4">
+                            <div class="box-image">
+                                <div class="slider"
+                                    data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "autoplay": "true"}'>
+                                    <div class="slider-image">
+                                        <img src="./assets/property_img1.jpg" alt="...">
+                                    </div>
+                                    <div class="slider-image">
+                                        <img src="./assets/property_img1.jpg" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="property-info-block box-text">
+                                <div class="property-block-text">
+                                    <header class="block-head">
+                                        <h5 class="text-heading"><a href="property_detail.html">The Hide <small class="text-muted">(H130)</small></a>
+                                        </h5>
+                                        <span class="floating text-danger"><i class="far fa-heart"></i></span>
+                                    </header>
+                                    <p>Lower Mill Estate, The Cotsworlds</p>
+                                    <div class="flex-bar mb-3">
+                                        <strong>2 nights from £800</strong>
+                                        <small>Sleeps 2</small>
+                                    </div>
+                                    <footer class="mb-1">
+                                        <div class="prop-foot-left">
+                                            <i class="fas fa-star text-warning mr-1"></i>
+                                            <span>4.48</span>
+                                        </div>
+                                        <div class="prop-foot-right">
+                                            <i class="fas fa-fire"></i>
+                                            <i class="fas fa-wifi"></i>
+                                            <i class="fas fa-paw"></i>
+                                        </div>
+                                    </footer>
+                                </div>
+                            </div><!-- /.property-info-block -->
+                        </div><!-- /property-info-box box hoverable -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="property-info-box box hoverable mb-4">
+                            <div class="box-image">
+                                <div class="box-tag bg-warning">New</div>
+                                <div class="slider"
+                                    data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "autoplay": "true"}'>
+                                    <div class="slider-image">
+                                        <img src="./assets/property_img1.jpg" alt="...">
+                                    </div>
+                                    <div class="slider-image">
+                                        <img src="./assets/property_img1.jpg" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="property-info-block box-text">
+                                <div class="property-block-text">
+                                    <header class="block-head">
+                                        <h5 class="text-heading"><a href="property_detail.html">The Hide <small class="text-muted">(H130)</small></a>
+                                        </h5>
+                                        <span class="floating text-danger"><i class="far fa-heart"></i></span>
+                                    </header>
+                                    <p>Lower Mill Estate, The Cotsworlds</p>
+                                    <div class="flex-bar mb-3">
+                                        <strong>2 nights from £800</strong>
+                                        <small>Sleeps 2</small>
+                                    </div>
+                                    <footer class="mb-1">
+                                        <div class="prop-foot-left">
+                                            <i class="fas fa-star text-warning mr-1"></i>
+                                            <span>4.48</span>
+                                        </div>
+                                        <div class="prop-foot-right">
+                                            <i class="fas fa-fire"></i>
+                                            <i class="fas fa-wifi"></i>
+                                            <i class="fas fa-paw"></i>
+                                        </div>
+                                    </footer>
+                                </div>
+                            </div><!-- /.property-info-block -->
+                        </div><!-- /property-info-box box hoverable -->
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SUBSCRIPTION SECTION START -->
+            <div class="subscription-section text-center pt-4 pb-4">
+                <div class="intro-heading pt-4">
+                    <h1 class="intro-title">Sign up for exclusive</br>offers from us </h1>
+                </div>
+
+                <div class='subscription-form row'>
+                    <div class="col-md-4 intro-cta">
+                        <input class="form-control" placeholder="Your Name" />
+                    </div>
+                    <div class="col-md-4 intro-cta">
+                        <input class="form-control" placeholder="Email" />
+                    </div>
+                    <div class="col-md-4">
+                        <div class="intro-cta text-center">
+                            <button>
+                                Subscribe Now <i class="fa fa-long-arrow-alt-right pl-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SUBSCRIPTION SECTION END -->
+
+
+        </main>
+    </div>
+
+    <!-- FOOTER SECTION START -->
+    <footer class="footer-section mt-4">
+        <div class="row justify-content-between footer-top">
+            <div class="col-6 property-rate">
+                <p>Call us today: +44 (0) 1285 869 489 </p>
+            </div>
+            <div class="col-6 justify-content-end text-right property-rooms">
+                <p>Stay Connected &nbsp;&nbsp; <i class="fab fa-twitter"></i> &nbsp;<i
+                        class="fab fa-facebook"></i>&nbsp; <i class="fab fa-instagram"></i></p>
+            </div>
+        </div>
+
+        <div class="row footer-main p-4">
+            <div class="col-md-6 p-4">
+                <img class="header-logo pb-4 mb-3" src="assets/logo_white.png" />
+                <p class="footer-details">Aenean imperdiet. Vestibulum suscipit nulla quis orci Nam pretium turpis et
+                    arcu.
+                    Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis eul.
+                    </br></br>
+                    Vestibulum dapibus nunc ac augue Morbi mollis tellus ac sapien. Cras varius. Aliquam lobortis.
+                    Pellentesque
+                    egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est.
+                    Morbi
+                    mattis ullamcorper velit. Nullam accumsan lorem in dui.</p>
+
+            </div>
+            <div class="col-md-2 mt-4">
+                <h1>About us</h1>
+
+                <p class="mt-4">Our Story</p>
+                <p> Why book with us</p>
+                <p> FAQ’s</p>
+                <p> Contact us</p>
+                <p>News</p>
+                <p>Blog</p>
+            </div>
+            <div class="col-md-2  mt-4">
+                <h1>Our locations</h1>
+
+
+                <p class="mt-4 bolded-text">The Cotswolds</p>
+                <p>Lower Mill Estate</p>
+                <p class="mt-4 bolded-text">Devon</p>
+                <p>Birchwood</p>
+
+                <p class="mt-4 bolded-text">Dorset</p>
+                <p>Silverlake
+                </p>
+            </div>
+            <div class="col-md-2 mt-4">
+                <h1>Owners</h1>
+                <p class="mt-4 bolded-text">Are you an owner?</p>
+                <div class="intro-cta mt-2">
+                    <button>
+                        Log IN <i class="fa fa-long-arrow-alt-right pl-2"></i>
+                    </button>
+                </div>
+                <p class="mt-4 bolded-text">Like to list a property?</p>
+                <div class="intro-cta mt-2">
+                    <button>
+                        List Now <i class="fa fa-long-arrow-alt-right pl-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-between footer-bottom">
+            <div class="col-6 property-rate">
+                <p>Copyright © 2020 Habitat Escapes</p>
+            </div>
+            <div class="col-6 justify-content-end text-right property-rooms">
+                <p>Terms & Conditions&nbsp; | &nbsp; Cookie Policy &nbsp; | &nbsp; Privacy Policy &nbsp; | &nbsp; Modern
+                    Slavery
+                    Act &nbsp; | &nbsp; Sitemap</p>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END -->
+
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="./scripts/slick.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
