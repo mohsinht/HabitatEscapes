@@ -55,6 +55,11 @@ button:focus {
   outline: 0;
 }
 
+.text-heading {
+  font-family: var(--font-headings);
+  padding-bottom: 1rem;
+}
+
 .row {
   margin-left: 0px;
   margin-right: 0px;
@@ -581,7 +586,6 @@ button:focus {
   color: #ebb75c;
 }
 
-
 .dropdown-row {
   width: 100%;
   margin-right: 0;
@@ -904,4 +908,9 @@ button:focus {
 
 .about-faq-accordian {
   margin-top: 4rem;
+}
+
+.team-card .intro-cta button {
+  font-size: 0.65rem;
+  padding: 0.8rem 0.7rem;
 }
