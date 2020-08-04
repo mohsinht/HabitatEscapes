@@ -916,3 +916,16 @@ button:focus {
 .team-card .team-date {
   font-size: 0.8rem;
 }
+
+.about-faq .property-accordian {
+  background-color: #f0f8ff00;
+}
+
+.about-faq .property_features_heading {
+  font-family: BrandonText-Regular;
+  font-size: 1.2rem;
+}
+
+.about-faq-accordian {
+  margin-top: 4rem;
+}
