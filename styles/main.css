@@ -55,11 +55,6 @@ button:focus {
   outline: 0;
 }
 
-.text-heading {
-  font-family: var(--font-headings);
-  padding-bottom: 1rem;
-}
-
 .row {
   margin-left: 0px;
   margin-right: 0px;
