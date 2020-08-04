@@ -384,8 +384,16 @@ img {
 .box.hoverable {
     box-shadow: 0px 0px 0 rgba(0,0,0,0);
 }
-.box.hoverable:hover {
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.15);
+.box.hoverable:hover,
+.box.shadowed:hover {
+    box-shadow: 0px 0px 1rem rgba(0,0,0,0.15);
+}
+.box.shadowed {
+    padding: 15px;
+    box-shadow: 0px 0px .8rem rgba(0,0,0,0.15);
+}
+.box.shadowed:hover {
+    box-shadow: 0px 0px 1.25rem rgba(0,0,0,0.15);
 }
 .box .box-text {
     padding-left: .5rem;
@@ -743,19 +751,34 @@ img {
     align-items: center;
 }
 
+.property-info-inner {
+    margin-left: -15px;
+    margin-right: -15px;
+}
 .property-block-text {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     border-bottom: 1px solid #ddd;
 }
+.property-block-text.no-border {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
 .property-block-text .block-head a {
     color: inherit;
 }
-.property-block-text footer {
+.property-block-text footer,
+.property-block-text .bar-ratings {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+.property-block-text .bar-ratings {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
 .property-block-text .button-bar {
     margin-left: 0;
