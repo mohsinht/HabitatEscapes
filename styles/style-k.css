@@ -5,6 +5,10 @@
     border-radius: 0;
     text-transform: uppercase;
 }
+.btn-group-lg > .btn,
+.btn-lg {
+    padding: 1rem 1.8rem;
+}
 .btn-primary {
     background-color: var(--color-primary);
     border-color: var(--color-primary);
@@ -270,7 +274,7 @@ img {
 }
 .banner-header {
     width: 100%;
-    padding: 2% 5%;
+    padding: 2% 15%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);    
@@ -459,6 +463,9 @@ img {
 }
 .button-bar.flex-end {
     justify-content: flex-end;
+}
+.button-bar.center {
+    justify-content: center;
 }
 .button-bar .btn {
     margin-left: 5px;
@@ -764,8 +771,13 @@ img {
     padding-bottom: 0;
     border-bottom: 0;
 }
-.property-block-text .block-head a {
+.property-block-text .block-head a,
+.location-block-text .block-head a {
     color: inherit;
+}
+.property-block-text .block-head a:hover,
+.location-block-text .block-head a:hover {
+    color: var(--color-primary);
 }
 .property-block-text footer,
 .property-block-text .bar-ratings {
@@ -779,6 +791,10 @@ img {
     padding-bottom: 1rem;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
+}
+.property-block-text footer.bar-ratings {
+    padding-bottom: 0;
+    border-bottom: 0;
 }
 .property-block-text .button-bar {
     margin-left: 0;
