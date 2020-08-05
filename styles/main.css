@@ -958,3 +958,17 @@ button:focus {
   font-size: .8rem;
 }
 /* TTD landing page ends here */
+
+/* Activity Things To Do page starts here */
+.attd-sub-heading {
+  font-family: BrandonText-Light;
+  font-size: 1rem;
+}
+
+.attd-sub-value {
+  font-family: BrandonText-Medium;
+  font-size: 1rem;
+  color: var(--color-primary);
+}
+
+/* Activity Things To Do page ends here */
