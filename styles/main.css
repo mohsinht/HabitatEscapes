@@ -909,3 +909,52 @@ button:focus {
   font-size: 0.65rem;
   padding: 0.8rem 0.7rem;
 }
+
+
+/* TTD landing page starts here */
+/* TTD = Things to do */
+.ttd-card-cta {
+  background-color: var(--color-primary);
+  color: white;
+  font-family: BrandonText-Medium;
+  font-size: 0.5rem;
+  min-width: 50%;
+}
+
+.dual-image {
+  position: relative;
+}
+.dual-image .image {
+  position: relative;
+}
+.dual-image .image + .image {
+  /* margin-left: 50%; */
+  margin-left: 40%;
+  /* margin-top:-1.5rem; */
+  margin-top: -10%;
+  z-index: 2;
+}
+.dual-image .image img {
+  /*width: 100%;*/
+  display: block;
+}
+
+.ttd-card-tag {
+  padding: .25rem 1rem;
+  font-size: .8rem;
+  text-transform: uppercase;
+  z-index: 2;
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+}
+
+.ttp-cardpoints-label {
+  font-family: BrandonText-Light;
+  font-size: .7rem;
+}
+.ttp-cardpoints-value {
+  font-family: BrandonText-Medium;
+  font-size: .8rem;
+}
+/* TTD landing page ends here */
