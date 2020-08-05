@@ -23,7 +23,7 @@
       integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
       crossorigin="anonymous"
     />
-
+    <link rel="stylesheet" href="./styles/slick.css" />
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/style-k.css" />
 
@@ -38,25 +38,35 @@
             class="header-content row flex-nowrap justify-content-between align-items-center"
           >
             <div class="col-4 pt-1 header-col">
-              <i class="far fa-envelope pr-1"></i> Newsletter Sign up
+              <a href="mailto:abc@mail.com" class="hd-contact-link"
+                ><i class="far fa-envelope pr-1"></i> Newsletter Sign up</a
+              >
             </div>
 
             <div class="col-4 text-center">
-              <img
-                id="header-logo"
-                class="header-logo"
-                src="assets/logo_white.png"
-              />
+              <a class="site-logo-link" href="index.html">
+                <img
+                  id="header-logo"
+                  class="header-logo"
+                  src="assets/logo_white.png"
+                />
+              </a>
             </div>
 
             <div
-              class="col-4 d-flex justify-content-end align-items-center header-col"
+              class="col-4 d-flex justify-content-end align-items-center header-col hd-links"
             >
-              <span class="pr-2">+44 (0) 1285 869 489</span> |<i
-                class="far fa-heart px-2"
-              ></i>
-              |
-              <i class="fa fa-search px-2"></i>
+              <ul class="list-hd-links">
+                <li>
+                  <a href="tel:+44 (0) 1285 869 489">+44 (0) 1285 869 489</a>
+                </li>
+                <li>
+                  <a href="#"><i class="far fa-heart"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-search"></i></a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -557,128 +567,163 @@
       <!-- PROPERTIES SECTION START -->
       <div class="properties-section">
         <div class="intro-top-img"><img src="assets/leaf_logo_dark.png" /></div>
-        <div class="intro-heading">
+        <div class="intro-heading mb-4">
           <h3 class="intro-sub">LOOK AT OUR</h3>
           <h1 class="intro-title">Popular Properties</h1>
         </div>
 
-        <div class="property-horizontal-list row pt-4">
-          <div class="col-md-4 mt-2">
-            <div class="property-card card">
-              <img
-                src="assets/property_img1.jpg"
-                alt="The Hide"
-                style="width: 100%;"
-              />
-              <div class="row justify-content-between">
-                <div class="col-6">
-                  <h1>The Hide <span class="property-code">(H130)</span></h1>
-                </div>
-                <div class="col-6 justify-content-end text-right pt-2">
-                  <i class="heart-icon far fa-heart px-2"></i>
-                </div>
-              </div>
-
-              <p class="property-address">Lower Mill Estate, The Cotswolds</p>
-
-              <div class="row justify-content-between">
-                <div class="col-6 property-rate"><p>2 nights from £800</p></div>
+        <div class="row pt-4 mt-4">
+          <div class="col-md-4">
+            <div class="property-info-box box shadowed mb-4">
+              <div class="box-image">
                 <div
-                  class="col-6 justify-content-end text-right property-rooms"
+                  class="slider"
+                  data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "autoplay": "true"}'
                 >
-                  <p>Sleeps 2</p>
+                  <div class="slider-image">
+                    <img src="./assets/property_img1.jpg" alt="..." />
+                  </div>
+                  <div class="slider-image">
+                    <img src="./assets/property_img1.jpg" alt="..." />
+                  </div>
                 </div>
               </div>
+              <div class="property-info-block box-text">
+                <div class="property-block-text no-border">
+                  <header class="block-head">
+                    <h5 class="text-heading">
+                      <a href="property_detail.html"
+                        >The Hide <small class="text-muted">(H130)</small></a
+                      >
+                    </h5>
+                    <span class="floating text-danger"
+                      ><i class="far fa-heart"></i
+                    ></span>
+                  </header>
+                  <p>Lower Mill Estate, The Cotsworlds</p>
+                  <div class="flex-bar mb-3">
+                    <strong>2 nights from £800</strong>
+                    <small>Sleeps 2</small>
+                  </div>
 
-              <div class="row justify-content-between pt-3 pb-2">
-                <div class="col-6 property-rate">
-                  <i class="fa fa-star"></i> 4.68
-                </div>
-                <div
-                  class="col-6 justify-content-end text-right property-rooms"
-                >
-                  <i class="fa fa-bed pr-2"></i><i class="fa fa-wifi"></i>
+                  <footer class="bar-ratings">
+                    <div class="prop-foot-left">
+                      <i class="fas fa-star text-warning mr-1"></i>
+                      <span>4.48</span>
+                    </div>
+                    <div class="prop-foot-right">
+                      <i class="fas fa-fire ml-1 mr-1"></i>
+                      <i class="fas fa-wifi ml-1 mr-1"></i>
+                      <i class="fas fa-paw ml-1 mr-1"></i>
+                    </div>
+                  </footer>
                 </div>
               </div>
+              <!-- /.property-info-block -->
             </div>
+            <!-- /property-info-box box shadowed -->
           </div>
-          <div class="col-md-4 mt-2">
-            <div class="property-card card">
-              <img
-                src="assets/property_img2.jpg"
-                alt="The Hide"
-                style="width: 100%;"
-              />
-              <div class="row justify-content-between">
-                <div class="col-6">
-                  <h1>The Hide <span class="property-code">(H130)</span></h1>
-                </div>
-                <div class="col-6 justify-content-end text-right pt-2">
-                  <i class="heart-icon far fa-heart px-2"></i>
-                </div>
-              </div>
-
-              <p class="property-address">Lower Mill Estate, The Cotswolds</p>
-
-              <div class="row justify-content-between">
-                <div class="col-6 property-rate"><p>2 nights from £800</p></div>
+          <div class="col-md-4">
+            <div class="property-info-box box shadowed mb-4">
+              <div class="box-image">
+                <div class="box-tag bg-warning">New</div>
                 <div
-                  class="col-6 justify-content-end text-right property-rooms"
+                  class="slider"
+                  data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "autoplay": "true"}'
                 >
-                  <p>Sleeps 2</p>
+                  <div class="slider-image">
+                    <img src="./assets/property_img3.jpg" alt="..." />
+                  </div>
+                  <div class="slider-image">
+                    <img src="./assets/property_img3.jpg" alt="..." />
+                  </div>
                 </div>
               </div>
+              <div class="property-info-block box-text">
+                <div class="property-block-text no-border">
+                  <header class="block-head">
+                    <h5 class="text-heading">
+                      <a href="property_detail.html"
+                        >Kingfisher Lodge
+                        <small class="text-muted">(H130)</small></a
+                      >
+                    </h5>
+                    <span class="floating text-danger"
+                      ><i class="far fa-heart"></i
+                    ></span>
+                  </header>
+                  <p>Lower Mill Estate, The Cotsworlds</p>
+                  <div class="flex-bar mb-3">
+                    <strong>2 nights from £800</strong>
+                    <small>Sleeps 2</small>
+                  </div>
 
-              <div class="row justify-content-between pt-3 pb-2">
-                <div class="col-6 property-rate">
-                  <i class="fa fa-star"></i> 4.68
-                </div>
-                <div
-                  class="col-6 justify-content-end text-right property-rooms"
-                >
-                  <i class="fa fa-bed pr-2"></i><i class="fa fa-wifi"></i>
+                  <footer class="bar-ratings">
+                    <div class="prop-foot-left">
+                      <i class="fas fa-star text-warning mr-1"></i>
+                      <span>4.48</span>
+                    </div>
+                    <div class="prop-foot-right">
+                      <i class="fas fa-fire ml-1 mr-1"></i>
+                      <i class="fas fa-wifi ml-1 mr-1"></i>
+                      <i class="fas fa-paw ml-1 mr-1"></i>
+                    </div>
+                  </footer>
                 </div>
               </div>
+              <!-- /.property-info-block -->
             </div>
+            <!-- /property-info-box box shadowed -->
           </div>
-          <div class="col-md-4 mt-2">
-            <div class="property-card card">
-              <img
-                src="assets/property_img3.jpg"
-                alt="The Hide"
-                style="width: 100%;"
-              />
-              <div class="row justify-content-between">
-                <div class="col-6">
-                  <h1>The Hide <span class="property-code">(H130)</span></h1>
-                </div>
-                <div class="col-6 justify-content-end text-right pt-2">
-                  <i class="heart-icon far fa-heart px-2"></i>
-                </div>
-              </div>
-
-              <p class="property-address">Lower Mill Estate, The Cotswolds</p>
-
-              <div class="row justify-content-between">
-                <div class="col-6 property-rate"><p>2 nights from £800</p></div>
+          <div class="col-md-4">
+            <div class="property-info-box box shadowed mb-4">
+              <div class="box-image">
                 <div
-                  class="col-6 justify-content-end text-right property-rooms"
+                  class="slider"
+                  data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "autoplay": "true"}'
                 >
-                  <p>Sleeps 2</p>
+                  <div class="slider-image">
+                    <img src="./assets/property_img1.jpg" alt="..." />
+                  </div>
+                  <div class="slider-image">
+                    <img src="./assets/property_img1.jpg" alt="..." />
+                  </div>
                 </div>
               </div>
-
-              <div class="row justify-content-between pt-3 pb-2">
-                <div class="col-6 property-rate">
-                  <i class="fa fa-star"></i> 4.68
-                </div>
-                <div
-                  class="col-6 justify-content-end text-right property-rooms"
-                >
-                  <i class="fa fa-bed pr-2"></i><i class="fa fa-wifi"></i>
+              <div class="property-info-block box-text">
+                <div class="property-block-text no-border">
+                  <header class="block-head">
+                    <h5 class="text-heading">
+                      <a href="property_detail.html"
+                        >Keynes Cottage
+                        <small class="text-muted">(H130)</small></a
+                      >
+                    </h5>
+                    <span class="floating text-danger"
+                      ><i class="far fa-heart"></i
+                    ></span>
+                  </header>
+                  <p>Lower Mill Estate, The Cotsworlds</p>
+                  <div class="flex-bar mb-3">
+                    <strong>2 nights from £800</strong>
+                    <small>Sleeps 2</small>
+                  </div>
+                  <footer class="bar-ratings">
+                    <div class="prop-foot-left">
+                      <i class="fas fa-star text-warning mr-1"></i>
+                      <span>4.48</span>
+                    </div>
+                    <div class="prop-foot-right">
+                      <i class="fas fa-fire ml-1 mr-1"></i>
+                      <i class="fas fa-wifi ml-1 mr-1"></i>
+                      <i class="fas fa-paw ml-1 mr-1"></i>
+                    </div>
+                  </footer>
                 </div>
               </div>
+              <!-- /.property-info-block -->
             </div>
+            <!-- /property-info-box box shadowed -->
           </div>
         </div>
 
@@ -938,5 +983,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="scripts/main.js"></script>
+    <script src="./scripts/slick.min.js"></script>
   </body>
 </html>
