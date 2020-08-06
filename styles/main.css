@@ -991,3 +991,41 @@ button:focus {
   font-family: BrandonText-Bold;
   font-size: 1.3rem;
 }
+
+.footer-number {
+  text-align: center;
+  display: none;
+  font-family: BrandonText-Medium !important;
+}
+
+.footer-main .logo-container {
+  margin-bottom: 1rem;
+}
+
+.footer-top a {
+  color: #91c3f9;
+}
+
+@media (max-width: 768px) {
+  .side-text {
+    display: none;
+  }
+  .footer-top p,
+  .footer-bottom p {
+    text-align: center !important;
+  }
+  .footer-number {
+    display: block;
+    margin-bottom: 1.5rem;
+  }
+  .footer-top-number {
+    display: none;
+  }
+  .footer-main .logo-container {
+    text-align: center;
+    margin-bottom: 0rem;
+  }
+  .social-icons {
+    font-size: 1.5rem;
+  }
+}
