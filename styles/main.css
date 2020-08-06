@@ -1006,6 +1006,16 @@ button:focus {
   color: #91c3f9;
 }
 
+.footer-main a,
+.footer-bottom a {
+  color: inherit;
+}
+
+.footer-main a:hover,
+.footer-bottom a:hover {
+  opacity: 0.8;
+}
+
 @media (max-width: 768px) {
   .side-text {
     display: none;
@@ -1027,5 +1037,18 @@ button:focus {
   }
   .social-icons {
     font-size: 1.5rem;
+  }
+
+  #first {
+    order: 2;
+  }
+  #second {
+    order: 4;
+  }
+  #third {
+    order: 1;
+  }
+  #fourth {
+    order: 3;
   }
 }
