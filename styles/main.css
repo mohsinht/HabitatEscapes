@@ -513,7 +513,7 @@ button:focus {
 .property_features_heading {
   font-family: var(--font-headings);
   /* line-height: 4.5rem; */
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: black;
   text-transform: none;
   /* text-decoration: none; */
