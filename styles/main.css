@@ -521,6 +521,7 @@ button:focus {
   /* line-height: 4.5rem; */
   font-size: 1.7rem;
   color: black;
+  text-transform: none;
   /* text-decoration: none; */
   /* background-color: white; */
 }
