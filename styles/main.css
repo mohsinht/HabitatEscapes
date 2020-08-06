@@ -205,6 +205,12 @@ button:focus {
   padding: 80px 10px;
 }
 
+.box.hb-box {
+  padding-bottom: 15px;
+  box-shadow: 0px 0px 0.8rem rgba(0, 0, 0, 0.15);
+  background: white;
+}
+
 .intro-title {
   font-family: var(--font-headings);
   line-height: 2.5rem;
@@ -980,3 +986,8 @@ button:focus {
 }
 
 /* Activity Things To Do page ends here */
+
+.text-heading.benefits {
+  font-family: BrandonText-Bold;
+  font-size: 1.3rem;
+}
