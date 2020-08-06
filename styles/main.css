@@ -1016,6 +1016,29 @@ button:focus {
   opacity: 0.8;
 }
 
+.footer-main .accordian-head {
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.25s ease-in;
+}
+
+.footer-main .accordian-head .fas {
+  display: none;
+}
+
+.accordian-head.collapsed {
+  border-bottom: none;
+  padding-bottom: none;
+}
+
+.footer-main .collapse:not(.show) {
+  display: block;
+}
+
+.accordian-head[aria-expanded='true'] .fas {
+  transform: translateY(-50%) rotate(-180deg);
+}
+
 @media (max-width: 768px) {
   .side-text {
     display: none;
@@ -1050,5 +1073,15 @@ button:focus {
   }
   #fourth {
     order: 3;
+  }
+  .footer-main .accordian-head .fas {
+    display: block;
+  }
+  .footer-main .collapse:not(.show) {
+    display: none;
+  }
+  .accordian-head.collapsed {
+    border-bottom: solid white 1px;
+    padding-bottom: 1rem;
   }
 }
