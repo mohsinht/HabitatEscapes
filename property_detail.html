@@ -286,14 +286,15 @@
                             Key Features
                           </div>
                           <div class="col-1 text-right px-0">
-                              <i class="far fa-plus-square"></i>
+                              <i id="collapseKeyFeaturesMinus" class="far fa-minus-square"></i>
+                              <i id="collapseKeyFeaturesPlus" class="far fa-plus-square" style="display: none;"></i>
                           </div>
                         </div>
                       </a>
                     </h5>
                   </div>
 
-                  <div id="collapseKeyFeatures" class="collapse show" aria-labelledby="headingKeyFeatures"
+                  <div id="collapseKeyFeatures" class="collapse accordion-item-content show" aria-labelledby="headingKeyFeatures"
                     data-parent="#accordion">
                     <div class="card-body property-accordian-card-body">
                       <div class="row">
@@ -346,13 +347,14 @@
                             Accommodation
                           </div>
                           <div class="col-1 text-right px-0">
-                              <i class="far fa-plus-square"></i>
+                            <i id="collapseAccommodationMinus" class="far fa-minus-square" style="display: none;"></i>
+                            <i id="collapseAccommodationPlus" class="far fa-plus-square"></i>
                           </div>
                         </div>                        
                       </a>
                     </h5>
                   </div>
-                  <div id="collapseAccommodation" class="collapse" aria-labelledby="headingAccommodation"
+                  <div id="collapseAccommodation" class="collapse accordion-item-content" aria-labelledby="headingAccommodation"
                     data-parent="#accordion">
                     <div class="card-body property-accordian-card-body property-text">
                       <!-- Accomodation Detail here -->
@@ -371,13 +373,14 @@
                             Outside
                           </div>
                           <div class="col-1 text-right px-0">
-                              <i class="far fa-plus-square"></i>
+                            <i id="collapseOutsideMinus" class="far fa-minus-square" style="display: none;"></i>
+                            <i id="collapseOutsidePlus" class="far fa-plus-square"></i>
                           </div>
                         </div> 
                       </a>
                     </h5>
                   </div>
-                  <div id="collapseOutside" class="collapse" aria-labelledby="headingOutside" data-parent="#accordion">
+                  <div id="collapseOutside" class="collapse accordion-item-content" aria-labelledby="headingOutside" data-parent="#accordion">
                     <div class="card-body property-accordian-card-body property-text">
                       Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
                       3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
@@ -401,13 +404,14 @@
                             Leisure Facilities
                           </div>
                           <div class="col-1 text-right px-0">
-                              <i class="far fa-plus-square"></i>
+                            <i id="collapseLeisureFacilitiesMinus" class="far fa-minus-square" style="display: none;"></i>
+                            <i id="collapseLeisureFacilitiesPlus" class="far fa-plus-square"></i>
                           </div>
                         </div> 
                       </a>
                     </h5>
                   </div>
-                  <div id="collapseLeisureFacilities" class="collapse" aria-labelledby="headingLeisureFacilities"
+                  <div id="collapseLeisureFacilities" class="collapse accordion-item-content" aria-labelledby="headingLeisureFacilities"
                     data-parent="#accordion">
                     <div class="card-body property-accordian-card-body property-text">
                       <!-- Accomodation Detail here -->
@@ -428,13 +432,14 @@
                             Local Information
                           </div>
                           <div class="col-1 text-right px-0">
-                              <i class="far fa-plus-square"></i>
+                            <i id="collapseLocalInformationMinus" class="far fa-minus-square" style="display: none;"></i>
+                            <i id="collapseLocalInformationPlus" class="far fa-plus-square"></i>
                           </div>
                         </div>                         
                       </a>
                     </h5>
                   </div>
-                  <div id="collapseLocalInformation" class="collapse" aria-labelledby="headingLocalInformation"
+                  <div id="collapseLocalInformation" class="collapse accordion-item-content" aria-labelledby="headingLocalInformation"
                     data-parent="#accordion">
                     <div class="card-body property-accordian-card-body property-text">
                       <!-- Accomodation Detail here -->
@@ -453,13 +458,14 @@
                             Parking
                           </div>
                           <div class="col-1 text-right px-0">
-                              <i class="far fa-plus-square"></i>
+                            <i id="collapseParkingMinus" class="far fa-minus-square" style="display: none;"></i>
+                            <i id="collapseParkingPlus" class="far fa-plus-square"></i>
                           </div>
                         </div> 
                       </a>
                     </h5>
                   </div>
-                  <div id="collapseParking" class="collapse" aria-labelledby="headingParking" data-parent="#accordion">
+                  <div id="collapseParking" class="collapse accordion-item-content" aria-labelledby="headingParking" data-parent="#accordion">
                     <div class="card-body property-accordian-card-body property-text">
                       <!-- Accomodation Detail here -->
                       <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -866,7 +872,7 @@
     <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/ab-datepicker@latest"></script> -->
     <script src="./scripts/slick.min.js"></script>
     <script src="scripts/main.js"></script>
-    <!-- <script src="scripts/property_detail.js"></script> -->
+    <script src="scripts/property_detail.js"></script>
 
 
 </body>
