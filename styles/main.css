@@ -37,6 +37,7 @@
 :root {
   --font-headings: RotisSerifCE;
   --color-primary: #86b7d9;
+  --color-primary-hover: #699bbe;
 }
 
 body {
@@ -247,63 +248,8 @@ button:focus {
   margin: auto;
 }
 
-.properties-section .intro-top-img,
-.properties-section .intro-heading {
-  text-align: center;
-}
-
 .properties-section {
-  padding: 80px 20px;
   background: #ecf2e9;
-}
-
-.property-card h1 {
-  font-family: var(--font-headings);
-  padding-left: 0.5rem;
-  padding-top: 0.5rem;
-  font-size: 1.65rem;
-}
-
-.property-card .heart-icon {
-  font-size: 1.3rem;
-  padding-top: 0.25rem;
-  color: #c25e84;
-}
-
-.property-card .property-code {
-  font-size: 1rem;
-  color: #a9acb1;
-}
-
-.property-card .property-address {
-  font-size: 1rem;
-  padding-left: 0.5rem;
-}
-
-.property-card .property-rate {
-  font-family: BrandonText-Medium;
-  font-size: 0.8rem;
-  padding-left: 1.45rem;
-}
-
-.property-card .property-rooms {
-  font-family: BrandonText-Light;
-  padding-right: 1.45rem;
-  font-size: 0.8rem;
-}
-
-.property-horizontal-list,
-.activities-horizontal-list {
-  max-width: 75rem;
-  margin: auto;
-}
-
-.property-card img {
-  min-height: 18rem;
-}
-
-.property-card .fa-star {
-  color: #ebb75c;
 }
 
 .destination-box {
