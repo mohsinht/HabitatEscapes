@@ -19,7 +19,7 @@
 
 <body>
   <div class="page-wrapper">
-    <header class="site-header">
+    <header class="site-header header-sticky">
       <div class="site-logo">
         <a class="site-logo-link" href="index.html">
           <img class="logo" src="assets/logo_colored.png" />
@@ -55,13 +55,14 @@
       <div class="container">
         <div class="row justify-content-md-center">
           <div class="col-md-8">
-            <header class="mb-4">
-              <h4>Payment details</h4>
+            <header class="mb-5">
+              <h4 class="text-heading">Thank you, your booking is now complete</h4>
+              <p>Your booking reference code is <span class="text-danger">C2457X</span>. An email confirmation has been sent to <a href="mailto:abc@mail.com" class="text-primary">johnsmith@hotmail.com</a>. We'll look forward to seeing you on August 17th.</p>
             </header>
 
             <div class="booking-stats-block">
               <header class="heading">
-                <h3 class="text-heading mb-0">Confirmation</h3>
+                <h4 class="text-heading mb-0">Confirmation</h4>
                 <p class="mb-0">Thank you for booking with Habitat Escapes, please check below and call us if you need
                   to make amendments</p>
               </header>
@@ -71,16 +72,16 @@
                     <h5 class="text-heading mb-0">Your Booking</h5>
                   </header>
 
-                  <div class="stat">
+                  <div class="stat mb-3">
                     <p class="mb-0 text-bold"><strong>Location</strong></p>
                     <p class="text-primary">Lower Mill Estate, Cotswolds</p>
                   </div>
-                  <div class="stat">
+                  <div class="stat mb-3">
                     <p class="mb-0"><strong>Property</strong></p>
                     <p class="text-primary">Kingfisher Lodge</p>
                   </div>
 
-                  <div class="row row-minus">
+                  <div class="row row-minus mb-3">
                     <div class="col-md-6">
                       <div class="stat">
                         <p class="mb-0"><strong>Check In</strong></p>
@@ -95,24 +96,42 @@
                     </div>
                   </div>
 
-                  <div class="stat">
+                  <div class="stat mb-3">
                     <p class="mb-0"><strong>Guests</strong></p>
                     <p class="text-primary">2 Adults, 1 Child</p>
                   </div>
 
-                  <div class="stat">
+                  <div class="stat mb-3">
                     <p class="mb-0"><strong>Extras</strong></p>
                     <p class="text-primary">Active Escapes Week Package</p>
                   </div>
 
                   <div class="bar-stat bar-border-top mt-4">
                     <header class="mt-2 mb-3">
-                      <h5 class="text-heading mb-0">Your Booking</h5>
+                      <h5 class="text-heading mb-0">Charges</h5>
                     </header>
 
                     <div class="row row-minus">
                       <div class="col-md-4">
                         <strong>Accommodation</strong>
+                      </div>
+                      <div class="col-md-8">
+                        <span>£1,600</span>
+                      </div>
+                    </div>
+
+                    <div class="row row-minus">
+                      <div class="col-md-4">
+                        <strong>Booking Fee</strong>
+                      </div>
+                      <div class="col-md-8">
+                        <span>£1,600</span>
+                      </div>
+                    </div>
+
+                    <div class="row row-minus">
+                      <div class="col-md-4">
+                        <strong>Extras</strong>
                       </div>
                       <div class="col-md-8">
                         <span>£1,600</span>
@@ -131,7 +150,7 @@
                       <h5 class="text-heading mb-0">Payment</h5>
                     </header>
 
-                    <div class="row row-minus mb-2">
+                    <div class="row row-minus">
                       <div class="col-md-4">
                         <strong>Deposit Paid</strong>
                       </div>
@@ -139,7 +158,7 @@
                         <span>£250</span>
                       </div>
                     </div>
-                    <div class="row">
+                    <div class="row row-minus">
                       <div class="col-md-4">
                         <strong>Balance</strong>
                       </div>
@@ -147,6 +166,7 @@
                         <span>£625</span>
                       </div>
                     </div>
+                    <small>To be paid 6 weeks before check in date</small>
                   </div>
 
                   <div class="bar-stat bar-border-top">
@@ -154,7 +174,7 @@
                       <h5 class="text-heading mb-0">Payment Method</h5>
                     </header>
 
-                    <div class="row">
+                    <div class="row row-minus">
                       <div class="col-md-4">
                         <strong>Visa Debit</strong>
                       </div>

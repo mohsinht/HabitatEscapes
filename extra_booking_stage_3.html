@@ -19,7 +19,7 @@
 
 <body>
   <div class="page-wrapper">
-    <header class="site-header">
+    <header class="site-header header-sticky">
       <div class="site-logo">
         <a class="site-logo-link" href="index.html">
           <img class="logo" src="assets/logo_colored.png" />
@@ -67,14 +67,14 @@
                     <p>How would you like to pay?</p>
                   </header>
 
-                  <div class="form-check mb-2">
+                  <div class="form-radiobox-wrapper mb-3">
                     <input class="form-check-input" type="radio" name="payment-method-input" id="radio-payment-full"
                       value="full">
                     <label class="form-check-label" for="radio-payment-full">
                       Payment full (£1725)
                     </label>
                   </div>
-                  <div class="form-check">
+                  <div class="form-radiobox-wrapper mb-3">
                     <input class="form-check-input" type="radio" name="payment-method-input" id="radio-payment-deposit"
                       value="deposit">
                     <label class="form-check-label" for="radio-payment-deposit">
@@ -83,7 +83,7 @@
                     <small class="form-text text-muted">Balance to be paid by 20 August 2020</small>
                   </div>
 
-                  <div class="mt-2 mb-2">
+                  <div class="mb-3">
                     <hr>
                   </div>
 
@@ -95,7 +95,7 @@
                     <div class="col-md-10">
 
                       <div class="check-creditcard-block">
-                        <div class="form-check">
+                        <div class="form-radiobox-wrapper">
                           <input class="form-check-input" type="radio" name="payment-method-input"
                             id="radio-payment-creditcard" value="credit-card">
                           <label class="form-check-label label-credit-card-icons" for="radio-payment-creditcard">
@@ -132,31 +132,35 @@
                     <div class="row row-minus">
                       <div class="col-md-6">
                         <div class="form-group">
-                          <select class="form-control">
-                            <option value="month">Select Month</option>
-                            <option value="jan">January</option>
-                            <option value="feb">February</option>
-                            <option value="mar">March</option>
-                            <option value="apr">April</option>
-                            <option value="may">May</option>
-                            <option value="jun">June</option>
-                            <option value="jul">July</option>
-                            <option value="aug">August</option>
-                            <option value="sep">September</option>
-                            <option value="oct">October</option>
-                            <option value="nov">November</option>
-                            <option value="dec">December</option>
-                          </select>
+                          <div class="select-box-primary">
+                            <select class="form-control">
+                              <option value="month">Select Month</option>
+                              <option value="jan">January</option>
+                              <option value="feb">February</option>
+                              <option value="mar">March</option>
+                              <option value="apr">April</option>
+                              <option value="may">May</option>
+                              <option value="jun">June</option>
+                              <option value="jul">July</option>
+                              <option value="aug">August</option>
+                              <option value="sep">September</option>
+                              <option value="oct">October</option>
+                              <option value="nov">November</option>
+                              <option value="dec">December</option>
+                            </select>
+                          </div>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
-                          <select class="form-control">
-                            <option value="year">Select Year</option>
-                            <option value="2020">2020</option>
-                            <option value="2019">2019</option>
-                            <option value="2018">2018</option>
-                          </select>
+                          <div class="select-box-primary">
+                            <select class="form-control">
+                              <option value="year">Select Year</option>
+                              <option value="2020">2020</option>
+                              <option value="2019">2019</option>
+                              <option value="2018">2018</option>
+                            </select>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -165,31 +169,35 @@
                     <div class="row row-minus">
                       <div class="col-md-6">
                         <div class="form-group">
-                          <select class="form-control">
-                            <option value="month">Select Month</option>
-                            <option value="jan">January</option>
-                            <option value="feb">February</option>
-                            <option value="mar">March</option>
-                            <option value="apr">April</option>
-                            <option value="may">May</option>
-                            <option value="jun">June</option>
-                            <option value="jul">July</option>
-                            <option value="aug">August</option>
-                            <option value="sep">September</option>
-                            <option value="oct">October</option>
-                            <option value="nov">November</option>
-                            <option value="dec">December</option>
-                          </select>
+                          <div class="select-box-primary">
+                            <select class="form-control">
+                              <option value="month">Select Month</option>
+                              <option value="jan">January</option>
+                              <option value="feb">February</option>
+                              <option value="mar">March</option>
+                              <option value="apr">April</option>
+                              <option value="may">May</option>
+                              <option value="jun">June</option>
+                              <option value="jul">July</option>
+                              <option value="aug">August</option>
+                              <option value="sep">September</option>
+                              <option value="oct">October</option>
+                              <option value="nov">November</option>
+                              <option value="dec">December</option>
+                            </select>
+                          </div>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
-                          <select class="form-control">
-                            <option value="year">Select Year</option>
-                            <option value="2020">2020</option>
-                            <option value="2019">2019</option>
-                            <option value="2018">2018</option>
-                          </select>
+                          <div class="select-box-primary">
+                            <select class="form-control">
+                              <option value="year">Select Year</option>
+                              <option value="2020">2020</option>
+                              <option value="2019">2019</option>
+                              <option value="2018">2018</option>
+                            </select>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -197,13 +205,19 @@
                     <div class="row row-minus">
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label>Security Code<span class="text-danger">*</span></label>
+                          <div class="flex-bar">
+                            <label>Security Code<span class="text-danger">*</span></label>
+                            <small class="text-muted">
+                              Unsure of CCV? 
+                              <i class="icon-creditcard inline-vertical-middle"></i>
+                            </small>
+                          </div>
                           <input type="text" class="form-control" placeholder="Add your card number">
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label>Issue number <small>(optional)</small></label>
+                          <label>Issue number <small>(Optional)</small></label>
                           <input type="text" class="form-control" placeholder="Add your issue number">
                         </div>
                       </div>
