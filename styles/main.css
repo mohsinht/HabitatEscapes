@@ -1104,4 +1104,25 @@ a.num-link:hover {
   #filter-header {
     display: none;
   }
+  .booking-block .property-search-bar-content {
+    flex-direction: column;
+  }
+  .booking-block .option-block {
+    flex-direction: column;
+    align-self: auto;
+    padding-top: 1.5rem;
+    margin-right: 0px;
+  }
+  .booking-block .btn-availability {
+    min-height: 3.9rem;
+    margin-top: 1rem;
+    width: 100%;
+  }
+  .booking-block .control {
+    min-width: 100%;
+    padding-bottom: 0.5rem;
+  }
+  .booking-block .property-search-bar-content {
+    padding: 1rem 0rem;
+  }
 }
