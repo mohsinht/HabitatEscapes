@@ -230,7 +230,7 @@ button:focus {
   margin-top: -0.6rem;
   margin-bottom: -0.6rem;
   min-width: 10.75rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 2px;
 }
 
 .intro-section.row {
@@ -975,6 +975,7 @@ button:focus {
   text-align: center;
   display: none;
   font-family: BrandonText-Medium !important;
+  font-size: 1.25rem;
 }
 
 .footer-main .logo-container {
@@ -1018,6 +1019,34 @@ button:focus {
   transform: translateY(-50%) rotate(-180deg);
 }
 
+.footer-main a {
+  color: #dee2e9;
+}
+
+.footer-main a:hover,
+.footer-bottom a:hover {
+  color: #86b7d9;
+}
+
+.footer-bottom a {
+  color: #a4adbd;
+}
+
+a.num-link {
+  color: white;
+}
+
+a.num-link:hover {
+  color: #86b7d9;
+}
+
+.social-icons a {
+  color: #86b7d9;
+}
+.social-icons a:hover {
+  color: #699bbe;
+}
+
 @media (max-width: 768px) {
   .side-text {
     display: none;
@@ -1039,6 +1068,7 @@ button:focus {
   }
   .social-icons {
     font-size: 1.5rem;
+    padding-top: 0.5rem;
   }
 
   #first {
@@ -1062,5 +1092,8 @@ button:focus {
   .accordian-head.collapsed {
     border-bottom: solid white 1px;
     padding-bottom: 1rem;
+  }
+  .footer-details {
+    display: none;
   }
 }
