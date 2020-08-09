@@ -418,13 +418,78 @@
         </div>
 
         <div class="booking-block row">
-          <div class="col-md-2 offset-md-1">Location</div>
-          <div class="col-md-2">Date</div>
-          <div class="col-md-2">Guests</div>
-          <div class="col-md-2">Duration</div>
-          <button class="col-md-2 avl-btn">
-            Check Availability
-          </button>
+          <div class="container">
+            <div class="property-search-bar-content">
+              <div class="option-block">
+                <div class="option-label">Location</div>
+                <div class="option-selection">
+                  <div class="select-box">
+                    <select>
+                      <option value="pick-location">Pick Location</option>
+                      <option value="1">Location One</option>
+                      <option value="2">Location Two</option>
+                      <option value="3">Location Three</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <!-- /option-block -->
+
+              <div class="option-block">
+                <div class="option-label">Date</div>
+                <div class="option-selection-dual">
+                  <input type="number" class="form-control selected-digit" value="15" min="1" max="31" />
+                  <div class="select-box-vertical">
+                    <select>
+                      <option value="pick-location">Month</option>
+                      <option value="1">Jan</option>
+                      <option value="2">Feb</option>
+                      <option value="3">Mar</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <!-- /option-block -->
+
+              <div class="option-block">
+                <div class="option-label">Guests</div>
+                <div class="option-selection-dual mt-0">
+                  <input type="number" class="form-control selected-digit" value="1" min="0" />
+                  <div class="number-controls-vertical">
+                    <button class="button-iconic increment">
+                      <i class="fas fa-chevron-up"></i>
+                    </button>
+                    <button class="button-iconic decrement">
+                      <i class="fas fa-chevron-down"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- /option-block -->
+
+              <div class="option-block">
+                <div class="option-label">Duration</div>
+                <div class="option-selection-dual mt-0">
+                  <input type="number" class="form-control selected-digit" value="4" min="0" />
+                  <div class="number-controls-vertical">
+                    <button class="button-iconic increment">
+                      <i class="fas fa-chevron-up"></i>
+                    </button>
+                    <button class="button-iconic decrement">
+                      <i class="fas fa-chevron-down"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- /option-block -->
+
+              <div class="control">
+                <button class="btn btn-primary btn-availability">
+                  Check Availability
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

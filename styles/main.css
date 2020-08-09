@@ -178,7 +178,7 @@ button:focus {
 .booking-block {
   background: white;
   text-align: center;
-  max-width: 615px;
+  max-width: 42rem;
   align-items: center;
   box-shadow: 4px 3px 4px #00000021;
   margin: auto;
@@ -198,6 +198,39 @@ button:focus {
   letter-spacing: 2px;
   min-width: min-content;
   margin-left: 14.7px;
+}
+
+.booking-block .option-block {
+  flex-direction: column;
+  align-self: flex-start;
+  padding-top: 0.3rem;
+}
+
+.booking-block .option-block .option-label {
+  border-right: none;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+}
+
+.booking-block .option-block .option-selection-dual {
+  margin-top: 0.5rem;
+}
+
+.booking-block .option-block .option-selection {
+  margin-top: 1rem;
+}
+
+.booking-block .property-search-bar-content {
+  padding: 0.6rem 1rem;
+}
+
+.booking-block .btn-availability {
+  min-height: 5.9rem;
+  margin-top: -0.6rem;
+  margin-bottom: -0.6rem;
+  min-width: 10.75rem;
+  letter-spacing: 0.1rem;
 }
 
 .intro-section.row {
