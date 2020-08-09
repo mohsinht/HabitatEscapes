@@ -9,6 +9,11 @@ $(document).ready(function () {
     }
   });
 
+  $('.nav-button').click(function () {
+    $('body').toggleClass('nav-open');
+    $('.responsive-menu').toggleClass('d-none');
+  });
+
   $('#nav-menu-transparent').hover(function () {
     $('.header').addClass('solid');
     $('.header').removeClass('transparent');

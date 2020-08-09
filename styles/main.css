@@ -1051,6 +1051,49 @@ a.num-link:hover {
   max-height: 4rem;
 }
 
+.burger-menu {
+  display: none;
+}
+
+.responsive-menu {
+  background: white;
+  position: fixed;
+  top: 0px;
+  min-height: 100vh;
+  z-index: 1000;
+  min-width: 100%;
+  display: none;
+}
+
+.responsive-menu .close-menu {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.responsive-menu .rmenu-num,
+.responsive-menu .rmenu-icon {
+  color: black;
+  font-family: BrandonText-Medium;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: row-reverse;
+  background: #ecf2e9;
+}
+
+.search-box-outer .fa-search {
+  margin-top: 11px;
+  margin-right: 10px;
+}
+
+.search-box-inner,
+.search-box-inner:focus {
+  background: none;
+  border: none;
+  font-family: BrandonText-Light;
+}
+
 @media (max-width: 768px) {
   .side-text {
     display: none;
@@ -1124,5 +1167,23 @@ a.num-link:hover {
   }
   .booking-block .property-search-bar-content {
     padding: 1rem 0rem;
+  }
+
+  .menu-wrapper,
+  .hd-contact-link,
+  .list-hd-links li:nth-child(1),
+  .list-hd-links li:nth-child(2) {
+    display: none;
+  }
+
+  .burger-menu,
+  .burger-menu:hover {
+    color: white;
+    font-size: 1.5rem;
+    display: block;
+  }
+
+  .responsive-menu {
+    display: block;
   }
 }
