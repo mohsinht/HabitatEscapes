@@ -1047,12 +1047,17 @@ a.num-link:hover {
   color: #699bbe;
 }
 
+.footer-main .blue-logos img {
+  max-height: 4rem;
+}
+
 @media (max-width: 768px) {
   .side-text {
     display: none;
   }
   .footer-top p,
-  .footer-bottom p {
+  .footer-bottom p,
+  .blue-logos {
     text-align: center !important;
   }
   .footer-number {
@@ -1094,6 +1099,9 @@ a.num-link:hover {
     padding-bottom: 1rem;
   }
   .footer-details {
+    display: none;
+  }
+  #filter-header {
     display: none;
   }
 }
