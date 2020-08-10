@@ -1133,6 +1133,24 @@ a.num-link:hover {
   top: 0px;
 }
 
+.subscription-section .intro-heading h1 {
+  line-height: 3rem;
+}
+
+.instagram-feed {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 10px;
+}
+
+.instagram-feed img {
+  width: 8rem;
+  height: 8rem;
+  overflow: hidden;
+  object-fit: cover;
+  padding: 10px 10px;
+}
+
 @media (max-width: 768px) {
   .side-text {
     display: none;
