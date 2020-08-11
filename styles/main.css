@@ -226,6 +226,7 @@ button:focus {
 
 .booking-block .property-search-bar-content {
   padding: 0.6rem 1rem;
+  flex-wrap: nowrap;
 }
 
 .booking-block .btn-availability {
