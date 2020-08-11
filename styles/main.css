@@ -1154,6 +1154,8 @@ a.num-link:hover {
   padding: 10px 10px;
 }
 
+
+
 @media (max-width: 768px) {
   .side-text {
     display: none;
@@ -1232,6 +1234,9 @@ a.num-link:hover {
   }
   .booking-block .property-search-bar-content {
     padding: 1rem 0rem;
+  }
+  .booking-block .property-search-bar-content {
+    flex-wrap: nowrap;
   }
 
   .menu-wrapper,
