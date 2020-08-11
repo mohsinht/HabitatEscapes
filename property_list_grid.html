@@ -112,7 +112,7 @@
             </header>
         </div><!-- /page-banner -->
 
-        <div class="breadcrumb-bar mb-2">
+        <div class="breadcrumb-bar">
             <div class="container">
                 <nav class="breadcrumb-nav" aria-label="breadcrumb">
                     <ol class="breadcrumb bg-white">
@@ -123,7 +123,142 @@
             </div>
         </div><!-- //.breadcrumb-bar -->
 
-        <div class="search-filter-bar">
+        <div class="search-filter-buttons d-xl-none">
+            <button class="filter-button" data-toggle="collapse" data-target="#filter-block" aria-expanded="false" aria-controls="filter-block">Filter By</button>
+            <button class="filter-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sort By <i
+                    class="icon-arrow-down"></i></button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item active" href="#">Recommended</a>
+                <a class="dropdown-item" href="#">Price High - Low</a>
+                <a class="dropdown-item" href="#">Price Low - High</a>
+                <a class="dropdown-item" href="#">Capacity High - Low</a>
+                <a class="dropdown-item" href="#">Capacity Low - High</a>
+            </div>
+        </div>
+
+        <div id="filter-block" class="filter-block collapse">
+            <div class="form-group">
+                <label>Sleeps</label>
+                <input type="text" class="form-control" placeholder="Enter sleeps">
+            </div>
+            <div class="form-group">
+                <label>Property type</label>
+                <div class="input-group mr-2">
+                    <input type="text" class="form-control" placeholder="Property Type">
+                    <div class="input-group-append">
+                        <button type="button"
+                            class="btn btn-caret btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item active" href="#">Option 1</a>
+                            <a class="dropdown-item" href="#">Option 2</a>
+                            <a class="dropdown-item" href="#">Option 3</a>
+                            <div role="separator" class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Option 4</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-extra-block">
+                <label>Facilities</label>
+                <div class="row">
+                    <div class="col-6 col-md-4">
+                        <div class="form-checkbox-wrapper mb-2">
+                            <input type="checkbox" class="form-check-input" id="facility-tv">
+                            <label class="form-check-label" for="facility-tv">TV</label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="form-checkbox-wrapper mb-2">
+                            <input type="checkbox" class="form-check-input" id="facility-bbq">
+                            <label class="form-check-label" for="facility-bbq">BBQ</label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="form-checkbox-wrapper mb-2">
+                            <input type="checkbox" class="form-check-input" id="facility-wifi">
+                            <label class="form-check-label" for="facility-wifi">Wifi</label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="form-checkbox-wrapper mb-2">
+                            <input type="checkbox" class="form-check-input" id="facility-dvd">
+                            <label class="form-check-label" for="facility-dvd">DVD</label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="form-checkbox-wrapper mb-2">
+                            <input type="checkbox" class="form-check-input" id="facility-pet">
+                            <label class="form-check-label" for="facility-pet">Pet Friendly</label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="form-checkbox-wrapper mb-2">
+                            <input type="checkbox" class="form-check-input" id="facility-hchair">
+                            <label class="form-check-label" for="facility-hchair">High Chair</label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="form-checkbox-wrapper mb-2">
+                            <input type="checkbox" class="form-check-input" id="facility-spa">
+                            <label class="form-check-label" for="facility-spa">Access to Spa</label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="form-checkbox-wrapper mb-2">
+                            <input type="checkbox" class="form-check-input" id="facility-fire">
+                            <label class="form-check-label" for="facility-fire">Log Fire</label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="form-checkbox-wrapper mb-2">
+                            <input type="checkbox" class="form-check-input" id="facility-tennis">
+                            <label class="form-check-label" for="facility-tennis">Tennis Courts</label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="form-checkbox-wrapper mb-2">
+                            <input type="checkbox" class="form-check-input" id="facility-water">
+                            <label class="form-check-label" for="facility-water">Water Side</label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="form-checkbox-wrapper mb-2">
+                            <input type="checkbox" class="form-check-input" id="facility-ground">
+                            <label class="form-check-label" for="facility-ground">Children's Playgroud</label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="form-checkbox-wrapper mb-2">
+                            <input type="checkbox" class="form-check-input" id="facility-bath">
+                            <label class="form-check-label" for="facility-bath">2 Bathrooms</label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="form-checkbox-wrapper mb-2">
+                            <input type="checkbox" class="form-check-input" id="facility-pools">
+                            <label class="form-check-label" for="facility-pools">Heated Pools</label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="form-checkbox-wrapper mb-2">
+                            <input type="checkbox" class="form-check-input" id="facility-suitbath">
+                            <label class="form-check-label" for="facility-suitbath">en-suite bathroom</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-button-bar mt-5">
+                <button class="btn btn-primary btn-block" data-toggle="collapse" data-target="#filter-block" aria-expanded="false" aria-controls="filter-block">Apply Filter</button>
+                <button class="btn btn-secondary btn-block" data-toggle="collapse" data-target="#filter-block" aria-expanded="false" aria-controls="filter-block">Close</button>
+            </div>
+
+        </div>
+
+        <div class="search-filter-bar d-none d-xl-block mt-2">
             <div class="container">
                 <div class="filter-contents">
                     <div class="search-filters">
@@ -158,7 +293,7 @@
                             </div>
                         </div>
 
-                        <a href="#" class="text-sm text-nowrap text-underline">Other Options</a>
+                        <a href="#extra-options-md" class="text-sm text-nowrap text-underline" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="extra-options-md">Other Options</a>
                     </div><!-- /search-filters -->
 
                     <div class="search-sorts">
@@ -172,21 +307,112 @@
                                     <i class="fas fa-chevron-down"></i>
                                 </button>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item active" href="#">Option 1</a>
-                                    <a class="dropdown-item" href="#">Option 2</a>
-                                    <a class="dropdown-item" href="#">Option 3</a>
-                                    <div role="separator" class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Option 4</a>
+                                    <a class="dropdown-item active" href="#">Recommended</a>
+                                    <a class="dropdown-item" href="#">Price High - Low</a>
+                                    <a class="dropdown-item" href="#">Price Low - High</a>
+                                    <a class="dropdown-item" href="#">Capacity High - Low</a>
+                                    <a class="dropdown-item" href="#">Capacity Low - High</a>
                                 </div>
                             </div>
                         </div>
                     </div><!-- /search-sorts -->
                 </div>
+
+                <div id="extra-options-md" class="filter-extra-block collapse">
+                    <strong>Facilities</strong>
+                    <div class="row">
+                        <div class="col-6 col-md-4">
+                            <div class="form-checkbox-wrapper mb-2">
+                                <input type="checkbox" class="form-check-input" id="facility-md-tv">
+                                <label class="form-check-label" for="facility-md-tv">TV</label>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="form-checkbox-wrapper mb-2">
+                                <input type="checkbox" class="form-check-input" id="facility-md-bbq">
+                                <label class="form-check-label" for="facility-md-bbq">BBQ</label>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="form-checkbox-wrapper mb-2">
+                                <input type="checkbox" class="form-check-input" id="facility-md-wifi">
+                                <label class="form-check-label" for="facility-md-wifi">Wifi</label>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="form-checkbox-wrapper mb-2">
+                                <input type="checkbox" class="form-check-input" id="facility-md-dvd">
+                                <label class="form-check-label" for="facility-md-dvd">DVD</label>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="form-checkbox-wrapper mb-2">
+                                <input type="checkbox" class="form-check-input" id="facility-md-pet">
+                                <label class="form-check-label" for="facility-md-pet">Pet Friendly</label>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="form-checkbox-wrapper mb-2">
+                                <input type="checkbox" class="form-check-input" id="facility-md-hchair">
+                                <label class="form-check-label" for="facility-md-hchair">High Chair</label>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="form-checkbox-wrapper mb-2">
+                                <input type="checkbox" class="form-check-input" id="facility-md-spa">
+                                <label class="form-check-label" for="facility-md-spa">Access to Spa</label>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="form-checkbox-wrapper mb-2">
+                                <input type="checkbox" class="form-check-input" id="facility-md-fire">
+                                <label class="form-check-label" for="facility-md-fire">Log Fire</label>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="form-checkbox-wrapper mb-2">
+                                <input type="checkbox" class="form-check-input" id="facility-md-tennis">
+                                <label class="form-check-label" for="facility-md-tennis">Tennis Courts</label>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="form-checkbox-wrapper mb-2">
+                                <input type="checkbox" class="form-check-input" id="facility-md-water">
+                                <label class="form-check-label" for="facility-md-water">Water Side</label>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="form-checkbox-wrapper mb-2">
+                                <input type="checkbox" class="form-check-input" id="facility-md-ground">
+                                <label class="form-check-label" for="facility-md-ground">Children's Playgroud</label>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="form-checkbox-wrapper mb-2">
+                                <input type="checkbox" class="form-check-input" id="facility-md-bath">
+                                <label class="form-check-label" for="facility-md-bath">2 Bathrooms</label>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="form-checkbox-wrapper mb-2">
+                                <input type="checkbox" class="form-check-input" id="facility-md-pools">
+                                <label class="form-check-label" for="facility-md-pools">Heated Pools</label>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="form-checkbox-wrapper mb-2">
+                                <input type="checkbox" class="form-check-input" id="facility-md-suitbath">
+                                <label class="form-check-label" for="facility-md-suitbath">en-suite bathroom</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div><!-- /search-filter-bar -->
 
         <main role="main">
-            <div class="container">
+            <div class="container-fluid">
                 <header class="heading mb-4 text-center">
                     <h3 class="title text-heading">Popular Properties</h3>
                 </header>
@@ -196,8 +422,7 @@
                         <div class="property-info-box box hoverable mb-4">
                             <div class="box-image">
                                 <div class="box-tag bg-warning">New</div>
-                                <div class="slider arrows-white"
-                                    data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "autoplay": "true"}'>
+                                <div class="slider arrows-white" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
                                     <div class="slider-image">
                                         <img src="./assets/property_img1.jpg" alt="...">
                                     </div>
@@ -241,8 +466,7 @@
                         <div class="property-info-box box hoverable mb-4">
                             <div class="box-image">
                                 <div class="box-tag bg-warning">Just Added</div>
-                                <div class="slider arrows-white"
-                                    data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "autoplay": "true"}'>
+                                <div class="slider arrows-white" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
                                     <div class="slider-image">
                                         <img src="./assets/property_img1.jpg" alt="...">
                                     </div>
@@ -285,8 +509,7 @@
                     <div class="col-md-4">
                         <div class="property-info-box box hoverable mb-4">
                             <div class="box-image">
-                                <div class="slider arrows-white"
-                                    data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "autoplay": "true"}'>
+                                <div class="slider arrows-white" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
                                     <div class="slider-image">
                                         <img src="./assets/property_img1.jpg" alt="...">
                                     </div>
@@ -328,8 +551,7 @@
                         <div class="property-info-box box hoverable mb-4">
                             <div class="box-image">
                                 <div class="box-tag bg-warning">Great Deal</div>
-                                <div class="slider arrows-white"
-                                    data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "autoplay": "true"}'>
+                                <div class="slider arrows-white" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
                                     <div class="slider-image">
                                         <img src="./assets/property_img1.jpg" alt="...">
                                     </div>
@@ -369,8 +591,7 @@
                     <div class="col-md-4">
                         <div class="property-info-box box hoverable mb-4">
                             <div class="box-image">
-                                <div class="slider arrows-white"
-                                    data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "autoplay": "true"}'>
+                                <div class="slider arrows-white" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
                                     <div class="slider-image">
                                         <img src="./assets/property_img1.jpg" alt="...">
                                     </div>
@@ -410,8 +631,7 @@
                     <div class="col-md-4">
                         <div class="property-info-box box hoverable mb-4">
                             <div class="box-image">
-                                <div class="slider arrows-white"
-                                    data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "autoplay": "true"}'>
+                                <div class="slider arrows-white" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
                                     <div class="slider-image">
                                         <img src="./assets/property_img1.jpg" alt="...">
                                     </div>
@@ -452,8 +672,7 @@
                     <div class="col-md-4">
                         <div class="property-info-box box hoverable mb-4">
                             <div class="box-image">
-                                <div class="slider arrows-white"
-                                    data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "autoplay": "true"}'>
+                                <div class="slider arrows-white" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
                                     <div class="slider-image">
                                         <img src="./assets/property_img1.jpg" alt="...">
                                     </div>
@@ -493,8 +712,7 @@
                     <div class="col-md-4">
                         <div class="property-info-box box hoverable mb-4">
                             <div class="box-image">
-                                <div class="slider arrows-white"
-                                    data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "autoplay": "true"}'>
+                                <div class="slider arrows-white" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
                                     <div class="slider-image">
                                         <img src="./assets/property_img1.jpg" alt="...">
                                     </div>
@@ -534,8 +752,7 @@
                     <div class="col-md-4">
                         <div class="property-info-box box hoverable mb-4">
                             <div class="box-image">
-                                <div class="slider arrows-white"
-                                    data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "autoplay": "true"}'>
+                                <div class="slider arrows-white" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
                                     <div class="slider-image">
                                         <img src="./assets/property_img1.jpg" alt="...">
                                     </div>
@@ -575,8 +792,7 @@
                     <div class="col-md-4">
                         <div class="property-info-box box hoverable mb-4">
                             <div class="box-image">
-                                <div class="slider arrows-white"
-                                    data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "autoplay": "true"}'>
+                                <div class="slider arrows-white" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
                                     <div class="slider-image">
                                         <img src="./assets/property_img1.jpg" alt="...">
                                     </div>
@@ -617,8 +833,7 @@
                         <div class="property-info-box box hoverable mb-4">
                             <div class="box-image">
                                 <div class="box-tag bg-warning">New</div>
-                                <div class="slider arrows-white"
-                                    data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "autoplay": "true"}'>
+                                <div class="slider arrows-white" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
                                     <div class="slider-image">
                                         <img src="./assets/property_img1.jpg" alt="...">
                                     </div>

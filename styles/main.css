@@ -48,6 +48,9 @@ a,
 button {
   transition: all 0.25s ease-in;
 }
+a {
+  color: var(--color-primary);
+}
 a:hover {
   text-decoration: none;
 }
@@ -1088,7 +1091,7 @@ a.num-link:hover {
   font-family: BrandonText-Medium;
 }
 
-.input-group {
+.input-group.search-box-outer {
   display: flex;
   flex-direction: row-reverse;
   background: #ecf2e9;
