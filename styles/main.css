@@ -974,6 +974,10 @@ button:focus {
   font-size: 1.3rem;
 }
 
+.newsletter-text {
+  vertical-align: revert;
+}
+
 .footer-number {
   text-align: center;
   display: none;

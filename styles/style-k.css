@@ -340,6 +340,35 @@ h1 {
   background-image: url('../assets/icons/arrow-long-right.svg');
 }
 
+.icon-fb,
+.icon-instagram,
+.icon-twitter {
+  width: 56px;
+  height: 24px;
+}
+
+.icon-newsletter {
+  height: 25px;
+  width: 25px;
+  vertical-align: sub;
+}
+
+.icon-fb {
+  background-image: url('../assets/icons/haitat_facebook_icon.svg');
+}
+
+.icon-instagram {
+  background-image: url('../assets/icons/haitat_Instagram_icon.svg');
+}
+
+.icon-twitter {
+  background-image: url('../assets/icons/haitat_twitter_icon.svg');
+}
+
+.icon-newsletter {
+  background-image: url('../assets/icons/haitat_newsletter_black_icon.svg');
+}
+
 .icon-star {
   width: 15px;
   height: 15px;
