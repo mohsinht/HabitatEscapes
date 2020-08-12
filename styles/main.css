@@ -1029,7 +1029,7 @@ button:focus {
 }
 
 .responsive-menu a {
-  color: black;
+  color: #50545b;
 }
 
 .accordian-head .icon-chevron-down {
@@ -1090,6 +1090,7 @@ a.num-link:hover {
   min-width: 100%;
   display: none;
   box-shadow: -1px 15px 20px 20px #00000047;
+  color: #50545b !important;
 }
 
 .responsive-menu .social-container {
