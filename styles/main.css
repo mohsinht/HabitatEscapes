@@ -1024,8 +1024,17 @@ button:focus {
   transform: translateY(-50%) rotate(-180deg);
 }
 
+.accordian-head[aria-expanded='true'] .icon-chevron-down {
+  transform: translateY(-50%) rotate(-270deg);
+}
+
 .responsive-menu a {
   color: black;
+}
+
+.accordian-head .icon-chevron-down {
+  width: 16px;
+  height: 16px;
 }
 
 .footer-main a {
@@ -1064,8 +1073,16 @@ a.num-link:hover {
   display: none;
 }
 
+.mt-1-5 {
+  margin-top: 0.37rem !important;
+}
+
+.collapse.show {
+  padding-top: 0.2px;
+}
+
 .responsive-menu {
-  background: white;
+  background: #ecf2e9;
   position: absolute;
   top: 0px;
   min-height: 100vh;
@@ -1095,7 +1112,8 @@ a.num-link:hover {
 .input-group.search-box-outer {
   display: flex;
   flex-direction: row-reverse;
-  background: #ecf2e9;
+  background: #cbd4c6;
+  padding: 0.3rem 0rem;
 }
 
 .search-box-outer .fa-search {
@@ -1155,7 +1173,11 @@ a.num-link:hover {
   padding: 10px 10px;
 }
 
-
+.r-login-btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem !important;
+}
 
 @media (max-width: 768px) {
   .side-text {
@@ -1204,10 +1226,10 @@ a.num-link:hover {
   }
   .accordian-head.collapsed {
     border-bottom: solid white 1px;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
   }
   .responsive-menu .accordian-head.collapsed {
-    border-bottom: solid black 1px;
+    border-bottom: solid #aeaeae 1px;
   }
   .footer-details {
     display: none;
@@ -1256,5 +1278,10 @@ a.num-link:hover {
 
   .responsive-menu {
     display: block;
+  }
+
+  .hd-contact-link2 {
+    font-size: 1.2rem;
+    font-family: BrandonText-Light;
   }
 }
