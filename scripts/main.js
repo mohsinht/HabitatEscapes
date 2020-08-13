@@ -1,12 +1,25 @@
 $(document).ready(function () {
+
+  var homeBanner = $('.main-banner');
+
   $(window).scroll(function () {
     if ($(this).scrollTop() > 750) {
       $('#header-logo').attr('src', 'assets/logo-2018.svg');
-      $('#filter-header').removeClass('d-none');
     } else {
       $('#header-logo').attr('src', 'assets/logo_white.png');
-      $('#filter-header').addClass('d-none');
     }
+
+    if ( homeBanner.length ) {
+      var bannerHt = $(homeBanner).height();
+      console.log('banner height: ', bannerHt);
+
+      $(this).scrollTop() > bannerHt ?
+        $('.property-search-bar').addClass('sticky').removeClass('bar-home')
+      :
+        $('.property-search-bar').addClass('bar-home').removeClass('sticky');
+    }
+  
+
   });
 
   $('.nav-button').click(function () {
@@ -14,20 +27,26 @@ $(document).ready(function () {
     $('.responsive-menu').toggleClass('d-none');
   });
 
-  $('#nav-menu-transparent').hover(function () {
-    $('.header').addClass('solid');
-    $('.header').removeClass('transparent');
-    $('.menu-wrapper').addClass('solid');
-    $('.menu-wrapper').removeClass('transparent');
-    $('#header-logo').attr('src', 'assets/logo-2018.svg');
+  $('.button-hd-search').on('click', this, function() {
+    $(this).closest('li').addClass('hd-search-active');
+    $('.site-header-wrap').addClass('search-on');
+    $('.hd-search-form input').focus();
+  })
+
+  function removeHdSearch() {
+    $('.hd-search-form').closest('li').removeClass('hd-search-active');
+    $('.site-header-wrap').removeClass('search-on');
+  }
+  $(document).mouseup(function(e) {
+    var searchBlock = $('.hd-search-block');
+
+    if (!searchBlock.is(e.target) && searchBlock.has(e.target).length === 0) {
+      removeHdSearch();
+    }
   });
 
-  $('#nav-menu-transparent').mouseleave(function () {
-    $('.header').addClass('transparent');
-    $('.header').removeClass('solid');
-    $('.menu-wrapper').removeClass('solid');
-    $('.menu-wrapper').addClass('transparent');
-    $('#header-logo').attr('src', 'assets/logo_white.png');
+  $(document).keyup(function(e) {
+    if (e.keyCode === 27) removeHdSearch();
   });
 
   $('.slider').slick();

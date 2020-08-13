@@ -74,13 +74,6 @@ button:focus {
   height: 4rem;
 }
 
-.header-section {
-  background-image: url(../assets/header_bg.jpg);
-  background-position: center;
-  background-size: cover;
-  min-height: 100vh;
-}
-
 .header-content {
   margin: 0rem 0.5rem;
 }
@@ -133,37 +126,6 @@ button:focus {
   color: black;
 }
 
-.header-mid .title {
-  font-family: var(--font-headings);
-  text-align: center;
-  color: white;
-  margin-top: 5rem;
-}
-
-.header-mid .title h1 {
-  font-size: 4.2rem;
-  margin: 0;
-}
-
-.header-mid .title h3 {
-  font-size: 1.6rem;
-  margin: 0;
-}
-
-.cta-container {
-  text-align: center;
-  margin-top: 4rem;
-}
-
-#filter-header {
-  position: fixed;
-  top: 0px;
-  background: white;
-  z-index: 100000;
-  width: 100%;
-}
-
-.cta-container button,
 .intro-cta button {
   background: var(--color-primary);
   border: none;
@@ -176,65 +138,6 @@ button:focus {
 
 .intro-cta {
   margin-top: 48px;
-}
-
-.booking-block {
-  background: white;
-  text-align: center;
-  max-width: 42rem;
-  align-items: center;
-  box-shadow: 4px 3px 4px #00000021;
-  margin: auto;
-  margin-top: 6rem;
-  min-height: 100px;
-}
-
-.booking-block .avl-btn {
-  margin: auto;
-  height: 100px;
-  text-transform: uppercase;
-  color: white;
-  background: var(--color-primary);
-  border: none;
-  font-size: 0.875rem;
-  letter-spacing: 1;
-  letter-spacing: 2px;
-  min-width: min-content;
-  margin-left: 14.7px;
-}
-
-.booking-block .option-block {
-  flex-direction: column;
-  align-self: flex-start;
-  padding-top: 0.3rem;
-}
-
-.booking-block .option-block .option-label {
-  border-right: none;
-  text-transform: uppercase;
-  font-size: 0.7rem;
-  letter-spacing: 0.1rem;
-}
-
-.booking-block .option-block .option-selection-dual {
-  margin-top: 0.5rem;
-}
-
-.booking-block .option-block .option-selection {
-  margin-top: 1rem;
-}
-
-.booking-block .property-search-bar-content {
-  padding: 0.6rem 1rem;
-  flex-wrap: nowrap;
-}
-
-.booking-block .btn-availability {
-  min-height: 5.9rem;
-  margin-top: -0.6rem;
-  margin-bottom: -0.6rem;
-  min-width: 10.75rem;
-  letter-spacing: 2px;
 }
 
 .intro-section.row {
@@ -647,8 +550,7 @@ button:focus {
   font-size: 0.6rem;
 }
 
-.footer-main .intro-cta button,
-.filter-header .intro-cta button {
+.footer-main .intro-cta button {
   padding: 0.8rem 1rem;
   font-size: 0.7rem;
 }
@@ -709,16 +611,6 @@ button:focus {
   width: 100%;
 }
 
-.filter-header {
-  background: white;
-  position: fixed;
-  margin: 0rem 0rem;
-  padding: 0.1rem 1rem 0.5rem 1rem;
-  top: 0px;
-  z-index: 10000;
-  width: -webkit-fill-available;
-  width: 100%;
-}
 
 /* Terms and Conditions */
 .tnc-tabcontent-heading {
@@ -1212,34 +1104,8 @@ a.num-link:hover {
   .footer-details {
     display: none;
   }
-  #filter-header {
-    display: none;
-  }
-  .booking-block .property-search-bar-content {
-    flex-direction: column;
-  }
-  .booking-block .option-block {
-    flex-direction: column;
-    align-self: auto;
-    padding-top: 1.5rem;
-    margin-right: 0px;
-  }
-  .booking-block .btn-availability {
-    min-height: 3.9rem;
-    margin-top: 1rem;
-    width: 100%;
-  }
-  .booking-block .control {
-    min-width: 100%;
-    padding-bottom: 0.5rem;
-  }
-  .booking-block .property-search-bar-content {
-    padding: 1rem 0rem;
-  }
-  .booking-block .property-search-bar-content {
-    flex-wrap: nowrap;
-  }
-
+  
+ 
   .menu-wrapper,
   .hd-contact-link,
   .list-hd-links li:nth-child(1),
