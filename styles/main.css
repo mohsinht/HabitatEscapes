@@ -1085,6 +1085,10 @@ a.num-link:hover {
   padding-top: 0.2px;
 }
 
+.footer-top-number {
+  padding-left: 2rem;
+}
+
 .responsive-menu {
   background: #ecf2e9;
   position: absolute;
