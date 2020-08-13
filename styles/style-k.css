@@ -717,12 +717,13 @@ img {
     opacity: 1;
 }
 
-
-
 .site-main-nav {
     margin-bottom: 0;
     border-top: 1px solid #ccc;
     position: relative;
+}
+.header-wrap-floating:not(:hover) .site-main-nav {
+  border-top-color: rgba(255,255,255,0.25);
 }
 .menu {
     padding-left: 0;
