@@ -725,6 +725,7 @@ img {
 .header-wrap-floating:not(:hover) .site-main-nav {
   border-top-color: rgba(255,255,255,0.25);
 }
+
 .menu {
     padding-left: 0;
     margin-bottom: 0;
