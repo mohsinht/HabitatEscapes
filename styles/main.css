@@ -38,6 +38,7 @@
   --font-headings: RotisSerifCE;
   --color-primary: #86b7d9;
   --color-primary-hover: #699bbe;
+  --color-default-text: #202226;
 }
 
 body {
@@ -335,7 +336,7 @@ button:focus {
   background: #2e3036;
 }
 .footer-bottom {
-  background: #202226;
+  background: var(--color-default-text);
   font-size: 0.8rem;
 }
 
