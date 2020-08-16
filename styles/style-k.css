@@ -4,7 +4,7 @@ html {
   font-size: 17px;
 }
 body {
-  color: #202226;
+  color: var(--color-default-text);
 }
 
 .btn {
@@ -654,7 +654,7 @@ img {
     visibility: visible;
 }
 .hd-search-form {
-    color: #202226;
+    color: var(--color-default-text);
     overflow: hidden;
     display: flex;
     flex-direction: row;
@@ -691,13 +691,17 @@ img {
     z-index: 100;
     position: relative;
 }
-.site-header-wrap.header-wrap-floating:not(:hover) {
+.site-header-wrap.header-wrap-floating {
     width: 100%;
     color: #fff;
     background-color: transparent;
     position: absolute;
     top: 0;
     left: 0;
+}
+.site-header-wrap.header-wrap-floating:hover {
+  color: var(--color-default-text);
+  background-color: #fff;
 }
 
 .site-header-wrap.search-on .site-logo {
@@ -866,9 +870,12 @@ img {
     min-height: 100vh;
     position: relative;
 }
-.main-banner .image img {
-    height: 100vh;
-    object-fit: cover;
+.main-banner .image-img {
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .banner-contents {
     width: 100%;
@@ -1845,10 +1852,6 @@ a.text-inherit:hover,
         padding-top: 0;
         padding-bottom: 3rem;
     }    
-    .main-banner .image img {
-        height: auto;
-        object-fit: none;
-    }
 
     /** Filter bar ***/
     .property-search-bar-content {
