@@ -22,10 +22,12 @@
     <div class="page-wrapper">
         <div class="site-header-wrap">
             <header class="site-header">
-                <div class="hd-signup">
-                    <a href="mailto:abc@mail.com" class="hd-contact-link"><i class="far fa-envelope pr-1"></i>
-                        Newsletter
-                        Sign up</a>
+                <div class="hd-left-block">
+                    <button class="nav-button d-xl-none" href="#"><i class="fas fa-bars"></i></button>
+                    <a href="mailto:abc@mail.com" class="hd-contact-link d-none d-md-inline-block">
+                        <i class="icon-envelope icon-whiteable pr-1"></i> Newsletter
+                        Sign up
+                    </a>
                 </div>
                 <div class="site-logo">
                     <a class="site-logo-link" href="index.html">
@@ -35,21 +37,21 @@
                 </div>
                 <div class="hd-links">
                     <ul class="list-hd-links">
-                        <li>
+                        <li class=" d-none d-md-inline-block">
                             <a href="tel:+44 (0) 1285 869 489">+44 (0) 1285 869 489</a>
                         </li>
-                        <li>
+                        <li class=" d-none d-md-inline-block">
                             <button class="button-hd-wishlist">
-                                <i class="far fa-heart"></i>
+                                <i class="icon-heart icon-whiteable"></i>
                                 <span class="wish-on"></span>
                             </button>
                         </li>
                         <li>
-                            <button class="button-hd-search"><i class="fa fa-search"></i></button>
+                            <button class="button-hd-search"><i class="icon-search icon-whiteable"></i></button>
                             <div class="hd-search-block">
                                 <form class="hd-search-form" action="#">
                                     <input class="hd-search-input" type="text">
-                                    <button type="submit" class="hd-search-button"><i class="fa fa-search"></i></button>
+                                    <button type="submit" class="hd-search-button"><i class="icon-search"></i></button>
                                 </form>
                             </div>
                         </li>
@@ -57,7 +59,140 @@
                 </div>
             </header><!-- /site-header -->
 
-            <div class="site-main-nav-bar d-none d-md-block">
+            <div class="responsive-menu container d-none">
+                <div class="header-content row flex-nowrap justify-content-between align-items-center mt-4">
+                    <button class="nav-button close-menu"><i class="icon-chevron-left"></i></button>
+                    <div class="justify-content-end text-right">
+                        <a class="rmenu-num" href=" tel:+44 (0) 1285 869 489">+44 (0) 1285 869 489</a> <a
+                            class="rmenu-icon" href="#"><i class="far fa-heart pl-4"></i></a>
+                    </div>
+                </div>
+
+                <div class="input-group search-box-outer mt-4 mb-4">
+                    <i class="fa fa-search"></i>
+                    <input class="form-control search-box-inner" placeholder="Search destination or property name">
+                </div>
+
+
+                <div class="row row-minus mt-2 r-menu-items">
+                    <div class="col-md-12">
+                        <h1>
+                            <a class="accordian-head collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseLocationR" aria-expanded="false" aria-controls="collapseLocationR"
+                                class="">Location <i class="icon-chevron-down mt-3"></i></a>
+                        </h1>
+
+                        <div id="collapseLocationR" class="collapse">
+                            <p class="mt-2 bolded-text"><a href="#">The Cotswolds</a></p>
+                            <p><a href="#">Lower Mill Estate</a></p>
+                            <p class="mt-4 bolded-text"><a href="#">Devon</a></p>
+                            <p><a href="#">Birchwood</a></p>
+
+                            <p class="mt-4 bolded-text"><a href="#">Dorset</a></p>
+                            <p><a href="#">Silverlake</a></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 mt-4">
+                        <h1>
+                            <a class="accordian-head collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseThingsToDoR" aria-expanded="false"
+                                aria-controls="collapseThingsToDoR" class="">Things to do <i
+                                    class="icon-chevron-down mt-3"></i></a>
+                        </h1>
+
+                        <div id="collapseThingsToDoR" class="collapse">
+                            <p class="mt-2"><a href="#">Seasonal</a></p>
+                            <p><a href="#">Restaurants</a></p>
+                            <p><a href="#">Tennis Sessions</a></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 mt-4">
+                        <h1>
+                            <a class="accordian-head collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseInspirationR" aria-expanded="false"
+                                aria-controls="collapseInspirationR" class="">Inspiration & Offers <i
+                                    class="icon-chevron-down mt-3"></i></a>
+                        </h1>
+
+                        <div id="collapseInspirationR" class="collapse">
+                            <p class="mt-2 bolded-text"><a href="#">Inspiration</a></p>
+                            <p class=""><a href="#">Hot tub Holidays</a></p>
+                            <p><a href="#">Family Swimming</a></p>
+                            <p><a href="#">Local Area</a></p>
+
+                            <p class="mt-4 bolded-text"><a href="#">Offers</a></p>
+                            <p class=""><a href="#">Kids go free</a></p>
+                            <p><a href="#">2 for 1</a></p>
+                            <p><a href="#">Offers on pools</a></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 mt-4">
+                        <h1>
+                            <a class="accordian-head collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseAboutR" aria-expanded="false" aria-controls="collapseAboutR"
+                                class="">About us <i class="icon-chevron-down mt-3"></i></a>
+                        </h1>
+                        <div id="collapseAboutR" class="collapse">
+                            <p class="mt-2"><a href="about.html">Our Story</a></p>
+                            <p><a href="inspiration.html">Why book with us</a></p>
+                            <p><a href="faq.html">FAQ’s</a></p>
+                            <p><a href="contactus.html">Contact us</a></p>
+                            <p><a href="news.html">News</a></p>
+                            <p><a href="blog_list.html">Blog</a></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 mt-4">
+                        <h1>
+                            <a class="accordian-head collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseMyBookingR" aria-expanded="false"
+                                aria-controls="collapseMyBookingR" class="">My Booking <i
+                                    class="icon-chevron-down mt-3"></i></a>
+                        </h1>
+                        <div id="collapseMyBookingR" class="collapse">
+                            <p class="mt-2"><a href="about.html">History</a></p>
+                            <p><a href="news.html">Account</a></p>
+                            <p><a href="blog_list.html">Bookings</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-minus">
+                    <div class="col-md-12">
+                        <p class="mt-4 bolded-text">Are you an owner?</p>
+                        <div class="intro-cta mt-2">
+                            <button class="btn btn-primary w-100 btn-with-icon">
+                                Log IN <i class="icon-long-right ml-3 mt-1-5"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-minus mt-4 mb-2">
+                    <div class="col-md-12">
+                        <a href="mailto:abc@mail.com" class="hd-contact-link2"><i class="icon-newsletter px-2"></i>
+                            <span class="ml-3 newsletter-text">Newsletter
+                                Sign
+                                up</span> </a>
+                    </div>
+                </div>
+
+                <div class="row row-minus mt-4 social-container">
+                    <div class=" col-md-12 text-center">
+                        <p class="social-icons mt-2">
+                            <a href="#"><i class="icon-twitter px-2"></i></a> &nbsp;<a href="#"><i
+                                    class="icon-fb px-2"></i></a>&nbsp;
+                            <a href="#"><i class="icon-instagram px-2"></a></i>
+                        </p>
+                    </div>
+                </div>
+
+            </div><!-- //.responsive-menu -->
+
+            <div class="site-main-nav-bar d-none d-xl-block">
                 <nav class="site-main-nav">
                     <ul class="menu">
                         <li>
@@ -158,27 +293,27 @@
                                                     </header>
                                                     <div class="row row-minus">
                                                         <div class="col-md-6 mb-3">
-                                                            <i class="icon-star mr-1"></i>
+                                                            <i class="icon-star-outline mr-1"></i>
                                                             Overview
                                                         </div>
                                                         <div class="col-md-6 mb-3">
-                                                            <i class="icon-star mr-1"></i>
+                                                            <i class="icon-cycle mr-1"></i>
                                                             Cycling
                                                         </div>
                                                         <div class="col-md-6 mb-3">
-                                                            <i class="icon-star mr-1"></i>
+                                                            <i class="icon-activities mr-1"></i>
                                                             Activities
                                                         </div>
                                                         <div class="col-md-6 mb-3">
-                                                            <i class="icon-star mr-1"></i>
+                                                            <i class="icon-spa mr-1"></i>
                                                             Spa
                                                         </div>
                                                         <div class="col-md-6 mb-3">
-                                                            <i class="icon-star mr-1"></i>
+                                                            <i class="icon-skating mr-1"></i>
                                                             Waterpark
                                                         </div>
                                                         <div class="col-md-6 mb-3">
-                                                            <i class="icon-star mr-1"></i>
+                                                            <i class="icon-food mr-1"></i>
                                                             Food & Drink
                                                         </div>
 
@@ -197,15 +332,15 @@
                                                     </header>
 
                                                     <div class="mb-3">
-                                                        <i class="icon-star mr-1"></i>
+                                                        <i class="icon-food mr-1"></i>
                                                         Italian Restaurant Title
                                                     </div>
                                                     <div class="mb-3">
-                                                        <i class="icon-star mr-1"></i>
+                                                        <i class="icon-food mr-1"></i>
                                                         Local Restaurant Title
                                                     </div>
                                                     <div class="mb-3">
-                                                        <i class="icon-star mr-1"></i>
+                                                        <i class="icon-food mr-1"></i>
                                                         Local Restaurant Title
                                                     </div>
 
@@ -449,7 +584,7 @@
                     </ul>
                 </nav>
             </div>
-        </div>
+        </div><!-- //.site-header-wrap -->
 
         <div class="property-search-bar">
             <div class="container">
