@@ -22,7 +22,7 @@ $(document).ready(function () {
 
   });
 
-  $('.nav-button').click(function () {
+  $('.nav-button').on('click', this, function () {
     $('body').toggleClass('nav-open');
     $('.responsive-menu').toggleClass('d-none');
   });
