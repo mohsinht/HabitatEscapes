@@ -1090,6 +1090,14 @@ a.num-link:hover {
   -webkit-text-stroke: 1px white;
 }
 
+.search-box-inner.form-control {
+  color: #5f636c;
+}
+
+.search-box-inner.form-control::placeholder {
+  color: #5f636c;
+}
+
 @media (max-width: 768px) {
   .side-text {
     display: none;
