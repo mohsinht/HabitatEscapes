@@ -1859,6 +1859,17 @@ a.text-inherit:hover,
   height: 3rem;
 }
 
+.property-box-list {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.property-box-list > li + li {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #ddd;
+}
+
 @media (min-width: 768px) {
     .site-header {
         padding: 10px 30px;
