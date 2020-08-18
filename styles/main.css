@@ -1087,10 +1087,13 @@ a.num-link:hover {
     max-width: 1300px;
 }
 
+<<<<<<< HEAD
 .thinner-fa {
   -webkit-text-stroke: 1px white;
 }
 
+=======
+>>>>>>> d7236f168534abbd19ffd267d1bf326d26bbdf8e
 @media (max-width: 768px) {
   .side-text {
     display: none;
