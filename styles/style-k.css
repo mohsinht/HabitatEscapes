@@ -256,6 +256,9 @@ h1 {
   color: #fff;
   background-color: var(--color-primary) !important;
 }
+.bg-blue-light {
+  background-color: #ecf2e9;
+}
 .bg-warning {
   background-color: #ebb75c !important;
 }
@@ -264,6 +267,9 @@ h1 {
 }
 .bg-gray-light {
   background-color: #f0f0f0;
+}
+.bg-red-light {
+  background-color: #fdf9f1;
 }
 
 .text-underline,
@@ -476,13 +482,21 @@ img {
   padding: 0.85rem 0;
   margin-bottom: 0;
 }
+.breadcrumb-item + .breadcrumb-item {
+  padding-left: 1rem;
+}
 .breadcrumb-item + .breadcrumb-item::before {
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 600;
-  content: '\f054';
-  font-size: 0.8em;
+  width: 7px;
+  height: 13px;
+  margin-right: 1rem;
+  content: '';
+  background: url('../assets/icons/breadcrumb-arrow.png') center center no-repeat;
+  background-size: contain;
   position: relative;
-  top: 0.15rem;
+  top: 0.35rem;
+}
+.breadcrumb-item a:not(:hover) {
+  color: #bbb;
 }
 
 /* Select Box */
@@ -1113,6 +1127,7 @@ img {
 }
 
 .box {
+  background-color: #fff;
   transition: all 0.25s ease-in;
 }
 .box.hoverable {
@@ -1122,7 +1137,7 @@ img {
   box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.15);
 }
 .box.shadowed {
-  box-shadow: 0px 0px 0.8rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.05);
 }
 .box.shadowed:hover {
   box-shadow: 0px 0px 1.25rem rgba(0, 0, 0, 0.2);
@@ -1443,9 +1458,6 @@ img {
   align-items: center;
   justify-content: flex-start;
 }
-.search-filter-bar .search-filters {
-  margin-bottom: 1rem;
-}
 .search-filter-bar .search-filters > strong,
 .search-filter-bar .search-sorts > strong {
   width: 120px;
@@ -1490,6 +1502,9 @@ img {
   font-weight: 400;
   text-transform: uppercase;
   font-size: 0.8em;
+}
+.filter-extra-block {
+  margin-top: 1rem;
 }
 
 .slick-slider {
