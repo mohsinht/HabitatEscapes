@@ -1086,6 +1086,10 @@ a.num-link:hover {
     max-width: 1300px;
 }
 
+.equal-width-container-2{
+    max-width: 1500px;
+}
+
 .thinner-fa {
   -webkit-text-stroke: 1px white;
 }
@@ -1096,6 +1100,18 @@ a.num-link:hover {
 
 .search-box-inner.form-control::placeholder {
   color: #5f636c;
+}
+
+.border-bottom {
+  border-bottom: #72757b solid 1px;
+}
+
+.border-right {
+  border-right: #72757b solid 1px;
+}
+
+.color-blue {
+  color: #85b6d9;
 }
 
 @media (max-width: 768px) {
