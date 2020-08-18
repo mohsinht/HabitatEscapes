@@ -985,7 +985,6 @@ a.num-link:hover {
   min-height: 100vh;
   z-index: 1000;
   min-width: 100%;
-  display: none;
   box-shadow: -1px 15px 20px 20px #00000047;
   color: #50545b !important;
 }
@@ -1142,10 +1141,6 @@ a.num-link:hover {
  
   .menu-wrapper {
     display: none;
-  }
-
-  .responsive-menu {
-    display: block;
   }
 
   .hd-contact-link2 {
