@@ -1065,7 +1065,7 @@ a.num-link:hover {
 }
 
 .instagram-feed img {
-  width: 8rem;
+  width: 8.89rem;
   height: 8rem;
   overflow: hidden;
   object-fit: cover;
@@ -1081,6 +1081,10 @@ a.num-link:hover {
 
 .footer-main .btn-with-icon {
   width: 10rem;
+}
+
+.equal-width-container {
+    max-width: 1300px;
 }
 
 @media (max-width: 768px) {
