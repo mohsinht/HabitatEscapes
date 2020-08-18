@@ -38,7 +38,7 @@
   --font-headings: RotisSerifCE;
   --color-primary: #86b7d9;
   --color-primary-hover: #699bbe;
-  --color-default-text: #202226;
+  --color-default-text: #50545b;
 }
 
 body {
@@ -1064,7 +1064,7 @@ a.num-link:hover {
 }
 
 .instagram-feed img {
-  width: 8rem;
+  width: 9.192rem;
   height: 8rem;
   overflow: hidden;
   object-fit: cover;
@@ -1080,6 +1080,14 @@ a.num-link:hover {
 
 .footer-main .btn-with-icon {
   width: 10rem;
+}
+
+.equal-width-container {
+    max-width: 1300px;
+}
+
+.thinner-fa {
+  -webkit-text-stroke: 1px white;
 }
 
 @media (max-width: 768px) {
