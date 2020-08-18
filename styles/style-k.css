@@ -1008,6 +1008,7 @@ img {
 }
 .text-heading {
   font-family: var(--font-headings);
+  font-weight: 400;
 }
 .text-heading small {
   font-family: BrandonText-Thin;
@@ -1117,20 +1118,21 @@ img {
 .box.hoverable {
   box-shadow: 0px 0px 0 rgba(0, 0, 0, 0);
 }
-.box.hoverable:hover,
-.box.shadowed:hover {
+.box.hoverable:hover {
   box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.15);
 }
 .box.shadowed {
-  padding: 0.5rem;
-  box-shadow: 0px 0px 0.8rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 0.8rem rgba(0, 0, 0, 0.1);
 }
 .box.shadowed:hover {
-  box-shadow: 0px 0px 1.25rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 1.25rem rgba(0, 0, 0, 0.2);
 }
 .box .box-text {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+.box.shadowed .box-text {
+  padding-bottom: 0.5rem;
 }
 .box-image {
   position: relative;
@@ -1837,6 +1839,10 @@ a.text-inherit:hover,
   padding-top: .1rem;
 }
 
+.subscription-section .form-control,
+.subscription-section .btn {
+  height: 3rem;
+}
 
 @media (min-width: 768px) {
     .site-header {
