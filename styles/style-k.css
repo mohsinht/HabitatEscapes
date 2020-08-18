@@ -681,6 +681,9 @@ img {
 .hd-contact-link {
   color: inherit;
 }
+.hd-contact-link [class^="icon-"] {
+  vertical-align: inherit;
+}
 
 .list-hd-links button {
     border: 0;
