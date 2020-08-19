@@ -747,8 +747,30 @@ button:focus {
 .team-card .card-body {
   padding: 0.8rem;
 }
+
+.ttd-card,
 .team-card {
   box-shadow: 3px 8px 13px #0000001f;
+}
+
+.ttd-card .team-name {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: var(--font-headings);
+}
+
+.ttd-card img {
+  padding: 0rem;
+}
+
+.ttd-card .card-body {
+  padding: 0.8rem;
+}
+
+.ttd-card .ttd-card-price{
+  padding: 0.675rem 0rem;
+  font-family: BrandonText-Light;
+  vertical-align: middle;
 }
 
 .footer-main .header-logo {
@@ -837,7 +859,7 @@ button:focus {
   text-transform: uppercase;
   z-index: 2;
   position: absolute;
-  bottom: 1rem;
+  top: 0.5rem;
   left: 0;
 }
 
@@ -847,7 +869,7 @@ button:focus {
 }
 .ttp-cardpoints-value {
   font-family: BrandonText-Medium;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 /* TTD landing page ends here */
 
@@ -1203,4 +1225,34 @@ a.num-link:hover {
   .menu-col h1 {
     margin-bottom: 2rem;
   }
+}
+
+.icon-difficulty {
+  /* width: 28px;
+  height: 25px; */
+  width: 18px;
+  height: 16px;
+  background-image: url('../assets/icons/difficulty.png');
+}
+.icon-age {
+  /* width: 20px;
+  height: 26px; */
+  width: 14px;
+  height: 21px;
+  background-image: url('../assets/icons/age.png');
+  padding-right:0.2rem;
+}
+.icon-attendees {
+  /* width: 31px;
+  height: 26px; */
+  width: 25px;
+  height: 21px;
+  background-image: url('../assets/icons/attendees.png');
+}
+.icon-spaces {
+  /* width: 30px;
+  height: 27px; */
+  width: 20px;
+  height: 18px;
+  background-image: url('../assets/icons/spaces.png');
 }
