@@ -712,6 +712,7 @@ button:focus {
 }
 .faq-answers .faq-answer {
   margin-top: 1rem;
+  color: #50545b;
 }
 
 /* FAQ page CSS ends here */
