@@ -1313,6 +1313,24 @@ a.num-link:hover {
   background-image: url('../assets/icons/tv.png');
 }
 
+.icon-contactus-social {
+  width: 30px;
+  height: 30px;
+  background-image: url('../assets/icons/contact_us_social.svg');
+}
+
+.icon-contactus-mail {
+  width: 30px;
+  height: 30px;
+  background-image: url('../assets/icons/contact_us_mail.svg');
+}
+
+.icon-contactus-officeopen {
+  width: 30px;
+  height: 30px;
+  background-image: url('../assets/icons/contact_us_office_open.svg');
+}
+
 .dark-starred {
   color: #cac2b5;
 }
