@@ -19,7 +19,7 @@
 
 <body>
   <div class="page-wrapper">
-    <header class="site-header header-sticky">
+    <header class="site-header header-sb header-sticky">
       <div class="site-logo">
         <a class="site-logo-link" href="index.html">
           <img class="logo" src="assets/logo_colored.png" />
@@ -27,15 +27,16 @@
       </div>
       <nav class="steps-nav">
         <ul class="list-steps-nav">
-          <li>Recommended Extras</li>
-          <li class="active">Your Details</li>
-          <li>Payment</li>
-          <li>Confirmation</li>
+          <li><i class="icon-chevron-left d-md-none mr-3"></i><span class="d-none d-md-inline">Recommended Extras</span>
+          </li>
+          <li class="active"><span>Your Details</span></li>
+          <li><i class="icon-chevron-right d-md-none ml-3"></i><span class="d-none d-md-inline">Payment</span></li>
+          <li class="d-none d-md-inline-block"><span>Confirmation</span></li>
         </ul>
       </nav>
       <div class="hd-links">
         <ul class="list-hd-links">
-          <li>
+          <li class="d-none d-md-inline-block">
             <a href="tel:+44 (0) 1285 869 489">+44 (0) 1285 869 489</a>
           </li>
         </ul>
@@ -54,7 +55,113 @@
     <main role="main">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-8">
+          <div class="col-lg-4 order-lg-last">
+
+            <div class="booking-stats-block accordion mb-5">
+              <header class="heading">
+                <h4 class="text-heading title mb-0">Your Booking</h4>
+              </header>
+              <div class="card">
+                <header class="card-header">
+                  <h6 class="mb-0">
+                    <button class="button-accordion bar-e2e" type="button" data-toggle="collapse"
+                      data-target="#collapseAccommodation" aria-expanded="true" aria-controls="collapseAccommodation">
+
+                      <span>Accommodation</span>
+                      <span>£1,600</span>
+
+                      <i class="fas fa-chevron-down"></i>
+                    </button>
+                  </h6>
+                </header>
+                <div id="collapseAccommodation" class="collapse show">
+                  <div class="card-body pb-0">
+                    <div class="stat">
+                      <p class="mb-0 text-bold"><strong>Location</strong></p>
+                      <p class="text-primary">Lower Mill Estate, Cotswolds</p>
+                    </div>
+                    <div class="stat">
+                      <p class="mb-0"><strong>Property</strong></p>
+                      <p class="text-primary">Kingfisher Lodge</p>
+                    </div>
+
+                    <div class="row row-minus">
+                      <div class="col-md-6">
+                        <div class="stat">
+                          <p class="mb-0"><strong>Check In</strong></p>
+                          <p class="text-primary">17 Aug 2020</p>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="stat">
+                          <p class="mb-0"><strong>Check Out</strong></p>
+                          <p class="text-primary">21 Aug 2020</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="stat">
+                      <p class="mb-0"><strong>Guests</strong></p>
+                      <p class="text-primary">2 Adults, 1 Child</p>
+                    </div>
+
+                    <footer class="bar-stat bar-border-top bar-e2e">
+                      <strong>Booking Fee</strong>
+                      <span>£25</span>
+                    </footer>
+
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <header class="card-header">
+                  <h6 class="mb-0">
+                    <button class="button-accordion bar-e2e" type="button" data-toggle="collapse"
+                      data-target="#collapseextra" aria-expanded="true" aria-controls="collapseextra">
+                      <span>Extra</span>
+                      <span>£125</span>
+                      <i class="fas fa-chevron-down"></i>
+                    </button>
+                  </h6>
+                </header>
+                <div id="collapseextra" class="collapse show">
+                  <div class="card-body pt-0 pb-0">
+                    <div class="bar-stat bar-e2e">
+                      <strong class="text-primary">Active Escapes Week Package</strong>
+                      <span>£125</span>
+                    </div>
+
+                    <div class="bar-stat bar-e2e bg-primary">
+                      <strong>Total</strong>
+                      <span>£1,175</span>
+                    </div>
+
+                    <div class="bar-stat bar-e2e">
+                      <strong>Security Deposit</strong>
+                      <span>£500</span>
+                    </div>
+
+                    <p>Magnam quod, quidem porro eaque expedita excepturi ad dolorum ipsam veniam tempore earum. Quia
+                      tenetur officiis maxime qui eaque quaerat ea consectetur.</p>
+
+                    <div class="bar-stat bar-e2e bg-gray-light">
+                      <strong>Deposit due now</strong>
+                      <span>£175</span>
+                    </div>
+
+                    <footer class="bar-stat bg-gray bar-e2e mt-2">
+                      <strong>Balance due Fri 01 July 2020</strong>
+                      <span>£175</span>
+                    </footer>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-8 order-lg-first">
             <div class="mb-4">
               <header class="mb-2">
                 <h3 class="text-heading">Your details</h3>
@@ -144,7 +251,7 @@
                     <input type="checkbox" class="form-check-input" id="agree-signup-check">
                     <label class="form-check-label" for="agree-signup-check">Sign up to Newsletter and receive updates
                   </div>
-                    about eating out, walks, health and fitness, family activities and much more</label>
+                  about eating out, walks, health and fitness, family activities and much more</label>
                 </div>
 
                 <div class="row row-minus">
@@ -376,227 +483,121 @@
             </div><!-- button-bar -->
 
           </div>
-          <div class="col-md-4">
-
-            <div class="booking-stats-block accordion">
-              <header class="heading">
-                <h4 class="text-heading title mb-0">Your Booking</h4>
-              </header>
-              <div class="card">
-                <header class="card-header">
-                  <h6 class="mb-0">
-                    <button class="button-accordion bar-e2e" type="button" data-toggle="collapse"
-                      data-target="#collapseAccommodation" aria-expanded="true" aria-controls="collapseAccommodation">
-
-                      <span>Accommodation</span>
-                      <span>£1,600</span>
-
-                      <i class="fas fa-chevron-down"></i>
-                    </button>
-                  </h6>
-                </header>
-                <div id="collapseAccommodation" class="collapse show">
-                  <div class="card-body pb-0">
-                    <div class="stat">
-                      <p class="mb-0 text-bold"><strong>Location</strong></p>
-                      <p class="text-primary">Lower Mill Estate, Cotswolds</p>
-                    </div>
-                    <div class="stat">
-                      <p class="mb-0"><strong>Property</strong></p>
-                      <p class="text-primary">Kingfisher Lodge</p>
-                    </div>
-
-                    <div class="row row-minus">
-                      <div class="col-md-6">
-                        <div class="stat">
-                          <p class="mb-0"><strong>Check In</strong></p>
-                          <p class="text-primary">17 Aug 2020</p>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="stat">
-                          <p class="mb-0"><strong>Check Out</strong></p>
-                          <p class="text-primary">21 Aug 2020</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="stat">
-                      <p class="mb-0"><strong>Guests</strong></p>
-                      <p class="text-primary">2 Adults, 1 Child</p>
-                    </div>
-
-                    <footer class="bar-stat bar-border-top bar-e2e">
-                      <strong>Booking Fee</strong>
-                      <span>£25</span>
-                    </footer>
-
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <header class="card-header">
-                  <h6 class="mb-0">
-                    <button class="button-accordion bar-e2e" type="button" data-toggle="collapse"
-                      data-target="#collapseextra" aria-expanded="true" aria-controls="collapseextra">
-                      <span>Extra</span>
-                      <span>£125</span>
-                      <i class="fas fa-chevron-down"></i>
-                    </button>
-                  </h6>
-                </header>
-                <div id="collapseextra" class="collapse show">
-                  <div class="card-body pt-0 pb-0">
-                    <div class="bar-stat bar-e2e">
-                      <strong class="text-primary">Active Escapes Week Package</strong>
-                      <span>£125</span>
-                    </div>
-
-                    <div class="bar-stat bar-e2e bg-primary">
-                      <strong>Total</strong>
-                      <span>£1,175</span>
-                    </div>
-
-                    <div class="bar-stat bar-e2e">
-                      <strong>Security Deposit</strong>
-                      <span>£500</span>
-                    </div>
-
-                    <p>Magnam quod, quidem porro eaque expedita excepturi ad dolorum ipsam veniam tempore earum. Quia
-                      tenetur officiis maxime qui eaque quaerat ea consectetur.</p>
-
-                    <div class="bar-stat bar-e2e bg-gray-light">
-                      <strong>Deposit due now</strong>
-                      <span>£175</span>
-                    </div>
-
-                    <footer class="bar-stat bg-gray bar-e2e mt-2">
-                      <strong>Balance due Fri 01 July 2020</strong>
-                      <span>£175</span>
-                    </footer>
-
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
 
         </div>
       </div>
     </main>
   </div>
 
-    <!-- FOOTER SECTION START -->
-    <div class="footer-section mt-4">
-      <div class="row justify-content-between footer-top">
-        <div class="col-md-6 property-rate">
-          <p class="footer-top-number"><span class="side-text">Call us today: </span><a href="tel:+4401285869489"
-              class="num-link">+44 (0) 1285 869
-              489</a></p>
-        </div>
-        <div class="col-md-6 justify-content-end text-right property-rooms">
+  <!-- FOOTER SECTION START -->
+  <div class="footer-section mt-4">
+    <div class="row justify-content-between footer-top">
+      <div class="col-md-6 property-rate">
+        <p class="footer-top-number"><span class="side-text">Call us today: </span><a href="tel:+4401285869489"
+            class="num-link">+44 (0) 1285 869
+            489</a></p>
+      </div>
+      <div class="col-md-6 justify-content-end text-right property-rooms">
 
-          <p class="social-icons">
-            <span class="side-text">Stay Connected &nbsp;&nbsp;</span>
-            <a href="#"><i class="icon-twitter px-2"></i></a> &nbsp;<a href="#"><i class="icon-fb px-2"></i></a>&nbsp;
-            <a href="#"><i class="icon-instagram px-2"></a></i>
-          </p>
+        <p class="social-icons">
+          <span class="side-text">Stay Connected &nbsp;&nbsp;</span>
+          <a href="#"><i class="icon-twitter px-2"></i></a> &nbsp;<a href="#"><i class="icon-fb px-2"></i></a>&nbsp;
+          <a href="#"><i class="icon-instagram px-2"></a></i>
+        </p>
+      </div>
+    </div>
+
+    <div class="row footer-main p-4">
+      <div class="col-md-6 p-4">
+        <div class=" logo-container">
+          <a href="index.html"><img class="header-logo pb-4" src="assets/logo_white.png" /></a>
+        </div>
+        <p class="footer-number">+44 (0) 1285 869 489</p>
+        <p class="footer-details">
+          Aenean imperdiet. Vestibulum suscipit nulla quis orci Nam pretium
+          turpis et arcu. Suspendisse faucibus, nunc et pellentesque
+          egestas, lacus ante convallis eul. <br />
+          <br />
+          Vestibulum dapibus nunc ac augue Morbi mollis tellus ac sapien.
+          Cras varius. Aliquam lobortis. Pellentesque egestas, neque sit
+          amet convallis pulvinar, justo nulla eleifend augue, ac auctor
+          orci leo non est. Morbi mattis ullamcorper velit. Nullam accumsan
+          lorem in dui.
+        </p>
+        <div class="blue-logos mt-4">
+          <img src="assets/habitat-zero-mono.png">
+          <img class="pl-4 pt-4" src="assets/blue-logo-2.png">
         </div>
       </div>
-
-      <div class="row footer-main p-4">
-        <div class="col-md-6 p-4">
-          <div class=" logo-container">
-            <a href="index.html"><img class="header-logo pb-4" src="assets/logo_white.png" /></a>
-          </div>
-          <p class="footer-number">+44 (0) 1285 869 489</p>
-          <p class="footer-details">
-            Aenean imperdiet. Vestibulum suscipit nulla quis orci Nam pretium
-            turpis et arcu. Suspendisse faucibus, nunc et pellentesque
-            egestas, lacus ante convallis eul. <br />
-            <br />
-            Vestibulum dapibus nunc ac augue Morbi mollis tellus ac sapien.
-            Cras varius. Aliquam lobortis. Pellentesque egestas, neque sit
-            amet convallis pulvinar, justo nulla eleifend augue, ac auctor
-            orci leo non est. Morbi mattis ullamcorper velit. Nullam accumsan
-            lorem in dui.
-          </p>
-          <div class="blue-logos mt-4">
-            <img src="assets/habitat-zero-mono.png">
-            <img class="pl-4 pt-4" src="assets/blue-logo-2.png">
-          </div>
-        </div>
-        <div class="col-md-2 menu-col">
-          <h1>
-            <a class="accordian-head collapsed" type="button" data-toggle="collapse" data-target="#collapseAbout"
-              aria-expanded="false" aria-controls="collapseAbout" class="">About us <i
-                class="fas fa-chevron-down"></i></a>
-          </h1>
-          <div id="collapseAbout" class="collapse">
-            <p class="mt-4"><a href="about.html">Our Story</a></p>
-            <p><a href="inspiration.html">Why book with us</a></p>
-            <p><a href="faq.html">FAQ’s</a></p>
-            <p><a href="contactus.html">Contact us</a></p>
-            <p><a href="news.html">News</a></p>
-            <p><a href="blog_list.html">Blog</a></p>
-          </div>
-        </div>
-        <div class="col-md-2  menu-col">
-          <h1>
-            <a class="accordian-head collapsed" type="button" data-toggle="collapse" data-target="#collapseLocation"
-              aria-expanded="false" aria-controls="collapseLocation" class="">Our locations <i
-                class="fas fa-chevron-down"></i></a>
-          </h1>
-          <div id="collapseLocation" class="collapse">
-            <p class="mt-4 bolded-text"><a href="#">The Cotswolds</a></p>
-            <p><a href="#">Lower Mill Estate</a></p>
-            <p class="mt-4 bolded-text"><a href="#">Devon</a></p>
-            <p><a href="#">Birchwood</a></p>
-
-            <p class="mt-4 bolded-text"><a href="#">Dorset</a></p>
-            <p><a href="#">Silverlake</a></p>
-          </div>
-        </div>
-        <div class="col-md-2  menu-col">
-          <h1>
-            <a class="accordian-head collapsed" type="button" data-toggle="collapse" data-target="#collapseOwners"
-              aria-expanded="false" aria-controls="collapseOwners" class="">Owners <i
-                class="fas fa-chevron-down"></i></a>
-          </h1>
-          <div id="collapseOwners" class="collapse">
-            <p class="mt-4 bolded-text">Are you an owner?</p>
-            <div class="intro-cta mt-2">
-              <button class="btn btn-primary btn-with-icon">
-                Log IN <i class="icon-long-right ml-3 mt-1-5"></i>
-              </button>
-            </div>
-            <p class="mt-4 bolded-text">Like to list a property?</p>
-            <div class="intro-cta mt-2">
-              <button class="btn btn-primary btn-with-icon">
-                List Now <i class="icon-long-right ml-3 mt-1-5"></i>
-              </button>
-            </div>
-          </div>
+      <div class="col-md-2 menu-col">
+        <h1>
+          <a class="accordian-head collapsed" type="button" data-toggle="collapse" data-target="#collapseAbout"
+            aria-expanded="false" aria-controls="collapseAbout" class="">About us <i
+              class="fas fa-chevron-down"></i></a>
+        </h1>
+        <div id="collapseAbout" class="collapse">
+          <p class="mt-4"><a href="about.html">Our Story</a></p>
+          <p><a href="inspiration.html">Why book with us</a></p>
+          <p><a href="faq.html">FAQ’s</a></p>
+          <p><a href="contactus.html">Contact us</a></p>
+          <p><a href="news.html">News</a></p>
+          <p><a href="blog_list.html">Blog</a></p>
         </div>
       </div>
+      <div class="col-md-2  menu-col">
+        <h1>
+          <a class="accordian-head collapsed" type="button" data-toggle="collapse" data-target="#collapseLocation"
+            aria-expanded="false" aria-controls="collapseLocation" class="">Our locations <i
+              class="fas fa-chevron-down"></i></a>
+        </h1>
+        <div id="collapseLocation" class="collapse">
+          <p class="mt-4 bolded-text"><a href="#">The Cotswolds</a></p>
+          <p><a href="#">Lower Mill Estate</a></p>
+          <p class="mt-4 bolded-text"><a href="#">Devon</a></p>
+          <p><a href="#">Birchwood</a></p>
 
-      <div class="row justify-content-between footer-bottom">
-        <div id="second" class="col-md-6 roperty-rate">
-          <p>Copyright © 2020 Habitat Escapes</p>
+          <p class="mt-4 bolded-text"><a href="#">Dorset</a></p>
+          <p><a href="#">Silverlake</a></p>
         </div>
-        <div id="first" class="col-md-6 justify-content-end text-right property-rooms">
-          <p>
-            <a href="tnc.html">Terms & Conditions</a>&nbsp; | &nbsp; <a href="tnc.html">Cookie Policy</a> &nbsp; |
-            &nbsp;
-            <a href="tnc.html">Privacy Policy</a> &nbsp; | &nbsp; <a href="tnc.html">Modern Slavery Act</a> &nbsp; |
-            &nbsp;
-            <a href="tnc.html">Sitemap</a>
-          </p>
+      </div>
+      <div class="col-md-2  menu-col">
+        <h1>
+          <a class="accordian-head collapsed" type="button" data-toggle="collapse" data-target="#collapseOwners"
+            aria-expanded="false" aria-controls="collapseOwners" class="">Owners <i class="fas fa-chevron-down"></i></a>
+        </h1>
+        <div id="collapseOwners" class="collapse">
+          <p class="mt-4 bolded-text">Are you an owner?</p>
+          <div class="intro-cta mt-2">
+            <button class="btn btn-primary btn-with-icon">
+              Log IN <i class="icon-long-right ml-3 mt-1-5"></i>
+            </button>
+          </div>
+          <p class="mt-4 bolded-text">Like to list a property?</p>
+          <div class="intro-cta mt-2">
+            <button class="btn btn-primary btn-with-icon">
+              List Now <i class="icon-long-right ml-3 mt-1-5"></i>
+            </button>
+          </div>
         </div>
       </div>
     </div>
-    <!-- FOOTER SECTION END -->
+
+    <div class="row justify-content-between footer-bottom">
+      <div id="second" class="col-md-6 roperty-rate">
+        <p>Copyright © 2020 Habitat Escapes</p>
+      </div>
+      <div id="first" class="col-md-6 justify-content-end text-right property-rooms">
+        <p>
+          <a href="tnc.html">Terms & Conditions</a>&nbsp; | &nbsp; <a href="tnc.html">Cookie Policy</a> &nbsp; |
+          &nbsp;
+          <a href="tnc.html">Privacy Policy</a> &nbsp; | &nbsp; <a href="tnc.html">Modern Slavery Act</a> &nbsp; |
+          &nbsp;
+          <a href="tnc.html">Sitemap</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- FOOTER SECTION END -->
 
   </div>
 
