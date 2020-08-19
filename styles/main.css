@@ -1229,31 +1229,22 @@ a.num-link:hover {
 }
 
 .icon-difficulty {
-  /* width: 28px;
-  height: 25px; */
-  width: 18px;
-  height: 16px;
+  width: 28px;
+  height: 25px;
   background-image: url('../assets/icons/difficulty.png');
 }
 .icon-age {
-  /* width: 20px;
-  height: 26px; */
-  width: 14px;
-  height: 21px;
+  width: 20px;
+  height: 26px;
   background-image: url('../assets/icons/age.png');
-  padding-right:0.2rem;
 }
 .icon-attendees {
-  /* width: 31px;
-  height: 26px; */
-  width: 25px;
-  height: 21px;
+  width: 31px;
+  height: 26px;
   background-image: url('../assets/icons/attendees.png');
 }
 .icon-spaces {
-  /* width: 30px;
-  height: 27px; */
-  width: 20px;
-  height: 18px;
+  width: 30px;
+  height: 27px;
   background-image: url('../assets/icons/spaces.png');
 }
