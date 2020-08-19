@@ -392,7 +392,7 @@ button:focus {
 .property-text {
   font-family: BrandonText-Light;
   font-size: 1rem;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 }
 
 .property-icons {
@@ -1247,4 +1247,72 @@ a.num-link:hover {
   width: 30px;
   height: 27px;
   background-image: url('../assets/icons/spaces.png');
+}
+
+.icon-bed {
+  /* width: 39px;
+  height: 32px;   */
+  width: 30px;
+  height: 30px;  
+  background-image: url('../assets/icons/bed.png');
+}
+
+.icon-pet {
+  /* width: 40px;
+  height: 35px;   */
+  width: 30px;
+  height: 30px;  
+  background-image: url('../assets/icons/pet.png');
+}
+
+.icon-hottub {
+  /* width: 36px;
+  height: 36px;   */
+  width: 30px;
+  height: 30px;  
+  background-image: url('../assets/icons/hot_tub.png');
+}
+
+.icon-campfire {
+  /* width: 35px;
+  height: 35px;   */
+  width: 30px;
+  height: 30px;  
+  background-image: url('../assets/icons/camp_fire.png');
+}
+
+.icon-bbq {
+  /* width: 34px;
+  height: 37px;   */
+  width: 30px;
+  height: 30px;  
+  background-image: url('../assets/icons/bbq.png');
+}
+
+.icon-highchair {
+  /* width: 28px;
+  height: 38px;   */
+  width: 30px;
+  height: 30px;  
+  background-image: url('../assets/icons/high_chair.png');
+}
+
+.icon-wifi {
+  /* width: 41px;
+  height: 31px;   */
+  width: 30px;
+  height: 30px;  
+  background-image: url('../assets/icons/wifi.png');
+}
+
+.icon-tv {
+  /* width: 38px;
+  height: 33px;   */
+  width: 30px;
+  height: 30px;  
+  background-image: url('../assets/icons/tv.png');
+}
+
+.dark-starred {
+  color: #cac2b5;
 }
