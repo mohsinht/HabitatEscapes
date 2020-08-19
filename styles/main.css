@@ -876,11 +876,12 @@ button:focus {
 /* Activity Things To Do page starts here */
 .attd-sub-heading {
   font-family: BrandonText-Light;
-  font-size: 1rem;
+  font-size: 0.8rem;
+  margin-top: 1rem;
 }
 
 .attd-sub-value {
-  font-family: BrandonText-Medium;
+  font-family: BrandonText-Light;
   font-size: 1rem;
   color: var(--color-primary);
 }
