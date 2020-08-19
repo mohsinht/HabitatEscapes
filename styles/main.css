@@ -727,6 +727,19 @@ button:focus {
 .contactus-social-icons {
   font-size: 2rem;
 }
+
+.contactus-submit-cta {
+  background-color: var(--color-primary);
+  color: white;
+  font-family: BrandonText-Medium;
+  font-size: 0.8rem;
+}
+
+.contactus-address-label {
+  font-family: RotisSerifCE;
+  color: #50545b;
+  font-size: 1.2rem;
+}
 /* Contact Us page ends here */
 
 .team-card .team-name {
