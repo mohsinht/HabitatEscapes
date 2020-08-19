@@ -49,7 +49,10 @@ $(document).ready(function () {
     if (e.keyCode === 27) removeHdSearch();
   });
 
-  $('.slider').slick();
+  if ( $('.slider').length ) {
+    $('.slider').slick();
+  }
+
 
   if ($('.slider-synced').length) {
     $('.slider-synced').each(function () {
