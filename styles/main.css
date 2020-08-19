@@ -652,9 +652,21 @@ button:focus {
 
 /* FAQ page CSS starts here */
 .faq a {
-  font-family: BrandonText-Medium;
-  font-size: 1rem;
+  font-family: RotisSerifCE;
+  font-size: 1.2rem;
+  color: #50545b;
 }
+
+.faq a[aria-selected="true"] {
+  color: #86b7d9;
+  
+}
+
+/* mouse over link */
+.faq a:hover {
+  color: #86b7d9;
+}
+
 /* for FAQ page */
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
@@ -668,17 +680,23 @@ button:focus {
 
 .faq-tab-content {
   border-left-style: solid;
-  border-color: #ddd;
+  border-color: #e1e1e1;
+  border-width: thin;
   padding-left: 2rem;
-  /* margin-left: 2rem; */
+}
+
+.faq-question-answer {
+  border-top-style: solid;
+  border-color: #e1e1e1;
+  border-width: thin;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .faq-questions {
-  font-family: BrandonText-Medium;
-  font-size: 1rem;
-  border-bottom-style: solid;
-  border-color: #ddd;
-  /* margin-left: 2rem; */
+  font-family: BrandonText-Light;
+  font-size: 1.1rem;
+
   padding-bottom: 1rem;
 }
 .faq-answers {
@@ -689,6 +707,7 @@ button:focus {
 .faq-answers .faq-question {
   font-family: BrandonText-Medium;
   font-size: 1rem;
+  color: #86b7d9;
   /* padding-bottom: 1rem; */
 }
 .faq-answers .faq-answer {
