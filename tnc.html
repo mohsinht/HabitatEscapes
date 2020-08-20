@@ -547,33 +547,42 @@
     <div class="relative-container" style="background-color: grey;">
       <img src="./assets/banner_thin.png" class="full-width">
       <div class="center-text-image">
-        <div class="center-text-image-h1 center-text-image-h1-lg">Legal</div>
+        <div class="center-text-image-h1 center-text-image-h1-lg">Terms & Conditions</div>
       </div>
     </div>
     <!-- Hero image ends -->
 
     <!-- container starts here -->
-    <div class="container">
-      <div class="row" style="margin-top: 2rem;">
-        <div class="col-sm-12 col-md-8">
-          <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <a class="nav-link active" id="tnc-tab" data-toggle="tab" href="#tnc" role="tab" aria-controls="tnc"
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <ul class="nav tnc-nav" id="myTab" role="tablist">
+            <li class="nav-item mt-3 py-0 px-0 tnc-nav-item-border" role="presentation">
+              <a class="nav-link active pl-0 py-0" id="tnc-tab" data-toggle="tab" href="#tnc" role="tab" aria-controls="tnc"
                 aria-selected="true">Terms & Conditions</a>
             </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" id="cookie-tab" data-toggle="tab" href="#cookie" role="tab" aria-controls="cookie"
+            <li class="nav-item mt-3 py-0 px-0 tnc-nav-item-border" role="presentation">
+              <a class="nav-link py-0" id="cookie-tab" data-toggle="tab" href="#cookie" role="tab" aria-controls="cookie"
                 aria-selected="false">Cookie Policy</a>
             </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" id="privacy-policy-tab" data-toggle="tab" href="#privacy-policy" role="tab"
+            <li class="nav-item mt-3 py-0 px-0 tnc-nav-item-border" role="presentation">
+              <a class="nav-link py-0" id="privacy-policy-tab" data-toggle="tab" href="#privacy-policy" role="tab"
                 aria-controls="privacy-policy" aria-selected="false">Privacy Policy</a>
             </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" id="modern-slavery-act-tab" data-toggle="tab" href="#modern-slavery-act" role="tab"
+            <li class="nav-item mt-3 py-0 px-0" role="presentation">
+              <a class="nav-link py-0" id="modern-slavery-act-tab" data-toggle="tab" href="#modern-slavery-act" role="tab"
                 aria-controls="modern-slavery-act" aria-selected="false">Modern Slavery Act</a>
             </li>
           </ul>
+        </div>
+      </div>
+      <hr />
+
+
+
+
+      <div class="row" style="margin-top: 2rem;">
+        <div class="col-sm-12 col-md-8">
           <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="tnc" role="tabpanel" aria-labelledby="tnc-tab"
               style="background-color: white;">
@@ -773,11 +782,15 @@
             Need Help?
           </div>
           <div class="tnc-help-subheading">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, dolore magna aliqua
+            Lorem ipsum dolor sit amet,<br />consectetur adipiscing elit, <br />dolore magna aliqua
           </div>
-          <div>
-            <a class="btn tnc-cta" href="#" role="button">Get In Touch</i></a>
+
+          <div class="intro-cta mt-3">
+            <div>
+              <a class="btn contactus-submit-cta" href="#" role="button">Contact us <i class="fa fa-long-arrow-alt-right pl-2"></i></a>
+            </div>
           </div>
+
         </div>
       </div>
       <hr />

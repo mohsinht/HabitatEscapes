@@ -618,18 +618,17 @@ button:focus {
   font-family: var(--font-headings);
   line-height: 4.5rem;
   font-size: 2rem;
-  padding-top: 2rem;
 }
 .tnc-help {
   text-align: center;
 }
 .tnc-help-title {
   font-family: var(--font-headings);
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .tnc-help-subheading {
-  font-family: BrandonText-Medium;
+  font-family: BrandonText-Light;
   font-size: 1rem;
 }
 .tnc-cta {
@@ -676,6 +675,23 @@ button:focus {
 .tab-content > .active {
   background-color: white;
   /* background: white; */
+}
+
+.tnc-nav .tnc-nav-item-border {
+  border-right-style: solid;
+  border-color: #e1e1e1;
+  border-width: thin;  
+}
+
+.tnc-nav .nav-link {
+  font-family: BrandonText-Light;
+  font-size: 0.8rem;
+  color: #202226;
+}
+
+.tnc-nav a[aria-selected="true"] {
+  font-family: BrandonText-Medium;
+  
 }
 
 .faq-tab-content {
