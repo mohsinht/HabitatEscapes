@@ -849,7 +849,8 @@ button:focus {
 
 .about-story .story-date {
   font-weight: 800;
-  font-size: 1rem;
+  font-size: 1.45rem;
+  font-family: RotisSerifCE;
 }
 
 .team-card .team-date {
@@ -1484,4 +1485,73 @@ a.num-link:hover {
   .subscription-section .col-md-4{
     padding-bottom: 1rem;
   }
+}
+
+.about-img1 {
+  max-width: 18rem;
+  margin-right: 0;
+  margin-left: 2rem;
+}
+
+.about-img2 {
+  max-width: 15rem;
+  position: relative;
+  margin-top: -24rem;
+  margin-right: 5rem;
+}
+
+@media (min-width: 1280px) { 
+  .about-img2 {
+    max-width: 14vw;
+    position: relative;
+    margin-top: -26vw;
+    margin-right: 9vw;
+  }
+  .about-img1 {
+    max-width: 20vw;
+    margin-right: 0;
+    margin-left: 1vw;
+  } 
+}
+
+.story-tb {
+  width: 5rem;
+}
+
+.timeline-right{
+  font-size: 3rem;
+  display: inline-block;
+  position: absolute;
+  margin-top: -7rem;
+  margin-left: 9.5vw;
+  color: darkgrey;
+}
+
+@media (max-width: 768px) { 
+  .timeline-right{
+    font-size: 3rem;
+    display: inline-block;
+    position: inherit;
+    /* margin-top: -7rem; */
+    /* margin-left: 9.5vw; */
+    color: darkgrey;
+    transform: translateY(-50%) rotate(90deg);
+    margin-top: 2rem;
+    margin-left: 0;
+  }
+}
+
+
+  .news-cards .team-card .card-body {
+    padding: 0.8rem 0rem;
+  }
+
+.news-cards .team-card{
+  border: none;
+  box-shadow: none;
+  padding: 10px;
+}
+
+.news-cards .team-card:hover{
+  box-shadow: 3px 8px 13px #0000001f;
 }
