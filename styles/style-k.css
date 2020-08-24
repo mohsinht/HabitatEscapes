@@ -852,7 +852,7 @@ img {
 .menu > li:hover > a:hover {
     color: inherit;
 }
-.menu a:hover {
+.menu a:hover{
     color: var(--color-primary);
 }
 .menu > li > a {
