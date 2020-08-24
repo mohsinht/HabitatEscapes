@@ -84,6 +84,10 @@ button:focus {
   font-family: BrandonText-Light;
 }
 
+.container-fluid {
+  overflow-x: hidden;
+}
+
 .menu-wrapper {
   border-bottom: 0.05rem solid #e5e5e5;
 }
