@@ -1555,3 +1555,7 @@ a.num-link:hover {
 .news-cards .team-card:hover{
   box-shadow: 3px 8px 13px #0000001f;
 }
+
+.property-info-box:hover {
+  box-shadow: 0px 0px 1.25rem rgba(0, 0, 0, 0.2);
+}
