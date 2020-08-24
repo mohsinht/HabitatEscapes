@@ -855,6 +855,9 @@ img {
 .menu a:hover{
     color: var(--color-primary);
 }
+.menu a.btn:hover{
+  color: inherit;
+}
 .menu > li > a {
     padding: .8rem 1rem;
     display: block;
