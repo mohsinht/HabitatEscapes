@@ -84,10 +84,6 @@ button:focus {
   font-family: BrandonText-Light;
 }
 
-.container-fluid {
-  overflow-x: hidden;
-}
-
 .menu-wrapper {
   border-bottom: 0.05rem solid #e5e5e5;
 }
@@ -1591,4 +1587,25 @@ a.num-link:hover {
   .icon-spaces {
     width: 22px;
   }
+}
+
+.grid-toggle {
+  padding: 0.5rem 0.8rem;
+  border: #969696 solid 1px;
+  border-radius: 0.3rem;
+  margin-right: 1rem;
+}
+.grid-toggle img {
+  width: 1.5rem;
+  cursor: pointer;
+}
+.grid-toggle .f-img {
+  margin-right: 0.5rem;
+  border-right: #ced4da solid 1px;
+  padding-right: 0.5rem;
+  width: 2rem;
+}
+.grid-toggle .blur-img {
+  filter: brightness(0.1) sepia(0.2) hue-rotate(1deg) saturate(0);
+  opacity: 0.2;
 }
