@@ -1616,3 +1616,11 @@ a.num-link:hover {
 .row.contactus-social-icons a:hover {
   color: #76a0bd;
 }
+
+.news-block-text .text-heading {
+  font-size: 1.5rem;
+}
+
+.news-block-text .prop-foot-left .text-muted{
+  color: var(--color-primary) !important;
+}
