@@ -630,6 +630,7 @@ button:focus {
 .tnc-help-subheading {
   font-family: BrandonText-Light;
   font-size: 1rem;
+  padding-top: 0.45rem;
 }
 .tnc-cta {
   background-color: var(--color-primary);
@@ -641,7 +642,7 @@ button:focus {
 
 @media screen and (min-width: 700px) {
   .tnc-help-align {
-    margin-top: 10rem;
+    margin-top: 0.85rem;
   }
 
   .center-text-image-h1-lg {
