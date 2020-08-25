@@ -1609,3 +1609,7 @@ a.num-link:hover {
   filter: brightness(0.1) sepia(0.2) hue-rotate(1deg) saturate(0);
   opacity: 0.2;
 }
+
+.row.contactus-social-icons a:hover {
+  color: #76a0bd;
+}
