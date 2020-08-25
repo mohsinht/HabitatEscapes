@@ -844,11 +844,13 @@ button:focus {
 
 .benefit-text h3 {
   font-weight: 800;
-  font-size: 1rem;
+  font-size: 1.35rem;
+  font-family: RotisSerifCE;
+  color: #72757b;
 }
 
 .about-story .story-date {
-  font-weight: 800;
+  font-weight: 400;
   font-size: 1.45rem;
   font-family: RotisSerifCE;
 }
@@ -862,8 +864,8 @@ button:focus {
 }
 
 .about-faq .property_features_heading {
-  font-family: BrandonText-Regular;
-  font-size: 1.2rem;
+  font-size: 1.35rem;
+  font-family: RotisSerifCE;
 }
 
 .about-faq-accordian {
