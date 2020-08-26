@@ -650,6 +650,29 @@ button:focus {
   }
 }
 
+.order-sm-1 {
+  order:2;
+}
+.order-sm-2 {
+  order:1;
+}
+@media (max-width: 700px){
+  img.hero-image {
+    height: 20rem;
+    object-fit: cover;
+  }
+
+  .order-sm-1 {
+    order:1;
+  }
+  .order-sm-2 {
+    order:2;
+  }
+
+  .adc {
+    border:0px;
+  }
+}
 /* FAQ page CSS starts here */
 .faq a {
   font-family: RotisSerifCE;
