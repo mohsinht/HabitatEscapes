@@ -1624,3 +1624,24 @@ a.num-link:hover {
 .news-block-text .prop-foot-left .text-muted{
   color: var(--color-primary) !important;
 }
+
+.input-group.blog-search{
+  flex-direction: row;
+}
+
+.blog-search.search-box-outer .fa-search {
+  margin-top: 12px;
+  margin-right: 0;
+  margin-left: 10px;
+  font-size: 0.8rem;
+}
+
+.blog-search.search-box-outer .search-box-inner.form-control {
+  color: #5f636c;
+  font-size: 0.8rem;
+}
+
+.blog-search.input-group.search-box-outer {
+  background: #f0f0f0;
+  padding: 0rem 0rem;
+}
