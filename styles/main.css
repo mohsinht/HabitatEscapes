@@ -1645,3 +1645,16 @@ a.num-link:hover {
   background: #f0f0f0;
   padding: 0rem 0rem;
 }
+
+.right-widget .text-heading h3{
+  font-weight: 200;
+}
+
+.blog-link {
+  text-decoration: underline;
+}
+
+.blog-image-row img{
+  height: 15rem;
+  object-fit: cover;
+}
