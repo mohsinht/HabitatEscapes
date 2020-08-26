@@ -499,6 +499,11 @@ img {
   color: #bbb;
 }
 
+@media (max-width: 767px) {
+  .breadcrumb .breadcrumb-item{
+    font-size: 0.8rem;
+  }
+}
 /* Select Box */
 .select-box,
 .select-box-vertical,
