@@ -579,6 +579,11 @@ button:focus {
   color: white;
 }
 
+.center-text-banner-h1 {
+  font-family: var(--font-headings);
+  color: white;
+}
+
 .full-width {
   width: 100%;
 }
@@ -650,6 +655,10 @@ button:focus {
   .center-text-image-h1-lg {
     font-size: 3.2rem;
   }
+
+  .center-text-banner-h1-lg {
+    font-size: 3.2rem;
+  }
 }
 
 .order-sm-1 {
@@ -662,6 +671,7 @@ button:focus {
   img.hero-image {
     height: 20rem;
     object-fit: cover;
+    width:100%;
   }
 
   .order-sm-1 {
@@ -674,7 +684,19 @@ button:focus {
   .adc {
     border:0px;
   }
+
+  .center-text-image-h1 {
+    font-size: 3rem;
+  }
+  .center-text-banner-h1 {
+    font-size: 1.5rem;
+  }
+  .center-text-image {
+    top: 20%;
+  }
 }
+
+
 /* FAQ page CSS starts here */
 .faq a {
   font-family: RotisSerifCE;
