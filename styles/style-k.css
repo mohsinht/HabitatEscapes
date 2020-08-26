@@ -2136,7 +2136,17 @@ a.text-inherit:hover,
     .more-button-bar {
       margin-left: calc(200px + 1rem);
     }
-
+    .property-tabs .tab{ 
+      font-size: 0.5rem;
+    }
+    .btn-pre-icon, .btn-post-icon {
+      padding-left: 0.2rem;
+      padding-right: 0.2rem;
+    }
+    .property-block-text .button-bar .btn {
+      flex: 1;
+      font-size: 0.5rem;
+    }
 }
 
 @media (max-width: 767px) {
@@ -2152,5 +2162,13 @@ a.text-inherit:hover,
   .footer-main .btn-with-icon {
     width: 6rem;
     font-size: 0.6rem;
+  }
+  
+}
+
+
+@media (max-width: 1035px) and (min-width: 988px){
+  .booking-detail-form label{
+    font-size: 0.8rem;
   }
 }
