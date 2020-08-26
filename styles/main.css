@@ -359,9 +359,9 @@ button:focus {
 }
 
 /* added by ghufran */
-.breadcrumb-item + .breadcrumb-item::before {
+/* .breadcrumb-item + .breadcrumb-item::before {
   content: '>';
-}
+} */
 
 /* .breadcrumb {background-color: none;} */
 /* added by ghufran */
