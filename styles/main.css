@@ -980,6 +980,7 @@ button:focus {
   display: flex;
   justify-content: space-between;
   transition: all 0.25s ease-in;
+  padding-top: 0.5rem;
 }
 
 .footer-main .accordian-head .fas,
@@ -1244,6 +1245,8 @@ a.num-link:hover {
   }
   .responsive-menu .accordian-head.collapsed {
     border-bottom: solid #aeaeae 1px;
+    padding-bottom: 0;
+    padding-bottom: 0;
   }
   .footer-details {
     display: none;
@@ -1572,6 +1575,9 @@ a.num-link:hover {
   .card-deck {
     flex-direction: column;
   }
+  .steps-nav{
+    margin-top: 1rem;
+  }
 
 }
 
@@ -1658,3 +1664,4 @@ a.num-link:hover {
   height: 15rem;
   object-fit: cover;
 }
+
