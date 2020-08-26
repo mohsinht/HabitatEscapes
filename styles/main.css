@@ -200,6 +200,8 @@ button:focus {
   align-items: center;
   justify-content: center;
   color: white;
+  background-size: cover;
+    background-position: center;
 }
 
 .destination-box h1 {
