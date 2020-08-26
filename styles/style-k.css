@@ -2172,3 +2172,7 @@ a.text-inherit:hover,
     font-size: 0.8rem;
   }
 }
+
+.subscription-section .btn {
+  padding: 0rem 0rem;
+}
