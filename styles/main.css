@@ -1819,3 +1819,13 @@ a.num-link:hover {
   margin-top: 1rem;
 }
 }
+
+@media (min-width: 768px) {
+  .main-slider-wrapper .slider-thumbs .thumb {
+    height: 10vw;
+  }
+  .main-slider-wrapper .slider-thumbs .thumb img{
+    height: 10vw;
+    object-fit: cover;
+  }
+}
