@@ -117,21 +117,3 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
-
-@media (max-width: 768px) {
-    .thumb.slick-slide {
-        display: none;
-    }
-    .slider-thumbs-count{
-        display: none;
-    }
-    .slick-slide {
-        display: none;
-        float: left;
-        height: 19rem;
-    }
-    .slick-slide img{
-        height: 19rem;
-        object-fit: cover;
-    }
-}

@@ -2173,3 +2173,96 @@ a.text-inherit:hover,
 .subscription-section .btn {
   padding: 0rem 0rem;
 }
+
+
+
+@media (min-width: 769px) {
+  .main-slide .view-gallery {
+      display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .thumb.slick-slide {
+      display: none;
+  }
+  .slider-thumbs-count{
+      display: none;
+  }
+  .main-slide.slick-slide {
+      float: left;
+      height: 22rem;
+  }
+  .slick-slide img{
+      height: 22rem;
+      object-fit: cover;
+  }
+
+  .main-slide .view-gallery {
+      padding: 0.5rem 1rem;
+      text-transform: uppercase;
+      font-size: 0.7rem;
+      position: absolute;
+      right: 1.5rem;
+      top: 2.2rem;
+      color: white;
+      background: #00000087;
+      border-radius: 1rem;
+      cursor: pointer;
+  }
+
+  .main-slide .slider-caption .slider-heading .title{
+      font-size: 1.6rem;
+  }
+
+  .main-slide .slider-caption .caption-text {
+      font-size: 0.8rem;
+  }
+  .main-slide .slider-caption {
+      padding: 0 1rem;
+  }
+
+  .visitor-block .property-visitorfeedback-carousel-comment {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .visitor-block .property-visitor-name {
+    margin-bottom: 0.5rem;
+  }
+
+  .visitor-block .starred {
+    padding: 0rem 0.5rem;
+  }
+
+  .visitor-slider .slick-slider.arrows-lg .slick-arrow::before {
+    width: 37px;
+    height: 98px;
+  }
+
+  .visitor-feedback-section .slick-slider .slick-arrow::before {
+    top: 23%;
+  }
+
+  .visitor-feedback-section  .slick-slide img {
+    height: 10rem;
+    object-fit: cover;
+  }
+
+  .activitynevent-card img {
+    max-width: 100%;
+    height: auto;
+    max-height: 14rem;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .activities-events-section .h3, h3 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 428px) {
+  .main-slide .property-stats {
+      display: none;
+  }
+}

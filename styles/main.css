@@ -1717,3 +1717,42 @@ a.num-link:hover {
   object-fit: cover;
 }
 
+.row.property-accordians-margin .col-12,.row.property-accordians-margin .col-4 {
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .property-accordian-card-body .icon-bed,
+  .property-accordian-card-body .icon-campfire,
+  .property-accordian-card-body .icon-highchair,
+  .property-accordian-card-body .icon-pet,
+  .property-accordian-card-body .icon-bbq,
+  .property-accordian-card-body .icon-wifi,
+  .property-accordian-card-body .icon-spa,
+  .property-accordian-card-body .icon-tv,
+  .property-accordian-card-body .icon-hottub{
+    width: 20px;
+    height: 20px;
+  }
+
+  .property-accordian-card-body .property-text {
+    font-size: 0.8rem;
+    margin-left: 3vw;
+  }
+
+  .property-accordian-card-body {
+    padding: 2rem 0rem;
+    padding-left: 1.7rem;
+  }
+
+  .property-accordian-card-body .container-fluid {
+    padding: 0;
+  }
+
+  .virtual-tour .container-fluid {
+    padding: 0;
+  }
+  .virtual-tour .h3{
+    font-size: 2rem;
+  }
+}
