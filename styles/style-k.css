@@ -2136,9 +2136,6 @@ a.text-inherit:hover,
     .more-button-bar {
       margin-left: calc(200px + 1rem);
     }
-    .property-tabs .tab{ 
-      font-size: 0.5rem;
-    }
     .btn-pre-icon, .btn-post-icon {
       padding-left: 0.2rem;
       padding-right: 0.2rem;
