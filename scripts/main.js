@@ -81,6 +81,7 @@ $(document).ready(function () {
         arrows: arrowsMain,
         fade: fade,
         asNavFor: sliderNav,
+        dots: false,
       });
       $(sliderNav).slick({
         slidesToShow: navCount,
