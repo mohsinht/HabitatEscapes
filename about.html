@@ -52,7 +52,9 @@
               </button>
             </li>
             <li>
-              <button class="button-hd-search"><i class="icon-search icon-whiteable"></i></button>
+              <button class="button-hd-search d-none d-xl-inline-block"><i
+                  class="icon-search icon-whiteable"></i></button>
+              <button class="button-search-resp d-xl-none"><i class="icon-search icon-whiteable"></i></button>
               <div class="hd-search-block">
                 <form class="hd-search-form" action="#">
                   <input class="hd-search-input" type="text">
@@ -193,6 +195,54 @@
 
       </div><!-- //.responsive-menu -->
 
+      <div class="responsive-search-block d-none">
+        <div class="form-group">
+          <div class="option-label mb-1">Location</div>
+          <div class="select-box dark">
+            <select class="form-select">
+              <option value="pick-location">Pick Location</option>
+              <option value="1">Location One</option>
+              <option value="2">Location Two</option>
+              <option value="3">Location Three</option>
+            </select>
+          </div>
+        </div><!-- /form-group -->
+
+        <div class="form-group">
+          <div class="option-label mb-1">Date</div>
+          <div class="option-selection-dual full-width">
+            <input type="text" class="form-control" value="15" min="1" max="31" />
+          </div>
+        </div><!-- /form-group -->
+
+        <div class="form-group">
+          <div class="option-label mb-1">Guests</div>
+          <div class="option-selection-dual full-width">
+            <input type="number" class="form-control selected-digit" value="1" min="0" />
+            <div class="number-controls-vertical">
+              <button class="button-iconic increment"><i class="fas fa-chevron-up"></i></button>
+              <button class="button-iconic decrement"><i class="fas fa-chevron-down"></i></button>
+            </div>
+          </div>
+        </div><!-- /form-group -->
+
+        <div class="form-group">
+          <div class="option-label mb-1">Duration</div>
+          <div class="option-selection-dual full-width">
+            <input type="number" class="form-control selected-digit" value="4" min="0" />
+            <div class="number-controls-vertical">
+              <button class="button-iconic increment"><i class="fas fa-chevron-up"></i></button>
+              <button class="button-iconic  decrement"><i class="fas fa-chevron-down"></i></button>
+            </div>
+          </div>
+        </div><!-- /form-group -->
+
+        <div class="control">
+          <button class="btn btn-primary btn-block">Check Availability</button>
+        </div>
+      </div><!-- //.responsive-search-block -->
+
+
       <div class="site-main-nav-bar d-none d-xl-block">
         <nav class="site-main-nav">
           <ul class="menu">
@@ -290,7 +340,7 @@
                             <p class="text-sm">Quidem modi sapiente veritatis, qui enim suscipit harum magni eligendi
                               earum saepe iure <a href="#" class="text-primary">View all</a></p>
                           </header>
-                                                    <ul class="list-iconic-menu">
+                          <ul class="list-iconic-menu">
                             <li><a href="#"><i class="icon-star-outline mr-2"></i><span>Overview</span></a></li>
                             <li><a href="#"><i class="icon-cycle mr-2"></i><span>Cycling</span></a></li>
                             <li><a href="#"><i class="icon-activities mr-2"></i><span>Activities</span></a></li>
@@ -311,20 +361,20 @@
 
                           <div class="mb-3">
                             <a href="#">
-                            <i class="icon-food mr-1"></i>
-                            Italian Restaurant Title
+                              <i class="icon-food mr-1"></i>
+                              Italian Restaurant Title
                             </a>
                           </div>
                           <div class="mb-3">
                             <a href="#">
-                            <i class="icon-food mr-1"></i>
-                            Local Restaurant Title
-                          </a>
+                              <i class="icon-food mr-1"></i>
+                              Local Restaurant Title
+                            </a>
                           </div>
                           <div class="mb-3">
                             <a href="#">
-                            <i class="icon-food mr-1"></i>
-                            Local Restaurant Title
+                              <i class="icon-food mr-1"></i>
+                              Local Restaurant Title
                             </a>
                           </div>
 
@@ -561,33 +611,33 @@
       </div>
       <!-- Hero image ends -->
       <div class="container-fluid">
-      <div class="row ml-4 pl-5">
-        <div class="col-12">
-          <ul class="nav tnc-nav" id="myTab" role="tablist">
-            <li class="nav-item mt-3 py-0 px-0 tnc-nav-item-border" role="presentation">
-              <a class="nav-link active pl-0 py-0" id="tnc-tab" href="#tnc">Our Story</a>
-            </li>
-            <li class="nav-item mt-3 py-0 px-0 tnc-nav-item-border" role="presentation">
-              <a class="nav-link py-0" id="cookie-tab" href="team.html">Meeting the Team</a>
-            </li>
-            <li class="nav-item mt-3 py-0 px-0 tnc-nav-item-border" role="presentation">
-              <a class="nav-link py-0" id="privacy-policy-tab" href="#privacy-policy">Why book with us?</a>
-            </li>
-            <li class="nav-item mt-3 py-0 px-0 tnc-nav-item-border" role="presentation">
-              <a class="nav-link py-0" id="modern-slavery-act-tab" href="#modern-slavery-act" >FAQ's</a>
-            </li>
-            <li class="nav-item mt-3 py-0 px-0 tnc-nav-item-border" role="presentation">
-              <a class="nav-link py-0" id="modern-slavery-act-tab" href="#modern-slavery-act" >News</a>
-            </li>
-            <li class="nav-item mt-3 py-0 px-0 tnc-nav-item-border" role="presentation">
-              <a class="nav-link py-0" id="modern-slavery-act-tab" href="blog.html" >Blog</a>
-            </li>
-            <li class="nav-item mt-3 py-0 px-0" role="presentation">
-              <a class="nav-link py-0" id="modern-slavery-act-tab" href="#modern-slavery-act" >Contact us</a>
-            </li>
-          </ul>
+        <div class="row ml-4 pl-5">
+          <div class="col-12">
+            <ul class="nav tnc-nav" id="myTab" role="tablist">
+              <li class="nav-item mt-3 py-0 px-0 tnc-nav-item-border" role="presentation">
+                <a class="nav-link active pl-0 py-0" id="tnc-tab" href="#tnc">Our Story</a>
+              </li>
+              <li class="nav-item mt-3 py-0 px-0 tnc-nav-item-border" role="presentation">
+                <a class="nav-link py-0" id="cookie-tab" href="team.html">Meeting the Team</a>
+              </li>
+              <li class="nav-item mt-3 py-0 px-0 tnc-nav-item-border" role="presentation">
+                <a class="nav-link py-0" id="privacy-policy-tab" href="#privacy-policy">Why book with us?</a>
+              </li>
+              <li class="nav-item mt-3 py-0 px-0 tnc-nav-item-border" role="presentation">
+                <a class="nav-link py-0" id="modern-slavery-act-tab" href="#modern-slavery-act">FAQ's</a>
+              </li>
+              <li class="nav-item mt-3 py-0 px-0 tnc-nav-item-border" role="presentation">
+                <a class="nav-link py-0" id="modern-slavery-act-tab" href="#modern-slavery-act">News</a>
+              </li>
+              <li class="nav-item mt-3 py-0 px-0 tnc-nav-item-border" role="presentation">
+                <a class="nav-link py-0" id="modern-slavery-act-tab" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item mt-3 py-0 px-0" role="presentation">
+                <a class="nav-link py-0" id="modern-slavery-act-tab" href="#modern-slavery-act">Contact us</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
       </div>
       <hr />
 
@@ -616,108 +666,108 @@
         </div>
       </div>
 
-            <!-- WHY HABITAT RESORTS STARTS -->
+      <!-- WHY HABITAT RESORTS STARTS -->
 
-            <div class="container-fluid mt-4 py-4 about-why equal-width-container-2">
-              <div class="row">
-                  <div class="col-sm-12 property-section-h2 text-center">
-                      <div class="text-center">
-                          <h3 class="text-heading">Why Habitat Resorts</h3>
-                      </div>
-                  </div>
-              </div>
-              <div class="row mt-4 pt-4">
-                  <div class="col-md-4">
-                      <div class="row">
-                          <div class="col-sm-4 benefit-img">
-                              <div class="intro-top-img"><img src="assets/leaf_logo_dark.png" /></div>
-                          </div>
-                          <div class="col-sm-8 benefit-text">
-                              <h3>Benefit</h3>
-                              <p>
-                                  Aliquam lobortis. Pellentesque egestas, neque sit amet
-                                  convallis pulvinar.
-                              </p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-4">
-                      <div class="row">
-                          <div class="col-sm-4 benefit-img">
-                              <div class="intro-top-img"><img src="assets/leaf_logo_dark.png" /></div>
-                          </div>
-                          <div class="col-sm-8 benefit-text">
-                              <h3>Benefit</h3>
-                              <p>
-                                  Aliquam lobortis. Pellentesque egestas, neque sit amet
-                                  convallis pulvinar.
-                              </p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-4">
-                      <div class="row">
-                          <div class="col-sm-4 benefit-img">
-                              <div class="intro-top-img"><img src="assets/leaf_logo_dark.png" /></div>
-                          </div>
-                          <div class="col-sm-8 benefit-text">
-                              <h3>Benefit</h3>
-                              <p>
-                                  Aliquam lobortis. Pellentesque egestas, neque sit amet
-                                  convallis pulvinar.
-                              </p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="row mt-4 pt-4">
-                  <div class="col-md-4">
-                      <div class="row">
-                          <div class="col-sm-4 benefit-img">
-                              <div class="intro-top-img"><img src="assets/leaf_logo_dark.png" /></div>
-                          </div>
-                          <div class="col-sm-8 benefit-text">
-                              <h3>Benefit</h3>
-                              <p>
-                                  Aliquam lobortis. Pellentesque egestas, neque sit amet
-                                  convallis pulvinar.
-                              </p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-4">
-                      <div class="row">
-                          <div class="col-sm-4 benefit-img">
-                              <div class="intro-top-img"><img src="assets/leaf_logo_dark.png" /></div>
-                          </div>
-                          <div class="col-sm-8 benefit-text">
-                              <h3>Benefit</h3>
-                              <p>
-                                  Aliquam lobortis. Pellentesque egestas, neque sit amet
-                                  convallis pulvinar.
-                              </p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-4">
-                      <div class="row">
-                          <div class="col-sm-4 benefit-img">
-                              <div class="intro-top-img"><img src="assets/leaf_logo_dark.png" /></div>
-                          </div>
-                          <div class="col-sm-8 benefit-text">
-                              <h3>Benefit</h3>
-                              <p>
-                                  Aliquam lobortis. Pellentesque egestas, neque sit amet
-                                  convallis pulvinar.
-                              </p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+      <div class="container-fluid mt-4 py-4 about-why equal-width-container-2">
+        <div class="row">
+          <div class="col-sm-12 property-section-h2 text-center">
+            <div class="text-center">
+              <h3 class="text-heading">Why Habitat Resorts</h3>
+            </div>
           </div>
+        </div>
+        <div class="row mt-4 pt-4">
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-sm-4 benefit-img">
+                <div class="intro-top-img"><img src="assets/leaf_logo_dark.png" /></div>
+              </div>
+              <div class="col-sm-8 benefit-text">
+                <h3>Benefit</h3>
+                <p>
+                  Aliquam lobortis. Pellentesque egestas, neque sit amet
+                  convallis pulvinar.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-sm-4 benefit-img">
+                <div class="intro-top-img"><img src="assets/leaf_logo_dark.png" /></div>
+              </div>
+              <div class="col-sm-8 benefit-text">
+                <h3>Benefit</h3>
+                <p>
+                  Aliquam lobortis. Pellentesque egestas, neque sit amet
+                  convallis pulvinar.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-sm-4 benefit-img">
+                <div class="intro-top-img"><img src="assets/leaf_logo_dark.png" /></div>
+              </div>
+              <div class="col-sm-8 benefit-text">
+                <h3>Benefit</h3>
+                <p>
+                  Aliquam lobortis. Pellentesque egestas, neque sit amet
+                  convallis pulvinar.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-          <!-- WHY HABITAT RESORTS ENDS -->
+        <div class="row mt-4 pt-4">
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-sm-4 benefit-img">
+                <div class="intro-top-img"><img src="assets/leaf_logo_dark.png" /></div>
+              </div>
+              <div class="col-sm-8 benefit-text">
+                <h3>Benefit</h3>
+                <p>
+                  Aliquam lobortis. Pellentesque egestas, neque sit amet
+                  convallis pulvinar.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-sm-4 benefit-img">
+                <div class="intro-top-img"><img src="assets/leaf_logo_dark.png" /></div>
+              </div>
+              <div class="col-sm-8 benefit-text">
+                <h3>Benefit</h3>
+                <p>
+                  Aliquam lobortis. Pellentesque egestas, neque sit amet
+                  convallis pulvinar.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-sm-4 benefit-img">
+                <div class="intro-top-img"><img src="assets/leaf_logo_dark.png" /></div>
+              </div>
+              <div class="col-sm-8 benefit-text">
+                <h3>Benefit</h3>
+                <p>
+                  Aliquam lobortis. Pellentesque egestas, neque sit amet
+                  convallis pulvinar.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- WHY HABITAT RESORTS ENDS -->
 
       <!--STORY SECTION-->
 
@@ -730,10 +780,10 @@
                 <div class="text-center">
                   <div class="intro-top-img"><img src="assets/leaf_logo_dark.png" /></div>
                   <div class="intro-heading mb-4">
-                      <h3 class="intro-sub">The story</h3>
-                      <h1 class="text-heading">Of Habitat</h1>
+                    <h3 class="intro-sub">The story</h3>
+                    <h1 class="text-heading">Of Habitat</h1>
                   </div>
-              </div>
+                </div>
               </div>
             </div>
 
@@ -753,24 +803,21 @@
                 <div><img class="story-tb" src="./assets/inspiration1.jpg"></div>
                 <div class="mt-2 text-heading  story-date">Est 1984</div>
                 <div class="mt-0">Lorem ipsum dolor sit amet telcus rist.</div>
-                <i
-                    class="fa fa-long-arrow-alt-right timeline-right thinner-fa"></i>
+                <i class="fa fa-long-arrow-alt-right timeline-right thinner-fa"></i>
               </div>
 
               <div class="col-md-3 text-center pt-3">
                 <div><img class="story-tb" src="./assets/inspiration1.jpg"></div>
                 <div class="mt-2 text-heading story-date">1997</div>
                 <div class="mt-0">Lorem ipsum dolor sit amet telcus rist.</div>
-                <i
-                    class="fa fa-long-arrow-alt-right timeline-right thinner-fa"></i>
+                <i class="fa fa-long-arrow-alt-right timeline-right thinner-fa"></i>
               </div>
 
               <div class="col-md-3 text-center pt-3">
                 <div><img class="story-tb" src="./assets/inspiration1.jpg"></div>
                 <div class="mt-2 text-heading  story-date">2017</div>
                 <div class="mt-0">Lorem ipsum dolor sit amet telcus rist.</div>
-                <i
-                    class="fa fa-long-arrow-alt-right timeline-right thinner-fa"></i>
+                <i class="fa fa-long-arrow-alt-right timeline-right thinner-fa"></i>
               </div>
 
               <div class="col-md-3 text-center pt-3">
@@ -871,8 +918,9 @@
         <header class="heading text-center mb-4">
           <h3 class="text-heading">What our visitors say</h3>
         </header>
-  
-        <div class="visitor-slider slider arrows-lg" data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "dots": true}'>
+
+        <div class="visitor-slider slider arrows-lg"
+          data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "dots": true}'>
           <div class="visitor-block text-center">
             <img src="./assets/visitor1.png" />
             <div class="property-visitor-name">Ben Sherman, Newcastle</div>
@@ -883,7 +931,8 @@
               <i class="fas fa-star starred"></i>
               <i class="fas fa-star starred"></i>
             </div>
-            <div class="property-visitorfeedback-carousel-comment">Pellentesque ut neque. Vestibulum ante ipsum primis in
+            <div class="property-visitorfeedback-carousel-comment">Pellentesque ut neque. Vestibulum ante ipsum primis
+              in
               faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Nullam vel sem. Phasellus accumsan
               cursus velit. Vivamus consectetuer hendrerit lacus.leo ligula, porttitor eu, consequat vitae, eleifend ac,
               enim. Sed lectus.</div>
@@ -930,36 +979,42 @@
               </p>
             </div>
             <div class="col-md-5">
-                          <!-- row for accordian starts -->
-            <div class="row">
-              <div class="col-12">
-                <div id="accordion">
-                  <div class="card property-accordian">
-                    <div class="card-header property-accordian property-accordian-header-border"
-                      id="headingKeyFeatures">
-                      <h5 class="mb-0">
-                        <a class="btn btn-link property-accordian w-100" data-toggle="collapse"
-                          data-target="#collapseKeyFeatures" aria-expanded="true" aria-controls="collapseKeyFeatures">
-                          <div class="row">
-                            <div class="col-11 text-left px-0 property_features_heading">
-                              Key Features
+              <!-- row for accordian starts -->
+              <div class="row">
+                <div class="col-12">
+                  <div id="accordion">
+                    <div class="card property-accordian">
+                      <div class="card-header property-accordian property-accordian-header-border"
+                        id="headingKeyFeatures">
+                        <h5 class="mb-0">
+                          <a class="btn btn-link property-accordian w-100" data-toggle="collapse"
+                            data-target="#collapseKeyFeatures" aria-expanded="true" aria-controls="collapseKeyFeatures">
+                            <div class="row">
+                              <div class="col-11 text-left px-0 property_features_heading">
+                                Key Features
+                              </div>
+                              <div class="col-1 text-right px-0">
+                                <i id="collapseKeyFeaturesMinus" class="icon-remove-hover"></i>
+                                <i id="collapseKeyFeaturesPlus" class="icon-add-hover" style="display: none;"></i>
+                              </div>
                             </div>
-                            <div class="col-1 text-right px-0">
-                              <i id="collapseKeyFeaturesMinus" class="icon-remove-hover"></i>
-                              <i id="collapseKeyFeaturesPlus" class="icon-add-hover" style="display: none;"></i>
-                            </div>
-                          </div>
-                        </a>
-                      </h5>
-                    </div>
-
-                    <div id="collapseKeyFeatures" class="collapse accordion-item-content show"
-                      aria-labelledby="headingKeyFeatures" data-parent="#accordion">
-                      <div class="card-body property-accordian-card-body">
-                        <div class="container-fluid">
-                          <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS</p>
-                        </div>
+                          </a>
+                        </h5>
                       </div>
+
+                      <div id="collapseKeyFeatures" class="collapse accordion-item-content show"
+                        aria-labelledby="headingKeyFeatures" data-parent="#accordion">
+                        <div class="card-body property-accordian-card-body">
+                          <div class="container-fluid">
+                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                              squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                              nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                              single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                              beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                              vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                              you probably haven't heard of them accusamus labore sustainable VHS</p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -987,7 +1042,8 @@
                         <!-- Accomodation Detail here -->
                         <div class="container">
                           <div class="row">
-                            <div class="property-text col-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            <div class="property-text col-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                              sed do
                               eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
                           </div>
                         </div>
@@ -1017,15 +1073,20 @@
                         <div class="container">
                           <div class="row">
                             <div class="property-text col-12">
-                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                              3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                              laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                              squid.
+                              3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                              nesciunt
+                              laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                              single-origin
                               coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                              anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-                              occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                              anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                              Leggings
+                              occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+                              heard
                               of them accusamus labore sustainable VHS.</div>
                           </div>
-                        </div>                        
+                        </div>
 
                       </div>
                     </div>
@@ -1055,7 +1116,8 @@
                       <div class="card-body property-accordian-card-body property-text">
                         <div class="container">
                           <div class="row">
-                            <div class="property-text col-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            <div class="property-text col-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                              sed do
                               eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
                           </div>
                         </div>
@@ -1087,7 +1149,8 @@
                       <div class="card-body property-accordian-card-body property-text">
                         <div class="container">
                           <div class="row">
-                            <div class="property-text col-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            <div class="property-text col-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                              sed do
                               eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
                           </div>
                         </div>
@@ -1116,7 +1179,8 @@
                       <div class="card-body property-accordian-card-body property-text">
                         <div class="container">
                           <div class="row">
-                            <div class="property-text col-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            <div class="property-text col-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                              sed do
                               eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
                           </div>
                         </div>
@@ -1128,173 +1192,172 @@
               </div>
             </div>
             <!-- row for accordian ends -->
-            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- FAQ Section End-->
+  </div>
+  <!-- FAQ Section End-->
 
-    <div class="container-fluid mt-4 pt-4 border-bottom pb-4">
-      <div class="about-first row m-0 mt-4 mb-4 pb-4">
-        <div class="col-md-4 pt-4">
-          <img src="./assets/Activities2.png" class="" alt="..." />
+  <div class="container-fluid mt-4 pt-4 border-bottom pb-4">
+    <div class="about-first row m-0 mt-4 mb-4 pb-4">
+      <div class="col-md-4 pt-4">
+        <img src="./assets/Activities2.png" class="" alt="..." />
+      </div>
+      <div class="col-md-8 pt-4 pl-4">
+        <div class="text-left">
+          <h3 class="text-heading">Feel free to speak to us, get in touch today!</h3>
         </div>
-        <div class="col-md-8 pt-4 pl-4">
-          <div class="text-left">
-            <h3 class="text-heading">Feel free to speak to us, get in touch today!</h3>
-          </div>
-          <p class="pb-1">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. The
-            Hide, accessed from the garden, is an elegant modernist
-            steel-and-glass structure, voted Britain’s best small building
-            in 2009, standing in complete seclusion, overlooking one of the
-            largest lakes in the Cotswolds Water Park.
-          </p>
-          <div class="intro-cta mt-4">
-            <a href="#" class="btn btn-primary">Contact us <i class="icon-long-right"></i></a>
-          </div>
+        <p class="pb-1">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. The
+          Hide, accessed from the garden, is an elegant modernist
+          steel-and-glass structure, voted Britain’s best small building
+          in 2009, standing in complete seclusion, overlooking one of the
+          largest lakes in the Cotswolds Water Park.
+        </p>
+        <div class="intro-cta mt-4">
+          <a href="#" class="btn btn-primary">Contact us <i class="icon-long-right"></i></a>
         </div>
       </div>
     </div>
+  </div>
 
-    <section class="subscription-section pt-4 pb-4">
-      <div class="container">
+  <section class="subscription-section pt-4 pb-4">
+    <div class="container">
 
-        <header class="heading mb-4">
-          <h2 class="text-heading text-center">Sign up for exclusive</br>offers from us</h2>
-        </header>
+      <header class="heading mb-4">
+        <h2 class="text-heading text-center">Sign up for exclusive</br>offers from us</h2>
+      </header>
 
-        <div class="row">
+      <div class="row">
 
-          <div class="col-md-4">
-            <input class="form-control" placeholder="Your Name" />
-          </div>
-          <div class="col-md-4">
-            <input class="form-control" placeholder="Email" />
-          </div>
-          <div class="col-md-4">
-            <button class="btn btn-block btn-primary">
-              Subscribe Now <i class="icon-long-right ml-3"></i>
+        <div class="col-md-4">
+          <input class="form-control" placeholder="Your Name" />
+        </div>
+        <div class="col-md-4">
+          <input class="form-control" placeholder="Email" />
+        </div>
+        <div class="col-md-4">
+          <button class="btn btn-block btn-primary">
+            Subscribe Now <i class="icon-long-right ml-3"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER SECTION START -->
+  <div class="footer-section mt-4">
+    <div class="row justify-content-between footer-top">
+      <div class="col-lg-6 property-rate">
+        <p class="footer-top-number"><span class="side-text">Call us today: </span><a href="tel:+4401285869489"
+            class="num-link">+44 (0) 1285 869
+            489</a></p>
+      </div>
+      <div class="col-lg-6 justify-content-end text-right property-rooms">
+
+        <p class="social-icons">
+          <span class="side-text">Stay Connected &nbsp;&nbsp;</span>
+          <a href="#"><i class="icon-twitter px-2"></i></a> &nbsp;<a href="#"><i class="icon-fb px-2"></i></a>&nbsp;
+          <a href="#"><i class="icon-instagram px-2"></a></i>
+        </p>
+      </div>
+    </div>
+
+    <div class="row footer-main p-4">
+      <div class="col-lg-6 p-4">
+        <div class=" logo-container">
+          <a href="index.html"><img class="header-logo pb-4" src="assets/logo_white.png" /></a>
+        </div>
+        <p class="footer-number">+44 (0) 1285 869 489</p>
+        <p class="footer-details">
+          Aenean imperdiet. Vestibulum suscipit nulla quis orci Nam pretium
+          turpis et arcu. Suspendisse faucibus, nunc et pellentesque
+          egestas, lacus ante convallis eul. <br />
+          <br />
+          Vestibulum dapibus nunc ac augue Morbi mollis tellus ac sapien.
+          Cras varius. Aliquam lobortis. Pellentesque egestas, neque sit
+          amet convallis pulvinar, justo nulla eleifend augue, ac auctor
+          orci leo non est. Morbi mattis ullamcorper velit. Nullam accumsan
+          lorem in dui.
+        </p>
+        <div class="blue-logos mt-4">
+          <img src="assets/habitat-zero-mono.png">
+          <img class="pl-4 pt-4" src="assets/blue-logo-2.png">
+        </div>
+      </div>
+      <div class="col-lg-2 menu-col">
+        <h1>
+          <a class="accordian-head collapsed" type="button" data-toggle="collapse" data-target="#collapseAbout"
+            aria-expanded="false" aria-controls="collapseAbout" class="">About us <i
+              class="fas fa-chevron-down"></i></a>
+        </h1>
+        <div id="collapseAbout" class="collapse">
+          <p class="mt-4"><a href="about.html">Our Story</a></p>
+          <p><a href="inspiration.html">Why book with us</a></p>
+          <p><a href="faq.html">FAQ’s</a></p>
+          <p><a href="contactus.html">Contact us</a></p>
+          <p><a href="news.html">News</a></p>
+          <p><a href="blog_list.html">Blog</a></p>
+        </div>
+      </div>
+      <div class="col-lg-2  menu-col">
+        <h1>
+          <a class="accordian-head collapsed" type="button" data-toggle="collapse" data-target="#collapseLocation"
+            aria-expanded="false" aria-controls="collapseLocation" class="">Our locations <i
+              class="fas fa-chevron-down"></i></a>
+        </h1>
+        <div id="collapseLocation" class="collapse">
+          <p class="mt-4 bolded-text"><a href="#">The Cotswolds</a></p>
+          <p><a href="#">Lower Mill Estate</a></p>
+          <p class="mt-4 bolded-text"><a href="#">Devon</a></p>
+          <p><a href="#">Birchwood</a></p>
+
+          <p class="mt-4 bolded-text"><a href="#">Dorset</a></p>
+          <p><a href="#">Silverlake</a></p>
+        </div>
+      </div>
+      <div class="col-lg-2  menu-col">
+        <h1>
+          <a class="accordian-head collapsed" type="button" data-toggle="collapse" data-target="#collapseOwners"
+            aria-expanded="false" aria-controls="collapseOwners" class="">Owners <i class="fas fa-chevron-down"></i></a>
+        </h1>
+        <div id="collapseOwners" class="collapse">
+          <p class="mt-4 bolded-text">Are you an owner?</p>
+          <div class="intro-cta mt-2">
+            <button class="btn btn-primary btn-with-icon">
+              Log IN <i class="icon-long-right ml-3 mt-1-5"></i>
             </button>
           </div>
-
-        </div>
-      </div>
-    </section>
-
-
-    <!-- FOOTER SECTION START -->
-    <div class="footer-section mt-4">
-      <div class="row justify-content-between footer-top">
-        <div class="col-lg-6 property-rate">
-          <p class="footer-top-number"><span class="side-text">Call us today: </span><a href="tel:+4401285869489"
-              class="num-link">+44 (0) 1285 869
-              489</a></p>
-        </div>
-        <div class="col-lg-6 justify-content-end text-right property-rooms">
-
-          <p class="social-icons">
-            <span class="side-text">Stay Connected &nbsp;&nbsp;</span>
-            <a href="#"><i class="icon-twitter px-2"></i></a> &nbsp;<a href="#"><i class="icon-fb px-2"></i></a>&nbsp;
-            <a href="#"><i class="icon-instagram px-2"></a></i>
-          </p>
-        </div>
-      </div>
-
-      <div class="row footer-main p-4">
-        <div class="col-lg-6 p-4">
-          <div class=" logo-container">
-            <a href="index.html"><img class="header-logo pb-4" src="assets/logo_white.png" /></a>
+          <p class="mt-4 bolded-text">Like to list a property?</p>
+          <div class="intro-cta mt-2">
+            <button class="btn btn-primary btn-with-icon">
+              List Now <i class="icon-long-right ml-3 mt-1-5"></i>
+            </button>
           </div>
-          <p class="footer-number">+44 (0) 1285 869 489</p>
-          <p class="footer-details">
-            Aenean imperdiet. Vestibulum suscipit nulla quis orci Nam pretium
-            turpis et arcu. Suspendisse faucibus, nunc et pellentesque
-            egestas, lacus ante convallis eul. <br />
-            <br />
-            Vestibulum dapibus nunc ac augue Morbi mollis tellus ac sapien.
-            Cras varius. Aliquam lobortis. Pellentesque egestas, neque sit
-            amet convallis pulvinar, justo nulla eleifend augue, ac auctor
-            orci leo non est. Morbi mattis ullamcorper velit. Nullam accumsan
-            lorem in dui.
-          </p>
-          <div class="blue-logos mt-4">
-            <img src="assets/habitat-zero-mono.png">
-            <img class="pl-4 pt-4" src="assets/blue-logo-2.png">
-          </div>
-        </div>
-        <div class="col-lg-2 menu-col">
-          <h1>
-            <a class="accordian-head collapsed" type="button" data-toggle="collapse" data-target="#collapseAbout"
-              aria-expanded="false" aria-controls="collapseAbout" class="">About us <i
-                class="fas fa-chevron-down"></i></a>
-          </h1>
-          <div id="collapseAbout" class="collapse">
-            <p class="mt-4"><a href="about.html">Our Story</a></p>
-            <p><a href="inspiration.html">Why book with us</a></p>
-            <p><a href="faq.html">FAQ’s</a></p>
-            <p><a href="contactus.html">Contact us</a></p>
-            <p><a href="news.html">News</a></p>
-            <p><a href="blog_list.html">Blog</a></p>
-          </div>
-        </div>
-        <div class="col-lg-2  menu-col">
-          <h1>
-            <a class="accordian-head collapsed" type="button" data-toggle="collapse" data-target="#collapseLocation"
-              aria-expanded="false" aria-controls="collapseLocation" class="">Our locations <i
-                class="fas fa-chevron-down"></i></a>
-          </h1>
-          <div id="collapseLocation" class="collapse">
-            <p class="mt-4 bolded-text"><a href="#">The Cotswolds</a></p>
-            <p><a href="#">Lower Mill Estate</a></p>
-            <p class="mt-4 bolded-text"><a href="#">Devon</a></p>
-            <p><a href="#">Birchwood</a></p>
-
-            <p class="mt-4 bolded-text"><a href="#">Dorset</a></p>
-            <p><a href="#">Silverlake</a></p>
-          </div>
-        </div>
-        <div class="col-lg-2  menu-col">
-          <h1>
-            <a class="accordian-head collapsed" type="button" data-toggle="collapse" data-target="#collapseOwners"
-              aria-expanded="false" aria-controls="collapseOwners" class="">Owners <i
-                class="fas fa-chevron-down"></i></a>
-          </h1>
-          <div id="collapseOwners" class="collapse">
-            <p class="mt-4 bolded-text">Are you an owner?</p>
-            <div class="intro-cta mt-2">
-              <button class="btn btn-primary btn-with-icon">
-                Log IN <i class="icon-long-right ml-3 mt-1-5"></i>
-              </button>
-            </div>
-            <p class="mt-4 bolded-text">Like to list a property?</p>
-            <div class="intro-cta mt-2">
-              <button class="btn btn-primary btn-with-icon">
-                List Now <i class="icon-long-right ml-3 mt-1-5"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row justify-content-between footer-bottom">
-        <div id="second" class="col-lg-4 roperty-rate">
-          <p>Copyright © 2020 Habitat Escapes</p>
-        </div>
-        <div id="first" class="col-lg-8 justify-content-end text-right property-rooms">
-          <p>
-            <a href="tnc.html">Terms & Conditions</a>&nbsp; | &nbsp; <a href="tnc.html">Cookie Policy</a> &nbsp; |
-            &nbsp;
-            <a href="tnc.html">Privacy Policy</a> &nbsp; | &nbsp; <a href="tnc.html">Modern Slavery Act</a> &nbsp; |
-            &nbsp;
-            <a href="tnc.html">Sitemap</a>
-          </p>
         </div>
       </div>
     </div>
-    <!-- FOOTER SECTION END -->
+
+    <div class="row justify-content-between footer-bottom">
+      <div id="second" class="col-lg-4 roperty-rate">
+        <p>Copyright © 2020 Habitat Escapes</p>
+      </div>
+      <div id="first" class="col-lg-8 justify-content-end text-right property-rooms">
+        <p>
+          <a href="tnc.html">Terms & Conditions</a>&nbsp; | &nbsp; <a href="tnc.html">Cookie Policy</a> &nbsp; |
+          &nbsp;
+          <a href="tnc.html">Privacy Policy</a> &nbsp; | &nbsp; <a href="tnc.html">Modern Slavery Act</a> &nbsp; |
+          &nbsp;
+          <a href="tnc.html">Sitemap</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- FOOTER SECTION END -->
   </div>
   </div>
 

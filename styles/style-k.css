@@ -588,6 +588,7 @@ img {
   top: 1px;
   bottom: 1px;
 }
+.select-box.dark::after,
 .select-box-primary::after {
   width: 23px;
   height: 12px;
@@ -602,6 +603,19 @@ img {
   position: absolute;
   top: 50%;
   right: 1rem;
+}
+.select-box.dark::after {
+  width: 15px;
+  height: 8px;
+  filter: grayscale(1);
+  right: .75rem;
+}
+.select-box.dark {
+  border: 1px solid #ddd;
+}
+.form-select {
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
 }
 
 .site-header {
@@ -737,11 +751,6 @@ img {
     top: 0;
     right: 0;
 }
-.hd-search-active .hd-search-block {
-    width: calc(100vw - 30px);
-    opacity: 1;
-    visibility: visible;
-}
 .hd-search-form {
     color: var(--color-default-text);
     overflow: hidden;
@@ -771,6 +780,15 @@ img {
 .list-hd-links a:hover,
 .hd-contact-link:hover {
   color: var(--color-primary);
+}
+
+.responsive-search-block {
+  width: 100%;
+  padding: 1rem;
+  background-color: #fff;
+  position: absolute;
+  top: 100%;
+  left: 0;
 }
 
 .nav-button {
@@ -818,10 +836,7 @@ img {
   background-image: url(../assets/icons/envelope_white.png);
 }
 
-.site-header-wrap.search-on .site-logo {
-    opacity: 0;
-    visibility: hidden;
-}
+
 .header-wrap-floating .site-header a,
 .header-wrap-floating .site-header button {
     transition: none;
@@ -1386,6 +1401,26 @@ img {
   opacity: 1;
 }
 
+.option-selection-dual.full-width {
+  border: 1px solid #ddd;
+}
+
+.option-selection-dual.full-width .selected-digit {
+  flex: 1;
+  text-align: left;
+}
+.option-selection-dual.full-width:focus-within {
+  border-color: var(--color-primary);
+}
+.option-selection-dual.full-width .form-control {
+  font-size: .9em;
+  border-color: transparent;
+}
+.option-selection-dual.full-width .button-iconic {
+  width: 16px;
+  height: 16px;
+}
+
 .property-search-bar.bar-home {
     padding-top: 1.5rem;
     border: 0;
@@ -1922,13 +1957,6 @@ a.text-inherit:hover,
       width: 50%;
     }
     
-    .hd-search-active .hd-search-block {
-        width: 100%;
-    }
-    .site-header-wrap.search-on .site-logo {
-        opacity: 1;
-        visibility: visible;
-    }
     .banner-contents .h1 {
         font-size: 4.2rem;
     }
@@ -2017,6 +2045,10 @@ a.text-inherit:hover,
     .option-selection-dual {
         min-height: 52px;
     }
+    .option-selection-dual.full-width {
+      min-height: calc(1.5em + .75rem + 2px);
+      height: calc(1.5em + .75rem + 2px);
+    }
 
     /** Filter bar ***/
     .property-search-bar-content {
@@ -2073,6 +2105,15 @@ a.text-inherit:hover,
     .responsive-menu {
       display: none;      
     }
+    .hd-search-active .hd-search-block {
+      width: 100%;
+      opacity: 1;
+      visibility: visible;
+    }
+    .responsive-search-block {
+      display: none;
+    }
+
     [role="main"] {
         padding-top: 45px;
         padding-bottom: 45px;
@@ -2159,6 +2200,38 @@ a.text-inherit:hover,
   .footer-main .btn-with-icon {
     width: 6rem;
     font-size: 0.6rem;
+  }
+
+
+  .site-header-wrap.header-wrap-floating.active {
+    color: var(--color-default-text);
+    background-color: #fff;
+  }
+  .site-header-wrap.header-wrap-floating.active .site-header,
+  .site-header-wrap.header-wrap-floating.active .menu > li > a {
+    color: var(--color-default-text);
+  }
+  .site-header-wrap.header-wrap-floating.active .list-hd-links li + li::before {
+    border-left-color: var(--color-default-text);
+  }
+  
+  .site-header-wrap.header-wrap-floating.active .icon-whiteable.icon-heart {
+    background-image: url(../assets/icons/heart_black.png);
+  }
+  .site-header-wrap.header-wrap-floating.active .icon-whiteable.icon-search {
+    background-image: url(../assets/icons/search_black.png);
+  }
+  .site-header-wrap.header-wrap-floating.active .icon-whiteable.icon-envelope {
+    background-image: url(../assets/icons/envelope_black.png);
+  }
+
+  .site-header-wrap.header-wrap-floating.active .logo-primary,
+  .site-header-wrap.header-wrap-floating.active:hover .logo-primary {
+      opacity: 1;
+  }
+  .site-header-wrap.header-wrap-floating.active .logo-secondary,
+  .site-header-wrap.header-wrap-floating.active:hover .logo-secondary {
+      opacity: 0;
   }
   
 }

@@ -51,7 +51,9 @@
               </button>
             </li>
             <li>
-              <button class="button-hd-search"><i class="icon-search icon-whiteable"></i></button>
+              <button class="button-hd-search d-none d-xl-inline-block"><i
+                  class="icon-search icon-whiteable"></i></button>
+              <button class="button-search-resp d-xl-none"><i class="icon-search icon-whiteable"></i></button>
               <div class="hd-search-block">
                 <form class="hd-search-form" action="#">
                   <input class="hd-search-input" type="text">
@@ -192,6 +194,53 @@
 
       </div><!-- //.responsive-menu -->
 
+      <div class="responsive-search-block d-none">
+        <div class="form-group">
+          <div class="option-label mb-1">Location</div>
+          <div class="select-box dark">
+            <select class="form-select">
+              <option value="pick-location">Pick Location</option>
+              <option value="1">Location One</option>
+              <option value="2">Location Two</option>
+              <option value="3">Location Three</option>
+            </select>
+          </div>
+        </div><!-- /form-group -->
+
+        <div class="form-group">
+          <div class="option-label mb-1">Date</div>
+          <div class="option-selection-dual full-width">
+            <input type="text" class="form-control" value="15" min="1" max="31" />
+          </div>
+        </div><!-- /form-group -->
+
+        <div class="form-group">
+          <div class="option-label mb-1">Guests</div>
+          <div class="option-selection-dual full-width">
+            <input type="number" class="form-control selected-digit" value="1" min="0" />
+            <div class="number-controls-vertical">
+              <button class="button-iconic increment"><i class="fas fa-chevron-up"></i></button>
+              <button class="button-iconic decrement"><i class="fas fa-chevron-down"></i></button>
+            </div>
+          </div>
+        </div><!-- /form-group -->
+
+        <div class="form-group">
+          <div class="option-label mb-1">Duration</div>
+          <div class="option-selection-dual full-width">
+            <input type="number" class="form-control selected-digit" value="4" min="0" />
+            <div class="number-controls-vertical">
+              <button class="button-iconic increment"><i class="fas fa-chevron-up"></i></button>
+              <button class="button-iconic  decrement"><i class="fas fa-chevron-down"></i></button>
+            </div>
+          </div>
+        </div><!-- /form-group -->
+
+        <div class="control">
+          <button class="btn btn-primary btn-block">Check Availability</button>
+        </div>
+      </div><!-- //.responsive-search-block -->
+
       <div class="site-main-nav-bar d-none d-xl-block">
         <nav class="site-main-nav">
           <ul class="menu">
@@ -289,7 +338,7 @@
                             <p class="text-sm">Quidem modi sapiente veritatis, qui enim suscipit harum magni eligendi
                               earum saepe iure <a href="#" class="text-primary">View all</a></p>
                           </header>
-                                                    <ul class="list-iconic-menu">
+                          <ul class="list-iconic-menu">
                             <li><a href="#"><i class="icon-star-outline mr-2"></i><span>Overview</span></a></li>
                             <li><a href="#"><i class="icon-cycle mr-2"></i><span>Cycling</span></a></li>
                             <li><a href="#"><i class="icon-activities mr-2"></i><span>Activities</span></a></li>
@@ -310,20 +359,20 @@
 
                           <div class="mb-3">
                             <a href="#">
-                            <i class="icon-food mr-1"></i>
-                            Italian Restaurant Title
+                              <i class="icon-food mr-1"></i>
+                              Italian Restaurant Title
                             </a>
                           </div>
                           <div class="mb-3">
                             <a href="#">
-                            <i class="icon-food mr-1"></i>
-                            Local Restaurant Title
-                          </a>
+                              <i class="icon-food mr-1"></i>
+                              Local Restaurant Title
+                            </a>
                           </div>
                           <div class="mb-3">
                             <a href="#">
-                            <i class="icon-food mr-1"></i>
-                            Local Restaurant Title
+                              <i class="icon-food mr-1"></i>
+                              Local Restaurant Title
                             </a>
                           </div>
 
@@ -617,9 +666,9 @@
                 <div class="row">
                   <div class="col-12 px-0">
                     <p class="contactus-option-h3">Lets get social</p>
-                  </div>  
+                  </div>
                 </div>
-                
+
                 <div class="row contactus-social-icons">
                   <div class="col-4 px-0">
                     <a href="https://twitter.com"><span> <i class="fab fa-twitter"></i> </span></a>
@@ -629,7 +678,7 @@
                   </div>
                   <div class="col-4 px-0">
                     <a href="https://www.instagram.com"><span> <i class="fab fa-instagram"></i> </span></a>
-                    </div>
+                  </div>
                 </div>
 
 
@@ -718,7 +767,7 @@
 
                 <div>
                   <button class="btn btn-primary contactus-submit-cta p-3">
-                   Submit <i class="icon-long-right ml-3"></i>
+                    Submit <i class="icon-long-right ml-3"></i>
                   </button>
                 </div>
 

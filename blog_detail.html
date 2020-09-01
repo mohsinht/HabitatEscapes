@@ -46,7 +46,10 @@
                             </button>
                         </li>
                         <li>
-                            <button class="button-hd-search"><i class="icon-search icon-whiteable"></i></button>
+                            <button class="button-hd-search d-none d-xl-inline-block"><i
+                                    class="icon-search icon-whiteable"></i></button>
+                            <button class="button-search-resp d-xl-none"><i
+                                    class="icon-search icon-whiteable"></i></button>
                             <div class="hd-search-block">
                                 <form class="hd-search-form" action="#">
                                     <input class="hd-search-input" type="text">
@@ -191,6 +194,53 @@
 
             </div><!-- //.responsive-menu -->
 
+            <div class="responsive-search-block d-none">
+                <div class="form-group">
+                    <div class="option-label mb-1">Location</div>
+                    <div class="select-box dark">
+                        <select class="form-select">
+                            <option value="pick-location">Pick Location</option>
+                            <option value="1">Location One</option>
+                            <option value="2">Location Two</option>
+                            <option value="3">Location Three</option>
+                        </select>
+                    </div>
+                </div><!-- /form-group -->
+
+                <div class="form-group">
+                    <div class="option-label mb-1">Date</div>
+                    <div class="option-selection-dual full-width">
+                        <input type="text" class="form-control" value="15" min="1" max="31" />
+                    </div>
+                </div><!-- /form-group -->
+
+                <div class="form-group">
+                    <div class="option-label mb-1">Guests</div>
+                    <div class="option-selection-dual full-width">
+                        <input type="number" class="form-control selected-digit" value="1" min="0" />
+                        <div class="number-controls-vertical">
+                            <button class="button-iconic increment"><i class="fas fa-chevron-up"></i></button>
+                            <button class="button-iconic decrement"><i class="fas fa-chevron-down"></i></button>
+                        </div>
+                    </div>
+                </div><!-- /form-group -->
+
+                <div class="form-group">
+                    <div class="option-label mb-1">Duration</div>
+                    <div class="option-selection-dual full-width">
+                        <input type="number" class="form-control selected-digit" value="4" min="0" />
+                        <div class="number-controls-vertical">
+                            <button class="button-iconic increment"><i class="fas fa-chevron-up"></i></button>
+                            <button class="button-iconic  decrement"><i class="fas fa-chevron-down"></i></button>
+                        </div>
+                    </div>
+                </div><!-- /form-group -->
+
+                <div class="control">
+                    <button class="btn btn-primary btn-block">Check Availability</button>
+                </div>
+            </div><!-- //.responsive-search-block -->
+
             <div class="site-main-nav-bar d-none d-xl-block">
                 <nav class="site-main-nav">
                     <ul class="menu">
@@ -199,76 +249,76 @@
                             <div class="mega-dropdown">
                                 <div class="container-fluid">
 
-                  <div class="mega-menu-contents">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <div class="row row-minus">
-                          <div class="col-8">
-                            <div class="destination-box destination-img1">
-                              <h4 class="text-heading">Lower Mill Estate</h4>
-                              <h6>The Cotswolds</h6>
-                            </div>
-                          </div>
+                                    <div class="mega-menu-contents">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="row row-minus">
+                                                    <div class="col-8">
+                                                        <div class="destination-box destination-img1">
+                                                            <h4 class="text-heading">Lower Mill Estate</h4>
+                                                            <h6>The Cotswolds</h6>
+                                                        </div>
+                                                    </div>
 
-                          <div class="col-4">
-                            <ul class="list-destination">
-                              <li><a href="#">The Properties</a></li>
-                              <li><a href="#">The Estate</a></li>
-                              <li><a href="#">Food & Drink</a></li>
-                              <li><a href="#">Spa</a></li>
-                              <li><a href="#">Local Area</a></li>
-                              <li><a href="#">Gallery</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
+                                                    <div class="col-4">
+                                                        <ul class="list-destination">
+                                                            <li><a href="#">The Properties</a></li>
+                                                            <li><a href="#">The Estate</a></li>
+                                                            <li><a href="#">Food & Drink</a></li>
+                                                            <li><a href="#">Spa</a></li>
+                                                            <li><a href="#">Local Area</a></li>
+                                                            <li><a href="#">Gallery</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
 
-                      <div class="col-md-4">
-                        <div class="row row-minus">
-                          <div class="col-8">
-                            <div class="destination-box destination-img2">
-                              <h4 class="text-heading">Silverlake</h4>
-                              <h6>Dorset</h6>
-                            </div>
-                          </div>
+                                            <div class="col-md-4">
+                                                <div class="row row-minus">
+                                                    <div class="col-8">
+                                                        <div class="destination-box destination-img2">
+                                                            <h4 class="text-heading">Silverlake</h4>
+                                                            <h6>Dorset</h6>
+                                                        </div>
+                                                    </div>
 
-                          <div class="col-4">
-                            <ul class="list-destination">
-                              <li><a href="#">The Properties</a></li>
-                              <li><a href="#">The Estate</a></li>
-                              <li><a href="#">Food & Drink</a></li>
-                              <li><a href="#">Spa</a></li>
-                              <li><a href="#">Local Area</a></li>
-                              <li><a href="#">Gallery</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
+                                                    <div class="col-4">
+                                                        <ul class="list-destination">
+                                                            <li><a href="#">The Properties</a></li>
+                                                            <li><a href="#">The Estate</a></li>
+                                                            <li><a href="#">Food & Drink</a></li>
+                                                            <li><a href="#">Spa</a></li>
+                                                            <li><a href="#">Local Area</a></li>
+                                                            <li><a href="#">Gallery</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
 
-                      <div class="col-md-4">
-                        <div class="row row-minus">
-                          <div class="col-8">
-                            <div class="destination-box destination-img1">
-                              <h4 class="text-heading">Birchwood</h4>
-                              <h6>Devon</h6>
-                            </div>
-                          </div>
+                                            <div class="col-md-4">
+                                                <div class="row row-minus">
+                                                    <div class="col-8">
+                                                        <div class="destination-box destination-img1">
+                                                            <h4 class="text-heading">Birchwood</h4>
+                                                            <h6>Devon</h6>
+                                                        </div>
+                                                    </div>
 
-                          <div class="col-4">
-                            <ul class="list-destination">
-                              <li><a href="#">The Properties</a></li>
-                              <li><a href="#">The Estate</a></li>
-                              <li><a href="#">Food & Drink</a></li>
-                              <li><a href="#">Spa</a></li>
-                              <li><a href="#">Local Area</a></li>
-                              <li><a href="#">Gallery</a></li>
-                            </ul>
-                          </div>
+                                                    <div class="col-4">
+                                                        <ul class="list-destination">
+                                                            <li><a href="#">The Properties</a></li>
+                                                            <li><a href="#">The Estate</a></li>
+                                                            <li><a href="#">Food & Drink</a></li>
+                                                            <li><a href="#">Spa</a></li>
+                                                            <li><a href="#">Local Area</a></li>
+                                                            <li><a href="#">Gallery</a></li>
+                                                        </ul>
+                                                    </div>
 
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
                                 </div>
                             </div>
@@ -722,7 +772,7 @@
                                 </div>
                                 <div>
                                     <a href="#"><i class="icon-twitter px-2"></i></a> &nbsp;<a href="#"><i
-                                        class="icon-fb px-2"></i></a>&nbsp;
+                                            class="icon-fb px-2"></i></a>&nbsp;
                                     <a href="#"><i class="icon-instagram px-2"></a></i>
                                 </div>
                             </div>
@@ -739,7 +789,8 @@
                                         <div class="blog-info-block box-text">
                                             <div class="blog-block-text pt-3">
                                                 <header class="block-head">
-                                                    <h5 class="text-heading"><a class="text-inherit" href="#">Ratione incidunt
+                                                    <h5 class="text-heading"><a class="text-inherit" href="#">Ratione
+                                                            incidunt
                                                             aspernatur ipsa et molestias cumque adipisci</a>
                                                     </h5>
                                                 </header>
@@ -757,7 +808,8 @@
                                         <div class="blog-info-block box-text">
                                             <div class="blog-block-text pt-3">
                                                 <header class="block-head">
-                                                    <h5 class="text-heading"><a class="text-inherit" href="#">Ratione incidunt
+                                                    <h5 class="text-heading"><a class="text-inherit" href="#">Ratione
+                                                            incidunt
                                                             aspernatur ipsa et molestias cumque adipisci</a>
                                                     </h5>
                                                 </header>
@@ -891,112 +943,115 @@
 
     <!-- FOOTER SECTION START -->
     <div class="footer-section mt-4">
-      <div class="row justify-content-between footer-top">
-        <div class="col-lg-6 property-rate">
-          <p class="footer-top-number"><span class="side-text">Call us today: </span><a href="tel:+4401285869489"
-              class="num-link">+44 (0) 1285 869
-              489</a></p>
-        </div>
-        <div class="col-lg-6 justify-content-end text-right property-rooms">
-
-          <p class="social-icons">
-            <span class="side-text">Stay Connected &nbsp;&nbsp;</span>
-            <a href="#"><i class="icon-twitter px-2"></i></a> &nbsp;<a href="#"><i class="icon-fb px-2"></i></a>&nbsp;
-            <a href="#"><i class="icon-instagram px-2"></a></i>
-          </p>
-        </div>
-      </div>
-
-      <div class="row footer-main p-4">
-        <div class="col-lg-6 p-4">
-          <div class=" logo-container">
-            <a href="index.html"><img class="header-logo pb-4" src="assets/logo_white.png" /></a>
-          </div>
-          <p class="footer-number">+44 (0) 1285 869 489</p>
-          <p class="footer-details">
-            Aenean imperdiet. Vestibulum suscipit nulla quis orci Nam pretium
-            turpis et arcu. Suspendisse faucibus, nunc et pellentesque
-            egestas, lacus ante convallis eul. <br />
-            <br />
-            Vestibulum dapibus nunc ac augue Morbi mollis tellus ac sapien.
-            Cras varius. Aliquam lobortis. Pellentesque egestas, neque sit
-            amet convallis pulvinar, justo nulla eleifend augue, ac auctor
-            orci leo non est. Morbi mattis ullamcorper velit. Nullam accumsan
-            lorem in dui.
-          </p>
-          <div class="blue-logos mt-4">
-            <img src="assets/habitat-zero-mono.png">
-            <img class="pl-4 pt-4" src="assets/blue-logo-2.png">
-          </div>
-        </div>
-        <div class="col-lg-2 menu-col">
-          <h1>
-            <a class="accordian-head collapsed" type="button" data-toggle="collapse" data-target="#collapseAbout"
-              aria-expanded="false" aria-controls="collapseAbout" class="">About us <i
-                class="fas fa-chevron-down"></i></a>
-          </h1>
-          <div id="collapseAbout" class="collapse">
-            <p class="mt-4"><a href="about.html">Our Story</a></p>
-            <p><a href="inspiration.html">Why book with us</a></p>
-            <p><a href="faq.html">FAQ’s</a></p>
-            <p><a href="contactus.html">Contact us</a></p>
-            <p><a href="news.html">News</a></p>
-            <p><a href="blog_list.html">Blog</a></p>
-          </div>
-        </div>
-        <div class="col-lg-2  menu-col">
-          <h1>
-            <a class="accordian-head collapsed" type="button" data-toggle="collapse" data-target="#collapseLocation"
-              aria-expanded="false" aria-controls="collapseLocation" class="">Our locations <i
-                class="fas fa-chevron-down"></i></a>
-          </h1>
-          <div id="collapseLocation" class="collapse">
-            <p class="mt-4 bolded-text"><a href="#">The Cotswolds</a></p>
-            <p><a href="#">Lower Mill Estate</a></p>
-            <p class="mt-4 bolded-text"><a href="#">Devon</a></p>
-            <p><a href="#">Birchwood</a></p>
-
-            <p class="mt-4 bolded-text"><a href="#">Dorset</a></p>
-            <p><a href="#">Silverlake</a></p>
-          </div>
-        </div>
-        <div class="col-lg-2  menu-col">
-          <h1>
-            <a class="accordian-head collapsed" type="button" data-toggle="collapse" data-target="#collapseOwners"
-              aria-expanded="false" aria-controls="collapseOwners" class="">Owners <i
-                class="fas fa-chevron-down"></i></a>
-          </h1>
-          <div id="collapseOwners" class="collapse">
-            <p class="mt-4 bolded-text">Are you an owner?</p>
-            <div class="intro-cta mt-2">
-              <button class="btn btn-primary btn-with-icon">
-                Log IN <i class="icon-long-right ml-3 mt-1-5"></i>
-              </button>
+        <div class="row justify-content-between footer-top">
+            <div class="col-lg-6 property-rate">
+                <p class="footer-top-number"><span class="side-text">Call us today: </span><a href="tel:+4401285869489"
+                        class="num-link">+44 (0) 1285 869
+                        489</a></p>
             </div>
-            <p class="mt-4 bolded-text">Like to list a property?</p>
-            <div class="intro-cta mt-2">
-              <button class="btn btn-primary btn-with-icon">
-                List Now <i class="icon-long-right ml-3 mt-1-5"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+            <div class="col-lg-6 justify-content-end text-right property-rooms">
 
-      <div class="row justify-content-between footer-bottom">
-        <div id="second" class="col-lg-4 roperty-rate">
-          <p>Copyright © 2020 Habitat Escapes</p>
+                <p class="social-icons">
+                    <span class="side-text">Stay Connected &nbsp;&nbsp;</span>
+                    <a href="#"><i class="icon-twitter px-2"></i></a> &nbsp;<a href="#"><i
+                            class="icon-fb px-2"></i></a>&nbsp;
+                    <a href="#"><i class="icon-instagram px-2"></a></i>
+                </p>
+            </div>
         </div>
-        <div id="first" class="col-lg-8 justify-content-end text-right property-rooms">
-          <p>
-            <a href="tnc.html">Terms & Conditions</a>&nbsp; | &nbsp; <a href="tnc.html">Cookie Policy</a> &nbsp; |
-            &nbsp;
-            <a href="tnc.html">Privacy Policy</a> &nbsp; | &nbsp; <a href="tnc.html">Modern Slavery Act</a> &nbsp; |
-            &nbsp;
-            <a href="tnc.html">Sitemap</a>
-          </p>
+
+        <div class="row footer-main p-4">
+            <div class="col-lg-6 p-4">
+                <div class=" logo-container">
+                    <a href="index.html"><img class="header-logo pb-4" src="assets/logo_white.png" /></a>
+                </div>
+                <p class="footer-number">+44 (0) 1285 869 489</p>
+                <p class="footer-details">
+                    Aenean imperdiet. Vestibulum suscipit nulla quis orci Nam pretium
+                    turpis et arcu. Suspendisse faucibus, nunc et pellentesque
+                    egestas, lacus ante convallis eul. <br />
+                    <br />
+                    Vestibulum dapibus nunc ac augue Morbi mollis tellus ac sapien.
+                    Cras varius. Aliquam lobortis. Pellentesque egestas, neque sit
+                    amet convallis pulvinar, justo nulla eleifend augue, ac auctor
+                    orci leo non est. Morbi mattis ullamcorper velit. Nullam accumsan
+                    lorem in dui.
+                </p>
+                <div class="blue-logos mt-4">
+                    <img src="assets/habitat-zero-mono.png">
+                    <img class="pl-4 pt-4" src="assets/blue-logo-2.png">
+                </div>
+            </div>
+            <div class="col-lg-2 menu-col">
+                <h1>
+                    <a class="accordian-head collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseAbout" aria-expanded="false" aria-controls="collapseAbout" class="">About
+                        us <i class="fas fa-chevron-down"></i></a>
+                </h1>
+                <div id="collapseAbout" class="collapse">
+                    <p class="mt-4"><a href="about.html">Our Story</a></p>
+                    <p><a href="inspiration.html">Why book with us</a></p>
+                    <p><a href="faq.html">FAQ’s</a></p>
+                    <p><a href="contactus.html">Contact us</a></p>
+                    <p><a href="news.html">News</a></p>
+                    <p><a href="blog_list.html">Blog</a></p>
+                </div>
+            </div>
+            <div class="col-lg-2  menu-col">
+                <h1>
+                    <a class="accordian-head collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseLocation" aria-expanded="false" aria-controls="collapseLocation"
+                        class="">Our locations <i class="fas fa-chevron-down"></i></a>
+                </h1>
+                <div id="collapseLocation" class="collapse">
+                    <p class="mt-4 bolded-text"><a href="#">The Cotswolds</a></p>
+                    <p><a href="#">Lower Mill Estate</a></p>
+                    <p class="mt-4 bolded-text"><a href="#">Devon</a></p>
+                    <p><a href="#">Birchwood</a></p>
+
+                    <p class="mt-4 bolded-text"><a href="#">Dorset</a></p>
+                    <p><a href="#">Silverlake</a></p>
+                </div>
+            </div>
+            <div class="col-lg-2  menu-col">
+                <h1>
+                    <a class="accordian-head collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseOwners" aria-expanded="false" aria-controls="collapseOwners"
+                        class="">Owners <i class="fas fa-chevron-down"></i></a>
+                </h1>
+                <div id="collapseOwners" class="collapse">
+                    <p class="mt-4 bolded-text">Are you an owner?</p>
+                    <div class="intro-cta mt-2">
+                        <button class="btn btn-primary btn-with-icon">
+                            Log IN <i class="icon-long-right ml-3 mt-1-5"></i>
+                        </button>
+                    </div>
+                    <p class="mt-4 bolded-text">Like to list a property?</p>
+                    <div class="intro-cta mt-2">
+                        <button class="btn btn-primary btn-with-icon">
+                            List Now <i class="icon-long-right ml-3 mt-1-5"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+
+        <div class="row justify-content-between footer-bottom">
+            <div id="second" class="col-lg-4 roperty-rate">
+                <p>Copyright © 2020 Habitat Escapes</p>
+            </div>
+            <div id="first" class="col-lg-8 justify-content-end text-right property-rooms">
+                <p>
+                    <a href="tnc.html">Terms & Conditions</a>&nbsp; | &nbsp; <a href="tnc.html">Cookie Policy</a> &nbsp;
+                    |
+                    &nbsp;
+                    <a href="tnc.html">Privacy Policy</a> &nbsp; | &nbsp; <a href="tnc.html">Modern Slavery Act</a>
+                    &nbsp; |
+                    &nbsp;
+                    <a href="tnc.html">Sitemap</a>
+                </p>
+            </div>
+        </div>
     </div>
     <!-- FOOTER SECTION END -->
 

@@ -53,7 +53,9 @@
               </button>
             </li>
             <li>
-              <button class="button-hd-search"><i class="icon-search icon-whiteable"></i></button>
+              <button class="button-hd-search d-none d-xl-inline-block"><i
+                  class="icon-search icon-whiteable"></i></button>
+              <button class="button-search-resp d-xl-none"><i class="icon-search icon-whiteable"></i></button>
               <div class="hd-search-block">
                 <form class="hd-search-form" action="#">
                   <input class="hd-search-input" type="text">
@@ -193,6 +195,53 @@
         </div>
 
       </div><!-- //.responsive-menu -->
+
+      <div class="responsive-search-block d-none">
+        <div class="form-group">
+          <div class="option-label mb-1">Location</div>
+          <div class="select-box dark">
+            <select class="form-select">
+              <option value="pick-location">Pick Location</option>
+              <option value="1">Location One</option>
+              <option value="2">Location Two</option>
+              <option value="3">Location Three</option>
+            </select>
+          </div>
+        </div><!-- /form-group -->
+
+        <div class="form-group">
+          <div class="option-label mb-1">Date</div>
+          <div class="option-selection-dual full-width">
+            <input type="text" class="form-control" value="15" min="1" max="31" />
+          </div>
+        </div><!-- /form-group -->
+
+        <div class="form-group">
+          <div class="option-label mb-1">Guests</div>
+          <div class="option-selection-dual full-width">
+            <input type="number" class="form-control selected-digit" value="1" min="0" />
+            <div class="number-controls-vertical">
+              <button class="button-iconic increment"><i class="fas fa-chevron-up"></i></button>
+              <button class="button-iconic decrement"><i class="fas fa-chevron-down"></i></button>
+            </div>
+          </div>
+        </div><!-- /form-group -->
+
+        <div class="form-group">
+          <div class="option-label mb-1">Duration</div>
+          <div class="option-selection-dual full-width">
+            <input type="number" class="form-control selected-digit" value="4" min="0" />
+            <div class="number-controls-vertical">
+              <button class="button-iconic increment"><i class="fas fa-chevron-up"></i></button>
+              <button class="button-iconic  decrement"><i class="fas fa-chevron-down"></i></button>
+            </div>
+          </div>
+        </div><!-- /form-group -->
+
+        <div class="control">
+          <button class="btn btn-primary btn-block">Check Availability</button>
+        </div>
+      </div><!-- //.responsive-search-block -->
 
       <div class="site-main-nav-bar d-none d-xl-block">
         <nav class="site-main-nav">
@@ -595,196 +644,196 @@
             <div class="row mt-4">
               <div class="card-deck">
 
-                      <!-- card starts here -->
-                      <div class="card ttd-card">
-                        <div class="box-image">
-                          <img src="./assets/Activities1.png" class="card-img-top" />
-                          <div class="ttd-card-tag bg-warning">QUICK - ONLY 4 SPACES LEFT</div>
-                        </div> 
-                        <div class="card-body">
-                        
-                          <h1 class="team-name">Yoga</h1>
-                          <!-- <h1 class="team-desg">By New York Times</h1> -->
+                <!-- card starts here -->
+                <div class="card ttd-card">
+                  <div class="box-image">
+                    <img src="./assets/Activities1.png" class="card-img-top" />
+                    <div class="ttd-card-tag bg-warning">QUICK - ONLY 4 SPACES LEFT</div>
+                  </div>
+                  <div class="card-body">
 
-                          <p class="property-long-description">
-                            Aenean imperdiet. Vestibulum suscipit nulla quis orci
-                            Nam pretium turpis et arcu. Suspendisse faucibus, nunc
-                            et pellentesque egestas, lacus ante convallis eul.
-                          </p>
+                    <h1 class="team-name">Yoga</h1>
+                    <!-- <h1 class="team-desg">By New York Times</h1> -->
 
+                    <p class="property-long-description">
+                      Aenean imperdiet. Vestibulum suscipit nulla quis orci
+                      Nam pretium turpis et arcu. Suspendisse faucibus, nunc
+                      et pellentesque egestas, lacus ante convallis eul.
+                    </p>
+
+                  </div>
+                  <div class="card-footer px-0 border-0 bg-transparent">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-4 ttd-card-price">£10.00</div>
+                        <div class="col-8 text-right px-0">
+                          <a class="btn ttd-card-cta btn-primary" href="#" role="button">Find out more</a>
                         </div>
-                          <div class="card-footer px-0 border-0 bg-transparent">
-                            <div class="container-fluid">
-                            <div class="row">
-                              <div class="col-4 ttd-card-price">£10.00</div>
-                              <div class="col-8 text-right px-0">
-                                <a class="btn ttd-card-cta btn-primary" href="#" role="button">Find out more</a>
-                              </div>
-                            </div>
-                            <hr />
+                      </div>
+                      <hr />
 
-                            <div class="activity-card-bottom">
-                              <div class="icon-section">
-                                <i class="icon-difficulty"></i>
-                                <div class="icon-label">
-                                  <div class="activity-heading">Difficulty</div>
-                                  <div class="activity-detail">Medium</div>
-                                </div>
-                              </div>
-                              <div class="icon-section">
-                                <i class="icon-age"></i>
-                                <div class="icon-label">
-                                  <div class="activity-heading">Age</div>
-                                  <div class="activity-detail">14+</div>
-                                </div>
-                              </div>
-                              <div class="icon-section">
-                                <i class="icon-difficulty"></i>
-                                <div class="icon-label">
-                                  <div class="activity-heading">Attendees</div>
-                                  <div class="activity-detail">23</div>
-                                </div>
-                              </div>
-                              <div class="icon-section">
-                                <i class="icon-spaces"></i>
-                                <div class="icon-label">
-                                  <div class="activity-heading">Spaces</div>
-                                  <div class="activity-detail">3</div>
-                                </div>
-                              </div>
-                            </div>
+                      <div class="activity-card-bottom">
+                        <div class="icon-section">
+                          <i class="icon-difficulty"></i>
+                          <div class="icon-label">
+                            <div class="activity-heading">Difficulty</div>
+                            <div class="activity-detail">Medium</div>
+                          </div>
+                        </div>
+                        <div class="icon-section">
+                          <i class="icon-age"></i>
+                          <div class="icon-label">
+                            <div class="activity-heading">Age</div>
+                            <div class="activity-detail">14+</div>
+                          </div>
+                        </div>
+                        <div class="icon-section">
+                          <i class="icon-difficulty"></i>
+                          <div class="icon-label">
+                            <div class="activity-heading">Attendees</div>
+                            <div class="activity-detail">23</div>
+                          </div>
+                        </div>
+                        <div class="icon-section">
+                          <i class="icon-spaces"></i>
+                          <div class="icon-label">
+                            <div class="activity-heading">Spaces</div>
+                            <div class="activity-detail">3</div>
                           </div>
                         </div>
                       </div>
-                      <!-- card ends here -->
+                    </div>
+                  </div>
+                </div>
+                <!-- card ends here -->
 
 
-                      <!-- card starts here -->
-                      <div class="card ttd-card">
-                        <div class="box-image">
-                          <img src="./assets/Activities1.png" class="card-img-top" />
-                          <div class="ttd-card-tag bg-warning">QUICK - ONLY 4 SPACES LEFT</div>
-                        </div> 
-                        <div class="card-body">
-                        
-                          <h1 class="team-name">Yoga</h1>
-                          <!-- <h1 class="team-desg">By New York Times</h1> -->
+                <!-- card starts here -->
+                <div class="card ttd-card">
+                  <div class="box-image">
+                    <img src="./assets/Activities1.png" class="card-img-top" />
+                    <div class="ttd-card-tag bg-warning">QUICK - ONLY 4 SPACES LEFT</div>
+                  </div>
+                  <div class="card-body">
 
-                          <p class="property-long-description">
-                            Aenean imperdiet. Vestibulum suscipit nulla quis orci
-                            Nam pretium turpis et arcu. Suspendisse faucibus, nunc
-                            et pellentesque egestas, lacus ante convallis eul.
-                          </p>
+                    <h1 class="team-name">Yoga</h1>
+                    <!-- <h1 class="team-desg">By New York Times</h1> -->
 
+                    <p class="property-long-description">
+                      Aenean imperdiet. Vestibulum suscipit nulla quis orci
+                      Nam pretium turpis et arcu. Suspendisse faucibus, nunc
+                      et pellentesque egestas, lacus ante convallis eul.
+                    </p>
+
+                  </div>
+                  <div class="card-footer px-0 border-0 bg-transparent">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-4 ttd-card-price">£10.00</div>
+                        <div class="col-8 text-right px-0">
+                          <a class="btn ttd-card-cta btn-primary" href="#" role="button">Find out more</a>
                         </div>
-                          <div class="card-footer px-0 border-0 bg-transparent">
-                            <div class="container-fluid">
-                            <div class="row">
-                              <div class="col-4 ttd-card-price">£10.00</div>
-                              <div class="col-8 text-right px-0">
-                                <a class="btn ttd-card-cta btn-primary" href="#" role="button">Find out more</a>
-                              </div>
-                            </div>
-                            <hr />
+                      </div>
+                      <hr />
 
-                            <div class="activity-card-bottom">
-                              <div class="icon-section">
-                                <i class="icon-difficulty"></i>
-                                <div class="icon-label">
-                                  <div class="activity-heading">Difficulty</div>
-                                  <div class="activity-detail">Medium</div>
-                                </div>
-                              </div>
-                              <div class="icon-section">
-                                <i class="icon-age"></i>
-                                <div class="icon-label">
-                                  <div class="activity-heading">Age</div>
-                                  <div class="activity-detail">14+</div>
-                                </div>
-                              </div>
-                              <div class="icon-section">
-                                <i class="icon-difficulty"></i>
-                                <div class="icon-label">
-                                  <div class="activity-heading">Attendees</div>
-                                  <div class="activity-detail">23</div>
-                                </div>
-                              </div>
-                              <div class="icon-section">
-                                <i class="icon-spaces"></i>
-                                <div class="icon-label">
-                                  <div class="activity-heading">Spaces</div>
-                                  <div class="activity-detail">3</div>
-                                </div>
-                              </div>
-                            </div>
+                      <div class="activity-card-bottom">
+                        <div class="icon-section">
+                          <i class="icon-difficulty"></i>
+                          <div class="icon-label">
+                            <div class="activity-heading">Difficulty</div>
+                            <div class="activity-detail">Medium</div>
+                          </div>
+                        </div>
+                        <div class="icon-section">
+                          <i class="icon-age"></i>
+                          <div class="icon-label">
+                            <div class="activity-heading">Age</div>
+                            <div class="activity-detail">14+</div>
+                          </div>
+                        </div>
+                        <div class="icon-section">
+                          <i class="icon-difficulty"></i>
+                          <div class="icon-label">
+                            <div class="activity-heading">Attendees</div>
+                            <div class="activity-detail">23</div>
+                          </div>
+                        </div>
+                        <div class="icon-section">
+                          <i class="icon-spaces"></i>
+                          <div class="icon-label">
+                            <div class="activity-heading">Spaces</div>
+                            <div class="activity-detail">3</div>
                           </div>
                         </div>
                       </div>
-                      <!-- card ends here -->
+                    </div>
+                  </div>
+                </div>
+                <!-- card ends here -->
 
 
-                      <!-- card starts here -->
-                      <div class="card ttd-card">
-                        <div class="box-image">
-                          <img src="./assets/Activities1.png" class="card-img-top" />
-                          <div class="ttd-card-tag bg-warning">QUICK - ONLY 4 SPACES LEFT</div>
-                        </div> 
-                        <div class="card-body">
-                        
-                          <h1 class="team-name">Yoga</h1>
-                          <!-- <h1 class="team-desg">By New York Times</h1> -->
+                <!-- card starts here -->
+                <div class="card ttd-card">
+                  <div class="box-image">
+                    <img src="./assets/Activities1.png" class="card-img-top" />
+                    <div class="ttd-card-tag bg-warning">QUICK - ONLY 4 SPACES LEFT</div>
+                  </div>
+                  <div class="card-body">
 
-                          <p class="property-long-description">
-                            Aenean imperdiet. Vestibulum suscipit nulla quis orci
-                            Nam pretium turpis et arcu. Suspendisse faucibus, nunc
-                            et pellentesque egestas, lacus ante convallis eul.
-                          </p>
+                    <h1 class="team-name">Yoga</h1>
+                    <!-- <h1 class="team-desg">By New York Times</h1> -->
 
+                    <p class="property-long-description">
+                      Aenean imperdiet. Vestibulum suscipit nulla quis orci
+                      Nam pretium turpis et arcu. Suspendisse faucibus, nunc
+                      et pellentesque egestas, lacus ante convallis eul.
+                    </p>
+
+                  </div>
+                  <div class="card-footer px-0 border-0 bg-transparent">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-4 ttd-card-price">£10.00</div>
+                        <div class="col-8 text-right px-0">
+                          <a class="btn ttd-card-cta btn-primary" href="#" role="button">Find out more</a>
                         </div>
-                          <div class="card-footer px-0 border-0 bg-transparent">
-                            <div class="container-fluid">
-                            <div class="row">
-                              <div class="col-4 ttd-card-price">£10.00</div>
-                              <div class="col-8 text-right px-0">
-                                <a class="btn ttd-card-cta btn-primary" href="#" role="button">Find out more</a>
-                              </div>
-                            </div>
-                            <hr />
+                      </div>
+                      <hr />
 
-                            <div class="activity-card-bottom">
-                              <div class="icon-section">
-                                <i class="icon-difficulty"></i>
-                                <div class="icon-label">
-                                  <div class="activity-heading">Difficulty</div>
-                                  <div class="activity-detail">Medium</div>
-                                </div>
-                              </div>
-                              <div class="icon-section">
-                                <i class="icon-age"></i>
-                                <div class="icon-label">
-                                  <div class="activity-heading">Age</div>
-                                  <div class="activity-detail">14+</div>
-                                </div>
-                              </div>
-                              <div class="icon-section">
-                                <i class="icon-difficulty"></i>
-                                <div class="icon-label">
-                                  <div class="activity-heading">Attendees</div>
-                                  <div class="activity-detail">23</div>
-                                </div>
-                              </div>
-                              <div class="icon-section">
-                                <i class="icon-spaces"></i>
-                                <div class="icon-label">
-                                  <div class="activity-heading">Spaces</div>
-                                  <div class="activity-detail">3</div>
-                                </div>
-                              </div>
-                            </div>
+                      <div class="activity-card-bottom">
+                        <div class="icon-section">
+                          <i class="icon-difficulty"></i>
+                          <div class="icon-label">
+                            <div class="activity-heading">Difficulty</div>
+                            <div class="activity-detail">Medium</div>
+                          </div>
+                        </div>
+                        <div class="icon-section">
+                          <i class="icon-age"></i>
+                          <div class="icon-label">
+                            <div class="activity-heading">Age</div>
+                            <div class="activity-detail">14+</div>
+                          </div>
+                        </div>
+                        <div class="icon-section">
+                          <i class="icon-difficulty"></i>
+                          <div class="icon-label">
+                            <div class="activity-heading">Attendees</div>
+                            <div class="activity-detail">23</div>
+                          </div>
+                        </div>
+                        <div class="icon-section">
+                          <i class="icon-spaces"></i>
+                          <div class="icon-label">
+                            <div class="activity-heading">Spaces</div>
+                            <div class="activity-detail">3</div>
                           </div>
                         </div>
                       </div>
-                      <!-- card ends here -->
+                    </div>
+                  </div>
+                </div>
+                <!-- card ends here -->
 
 
               </div>
@@ -802,7 +851,7 @@
             <div class="image"><img src="./assets/inspiration_img3.jpg" style="width:50%"></div>
             <div class="image"><img src="./assets/inspiration_img2.jpg" style="width:100%"></div>
           </div>
-        </div>        
+        </div>
         <div class="col-md-8">
           <div class="property-section-h2 text-left property-overview-heading">
             Water Sports Activities
@@ -828,7 +877,7 @@
         </div>
 
       </div>
-      <!-- Wellbeing2 section ends --> 
+      <!-- Wellbeing2 section ends -->
       <!-- Wellbeing2 CARDS START -->
       <div class="row mb-5">
         <div class="col-12 mt-2 px-0">
@@ -836,196 +885,196 @@
             <div class="row mt-4">
               <div class="card-deck">
 
-                      <!-- card starts here -->
-                      <div class="card ttd-card">
-                        <div class="box-image">
-                          <img src="./assets/Activities1.png" class="card-img-top" />
-                          <div class="ttd-card-tag bg-warning">QUICK - ONLY 4 SPACES LEFT</div>
-                        </div> 
-                        <div class="card-body">
-                        
-                          <h1 class="team-name">Yoga</h1>
-                          <!-- <h1 class="team-desg">By New York Times</h1> -->
+                <!-- card starts here -->
+                <div class="card ttd-card">
+                  <div class="box-image">
+                    <img src="./assets/Activities1.png" class="card-img-top" />
+                    <div class="ttd-card-tag bg-warning">QUICK - ONLY 4 SPACES LEFT</div>
+                  </div>
+                  <div class="card-body">
 
-                          <p class="property-long-description">
-                            Aenean imperdiet. Vestibulum suscipit nulla quis orci
-                            Nam pretium turpis et arcu. Suspendisse faucibus, nunc
-                            et pellentesque egestas, lacus ante convallis eul.
-                          </p>
+                    <h1 class="team-name">Yoga</h1>
+                    <!-- <h1 class="team-desg">By New York Times</h1> -->
 
+                    <p class="property-long-description">
+                      Aenean imperdiet. Vestibulum suscipit nulla quis orci
+                      Nam pretium turpis et arcu. Suspendisse faucibus, nunc
+                      et pellentesque egestas, lacus ante convallis eul.
+                    </p>
+
+                  </div>
+                  <div class="card-footer px-0 border-0 bg-transparent">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-4 ttd-card-price">£10.00</div>
+                        <div class="col-8 text-right px-0">
+                          <a class="btn ttd-card-cta btn-primary" href="#" role="button">Find out more</a>
                         </div>
-                          <div class="card-footer px-0 border-0 bg-transparent">
-                            <div class="container-fluid">
-                            <div class="row">
-                              <div class="col-4 ttd-card-price">£10.00</div>
-                              <div class="col-8 text-right px-0">
-                                <a class="btn ttd-card-cta btn-primary" href="#" role="button">Find out more</a>
-                              </div>
-                            </div>
-                            <hr />
+                      </div>
+                      <hr />
 
-                            <div class="activity-card-bottom">
-                              <div class="icon-section">
-                                <i class="icon-difficulty"></i>
-                                <div class="icon-label">
-                                  <div class="activity-heading">Difficulty</div>
-                                  <div class="activity-detail">Medium</div>
-                                </div>
-                              </div>
-                              <div class="icon-section">
-                                <i class="icon-age"></i>
-                                <div class="icon-label">
-                                  <div class="activity-heading">Age</div>
-                                  <div class="activity-detail">14+</div>
-                                </div>
-                              </div>
-                              <div class="icon-section">
-                                <i class="icon-difficulty"></i>
-                                <div class="icon-label">
-                                  <div class="activity-heading">Attendees</div>
-                                  <div class="activity-detail">23</div>
-                                </div>
-                              </div>
-                              <div class="icon-section">
-                                <i class="icon-spaces"></i>
-                                <div class="icon-label">
-                                  <div class="activity-heading">Spaces</div>
-                                  <div class="activity-detail">3</div>
-                                </div>
-                              </div>
-                            </div>
+                      <div class="activity-card-bottom">
+                        <div class="icon-section">
+                          <i class="icon-difficulty"></i>
+                          <div class="icon-label">
+                            <div class="activity-heading">Difficulty</div>
+                            <div class="activity-detail">Medium</div>
+                          </div>
+                        </div>
+                        <div class="icon-section">
+                          <i class="icon-age"></i>
+                          <div class="icon-label">
+                            <div class="activity-heading">Age</div>
+                            <div class="activity-detail">14+</div>
+                          </div>
+                        </div>
+                        <div class="icon-section">
+                          <i class="icon-difficulty"></i>
+                          <div class="icon-label">
+                            <div class="activity-heading">Attendees</div>
+                            <div class="activity-detail">23</div>
+                          </div>
+                        </div>
+                        <div class="icon-section">
+                          <i class="icon-spaces"></i>
+                          <div class="icon-label">
+                            <div class="activity-heading">Spaces</div>
+                            <div class="activity-detail">3</div>
                           </div>
                         </div>
                       </div>
-                      <!-- card ends here -->
+                    </div>
+                  </div>
+                </div>
+                <!-- card ends here -->
 
 
-                      <!-- card starts here -->
-                      <div class="card ttd-card">
-                        <div class="box-image">
-                          <img src="./assets/Activities1.png" class="card-img-top" />
-                          <div class="ttd-card-tag bg-warning">QUICK - ONLY 4 SPACES LEFT</div>
-                        </div> 
-                        <div class="card-body">
-                        
-                          <h1 class="team-name">Yoga</h1>
-                          <!-- <h1 class="team-desg">By New York Times</h1> -->
+                <!-- card starts here -->
+                <div class="card ttd-card">
+                  <div class="box-image">
+                    <img src="./assets/Activities1.png" class="card-img-top" />
+                    <div class="ttd-card-tag bg-warning">QUICK - ONLY 4 SPACES LEFT</div>
+                  </div>
+                  <div class="card-body">
 
-                          <p class="property-long-description">
-                            Aenean imperdiet. Vestibulum suscipit nulla quis orci
-                            Nam pretium turpis et arcu. Suspendisse faucibus, nunc
-                            et pellentesque egestas, lacus ante convallis eul.
-                          </p>
+                    <h1 class="team-name">Yoga</h1>
+                    <!-- <h1 class="team-desg">By New York Times</h1> -->
 
+                    <p class="property-long-description">
+                      Aenean imperdiet. Vestibulum suscipit nulla quis orci
+                      Nam pretium turpis et arcu. Suspendisse faucibus, nunc
+                      et pellentesque egestas, lacus ante convallis eul.
+                    </p>
+
+                  </div>
+                  <div class="card-footer px-0 border-0 bg-transparent">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-4 ttd-card-price">£10.00</div>
+                        <div class="col-8 text-right px-0">
+                          <a class="btn ttd-card-cta btn-primary" href="#" role="button">Find out more</a>
                         </div>
-                          <div class="card-footer px-0 border-0 bg-transparent">
-                            <div class="container-fluid">
-                            <div class="row">
-                              <div class="col-4 ttd-card-price">£10.00</div>
-                              <div class="col-8 text-right px-0">
-                                <a class="btn ttd-card-cta btn-primary" href="#" role="button">Find out more</a>
-                              </div>
-                            </div>
-                            <hr />
+                      </div>
+                      <hr />
 
-                            <div class="activity-card-bottom">
-                              <div class="icon-section">
-                                <i class="icon-difficulty"></i>
-                                <div class="icon-label">
-                                  <div class="activity-heading">Difficulty</div>
-                                  <div class="activity-detail">Medium</div>
-                                </div>
-                              </div>
-                              <div class="icon-section">
-                                <i class="icon-age"></i>
-                                <div class="icon-label">
-                                  <div class="activity-heading">Age</div>
-                                  <div class="activity-detail">14+</div>
-                                </div>
-                              </div>
-                              <div class="icon-section">
-                                <i class="icon-difficulty"></i>
-                                <div class="icon-label">
-                                  <div class="activity-heading">Attendees</div>
-                                  <div class="activity-detail">23</div>
-                                </div>
-                              </div>
-                              <div class="icon-section">
-                                <i class="icon-spaces"></i>
-                                <div class="icon-label">
-                                  <div class="activity-heading">Spaces</div>
-                                  <div class="activity-detail">3</div>
-                                </div>
-                              </div>
-                            </div>
+                      <div class="activity-card-bottom">
+                        <div class="icon-section">
+                          <i class="icon-difficulty"></i>
+                          <div class="icon-label">
+                            <div class="activity-heading">Difficulty</div>
+                            <div class="activity-detail">Medium</div>
+                          </div>
+                        </div>
+                        <div class="icon-section">
+                          <i class="icon-age"></i>
+                          <div class="icon-label">
+                            <div class="activity-heading">Age</div>
+                            <div class="activity-detail">14+</div>
+                          </div>
+                        </div>
+                        <div class="icon-section">
+                          <i class="icon-difficulty"></i>
+                          <div class="icon-label">
+                            <div class="activity-heading">Attendees</div>
+                            <div class="activity-detail">23</div>
+                          </div>
+                        </div>
+                        <div class="icon-section">
+                          <i class="icon-spaces"></i>
+                          <div class="icon-label">
+                            <div class="activity-heading">Spaces</div>
+                            <div class="activity-detail">3</div>
                           </div>
                         </div>
                       </div>
-                      <!-- card ends here -->
+                    </div>
+                  </div>
+                </div>
+                <!-- card ends here -->
 
 
-                      <!-- card starts here -->
-                      <div class="card ttd-card">
-                        <div class="box-image">
-                          <img src="./assets/Activities1.png" class="card-img-top" />
-                          <div class="ttd-card-tag bg-warning">QUICK - ONLY 4 SPACES LEFT</div>
-                        </div> 
-                        <div class="card-body">
-                        
-                          <h1 class="team-name">Yoga</h1>
-                          <!-- <h1 class="team-desg">By New York Times</h1> -->
+                <!-- card starts here -->
+                <div class="card ttd-card">
+                  <div class="box-image">
+                    <img src="./assets/Activities1.png" class="card-img-top" />
+                    <div class="ttd-card-tag bg-warning">QUICK - ONLY 4 SPACES LEFT</div>
+                  </div>
+                  <div class="card-body">
 
-                          <p class="property-long-description">
-                            Aenean imperdiet. Vestibulum suscipit nulla quis orci
-                            Nam pretium turpis et arcu. Suspendisse faucibus, nunc
-                            et pellentesque egestas, lacus ante convallis eul.
-                          </p>
+                    <h1 class="team-name">Yoga</h1>
+                    <!-- <h1 class="team-desg">By New York Times</h1> -->
 
+                    <p class="property-long-description">
+                      Aenean imperdiet. Vestibulum suscipit nulla quis orci
+                      Nam pretium turpis et arcu. Suspendisse faucibus, nunc
+                      et pellentesque egestas, lacus ante convallis eul.
+                    </p>
+
+                  </div>
+                  <div class="card-footer px-0 border-0 bg-transparent">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-4 ttd-card-price">£10.00</div>
+                        <div class="col-8 text-right px-0">
+                          <a class="btn ttd-card-cta btn-primary" href="#" role="button">Find out more</a>
                         </div>
-                          <div class="card-footer px-0 border-0 bg-transparent">
-                            <div class="container-fluid">
-                            <div class="row">
-                              <div class="col-4 ttd-card-price">£10.00</div>
-                              <div class="col-8 text-right px-0">
-                                <a class="btn ttd-card-cta btn-primary" href="#" role="button">Find out more</a>
-                              </div>
-                            </div>
-                            <hr />
+                      </div>
+                      <hr />
 
-                            <div class="activity-card-bottom">
-                              <div class="icon-section">
-                                <i class="icon-difficulty"></i>
-                                <div class="icon-label">
-                                  <div class="activity-heading">Difficulty</div>
-                                  <div class="activity-detail">Medium</div>
-                                </div>
-                              </div>
-                              <div class="icon-section">
-                                <i class="icon-age"></i>
-                                <div class="icon-label">
-                                  <div class="activity-heading">Age</div>
-                                  <div class="activity-detail">14+</div>
-                                </div>
-                              </div>
-                              <div class="icon-section">
-                                <i class="icon-difficulty"></i>
-                                <div class="icon-label">
-                                  <div class="activity-heading">Attendees</div>
-                                  <div class="activity-detail">23</div>
-                                </div>
-                              </div>
-                              <div class="icon-section">
-                                <i class="icon-spaces"></i>
-                                <div class="icon-label">
-                                  <div class="activity-heading">Spaces</div>
-                                  <div class="activity-detail">3</div>
-                                </div>
-                              </div>
-                            </div>
+                      <div class="activity-card-bottom">
+                        <div class="icon-section">
+                          <i class="icon-difficulty"></i>
+                          <div class="icon-label">
+                            <div class="activity-heading">Difficulty</div>
+                            <div class="activity-detail">Medium</div>
+                          </div>
+                        </div>
+                        <div class="icon-section">
+                          <i class="icon-age"></i>
+                          <div class="icon-label">
+                            <div class="activity-heading">Age</div>
+                            <div class="activity-detail">14+</div>
+                          </div>
+                        </div>
+                        <div class="icon-section">
+                          <i class="icon-difficulty"></i>
+                          <div class="icon-label">
+                            <div class="activity-heading">Attendees</div>
+                            <div class="activity-detail">23</div>
+                          </div>
+                        </div>
+                        <div class="icon-section">
+                          <i class="icon-spaces"></i>
+                          <div class="icon-label">
+                            <div class="activity-heading">Spaces</div>
+                            <div class="activity-detail">3</div>
                           </div>
                         </div>
                       </div>
-                      <!-- card ends here -->
+                    </div>
+                  </div>
+                </div>
+                <!-- card ends here -->
 
 
               </div>
@@ -1069,7 +1118,7 @@
         </div>
       </div>
       <!-- Wellbeing3 section ends -->
-      <!-- Wellbeing3 CARDS START --> 
+      <!-- Wellbeing3 CARDS START -->
       <div class="row mb-5">
         <div class="col-12 mt-2 px-0">
           <div class="container-fluid">
@@ -1081,9 +1130,9 @@
                   <div class="box-image">
                     <img src="./assets/Activities1.png" class="card-img-top" />
                     <div class="ttd-card-tag bg-warning">QUICK - ONLY 4 SPACES LEFT</div>
-                  </div> 
+                  </div>
                   <div class="card-body">
-                  
+
                     <h1 class="team-name">Yoga</h1>
                     <!-- <h1 class="team-desg">By New York Times</h1> -->
 
@@ -1094,8 +1143,8 @@
                     </p>
 
                   </div>
-                    <div class="card-footer px-0 border-0 bg-transparent">
-                      <div class="container-fluid">
+                  <div class="card-footer px-0 border-0 bg-transparent">
+                    <div class="container-fluid">
                       <div class="row">
                         <div class="col-4 ttd-card-price">£10</div>
                         <div class="col-8 text-right px-0">
@@ -1166,9 +1215,9 @@
                   <div class="box-image">
                     <img src="./assets/Activities1.png" class="card-img-top" />
                     <div class="ttd-card-tag bg-warning">QUICK - ONLY 4 SPACES LEFT</div>
-                  </div> 
+                  </div>
                   <div class="card-body">
-                  
+
                     <h1 class="team-name">Yoga</h1>
                     <!-- <h1 class="team-desg">By New York Times</h1> -->
 
@@ -1179,8 +1228,8 @@
                     </p>
 
                   </div>
-                    <div class="card-footer px-0 border-0 bg-transparent">
-                      <div class="container-fluid">
+                  <div class="card-footer px-0 border-0 bg-transparent">
+                    <div class="container-fluid">
                       <div class="row">
                         <div class="col-4 ttd-card-price">£10</div>
                         <div class="col-8 text-right px-0">
@@ -1251,9 +1300,9 @@
                   <div class="box-image">
                     <img src="./assets/Activities1.png" class="card-img-top" />
                     <div class="ttd-card-tag bg-warning">QUICK - ONLY 4 SPACES LEFT</div>
-                  </div> 
+                  </div>
                   <div class="card-body">
-                  
+
                     <h1 class="team-name">Yoga</h1>
                     <!-- <h1 class="team-desg">By New York Times</h1> -->
 
@@ -1264,8 +1313,8 @@
                     </p>
 
                   </div>
-                    <div class="card-footer px-0 border-0 bg-transparent">
-                      <div class="container-fluid">
+                  <div class="card-footer px-0 border-0 bg-transparent">
+                    <div class="container-fluid">
                       <div class="row">
                         <div class="col-4 ttd-card-price">£10</div>
                         <div class="col-8 text-right px-0">
@@ -1337,9 +1386,9 @@
         </div>
       </div>
       <!-- Wellbeing3 CARDS END -->
-      <hr />      
+      <hr />
     </div>
-    
+
 
 
 
