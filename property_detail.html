@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="./styles/slick.css">
   <link rel="stylesheet" href="./styles/main.css" />
   <link rel="stylesheet" href="./styles/style-k.css" />
-  
+
 
 </head>
 
@@ -51,7 +51,9 @@
               </button>
             </li>
             <li>
-              <button class="button-hd-search"><i class="icon-search icon-whiteable"></i></button>
+              <button class="button-hd-search d-none d-xl-inline-block"><i
+                  class="icon-search icon-whiteable"></i></button>
+              <button class="button-search-resp d-xl-none"><i class="icon-search icon-whiteable"></i></button>
               <div class="hd-search-block">
                 <form class="hd-search-form" action="#">
                   <input class="hd-search-input" type="text">
@@ -192,6 +194,53 @@
 
       </div><!-- //.responsive-menu -->
 
+      <div class="responsive-search-block d-none">
+        <div class="form-group">
+          <div class="option-label mb-1">Location</div>
+          <div class="select-box dark">
+            <select class="form-select">
+              <option value="pick-location">Pick Location</option>
+              <option value="1">Location One</option>
+              <option value="2">Location Two</option>
+              <option value="3">Location Three</option>
+            </select>
+          </div>
+        </div><!-- /form-group -->
+
+        <div class="form-group">
+          <div class="option-label mb-1">Date</div>
+          <div class="option-selection-dual full-width">
+            <input type="text" class="form-control" value="15" min="1" max="31" />
+          </div>
+        </div><!-- /form-group -->
+
+        <div class="form-group">
+          <div class="option-label mb-1">Guests</div>
+          <div class="option-selection-dual full-width">
+            <input type="number" class="form-control selected-digit" value="1" min="0" />
+            <div class="number-controls-vertical">
+              <button class="button-iconic increment"><i class="fas fa-chevron-up"></i></button>
+              <button class="button-iconic decrement"><i class="fas fa-chevron-down"></i></button>
+            </div>
+          </div>
+        </div><!-- /form-group -->
+
+        <div class="form-group">
+          <div class="option-label mb-1">Duration</div>
+          <div class="option-selection-dual full-width">
+            <input type="number" class="form-control selected-digit" value="4" min="0" />
+            <div class="number-controls-vertical">
+              <button class="button-iconic increment"><i class="fas fa-chevron-up"></i></button>
+              <button class="button-iconic  decrement"><i class="fas fa-chevron-down"></i></button>
+            </div>
+          </div>
+        </div><!-- /form-group -->
+
+        <div class="control">
+          <button class="btn btn-primary btn-block">Check Availability</button>
+        </div>
+      </div><!-- //.responsive-search-block -->
+
       <div class="site-main-nav-bar d-none d-xl-block">
         <nav class="site-main-nav">
           <ul class="menu">
@@ -289,7 +338,7 @@
                             <p class="text-sm">Quidem modi sapiente veritatis, qui enim suscipit harum magni eligendi
                               earum saepe iure <a href="#" class="text-primary">View all</a></p>
                           </header>
-                                                    <ul class="list-iconic-menu">
+                          <ul class="list-iconic-menu">
                             <li><a href="#"><i class="icon-star-outline mr-2"></i><span>Overview</span></a></li>
                             <li><a href="#"><i class="icon-cycle mr-2"></i><span>Cycling</span></a></li>
                             <li><a href="#"><i class="icon-activities mr-2"></i><span>Activities</span></a></li>
@@ -310,20 +359,20 @@
 
                           <div class="mb-3">
                             <a href="#">
-                            <i class="icon-food mr-1"></i>
-                            Italian Restaurant Title
+                              <i class="icon-food mr-1"></i>
+                              Italian Restaurant Title
                             </a>
                           </div>
                           <div class="mb-3">
                             <a href="#">
-                            <i class="icon-food mr-1"></i>
-                            Local Restaurant Title
-                          </a>
+                              <i class="icon-food mr-1"></i>
+                              Local Restaurant Title
+                            </a>
                           </div>
                           <div class="mb-3">
                             <a href="#">
-                            <i class="icon-food mr-1"></i>
-                            Local Restaurant Title
+                              <i class="icon-food mr-1"></i>
+                              Local Restaurant Title
                             </a>
                           </div>
 
@@ -783,40 +832,41 @@
                       aria-labelledby="headingKeyFeatures" data-parent="#accordion">
                       <div class="card-body property-accordian-card-body">
                         <div class="container-fluid">
-                        <div class="row">
-                          <div class="col-4">
-                            <i class="icon-bed"></i> <span class="property-text align-bottom">Sleep 8</span>
+                          <div class="row">
+                            <div class="col-4">
+                              <i class="icon-bed"></i> <span class="property-text align-bottom">Sleep 8</span>
+                            </div>
+                            <div class="col-4">
+                              <i class="icon-campfire"></i> <span class="property-text align-bottom">Camp fire</span>
+                            </div>
+                            <div class="col-4">
+                              <i class="icon-highchair"></i> <span class="property-text align-bottom">High Chair</span>
+                            </div>
                           </div>
-                          <div class="col-4">
-                            <i class="icon-campfire"></i> <span class="property-text align-bottom">Camp fire</span>
+                          <div class="row mt-4">
+                            <div class="col-4">
+                              <i class="icon-pet"></i> <span class="property-text align-bottom">Pet friendly</span>
+                            </div>
+                            <div class="col-4">
+                              <i class="icon-bbq" aria-hidden="true"></i> <span
+                                class="property-text align-bottom">BBQ</span>
+                            </div>
+                            <div class="col-4">
+                              <i class="icon-wifi"></i> <span class="property-text align-bottom">WiFi</span>
+                            </div>
                           </div>
-                          <div class="col-4">
-                            <i class="icon-highchair"></i> <span class="property-text align-bottom">High Chair</span>
+                          <div class="row mt-4">
+                            <div class="col-4">
+                              <i class="icon-hottub"></i> <span class="property-text align-bottom">Hot tub</span>
+                            </div>
+                            <div class="col-4">
+                              <i class="icon-spa"></i> <span class="property-text align-bottom">Access to spa</span>
+                            </div>
+                            <div class="col-4">
+                              <i class="icon-tv"></i> <span class="property-text align-bottom">TV</span>
+                            </div>
                           </div>
                         </div>
-                        <div class="row mt-4">
-                          <div class="col-4">
-                            <i class="icon-pet"></i> <span class="property-text align-bottom">Pet friendly</span>
-                          </div>
-                          <div class="col-4">
-                            <i class="icon-bbq" aria-hidden="true"></i> <span class="property-text align-bottom">BBQ</span>
-                          </div>
-                          <div class="col-4">
-                            <i class="icon-wifi"></i> <span class="property-text align-bottom">WiFi</span>
-                          </div>
-                        </div>
-                        <div class="row mt-4">
-                          <div class="col-4">
-                            <i class="icon-hottub"></i> <span class="property-text align-bottom">Hot tub</span>
-                          </div>
-                          <div class="col-4">
-                            <i class="icon-spa"></i> <span class="property-text align-bottom">Access to spa</span>
-                          </div>
-                          <div class="col-4">
-                            <i class="icon-tv"></i> <span class="property-text align-bottom">TV</span>
-                          </div>
-                        </div>
-                      </div>
                         <!-- Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. -->
                       </div>
                     </div>
@@ -845,7 +895,8 @@
                         <!-- Accomodation Detail here -->
                         <div class="container">
                           <div class="row">
-                            <div class="property-text col-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            <div class="property-text col-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                              sed do
                               eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
                           </div>
                         </div>
@@ -875,15 +926,20 @@
                         <div class="container">
                           <div class="row">
                             <div class="property-text col-12">
-                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                              3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                              laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                              squid.
+                              3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                              nesciunt
+                              laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                              single-origin
                               coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                              anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-                              occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                              anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                              Leggings
+                              occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+                              heard
                               of them accusamus labore sustainable VHS.</div>
                           </div>
-                        </div>                        
+                        </div>
 
                       </div>
                     </div>
@@ -913,7 +969,8 @@
                       <div class="card-body property-accordian-card-body property-text">
                         <div class="container">
                           <div class="row">
-                            <div class="property-text col-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            <div class="property-text col-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                              sed do
                               eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
                           </div>
                         </div>
@@ -945,7 +1002,8 @@
                       <div class="card-body property-accordian-card-body property-text">
                         <div class="container">
                           <div class="row">
-                            <div class="property-text col-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            <div class="property-text col-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                              sed do
                               eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
                           </div>
                         </div>
@@ -974,7 +1032,8 @@
                       <div class="card-body property-accordian-card-body property-text">
                         <div class="container">
                           <div class="row">
-                            <div class="property-text col-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            <div class="property-text col-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                              sed do
                               eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
                           </div>
                         </div>

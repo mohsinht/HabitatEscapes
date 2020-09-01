@@ -50,7 +50,10 @@
                             </button>
                         </li>
                         <li>
-                            <button class="button-hd-search"><i class="icon-search icon-whiteable"></i></button>
+                            <button class="button-hd-search d-none d-xl-inline-block"><i
+                                    class="icon-search icon-whiteable"></i></button>
+                            <button class="button-search-resp d-xl-none"><i
+                                    class="icon-search icon-whiteable"></i></button>
                             <div class="hd-search-block">
                                 <form class="hd-search-form" action="#">
                                     <input class="hd-search-input" type="text">
@@ -195,6 +198,53 @@
 
             </div><!-- //.responsive-menu -->
 
+            <div class="responsive-search-block d-none">
+                <div class="form-group">
+                    <div class="option-label mb-1">Location</div>
+                    <div class="select-box dark">
+                        <select class="form-select">
+                            <option value="pick-location">Pick Location</option>
+                            <option value="1">Location One</option>
+                            <option value="2">Location Two</option>
+                            <option value="3">Location Three</option>
+                        </select>
+                    </div>
+                </div><!-- /form-group -->
+
+                <div class="form-group">
+                    <div class="option-label mb-1">Date</div>
+                    <div class="option-selection-dual full-width">
+                        <input type="text" class="form-control" value="15" min="1" max="31" />
+                    </div>
+                </div><!-- /form-group -->
+
+                <div class="form-group">
+                    <div class="option-label mb-1">Guests</div>
+                    <div class="option-selection-dual full-width">
+                        <input type="number" class="form-control selected-digit" value="1" min="0" />
+                        <div class="number-controls-vertical">
+                            <button class="button-iconic increment"><i class="fas fa-chevron-up"></i></button>
+                            <button class="button-iconic decrement"><i class="fas fa-chevron-down"></i></button>
+                        </div>
+                    </div>
+                </div><!-- /form-group -->
+
+                <div class="form-group">
+                    <div class="option-label mb-1">Duration</div>
+                    <div class="option-selection-dual full-width">
+                        <input type="number" class="form-control selected-digit" value="4" min="0" />
+                        <div class="number-controls-vertical">
+                            <button class="button-iconic increment"><i class="fas fa-chevron-up"></i></button>
+                            <button class="button-iconic  decrement"><i class="fas fa-chevron-down"></i></button>
+                        </div>
+                    </div>
+                </div><!-- /form-group -->
+
+                <div class="control">
+                    <button class="btn btn-primary btn-block">Check Availability</button>
+                </div>
+            </div><!-- //.responsive-search-block -->
+
             <div class="site-main-nav-bar d-none d-xl-block">
                 <nav class="site-main-nav">
                     <ul class="menu">
@@ -203,76 +253,76 @@
                             <div class="mega-dropdown">
                                 <div class="container-fluid">
 
-                  <div class="mega-menu-contents">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <div class="row row-minus">
-                          <div class="col-8">
-                            <div class="destination-box destination-img1">
-                              <h4 class="text-heading">Lower Mill Estate</h4>
-                              <h6>The Cotswolds</h6>
-                            </div>
-                          </div>
+                                    <div class="mega-menu-contents">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="row row-minus">
+                                                    <div class="col-8">
+                                                        <div class="destination-box destination-img1">
+                                                            <h4 class="text-heading">Lower Mill Estate</h4>
+                                                            <h6>The Cotswolds</h6>
+                                                        </div>
+                                                    </div>
 
-                          <div class="col-4">
-                            <ul class="list-destination">
-                              <li><a href="#">The Properties</a></li>
-                              <li><a href="#">The Estate</a></li>
-                              <li><a href="#">Food & Drink</a></li>
-                              <li><a href="#">Spa</a></li>
-                              <li><a href="#">Local Area</a></li>
-                              <li><a href="#">Gallery</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
+                                                    <div class="col-4">
+                                                        <ul class="list-destination">
+                                                            <li><a href="#">The Properties</a></li>
+                                                            <li><a href="#">The Estate</a></li>
+                                                            <li><a href="#">Food & Drink</a></li>
+                                                            <li><a href="#">Spa</a></li>
+                                                            <li><a href="#">Local Area</a></li>
+                                                            <li><a href="#">Gallery</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
 
-                      <div class="col-md-4">
-                        <div class="row row-minus">
-                          <div class="col-8">
-                            <div class="destination-box destination-img2">
-                              <h4 class="text-heading">Silverlake</h4>
-                              <h6>Dorset</h6>
-                            </div>
-                          </div>
+                                            <div class="col-md-4">
+                                                <div class="row row-minus">
+                                                    <div class="col-8">
+                                                        <div class="destination-box destination-img2">
+                                                            <h4 class="text-heading">Silverlake</h4>
+                                                            <h6>Dorset</h6>
+                                                        </div>
+                                                    </div>
 
-                          <div class="col-4">
-                            <ul class="list-destination">
-                              <li><a href="#">The Properties</a></li>
-                              <li><a href="#">The Estate</a></li>
-                              <li><a href="#">Food & Drink</a></li>
-                              <li><a href="#">Spa</a></li>
-                              <li><a href="#">Local Area</a></li>
-                              <li><a href="#">Gallery</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
+                                                    <div class="col-4">
+                                                        <ul class="list-destination">
+                                                            <li><a href="#">The Properties</a></li>
+                                                            <li><a href="#">The Estate</a></li>
+                                                            <li><a href="#">Food & Drink</a></li>
+                                                            <li><a href="#">Spa</a></li>
+                                                            <li><a href="#">Local Area</a></li>
+                                                            <li><a href="#">Gallery</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
 
-                      <div class="col-md-4">
-                        <div class="row row-minus">
-                          <div class="col-8">
-                            <div class="destination-box destination-img1">
-                              <h4 class="text-heading">Birchwood</h4>
-                              <h6>Devon</h6>
-                            </div>
-                          </div>
+                                            <div class="col-md-4">
+                                                <div class="row row-minus">
+                                                    <div class="col-8">
+                                                        <div class="destination-box destination-img1">
+                                                            <h4 class="text-heading">Birchwood</h4>
+                                                            <h6>Devon</h6>
+                                                        </div>
+                                                    </div>
 
-                          <div class="col-4">
-                            <ul class="list-destination">
-                              <li><a href="#">The Properties</a></li>
-                              <li><a href="#">The Estate</a></li>
-                              <li><a href="#">Food & Drink</a></li>
-                              <li><a href="#">Spa</a></li>
-                              <li><a href="#">Local Area</a></li>
-                              <li><a href="#">Gallery</a></li>
-                            </ul>
-                          </div>
+                                                    <div class="col-4">
+                                                        <ul class="list-destination">
+                                                            <li><a href="#">The Properties</a></li>
+                                                            <li><a href="#">The Estate</a></li>
+                                                            <li><a href="#">Food & Drink</a></li>
+                                                            <li><a href="#">Spa</a></li>
+                                                            <li><a href="#">Local Area</a></li>
+                                                            <li><a href="#">Gallery</a></li>
+                                                        </ul>
+                                                    </div>
 
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
                                 </div>
                             </div>
@@ -606,51 +656,51 @@
                 </div>
             </div>
 
-    <!-- INSPIRATION SECTION START -->
+            <!-- INSPIRATION SECTION START -->
 
-    <div class="inspiration-section container-fluid text-center mt-4 pt-4">
-        <div class="intro-top-img"><img src="assets/leaf_logo_dark.png" /></div>
-        <div class="intro-heading">
-          <h3 class="intro-sub">Looking for</h3>
-          <h1 class="text-heading">Inspiration</h1>
-        </div>
-  
-        <div class="row pt-4 pb-4">
-          <div class="col-md-6 px-2">
-            <div class="col-md-12 inspiration-img inspiration-img1 mb-4">
-              Hot Tub Holidays
+            <div class="inspiration-section container-fluid text-center mt-4 pt-4">
+                <div class="intro-top-img"><img src="assets/leaf_logo_dark.png" /></div>
+                <div class="intro-heading">
+                    <h3 class="intro-sub">Looking for</h3>
+                    <h1 class="text-heading">Inspiration</h1>
+                </div>
+
+                <div class="row pt-4 pb-4">
+                    <div class="col-md-6 px-2">
+                        <div class="col-md-12 inspiration-img inspiration-img1 mb-4">
+                            Hot Tub Holidays
+                        </div>
+                    </div>
+                    <div class="col-md-6 pl-0 pr-0">
+                        <div class="row">
+                            <div class="col-md-6 px-2">
+                                <div class="col-md-12 inspiration-img inspiration-img2">
+                                    Family time
+                                </div>
+                            </div>
+                            <div class="col-md-6 pl-2 pr-0">
+                                <div class="col-md-12 inspiration-img inspiration-img3">
+                                    Spring Breaks
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 px-2">
+                                <div class="col-md-12 inspiration-img inspiration-img4">
+                                    Romantic Breaks
+                                </div>
+                            </div>
+                            <div class="col-md-6 pl-2 pr-0">
+                                <div class="col-md-12 inspiration-img inspiration-img5">
+                                    Private Pools
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md-6 pl-0 pr-0">
-            <div class="row">
-              <div class="col-md-6 px-2">
-                <div class="col-md-12 inspiration-img inspiration-img2">
-                  Family time
-                </div>
-              </div>
-              <div class="col-md-6 pl-2 pr-0">
-                <div class="col-md-12 inspiration-img inspiration-img3">
-                  Spring Breaks
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6 px-2">
-                <div class="col-md-12 inspiration-img inspiration-img4">
-                  Romantic Breaks
-                </div>
-              </div>
-              <div class="col-md-6 pl-2 pr-0">
-                <div class="col-md-12 inspiration-img inspiration-img5">
-                  Private Pools
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <!-- INSPIRATION SECTION END -->
+
+            <!-- INSPIRATION SECTION END -->
 
             <!--VIDEO SECTION-->
 
@@ -669,8 +719,8 @@
                                     <!-- style="margin-bottom: 50px;" -->
                                     <div class="col-sm-12 col-md-6">
                                         <div class="iframe-youtube-container">
-                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/q5tlV-CA8pk"
-                                                frameborder="0"
+                                            <iframe width="560" height="315"
+                                                src="https://www.youtube.com/embed/q5tlV-CA8pk" frameborder="0"
                                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                                 allowfullscreen></iframe>
                                         </div>
@@ -807,42 +857,48 @@
 
             <section class="container-fluid mb-5 py-5 mt-5">
                 <header class="heading text-center mb-4">
-                  <h3 class="text-heading">Visitor Feedback</h3>
+                    <h3 class="text-heading">Visitor Feedback</h3>
                 </header>
-          
-                <div class="visitor-slider slider arrows-lg" data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "dots": true}'>
-                  <div class="visitor-block text-center">
-                    <img src="./assets/visitor1.png" />
-                    <div class="property-visitor-name">Ben Sherman, Newcastle</div>
-                    <div>
-                      <i class="fas fa-star starred"></i>
-                      <i class="fas fa-star starred"></i>
-                      <i class="fas fa-star starred"></i>
-                      <i class="fas fa-star starred"></i>
-                      <i class="fas fa-star starred"></i>
+
+                <div class="visitor-slider slider arrows-lg"
+                    data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "dots": true}'>
+                    <div class="visitor-block text-center">
+                        <img src="./assets/visitor1.png" />
+                        <div class="property-visitor-name">Ben Sherman, Newcastle</div>
+                        <div>
+                            <i class="fas fa-star starred"></i>
+                            <i class="fas fa-star starred"></i>
+                            <i class="fas fa-star starred"></i>
+                            <i class="fas fa-star starred"></i>
+                            <i class="fas fa-star starred"></i>
+                        </div>
+                        <div class="property-visitorfeedback-carousel-comment">Pellentesque ut neque. Vestibulum ante
+                            ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Nullam vel sem.
+                            Phasellus accumsan
+                            cursus velit. Vivamus consectetuer hendrerit lacus.leo ligula, porttitor eu, consequat
+                            vitae, eleifend ac,
+                            enim. Sed lectus.</div>
                     </div>
-                    <div class="property-visitorfeedback-carousel-comment">Pellentesque ut neque. Vestibulum ante ipsum primis in
-                      faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Nullam vel sem. Phasellus accumsan
-                      cursus velit. Vivamus consectetuer hendrerit lacus.leo ligula, porttitor eu, consequat vitae, eleifend ac,
-                      enim. Sed lectus.</div>
-                  </div>
-                  <div class="visitor-block text-center">
-                    <img src="./assets/visitor2.png" />
-                    <div class="property-visitor-name">Ben Sherman 2, Newcastle</div>
-                    <div>
-                      <i class="fas fa-star starred"></i>
-                      <i class="fas fa-star starred"></i>
-                      <i class="fas fa-star starred"></i>
-                      <i class="fas fa-star starred"></i>
-                      <i class="fas fa-star dark-starred"></i>
+                    <div class="visitor-block text-center">
+                        <img src="./assets/visitor2.png" />
+                        <div class="property-visitor-name">Ben Sherman 2, Newcastle</div>
+                        <div>
+                            <i class="fas fa-star starred"></i>
+                            <i class="fas fa-star starred"></i>
+                            <i class="fas fa-star starred"></i>
+                            <i class="fas fa-star starred"></i>
+                            <i class="fas fa-star dark-starred"></i>
+                        </div>
+                        <div class="property-visitorfeedback-carousel-comment">Amet consectetur adipisicing elit.
+                            Impedit tempore
+                            fugiat, nemo quas dolor aspernatur, tempora illo quod sequi ipsa at recusandae. Pariatur
+                            numquam enim sunt
+                            facere, totam voluptatibus velit?</div>
                     </div>
-                    <div class="property-visitorfeedback-carousel-comment">Amet consectetur adipisicing elit. Impedit tempore
-                      fugiat, nemo quas dolor aspernatur, tempora illo quod sequi ipsa at recusandae. Pariatur numquam enim sunt
-                      facere, totam voluptatibus velit?</div>
-                  </div>
                 </div>
                 <!-- Visitor Feedback Carousel ends here -->
-              </section>
+            </section>
 
             <section class="subscription-section pt-4 pb-4">
                 <div class="container">

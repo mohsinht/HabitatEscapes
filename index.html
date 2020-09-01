@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
     integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
   <link rel="stylesheet" href="./styles/slick.css" />
-  
+
   <link rel="stylesheet" href="./styles/style-k.css" />
   <link rel="stylesheet" href="./styles/main.css" />
 
@@ -51,7 +51,9 @@
               </button>
             </li>
             <li>
-              <button class="button-hd-search"><i class="icon-search icon-whiteable"></i></button>
+              <button class="button-hd-search d-none d-xl-inline-block"><i
+                  class="icon-search icon-whiteable"></i></button>
+              <button class="button-search-resp d-xl-none"><i class="icon-search icon-whiteable"></i></button>
               <div class="hd-search-block">
                 <form class="hd-search-form" action="#">
                   <input class="hd-search-input" type="text">
@@ -192,6 +194,54 @@
 
       </div><!-- //.responsive-menu -->
 
+      <div class="responsive-search-block d-none">
+        <div class="form-group">
+          <div class="option-label mb-1">Location</div>
+          <div class="select-box dark">
+            <select class="form-select">
+              <option value="pick-location">Pick Location</option>
+              <option value="1">Location One</option>
+              <option value="2">Location Two</option>
+              <option value="3">Location Three</option>
+            </select>
+          </div>
+        </div><!-- /form-group -->
+
+        <div class="form-group">
+          <div class="option-label mb-1">Date</div>
+          <div class="option-selection-dual full-width">
+            <input type="text" class="form-control" value="15" min="1" max="31" />
+          </div>
+        </div><!-- /form-group -->
+
+        <div class="form-group">
+          <div class="option-label mb-1">Guests</div>
+          <div class="option-selection-dual full-width">
+            <input type="number" class="form-control selected-digit" value="1" min="0" />
+            <div class="number-controls-vertical">
+              <button class="button-iconic increment"><i class="fas fa-chevron-up"></i></button>
+              <button class="button-iconic decrement"><i class="fas fa-chevron-down"></i></button>
+            </div>
+          </div>
+        </div><!-- /form-group -->
+
+        <div class="form-group">
+          <div class="option-label mb-1">Duration</div>
+          <div class="option-selection-dual full-width">
+            <input type="number" class="form-control selected-digit" value="4" min="0" />
+            <div class="number-controls-vertical">
+              <button class="button-iconic increment"><i class="fas fa-chevron-up"></i></button>
+              <button class="button-iconic  decrement"><i class="fas fa-chevron-down"></i></button>
+            </div>
+          </div>
+        </div><!-- /form-group -->
+
+        <div class="control">
+          <button class="btn btn-primary btn-block">Check Availability</button>
+        </div>
+      </div><!-- //.responsive-search-block -->
+
+
       <div class="site-main-nav-bar d-none d-xl-block">
         <nav class="site-main-nav">
           <ul class="menu">
@@ -310,20 +360,20 @@
 
                           <div class="mb-3">
                             <a href="#">
-                            <i class="icon-food mr-1"></i>
-                            Italian Restaurant Title
+                              <i class="icon-food mr-1"></i>
+                              Italian Restaurant Title
                             </a>
                           </div>
                           <div class="mb-3">
                             <a href="#">
-                            <i class="icon-food mr-1"></i>
-                            Local Restaurant Title
-                          </a>
+                              <i class="icon-food mr-1"></i>
+                              Local Restaurant Title
+                            </a>
                           </div>
                           <div class="mb-3">
                             <a href="#">
-                            <i class="icon-food mr-1"></i>
-                            Local Restaurant Title
+                              <i class="icon-food mr-1"></i>
+                              Local Restaurant Title
                             </a>
                           </div>
 
