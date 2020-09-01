@@ -1901,6 +1901,35 @@ a.text-inherit:hover,
   border-top: 1px solid #ddd;
 }
 
+.dual-image-holder {
+  position: relative;
+}
+.dual-image-holder figure {
+  margin-bottom: 0;
+}
+.dual-image-holder .image-1 {
+  width: 60%;
+  z-index: 1;
+  position: relative;
+}
+.dual-image-holder .image-2 {
+  margin-top: -20%;
+  margin-left: 20%;
+}
+
+.about-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.about-block .iconic {
+  width: 30px;
+}
+.about-block .iconic + .text {
+  padding-left: 1rem;
+  flex: 1;
+}
+
 @media (min-width: 600px) {
   .activity-block-top .action {
     margin-bottom: -2rem;
@@ -2082,6 +2111,12 @@ a.text-inherit:hover,
       top: 11px;
     }
 
+    .about-block-text {
+      padding-left: 2rem;
+    }
+    .about-block .iconic {
+      width: 40px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -2194,6 +2229,10 @@ a.text-inherit:hover,
   .page-banner .h4 {
     font-size: 1.1rem;
   }
+  .visitor-slider.slick-slider .slick-arrow::before {
+    top: 25%;
+  }
+
 }
 
 @media (max-width: 1200px) {
