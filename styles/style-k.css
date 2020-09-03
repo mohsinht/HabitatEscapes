@@ -1222,8 +1222,6 @@ img {
 }
 
 .button-bar {
-  margin-left: -5px;
-  margin-right: -5px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
