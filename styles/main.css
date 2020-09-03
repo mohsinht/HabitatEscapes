@@ -1257,7 +1257,7 @@ a.num-link:hover {
   color: #85b6d9;
 }
 
-@media (max-width: 930px) {
+@media (max-width: 990px) {
   .side-text {
     display: none;
   }
@@ -1331,7 +1331,7 @@ a.num-link:hover {
   }
 }
 
-@media (min-width: 930px) {
+@media (min-width: 991px) {
   .icon-fb,
   .icon-instagram,
   .icon-twitter {
