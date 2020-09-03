@@ -1847,3 +1847,27 @@ a.num-link:hover {
     padding-right: 0;
   }
 }
+
+
+@media (min-width: 576px) {
+  .faq.nav{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 575px) {
+  .faq-tab-content {
+    border-left-style: none;
+    padding-left: 0rem;
+    padding-top: 2rem;
+  }
+  .faq.nav{
+    flex-direction: row;
+  }
+
+  .faq .nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    border-right: solid #00000026 1px;
+  }
+}
