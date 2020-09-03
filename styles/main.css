@@ -1817,3 +1817,28 @@ a.num-link:hover {
     object-fit: cover;
   }
 }
+
+@media (max-width: 768px) {
+  .activity-cards-container .container-fluid, .activity-cards-container .col-12{
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 441px) {
+  .activity-card-bottom .icon-label .activity-detail {
+    font-size: 0.6rem;
+  }
+  .icon-difficulty {
+    width: 16px;
+  }
+  .icon-age {
+    width: 13px;
+  }
+  .icon-spaces {
+    width: 16px;
+  }
+  .activity-card-bottom .icon-label .activity-heading {
+    font-family: BrandonText-Light;
+    font-size: 0.6rem;
+  }
+}
