@@ -1824,7 +1824,7 @@ a.num-link:hover {
   }
 }
 
-@media (max-width: 441px) {
+@media (max-width: 520px) {
   .activity-card-bottom .icon-label .activity-detail {
     font-size: 0.6rem;
   }
@@ -1840,5 +1840,10 @@ a.num-link:hover {
   .activity-card-bottom .icon-label .activity-heading {
     font-family: BrandonText-Light;
     font-size: 0.6rem;
+  }
+
+  .properties-section .container-fluid, .properties-section.jumbotron{
+    padding-left: 0;
+    padding-right: 0;
   }
 }
