@@ -1329,6 +1329,10 @@ a.num-link:hover {
     margin-bottom: 1rem;
     margin-top: 1rem;
   }
+
+  .footer-main .intro-cta button {
+    width: 100%;
+  }
 }
 
 @media (min-width: 991px) {
