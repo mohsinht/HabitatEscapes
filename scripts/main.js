@@ -9,16 +9,16 @@ $(document).ready(function () {
       $('#header-logo').attr('src', 'assets/logo_white.png');
     }
 
-    if ( homeBanner.length ) {
+    if (homeBanner.length) {
       var bannerHt = $(homeBanner).height();
       console.log('banner height: ', bannerHt);
 
       $(this).scrollTop() > bannerHt ?
         $('.property-search-bar').addClass('sticky').removeClass('bar-home')
-      :
+        :
         $('.property-search-bar').addClass('bar-home').removeClass('sticky');
     }
-  
+
 
   });
 
@@ -27,12 +27,12 @@ $(document).ready(function () {
     $('.responsive-menu').toggleClass('d-none');
   });
 
-  $('.button-hd-search').on('click', this, function() {
+  $('.button-hd-search').on('click', this, function () {
     $(this).closest('li').addClass('hd-search-active');
     $('.hd-search-form input').focus();
   });
-  
-  $('.button-search-resp').on('click', this, function() {
+
+  $('.button-search-resp').on('click', this, function () {
     $('.responsive-search-block').toggleClass('d-none');
     $('.header-wrap-floating').toggleClass('active');
   });
@@ -41,23 +41,23 @@ $(document).ready(function () {
     $('.hd-search-form').closest('li').removeClass('hd-search-active');
   }
 
-  $(document).mouseup(function(e) {
+  $(document).mouseup(function (e) {
     var searchBlock = $('.hd-search-block');
     var searchBlockResp = $('.responsive-search-block');
 
     if (
       (!searchBlock.is(e.target) && searchBlock.has(e.target).length === 0) ||
       (!searchBlockResp.is(e.target) && searchBlockResp.has(e.target).length === 0)
-      ) {
+    ) {
       removeHdSearch();
     }
   });
 
-  $(document).keyup(function(e) {
+  $(document).keyup(function (e) {
     if (e.keyCode === 27) removeHdSearch();
   });
 
-  if ( $('.slider').length ) {
+  if ($('.slider').length) {
     $('.slider').slick();
   }
 
@@ -102,4 +102,24 @@ $(document).ready(function () {
       });
     });
   }
+
+  $('.datepicker-input').datepicker({
+    startDate: "-Infinity",
+    todayHighlight: true,
+    templates: {
+      leftArrow: '<i class="icon-chevron-left"></i>',
+      rightArrow: '<i class="icon-chevron-right"></i>'
+    }
+  });
+
+  $('.datepicker-component').datepicker({
+    startDate: "-Infinity",
+    todayHighlight: true,
+    multidate: true,
+    templates: {
+      leftArrow: '<i class="icon-chevron-left"></i>',
+      rightArrow: '<i class="icon-chevron-right"></i>'
+    }
+  });
+
 });
