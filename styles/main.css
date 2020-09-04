@@ -4144,11 +4144,16 @@ a.text-inherit:hover,
 .datepicker table tr th.focused,
 .datepicker table tr th:hover,
 .datepicker table tr td.focused,
+.datepicker table tr td.day:hover,
 .datepicker table tr td:hover {
   background-color: transparent;
 }
+.datepicker table tr td.day:hover {
+  color: var(--color-default-text);
+}
 .datepicker table tr td.active.active,
 .datepicker table tr td.active:hover,
+.datepicker table tr td.active.day:hover,
 .datepicker table tr td.active:hover:hover,
 .datepicker table tr td.active:hover:active {
   color: #5fcc6c;
@@ -4159,6 +4164,7 @@ a.text-inherit:hover,
 .datepicker table tr td.today,
 .datepicker table tr td.today.disabled,
 .datepicker table tr td.today.disabled:hover,
+.datepicker table tr td.today.day:hover,
 .datepicker table tr td.today:hover,
 .datepicker table tr td.today:hover:hover {
   color: var(--color-primary);
