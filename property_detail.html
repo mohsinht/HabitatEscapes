@@ -12,13 +12,10 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
     integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
 
-  <!-- Datepicker CSS -->
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ab-datepicker@latest/css/datepicker.css" type="text/css" /> -->
-
   <link rel="stylesheet" href="./styles/slick.css">
+  <link rel="stylesheet" href="./styles/bootstrap-datepicker.min.css" />
   <link rel="stylesheet" href="./styles/main.css" />
-  <link rel="stylesheet" href="./styles/style-k.css" />
-
+  
 
 </head>
 
@@ -210,7 +207,7 @@
         <div class="form-group">
           <div class="option-label mb-1">Date</div>
           <div class="option-selection-dual full-width">
-            <input type="text" class="form-control" value="15" min="1" max="31" />
+            <input type="text" class="form-control datepicker-input" value="15" min="1" max="31" />
           </div>
         </div><!-- /form-group -->
 
@@ -813,8 +810,8 @@
                     <div class="card-header property-accordian property-accordian-header-border"
                       id="headingKeyFeatures">
                       <h5 class="mb-0">
-                        <a class="btn btn-link w-100" data-toggle="collapse"
-                          data-target="#collapseKeyFeatures" aria-expanded="true" aria-controls="collapseKeyFeatures">
+                        <a class="btn btn-link w-100" data-toggle="collapse" data-target="#collapseKeyFeatures"
+                          aria-expanded="true" aria-controls="collapseKeyFeatures">
                           <div class="row">
                             <div class="col-11 text-left px-0 property_features_heading">
                               Key Features
@@ -868,8 +865,8 @@
                     <div class="card-header property-accordian property-accordian-header-border"
                       id="headingAccommodation">
                       <h5 class="mb-0">
-                        <a class="btn btn-link w-100" data-toggle="collapse"
-                          data-target="#collapseAccommodation" aria-expanded="true" aria-controls="collapseKeyFeatures">
+                        <a class="btn btn-link w-100" data-toggle="collapse" data-target="#collapseAccommodation"
+                          aria-expanded="true" aria-controls="collapseKeyFeatures">
                           <div class="row">
                             <div class="col-11 text-left px-0 property_features_heading">
                               Accommodation
@@ -895,8 +892,8 @@
                   <div class="card property-accordian">
                     <div class="card-header property-accordian property-accordian-header-border" id="headingOutside">
                       <h5 class="mb-0">
-                        <a class="btn btn-link w-100" data-toggle="collapse"
-                          data-target="#collapseOutside" aria-expanded="true" aria-controls="collapseKeyFeatures">
+                        <a class="btn btn-link w-100" data-toggle="collapse" data-target="#collapseOutside"
+                          aria-expanded="true" aria-controls="collapseKeyFeatures">
                           <div class="row">
                             <div class="col-11 text-left px-0 property_features_heading">
                               Outside
@@ -932,9 +929,8 @@
                     <div class="card-header property-accordian property-accordian-header-border"
                       id="headingLeisureFacilities">
                       <h5 class="mb-0">
-                        <a class="btn btn-link w-100" data-toggle="collapse"
-                          data-target="#collapseLeisureFacilities" aria-expanded="true"
-                          aria-controls="collapseKeyFeatures">
+                        <a class="btn btn-link w-100" data-toggle="collapse" data-target="#collapseLeisureFacilities"
+                          aria-expanded="true" aria-controls="collapseKeyFeatures">
                           <div class="row">
                             <div class="col-11 text-left px-0 property_features_heading">
                               Leisure Facilities
@@ -961,9 +957,8 @@
                     <div class="card-header property-accordian property-accordian-header-border"
                       id="headingLocalInformation">
                       <h5 class="mb-0">
-                        <a class="btn btn-link w-100" data-toggle="collapse"
-                          data-target="#collapseLocalInformation" aria-expanded="true"
-                          aria-controls="collapseKeyFeatures">
+                        <a class="btn btn-link w-100" data-toggle="collapse" data-target="#collapseLocalInformation"
+                          aria-expanded="true" aria-controls="collapseKeyFeatures">
                           <div class="row">
                             <div class="col-11 text-left px-0 property_features_heading">
                               Local Information
@@ -989,8 +984,8 @@
                   <div class="card property-accordian">
                     <div class="card-header property-accordian property-accordian-header-border" id="headingParking">
                       <h5 class="mb-0">
-                        <a class="btn btn-link w-100" data-toggle="collapse"
-                          data-target="#collapseParking" aria-expanded="true" aria-controls="collapseKeyFeatures">
+                        <a class="btn btn-link w-100" data-toggle="collapse" data-target="#collapseParking"
+                          aria-expanded="true" aria-controls="collapseKeyFeatures">
                           <div class="row">
                             <div class="col-11 text-left px-0 property_features_heading">
                               Parking
@@ -1020,15 +1015,23 @@
           </div>
           <!-- Overview and Accordian sections End here -->
 
-          <!-- Datepicker starts here -->
-          <div class="col-sm-12 col-md-4">Date picker here ...</div>
-          <!-- <div class="col-sm-12 col-md-4"><div id="tdate"></div></div> -->
-          <!-- Datepicker ends here -->
+          <div class="col-sm-12 col-md-4">
+            <div class="datepicker-holder-block">
+              <header class="heading mb-4">
+                <h4 class="text-heading text-center">Check Availability</h4>
+              </header>
+              <div class="datepicker-component"></div>
+              <div class="datepicker-button-bar">
+                <button class="btn btn-primary btn-block mt-4">Check Availability</button>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <section class="mt-5 mb-5 pt-5 pb-5 virtual-tour" style="background-color: #FDF9F1; margin-top: 50px;">
+    <section class="mt-5 mb-5 pt-5 pb-5 virtual-tour" style="background-color: #FDF9F1;">
       <div class="container-fluid">
         <div class="container-fluid">
 
@@ -1486,8 +1489,8 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"></script>
 
-    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/ab-datepicker@latest"></script> -->
     <script src="./scripts/slick.min.js"></script>
+    <script src="./scripts/bootstrap-datepicker.min.js"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/property_detail.js"></script>
 
