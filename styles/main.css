@@ -4829,6 +4829,9 @@ a.text-inherit:hover,
   transition: border-bottom 0s;
 }
 
-.responsive-menu a {
+.responsive-menu a, .footer-main a {
   background-color: RGBA(255, 255, 255, 0);
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
 }
