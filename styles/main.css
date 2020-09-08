@@ -1853,7 +1853,7 @@ a.num-link:hover {
     display: none;
   }
   .accordian-head.collapsed {
-    border-bottom: solid white 1px;
+    /* border-bottom: solid white 1px; */
     padding-bottom: 0.5rem;
   }
   .responsive-menu .accordian-head.collapsed {
