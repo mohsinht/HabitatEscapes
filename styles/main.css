@@ -4828,3 +4828,7 @@ a.text-inherit:hover,
   -o-transition: border-bottom 0s;
   transition: border-bottom 0s;
 }
+
+.responsive-menu a {
+  background-color: RGBA(255, 255, 255, 0);
+}
