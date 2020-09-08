@@ -1756,6 +1756,11 @@ a.num-link:hover {
     padding-bottom: 0;
     padding-bottom: 0;
   }
+  .responsive-menu .collapse .accordian-head.collapsed {
+    border-bottom: solid #dedede 1px;
+    padding-bottom: 0;
+    padding-bottom: 0;
+  }
   .footer-details {
     display: none;
   }
@@ -4326,4 +4331,13 @@ a.text-inherit:hover,
   .main-slide .property-stats {
     display: none;
   }
+}
+
+
+.view-all-btn a {
+  text-decoration: underline;
+}
+
+.responsive-menu .collapse .accordian-head{
+  transition: border-bottom 0s;
 }
