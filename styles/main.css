@@ -1857,12 +1857,12 @@ a.num-link:hover {
     padding-bottom: 0.5rem;
   }
   .responsive-menu .accordian-head.collapsed {
-    border-bottom: solid #aeaeae 1px;
+    /* border-bottom: solid #aeaeae 1px; */
     padding-bottom: 0;
     padding-bottom: 0;
   }
   .responsive-menu .collapse .accordian-head.collapsed {
-    border-bottom: solid #dedede 1px;
+    /* border-bottom: solid #dedede 1px; */
     padding-bottom: 0;
     padding-bottom: 0;
   }
