@@ -1916,7 +1916,7 @@ a.num-link:hover {
 }
 
 
-@media (max-width: 768px) { 
+@media (max-width: 767px) {
   .h1, h1 {
     font-size: 2.1rem;
   }
@@ -1927,7 +1927,7 @@ a.num-link:hover {
     padding-top: 1rem;
   }
 
-  .nav-button .fa-bars{
+  .nav-button .fa-bars {
     transform: scale(1.5,1);
   }
   .banner-text .h1.text-heading {
@@ -1939,36 +1939,6 @@ a.num-link:hover {
     font-size: 2rem;
     padding: 0rem 3rem;
     padding-top: 0.5rem;
-  }
-
-  .bar-home .option-label {
-    font-size: 1.2rem;
-    letter-spacing: 0.3rem;
-    font-family: BrandonText-Light;
-    padding-top: 1rem;
-  }
-
-  .bar-home .selected-digit {
-    width: 62px;
-    font-size: 2.6rem;
-  }
-
-  .bar-home .option-block select {
-    font-size: 1.3rem;
-  }
-
-  .bar-home .option-block .option-selection {
-    font-family: BrandonText-Light;
-    min-width: 160px;
-  }
-
-  .bar-home .option-block [class^='select-box']::after {
-    font-size: 1.2rem;
-    color: rgba(0, 0, 0, 0.35);
-  }
-
-  .bar-home .select-box-vertical select {
-    font-size: 0.8rem;
   }
 
   .intro-img1 img, .intro-img2 img {
@@ -2438,9 +2408,9 @@ a.num-link:hover {
 .select-box-vertical select {
   border: 0;
 }
-
 .select-box-vertical select {
   padding-bottom: 15px;
+  font-size: 0.8rem;
   text-align: center;
   text-align-last: center;
   -moz-text-align-last: center;
@@ -3218,9 +3188,11 @@ a.num-link:hover {
 }
 
 .option-label {
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    font-size: 0.8em;
+  font-size: 1.2rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  font-family: BrandonText-Light;
+  padding-top: 1rem;
 }
 .property-search-bar .control .btn {
   width: 100%;
@@ -3233,24 +3205,25 @@ a.num-link:hover {
   align-items: center;
 }
 .option-block .option-selection {
-  min-width: 120px;
+  font-family: BrandonText-Light;
+  min-width: 160px;
 }
 .option-block select {
-  font-size: 0.8rem;
+  font-size: 1.3rem;
   color: rgba(0, 0, 0, 0.5);
 }
 .option-block [class^='select-box']::after {
-  font-size: 0.6rem;
+  font-size: 1.2rem;
   color: rgba(0, 0, 0, 0.35);
 }
 .selected-digit {
-    width: 50px;
-    height: 2.2rem;
-    padding: .1rem .5rem;
-    margin-right: 0.25rem;
-    font-size: 1.6rem;
-    border: 0;
-    text-align: center;
+  width: 62px;
+  height: 3.5rem;
+  padding: .1rem .5rem;
+  margin-right: 0.25rem;
+  font-size: 2.6rem;
+  border: 0;
+  text-align: center;
 }
 .selected-digit::-webkit-outer-spin-button,
 .selected-digit::-webkit-inner-spin-button {
@@ -3295,16 +3268,14 @@ a.num-link:hover {
   height: 16px;
 }
 
-.property-search-bar.bar-home {
+.page-home .property-search-bar {
     padding-top: 1.5rem;
     border: 0;
 }
-.property-search-bar.sticky .btn-post-icon,
-.property-search-bar.bar-home .btn-bold {
+.property-search-bar .btn-bold {
     display: inline-block;
 }
-.property-search-bar.sticky .btn-bold,
-.property-search-bar.bar-home .btn-post-icon {
+.property-search-bar .btn-post-icon {
     display: none;
 }
 .property-search-bar.sticky .btn-post-icon {
@@ -3906,10 +3877,21 @@ a.text-inherit:hover,
     }    
 
     .property-search-bar.sticky {
-        width: 100%;
-        z-index: 10;
-        position: sticky;
-        top: 0;
+      width: 100%;
+      z-index: 10;
+      position: sticky;
+      top: 0;
+    }
+    .page-home .property-search-bar.sticky {
+      border-bottom: 1px solid #ddd;
+    }
+    .property-search-bar.sticky .btn-post-icon,
+    .property-search-bar.bar-home .btn-bold {
+        display: inline-block;
+    }
+    .property-search-bar.sticky .btn-bold,
+    .property-search-bar.bar-home .btn-post-icon {
+        display: none;
     }
     .property-search-bar.bar-home {
         max-width: 650px;
@@ -3939,9 +3921,12 @@ a.text-inherit:hover,
         margin-right: 15px;
     }
     .option-label {
-        margin-bottom: 0;
+      padding-top: 0;
+      margin-bottom: 0;
+      font-size: 0.8em;
     }
     .option-block .option-selection {
+      min-width: 120px;
         padding-top: 16px;
         padding-bottom: 16px;
     }
@@ -3951,6 +3936,18 @@ a.text-inherit:hover,
     .option-selection-dual.full-width {
       min-height: calc(1.5em + .75rem + 2px);
       height: calc(1.5em + .75rem + 2px);
+    }
+
+    .selected-digit {
+        width: 50px;
+        height: 2.2rem;
+        font-size: 1.6rem;
+    }
+    .option-block select {
+        font-size: 0.8rem;
+    }
+    .option-block [class^='select-box']::after {
+        font-size: 0.6rem;
     }
 
     /** Filter bar ***/
