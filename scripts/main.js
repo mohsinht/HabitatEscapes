@@ -11,7 +11,6 @@ $(document).ready(function () {
 
     if (homeBanner.length) {
       var bannerHt = $(homeBanner).height();
-      console.log('banner height: ', bannerHt);
 
       $(this).scrollTop() > bannerHt ?
         $('.property-search-bar').addClass('sticky').removeClass('bar-home')
