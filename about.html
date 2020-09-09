@@ -1,1351 +1,1773 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <!-- Fontawesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
 
-  <!-- Fontawesome CSS -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./styles/slick.css" />
+    <link rel="stylesheet" href="./styles/bootstrap-datepicker.min.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
 
-  
-  
-  <link rel="stylesheet" href="./styles/slick.css" />
-  <link rel="stylesheet" href="./styles/bootstrap-datepicker.min.css" />
-  <link rel="stylesheet" href="./styles/main.css" />
-  
+    <title>Habitat Escapes | About Habitat</title>
+  </head>
 
-  <title>Habitat Escapes | About Habitat</title>
-</head>
-
-<body>
-  <div class="page-wrapper">
-    <div class="site-header-wrap">
-      <header class="site-header">
-        <div class="hd-left-block">
-          <button class="nav-button d-xl-none" href="#"><i class="fas fa-bars"></i></button>
-          <a href="mailto:abc@mail.com" class="hd-contact-link d-none d-md-inline-block">
-            <i class="icon-envelope icon-whiteable pr-1"></i> Newsletter
-            Sign up
-          </a>
-        </div>
-        <div class="site-logo">
-          <a class="site-logo-link" href="index.html">
-            <img class="logo-primary" src="assets/logo_colored.png" />
-            <img class="logo-secondary" src="assets/logo_white.png" />
-          </a>
-        </div>
-        <div class="hd-links">
-          <ul class="list-hd-links">
-            <li class=" d-none d-md-inline-block">
-              <a href="tel:+44 (0) 1285 869 489">+44 (0) 1285 869 489</a>
-            </li>
-            <li class=" d-none d-md-inline-block">
-              <button class="button-hd-wishlist">
-                <i class="icon-heart icon-whiteable"></i>
-                <span class="wish-on"></span>
-              </button>
-            </li>
-            <li>
-              <button class="button-hd-search d-none d-xl-inline-block"><i
-                  class="icon-search icon-whiteable"></i></button>
-              <button class="button-search-resp d-xl-none"><i class="icon-search icon-whiteable"></i></button>
-              <div class="hd-search-block">
-                <form class="hd-search-form" action="#">
-                  <input class="hd-search-input" type="text">
-                  <button type="submit" class="hd-search-button"><i class="icon-search"></i></button>
-                </form>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </header><!-- /site-header -->
-
-      <div class="responsive-menu container d-none">
-        <div class="header-content row flex-nowrap justify-content-between align-items-center mt-4">
-          <button class="nav-button close-menu"><i class="icon-chevron-left"></i></button>
-          <div class="justify-content-end text-right">
-            <a class="rmenu-num" href=" tel:+44 (0) 1285 869 489">+44 (0) 1285 869 489</a> <a class="rmenu-icon"
-              href="#"><i class="far fa-heart pl-4"></i></a>
+  <body>
+    <div class="page-wrapper">
+      <div class="site-header-wrap">
+        <header class="site-header">
+          <div class="hd-left-block">
+            <button class="nav-button d-xl-none" href="#">
+              <i class="fas fa-bars"></i>
+            </button>
+            <a
+              href="mailto:abc@mail.com"
+              class="hd-contact-link d-none d-md-inline-block"
+            >
+              <i class="icon-envelope icon-whiteable pr-1"></i> Newsletter Sign
+              up
+            </a>
           </div>
-        </div>
-
-        <div class="input-group search-box-outer mt-4 mb-4">
-          <i class="fa fa-search"></i>
-          <input class="form-control search-box-inner" placeholder="Search destination or property name">
-        </div>
-
-
-        <div class="row row-minus mt-2 r-menu-items">
-          <div class="col-md-12">
-            <h1>
-              <a class="accordian-head collapsed" type="button" data-toggle="collapse" data-target="#collapseLocationR"
-                aria-expanded="false" aria-controls="collapseLocationR" class="">Location <i
-                  class="icon-chevron-down mt-3"></i></a>
-            </h1>
-
-            <div id="collapseLocationR" class="collapse">
-              <p class="mt-2 bolded-text"><a href="#">The Cotswolds</a></p>
-              <p><a href="#">Lower Mill Estate</a></p>
-              <p class="mt-4 bolded-text"><a href="#">Devon</a></p>
-              <p><a href="#">Birchwood</a></p>
-
-              <p class="mt-4 bolded-text"><a href="#">Dorset</a></p>
-              <p><a href="#">Silverlake</a></p>
-            </div>
+          <div class="site-logo">
+            <a class="site-logo-link" href="index.html">
+              <img class="logo-primary" src="assets/logo_colored.png" />
+              <img class="logo-secondary" src="assets/logo_white.png" />
+            </a>
           </div>
-
-          <div class="col-md-12 mt-4">
-            <h1>
-              <a class="accordian-head collapsed" type="button" data-toggle="collapse"
-                data-target="#collapseThingsToDoR" aria-expanded="false" aria-controls="collapseThingsToDoR"
-                class="">Things to do <i class="icon-chevron-down mt-3"></i></a>
-            </h1>
-
-            <div id="collapseThingsToDoR" class="collapse">
-              <p class="mt-2"><a href="#">Seasonal</a></p>
-              <p><a href="#">Restaurants</a></p>
-              <p><a href="#">Tennis Sessions</a></p>
-            </div>
-          </div>
-
-          <div class="col-md-12 mt-4">
-            <h1>
-              <a class="accordian-head collapsed" type="button" data-toggle="collapse"
-                data-target="#collapseInspirationR" aria-expanded="false" aria-controls="collapseInspirationR"
-                class="">Inspiration & Offers <i class="icon-chevron-down mt-3"></i></a>
-            </h1>
-
-            <div id="collapseInspirationR" class="collapse">
-              <p class="mt-2 bolded-text"><a href="#">Inspiration</a></p>
-              <p class=""><a href="#">Hot tub Holidays</a></p>
-              <p><a href="#">Family Swimming</a></p>
-              <p><a href="#">Local Area</a></p>
-
-              <p class="mt-4 bolded-text"><a href="#">Offers</a></p>
-              <p class=""><a href="#">Kids go free</a></p>
-              <p><a href="#">2 for 1</a></p>
-              <p><a href="#">Offers on pools</a></p>
-            </div>
-          </div>
-
-          <div class="col-md-12 mt-4">
-            <h1>
-              <a class="accordian-head collapsed" type="button" data-toggle="collapse" data-target="#collapseAboutR"
-                aria-expanded="false" aria-controls="collapseAboutR" class="">About us <i
-                  class="icon-chevron-down mt-3"></i></a>
-            </h1>
-            <div id="collapseAboutR" class="collapse">
-              <p class="mt-2"><a href="about.html">Our Story</a></p>
-              <p><a href="inspiration.html">Why book with us</a></p>
-              <p><a href="faq.html">FAQ’s</a></p>
-              <p><a href="contactus.html">Contact us</a></p>
-              <p><a href="news.html">News</a></p>
-              <p><a href="blog_list.html">Blog</a></p>
-            </div>
-          </div>
-
-          <div class="col-md-12 mt-4">
-            <h1>
-              <a class="accordian-head collapsed" type="button" data-toggle="collapse" data-target="#collapseMyBookingR"
-                aria-expanded="false" aria-controls="collapseMyBookingR" class="">My Booking <i
-                  class="icon-chevron-down mt-3"></i></a>
-            </h1>
-            <div id="collapseMyBookingR" class="collapse">
-              <p class="mt-2"><a href="about.html">History</a></p>
-              <p><a href="news.html">Account</a></p>
-              <p><a href="blog_list.html">Bookings</a></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row row-minus">
-          <div class="col-md-12">
-            <p class="mt-4 bolded-text">Are you an owner?</p>
-            <div class="intro-cta mt-2">
-              <button class="btn btn-primary w-100 btn-with-icon">
-                Log IN <i class="icon-long-right ml-3 mt-1-5"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="row row-minus mt-4 mb-2">
-          <div class="col-md-12">
-            <a href="mailto:abc@mail.com" class="hd-contact-link2"><i class="icon-newsletter px-2"></i>
-              <span class="ml-3 newsletter-text">Newsletter
-                Sign
-                up</span> </a>
-          </div>
-        </div>
-
-        <div class="row row-minus mt-4 social-container">
-          <div class=" col-md-12 text-center">
-            <p class="social-icons mt-2">
-              <a href="#"><i class="icon-twitter px-2"></i></a> &nbsp;<a href="#"><i class="icon-fb px-2"></i></a>&nbsp;
-              <a href="#"><i class="icon-instagram px-2"></a></i>
-            </p>
-          </div>
-        </div>
-
-      </div><!-- //.responsive-menu -->
-
-      <div class="responsive-search-block d-none">
-        <div class="form-group">
-          <div class="option-label mb-1">Location</div>
-          <div class="select-box dark">
-            <select class="form-select">
-              <option value="pick-location">Pick Location</option>
-              <option value="1">Location One</option>
-              <option value="2">Location Two</option>
-              <option value="3">Location Three</option>
-            </select>
-          </div>
-        </div><!-- /form-group -->
-
-        <div class="form-group">
-          <div class="option-label mb-1">Date</div>
-          <div class="option-selection-dual full-width">
-            <input type="text" class="form-control datepicker-input" value="15" min="1" max="31" />
-          </div>
-        </div><!-- /form-group -->
-
-        <div class="form-group">
-          <div class="option-label mb-1">Guests</div>
-          <div class="option-selection-dual full-width">
-            <input type="number" class="form-control selected-digit" value="1" min="0" />
-            <div class="number-controls-vertical">
-              <button class="button-iconic increment"><i class="fas fa-chevron-up"></i></button>
-              <button class="button-iconic decrement"><i class="fas fa-chevron-down"></i></button>
-            </div>
-          </div>
-        </div><!-- /form-group -->
-
-        <div class="form-group">
-          <div class="option-label mb-1">Duration</div>
-          <div class="option-selection-dual full-width">
-            <input type="number" class="form-control selected-digit" value="4" min="0" />
-            <div class="number-controls-vertical">
-              <button class="button-iconic increment"><i class="fas fa-chevron-up"></i></button>
-              <button class="button-iconic  decrement"><i class="fas fa-chevron-down"></i></button>
-            </div>
-          </div>
-        </div><!-- /form-group -->
-
-        <div class="control">
-          <button class="btn btn-primary btn-block">Check Availability</button>
-        </div>
-      </div><!-- //.responsive-search-block -->
-
-
-      <div class="site-main-nav-bar d-none d-xl-block">
-        <nav class="site-main-nav">
-          <ul class="menu">
-            <li>
-              <a href="locations.html">Location</a>
-              <div class="mega-dropdown">
-                <div class="container-fluid">
-
-                  <div class="mega-menu-contents">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <div class="row row-minus">
-                          <div class="col-8">
-                            <div class="destination-box destination-img1">
-                              <h4 class="text-heading">Lower Mill Estate</h4>
-                              <h6>The Cotswolds</h6>
-                            </div>
-                          </div>
-
-                          <div class="col-4">
-                            <ul class="list-destination">
-                              <li><a href="#">The Properties</a></li>
-                              <li><a href="#">The Estate</a></li>
-                              <li><a href="#">Food & Drink</a></li>
-                              <li><a href="#">Spa</a></li>
-                              <li><a href="#">Local Area</a></li>
-                              <li><a href="#">Gallery</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-md-4">
-                        <div class="row row-minus">
-                          <div class="col-8">
-                            <div class="destination-box destination-img2">
-                              <h4 class="text-heading">Silverlake</h4>
-                              <h6>Dorset</h6>
-                            </div>
-                          </div>
-
-                          <div class="col-4">
-                            <ul class="list-destination">
-                              <li><a href="#">The Properties</a></li>
-                              <li><a href="#">The Estate</a></li>
-                              <li><a href="#">Food & Drink</a></li>
-                              <li><a href="#">Spa</a></li>
-                              <li><a href="#">Local Area</a></li>
-                              <li><a href="#">Gallery</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-md-4">
-                        <div class="row row-minus">
-                          <div class="col-8">
-                            <div class="destination-box destination-img1">
-                              <h4 class="text-heading">Birchwood</h4>
-                              <h6>Devon</h6>
-                            </div>
-                          </div>
-
-                          <div class="col-4">
-                            <ul class="list-destination">
-                              <li><a href="#">The Properties</a></li>
-                              <li><a href="#">The Estate</a></li>
-                              <li><a href="#">Food & Drink</a></li>
-                              <li><a href="#">Spa</a></li>
-                              <li><a href="#">Local Area</a></li>
-                              <li><a href="#">Gallery</a></li>
-                            </ul>
-                          </div>
-
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
+          <div class="hd-links">
+            <ul class="list-hd-links">
+              <li class="d-none d-md-inline-block">
+                <a href="tel:+44 (0) 1285 869 489">+44 (0) 1285 869 489</a>
+              </li>
+              <li class="d-none d-md-inline-block">
+                <button class="button-hd-wishlist">
+                  <i class="icon-heart icon-whiteable"></i>
+                  <span class="wish-on"></span>
+                </button>
+              </li>
+              <li>
+                <button class="button-hd-search d-none d-xl-inline-block">
+                  <i class="icon-search icon-whiteable"></i>
+                </button>
+                <button class="button-search-resp d-xl-none">
+                  <i class="icon-search icon-whiteable"></i>
+                </button>
+                <div class="hd-search-block">
+                  <form class="hd-search-form" action="#">
+                    <input class="hd-search-input" type="text" />
+                    <button type="submit" class="hd-search-button">
+                      <i class="icon-search"></i>
+                    </button>
+                  </form>
                 </div>
-              </div>
-            </li>
-            <li>
-              <a href="things-to-do-landing-page.html">Things to do</a>
-
-              <div class="mega-dropdown">
-                <div class="container-fluid">
-
-                  <div class="mega-menu-contents">
-                    <div class="row row-sp-col">
-                      <div class="col-md-3">
-                        <div class="todo-block">
-                          <header class="heading mb-4">
-                            <h4 class="title text-heading">Things to do</h4>
-                            <p class="text-sm">Quidem modi sapiente veritatis, qui enim suscipit harum magni eligendi
-                              earum saepe iure <a href="#" class="text-primary">View all</a></p>
-                          </header>
-                          <ul class="list-iconic-menu">
-                            <li><a href="#"><i class="icon-star-outline mr-2"></i><span>Overview</span></a></li>
-                            <li><a href="#"><i class="icon-cycle mr-2"></i><span>Cycling</span></a></li>
-                            <li><a href="#"><i class="icon-activities mr-2"></i><span>Activities</span></a></li>
-                            <li><a href="#"><i class="icon-spa mr-2"></i><span>Spa</span></a></li>
-                            <li><a href="#"><i class="icon-skating mr-2"></i><span>Waterpark</span></a></li>
-                            <li><a href="#"><i class="icon-food mr-2"></i><span>Food & Drink</span></a></li>
-                          </ul>
-                        </div>
-                      </div>
-
-                      <div class="col-md-3">
-                        <div class="todo-block">
-                          <header class="heading mb-4">
-                            <h4 class="title text-heading">Restaurants</h4>
-                            <p class="text-sm">Quidem modi sapiente veritatis, qui enim suscipit harum magni eligendi
-                              earum saepe iure <a href="#" class="text-primary">View all</a></p>
-                          </header>
-
-                          <div class="mb-3">
-                            <a href="#">
-                              <i class="icon-food mr-1"></i>
-                              Italian Restaurant Title
-                            </a>
-                          </div>
-                          <div class="mb-3">
-                            <a href="#">
-                              <i class="icon-food mr-1"></i>
-                              Local Restaurant Title
-                            </a>
-                          </div>
-                          <div class="mb-3">
-                            <a href="#">
-                              <i class="icon-food mr-1"></i>
-                              Local Restaurant Title
-                            </a>
-                          </div>
-
-
-                        </div>
-                      </div>
-
-                      <div class="col-md-3">
-                        <div class="todo-block">
-                          <header class="heading mb-4">
-                            <h4 class="title text-heading">Seasonal</h4>
-                            <p class="text-sm">Quidem modi sapiente veritatis, qui enim suscipit harum magni eligendi
-                              earum saepe iure
-                              <a href="#" class="text-primary">View all</a></p>
-                          </header>
-
-                          <div class="mb-3">
-                            <div class="todo-media">
-                              <img src="./assets/inspiration1.jpg" class="img-todo-sm" alt="...">
-                              <div class="media-body"><a href="#">Family Swim</a></div>
-                            </div>
-                          </div>
-                          <div class="mb-3">
-                            <div class="todo-media">
-                              <img src="./assets/inspiration2.jpg" class="img-todo-sm" alt="...">
-                              <div class="media-body"><a href="#">Kayan and Canoe sessions</a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="mb-3">
-                            <div class="todo-media">
-                              <img src="./assets/inspiration1.jpg" class="img-todo-sm" alt="...">
-                              <div class="media-body"><a href="#">Trout Fishing</a></div>
-                            </div>
-                          </div>
-
-
-                        </div>
-                      </div>
-
-                      <div class="col-md-3">
-                        <div class="todo-image-block">
-                          <div class="todo-image" style="background-image: url(./assets/destination_img2.jpg)">
-                            <header class="heading mb-4">
-                              <h4 class="title text-heading">Summer Tennis Season</h4>
-                            </header>
-                            <p class="mb-4">Quidem modi sapiente veritatis, qui enim suscipit harum magni eligendi earum
-                              saepe iure</p>
-                            <a href="#" class="btn btn-primary">Find out more <i class="icon-long-right"></i></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-            </li>
-            <li>
-              <a href="inspiration.html">Inspiration & Offers</a>
-
-              <div class="mega-dropdown">
-                <div class="container-fluid">
-
-                  <div class="mega-menu-contents">
-                    <div class="row row-sp-col">
-                      <div class="col-md-6">
-                        <header class="heading mb-4">
-                          <h4 class="title text-heading">Inspiration</h4>
-                          <p>Quidem modi sapiente veritatis, qui enim suscipit harum magni
-                            <a href="#" class="text-primary">View all</a></p>
-                        </header>
-
-                        <div class="row row-minus">
-                          <div class="col-md-4">
-                            <div class="inspi-image-block">
-                              <figure>
-                                <img src="assets/inspiration1.jpg" />
-                              </figure>
-                              <h6 class="text-heading">Hot tub Holidays</h6>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="inspi-image-block">
-                              <figure>
-                                <img src="assets/inspiration2.jpg" />
-                              </figure>
-                              <h6 class="text-heading">Hot tub Holidays</h6>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="inspi-image-block">
-                              <figure>
-                                <img src="assets/inspiration3.jpg" />
-                              </figure>
-                              <h6 class="text-heading">Hot tub Holidays</h6>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-md-6">
-                        <header class="heading mb-4">
-                          <h4 class="title text-heading">Offers</h4>
-                          <p>Quidem modi sapiente veritatis, qui enim suscipit harum magni
-                            <a href="#" class="text-primary">View all</a></p>
-                        </header>
-
-                        <div class="row row-minus">
-                          <div class="col-md-4">
-                            <div class="inspi-image-block">
-                              <figure>
-                                <img src="assets/inspiration1.jpg" />
-                              </figure>
-                              <h6 class="text-heading"><a href="#">Hot tub Holidays</a></h6>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="inspi-image-block">
-                              <figure>
-                                <img src="assets/inspiration2.jpg" />
-                              </figure>
-                              <h6 class="text-heading"><a href="#">Hot tub Holidays</a></h6>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="inspi-image-block">
-                              <figure>
-                                <img src="assets/inspiration3.jpg" />
-                              </figure>
-                              <h6 class="text-heading"><a href="#">Hot tub Holidays</a></h6>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-            </li>
-            <li>
-              <a href="about.html">About us</a>
-
-              <div class="mega-dropdown">
-                <div class="container-fluid">
-
-                  <div class="mega-menu-contents">
-                    <div class="row row-sp-col">
-                      <div class="col-md-5">
-                        <div class="todo-block">
-                          <header class="heading mb-4">
-                            <h4 class="title text-heading">About Habitat Escapes</h4>
-                          </header>
-                          <p>Consectetur adipisicing elit itaque ducimus necessitatibus voluptate dolorem accusantium
-                            corporis eligendi molestias, laudantium amet ea provident odit earum veritatis quos unde
-                            suscipit</p>
-
-                          <p>Quidem modi sapiente veritatis, qui enim suscipit harum magni eligendi earum saepe iure</p>
-
-                          <img src="assets/blue-logo-2.png" alt="part of habitat first" class="mt-4">
-                        </div>
-                      </div>
-
-                      <div class="col-md-7">
-
-                        <div class="row full-height">
-                          <div class="col-md-6">
-                            <div class="todo-block">
-                              <header class="heading mb-5">
-                                <h4 class="title text-heading">Things to do</h4>
-                              </header>
-                              <div class="row row-minus">
-                                <div class="col-md-6 mb-4"><a href="about.html">Our Story</a></div>
-                                <div class="col-md-6 mb-4"><a href="contactus.html">Contact Us</a></div>
-                                <div class="col-md-6 mb-4"><a href="inspiration.html">Why book with us</a></div>
-                                <div class="col-md-6 mb-4"><a href="news.html">news</a></div>
-                                <div class="col-md-6 mb-4"><a href="faq.html">FAQ’s</a></div>
-                                <div class="col-md-6 mb-4"><a href="blog_list.html">Blog</a></div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="col-md-6">
-                            <div class="todo-image-block">
-                              <div class="todo-image" style="background-image: url(./assets/destination_img2.jpg)">
-                                <header class="heading mb-4">
-                                  <h4 class="title text-heading">Summer Tennis Season</h4>
-                                </header>
-                                <p class="mb-4">Quidem modi sapiente veritatis, qui enim suscipit harum magni eligendi
-                                  earum
-                                  saepe iure</p>
-                                <a href="#" class="btn btn-primary">Find out more <i class="icon-long-right"></i></a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                      </div>
-
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-            </li>
-            <li><a href="extra_booking_stage_1.html">My Bookings</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div><!-- //.site-header-wrap -->
-
-    <div>
-      <!-- Hero image starts -->
-
-      <div class="relative-container">
-        <img src="./assets/aquaactivity.jpg" class="full-width" />
-        <div class="center-text-image text-center pl-4">
-          <div class="center-text-image-h1 center-text-image-h1-lg">
-            About us
+              </li>
+            </ul>
           </div>
-          <div class="center-text-image-p">
-            Praesent congue erat at massa. Vivamus elementum semper nisi.
-            Praesent congue erat at massa.
-          </div>
-          <div class="center-text-image-p">
-            Nunc interdum lacus sit amet orci.
-          </div>
-        </div>
-      </div>
-      <!-- Hero image ends -->
+        </header>
+        <!-- /site-header -->
 
-      <nav class="nav-quick-link-bar">
-        <div class="container-fluid">
-          <ul class="nav-quick-link" id="myTab" role="tablist">
-            <li role="presentation">
-              <a id="tnc-tab" href="about.html">Our Story</a>
-            </li>
-            <li role="presentation">
-              <a id="cookie-tab" href="team.html">Meeting the Team</a>
-            </li>
-            <li role="presentation">
-              <a id="privacy-policy-tab" href="inspiration.html">Why book with us?</a>
-            </li>
-            <li role="presentation">
-              <a id="modern-slavery-act-tab" href="faq.html">FAQ's</a>
-            </li>
-            <li role="presentation">
-              <a id="modern-slavery-act-tab" href="news.html">News</a>
-            </li>
-            <li role="presentation">
-              <a id="modern-slavery-act-tab" href="blog.html">Blog</a>
-            </li>
-            <li role="presentation">
-              <a id="modern-slavery-act-tab" href="contactus.html">Contact us</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-      <div class="container-fluid pt-4 border-bottom">
-        <div class="row mt-4 mb-4 pb-4">
-
-          <div class="col-md-5 col-lg-4">
-            <div class="dual-image-holder mb-4">
-              <figure class="image-1">
-                <img src="./assets/Activities2.png" alt="..." />
-              </figure>
-              <figure class="image-2">
-                <img src="./assets/Activities3.png" alt="..." />
-              </figure>
+        <div class="responsive-menu container d-none">
+          <div
+            class="header-content row flex-nowrap justify-content-between align-items-center mt-4"
+          >
+            <button class="nav-button close-menu">
+              <i class="icon-chevron-left"></i>
+            </button>
+            <div class="justify-content-end text-right">
+              <a class="rmenu-num" href=" tel:+44 (0) 1285 869 489"
+                >+44 (0) 1285 869 489</a
+              >
+              <a class="rmenu-icon" href="#"
+                ><i class="far fa-heart pl-4"></i
+              ></a>
             </div>
           </div>
 
-          <div class="col-md-7 col-lg-8">
+          <div class="input-group search-box-outer mt-4 mb-4">
+            <i class="fa fa-search"></i>
+            <input
+              class="form-control search-box-inner"
+              placeholder="Search destination or property name"
+            />
+          </div>
 
-            <div class="about-block-text">
-              <header class="heading">
-                <h3 class="text-heading">The story of Habitat</h3>
-              </header>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. The
-                Hide, accessed from the garden, is an elegant modernist
-                steel-and-glass structure, voted Britain’s best small building
-                in 2009, standing in complete seclusion, overlooking one of the
-                largest lakes in the Cotswolds Water Park.
+          <div class="row row-minus mt-2 r-menu-items">
+            <div class="col-md-12">
+              <h1>
+                <span
+                  class="accordian-head collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseLocationR"
+                  aria-expanded="false"
+                  aria-controls="collapseLocationR"
+                >
+                  <a href="locations.html">Locaiton</a
+                  ><i class="icon-chevron-down mt-3"></i
+                ></span>
+              </h1>
+
+              <div id="collapseLocationR" class="collapse">
+                <p class="mt-2 bolded-text"><a href="#">The Cotswolds</a></p>
+                <p><a href="#">Lower Mill Estate</a></p>
+                <p class="mt-4 bolded-text"><a href="#">Devon</a></p>
+                <p><a href="#">Birchwood</a></p>
+
+                <p class="mt-4 bolded-text"><a href="#">Dorset</a></p>
+                <p><a href="#">Silverlake</a></p>
+              </div>
+            </div>
+
+            <div class="col-md-12 mt-4">
+              <h1>
+                <span
+                  class="accordian-head collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseThingsToDoR"
+                  aria-expanded="false"
+                  aria-controls="collapseThingsToDoR"
+                  class=""
+                  ><a href="things-to-do-landing-page.html">Things to do</a>
+                  <i class="icon-chevron-down mt-3"></i
+                ></span>
+              </h1>
+
+              <div id="collapseThingsToDoR" class="collapse">
+                <p class="mt-2"><a href="#">Seasonal</a></p>
+                <p><a href="#">Restaurants</a></p>
+                <p><a href="#">Tennis Sessions</a></p>
+              </div>
+            </div>
+
+            <div class="col-md-12 mt-4">
+              <h1>
+                <span
+                  class="accordian-head collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseInspirationR"
+                  aria-expanded="false"
+                  aria-controls="collapseInspirationR"
+                  class=""
+                  ><a href="inspiration.html">Inspiration & Offers</a>
+                  <i class="icon-chevron-down mt-3"></i
+                ></span>
+              </h1>
+
+              <div id="collapseInspirationR" class="collapse">
+                <p class="mt-2 bolded-text"><a href="#">Inspiration</a></p>
+                <p class=""><a href="#">Hot tub Holidays</a></p>
+                <p><a href="#">Family Swimming</a></p>
+                <p><a href="#">Local Area</a></p>
+
+                <p class="mt-4 bolded-text"><a href="#">Offers</a></p>
+                <p class=""><a href="#">Kids go free</a></p>
+                <p><a href="#">2 for 1</a></p>
+                <p><a href="#">Offers on pools</a></p>
+              </div>
+            </div>
+
+            <div class="col-md-12 mt-4">
+              <h1>
+                <span
+                  class="accordian-head collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseAboutR"
+                  aria-expanded="false"
+                  aria-controls="collapseAboutR"
+                  class=""
+                  ><a href="about.html">About us</a>
+                  <i class="icon-chevron-down mt-3"></i
+                ></span>
+              </h1>
+              <div id="collapseAboutR" class="collapse">
+                <p class="mt-2"><a href="about.html">Our Story</a></p>
+                <p><a href="inspiration.html">Why book with us</a></p>
+                <p><a href="faq.html">FAQ’s</a></p>
+                <p><a href="contactus.html">Contact us</a></p>
+                <p><a href="news.html">News</a></p>
+                <p><a href="blog_list.html">Blog</a></p>
+              </div>
+            </div>
+
+            <div class="col-md-12 mt-4">
+              <h1>
+                <span
+                  class="accordian-head collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseMyBookingR"
+                  aria-expanded="false"
+                  aria-controls="collapseMyBookingR"
+                  class=""
+                  ><a href="#bookingPage">My Booking</a>
+                  <i class="icon-chevron-down mt-3"></i
+                ></span>
+              </h1>
+              <div id="collapseMyBookingR" class="collapse">
+                <p class="mt-2"><a href="about.html">History</a></p>
+                <p><a href="news.html">Account</a></p>
+                <p><a href="blog_list.html">Bookings</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row row-minus">
+            <div class="col-md-12">
+              <p class="mt-4 bolded-text">Are you an owner?</p>
+              <div class="intro-cta mt-2">
+                <button class="btn btn-primary w-100 btn-with-icon">
+                  Log IN <i class="icon-long-right ml-3 mt-1-5"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row row-minus mt-4 mb-2">
+            <div class="col-md-12">
+              <a href="mailto:abc@mail.com" class="hd-contact-link2"
+                ><i class="icon-newsletter px-2"></i>
+                <span class="ml-3 newsletter-text">Newsletter Sign up</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="row row-minus mt-4 social-container">
+            <div class="col-md-12 text-center">
+              <p class="social-icons mt-2">
+                <a href="#"><i class="icon-twitter px-2"></i></a> &nbsp;<a
+                  href="#"
+                  ><i class="icon-fb px-2"></i></a
+                >&nbsp;
+                <a href="#"><i class="icon-instagram px-2"></i></a>
               </p>
-              <div class="intro-cta mt-4">
-                <a href="#" class="btn btn-primary">View more <i class="icon-long-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- //.responsive-menu -->
+
+        <div class="responsive-search-block d-none">
+          <div class="form-group">
+            <div class="option-label mb-1">Location</div>
+            <div class="select-box dark">
+              <select class="form-select">
+                <option value="pick-location">Pick Location</option>
+                <option value="1">Location One</option>
+                <option value="2">Location Two</option>
+                <option value="3">Location Three</option>
+              </select>
+            </div>
+          </div>
+          <!-- /form-group -->
+
+          <div class="form-group">
+            <div class="option-label mb-1">Date</div>
+            <div class="option-selection-dual full-width">
+              <input
+                type="text"
+                class="form-control datepicker-input"
+                value="15"
+                min="1"
+                max="31"
+              />
+            </div>
+          </div>
+          <!-- /form-group -->
+
+          <div class="form-group">
+            <div class="option-label mb-1">Guests</div>
+            <div class="option-selection-dual full-width">
+              <input
+                type="number"
+                class="form-control selected-digit"
+                value="1"
+                min="0"
+              />
+              <div class="number-controls-vertical">
+                <button class="button-iconic increment">
+                  <i class="fas fa-chevron-up"></i>
+                </button>
+                <button class="button-iconic decrement">
+                  <i class="fas fa-chevron-down"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- /form-group -->
+
+          <div class="form-group">
+            <div class="option-label mb-1">Duration</div>
+            <div class="option-selection-dual full-width">
+              <input
+                type="number"
+                class="form-control selected-digit"
+                value="4"
+                min="0"
+              />
+              <div class="number-controls-vertical">
+                <button class="button-iconic increment">
+                  <i class="fas fa-chevron-up"></i>
+                </button>
+                <button class="button-iconic decrement">
+                  <i class="fas fa-chevron-down"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- /form-group -->
+
+          <div class="control">
+            <button class="btn btn-primary btn-block">
+              Check Availability
+            </button>
+          </div>
+        </div>
+        <!-- //.responsive-search-block -->
+
+        <div class="site-main-nav-bar d-none d-xl-block">
+          <nav class="site-main-nav">
+            <ul class="menu">
+              <li>
+                <a href="locations.html">Location</a>
+                <div class="mega-dropdown">
+                  <div class="container-fluid">
+                    <div class="mega-menu-contents">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="row row-minus">
+                            <div class="col-8">
+                              <div class="destination-box destination-img1">
+                                <h4 class="text-heading">Lower Mill Estate</h4>
+                                <h6>The Cotswolds</h6>
+                              </div>
+                            </div>
+
+                            <div class="col-4">
+                              <ul class="list-destination">
+                                <li><a href="#">The Properties</a></li>
+                                <li><a href="#">The Estate</a></li>
+                                <li><a href="#">Food & Drink</a></li>
+                                <li><a href="#">Spa</a></li>
+                                <li><a href="#">Local Area</a></li>
+                                <li><a href="#">Gallery</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4">
+                          <div class="row row-minus">
+                            <div class="col-8">
+                              <div class="destination-box destination-img2">
+                                <h4 class="text-heading">Silverlake</h4>
+                                <h6>Dorset</h6>
+                              </div>
+                            </div>
+
+                            <div class="col-4">
+                              <ul class="list-destination">
+                                <li><a href="#">The Properties</a></li>
+                                <li><a href="#">The Estate</a></li>
+                                <li><a href="#">Food & Drink</a></li>
+                                <li><a href="#">Spa</a></li>
+                                <li><a href="#">Local Area</a></li>
+                                <li><a href="#">Gallery</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4">
+                          <div class="row row-minus">
+                            <div class="col-8">
+                              <div class="destination-box destination-img1">
+                                <h4 class="text-heading">Birchwood</h4>
+                                <h6>Devon</h6>
+                              </div>
+                            </div>
+
+                            <div class="col-4">
+                              <ul class="list-destination">
+                                <li><a href="#">The Properties</a></li>
+                                <li><a href="#">The Estate</a></li>
+                                <li><a href="#">Food & Drink</a></li>
+                                <li><a href="#">Spa</a></li>
+                                <li><a href="#">Local Area</a></li>
+                                <li><a href="#">Gallery</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="things-to-do-landing-page.html">Things to do</a>
+
+                <div class="mega-dropdown">
+                  <div class="container-fluid">
+                    <div class="mega-menu-contents">
+                      <div class="row row-sp-col">
+                        <div class="col-md-3">
+                          <div class="todo-block">
+                            <header class="heading mb-4">
+                              <h4 class="title text-heading">Things to do</h4>
+                              <p class="text-sm">
+                                Quidem modi sapiente veritatis, qui enim
+                                suscipit harum magni eligendi earum saepe iure
+                                <a href="#" class="text-primary">View all</a>
+                              </p>
+                            </header>
+                            <ul class="list-iconic-menu">
+                              <li>
+                                <a href="#"
+                                  ><i class="icon-star-outline mr-2"></i
+                                  ><span>Overview</span></a
+                                >
+                              </li>
+                              <li>
+                                <a href="#"
+                                  ><i class="icon-cycle mr-2"></i
+                                  ><span>Cycling</span></a
+                                >
+                              </li>
+                              <li>
+                                <a href="#"
+                                  ><i class="icon-activities mr-2"></i
+                                  ><span>Activities</span></a
+                                >
+                              </li>
+                              <li>
+                                <a href="#"
+                                  ><i class="icon-spa mr-2"></i
+                                  ><span>Spa</span></a
+                                >
+                              </li>
+                              <li>
+                                <a href="#"
+                                  ><i class="icon-skating mr-2"></i
+                                  ><span>Waterpark</span></a
+                                >
+                              </li>
+                              <li>
+                                <a href="#"
+                                  ><i class="icon-food mr-2"></i
+                                  ><span>Food & Drink</span></a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3">
+                          <div class="todo-block">
+                            <header class="heading mb-4">
+                              <h4 class="title text-heading">Restaurants</h4>
+                              <p class="text-sm">
+                                Quidem modi sapiente veritatis, qui enim
+                                suscipit harum magni eligendi earum saepe iure
+                                <a href="#" class="text-primary">View all</a>
+                              </p>
+                            </header>
+
+                            <div class="mb-3">
+                              <a href="#">
+                                <i class="icon-food mr-1"></i>
+                                Italian Restaurant Title
+                              </a>
+                            </div>
+                            <div class="mb-3">
+                              <a href="#">
+                                <i class="icon-food mr-1"></i>
+                                Local Restaurant Title
+                              </a>
+                            </div>
+                            <div class="mb-3">
+                              <a href="#">
+                                <i class="icon-food mr-1"></i>
+                                Local Restaurant Title
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3">
+                          <div class="todo-block">
+                            <header class="heading mb-4">
+                              <h4 class="title text-heading">Seasonal</h4>
+                              <p class="text-sm">
+                                Quidem modi sapiente veritatis, qui enim
+                                suscipit harum magni eligendi earum saepe iure
+                                <a href="#" class="text-primary">View all</a>
+                              </p>
+                            </header>
+
+                            <div class="mb-3">
+                              <div class="todo-media">
+                                <img
+                                  src="./assets/inspiration1.jpg"
+                                  class="img-todo-sm"
+                                  alt="..."
+                                />
+                                <div class="media-body">
+                                  <a href="#">Family Swim</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mb-3">
+                              <div class="todo-media">
+                                <img
+                                  src="./assets/inspiration2.jpg"
+                                  class="img-todo-sm"
+                                  alt="..."
+                                />
+                                <div class="media-body">
+                                  <a href="#">Kayan and Canoe sessions</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mb-3">
+                              <div class="todo-media">
+                                <img
+                                  src="./assets/inspiration1.jpg"
+                                  class="img-todo-sm"
+                                  alt="..."
+                                />
+                                <div class="media-body">
+                                  <a href="#">Trout Fishing</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3">
+                          <div class="todo-image-block">
+                            <div
+                              class="todo-image"
+                              style="
+                                background-image: url(./assets/destination_img2.jpg);
+                              "
+                            >
+                              <header class="heading mb-4">
+                                <h4 class="title text-heading">
+                                  Summer Tennis Season
+                                </h4>
+                              </header>
+                              <p class="mb-4">
+                                Quidem modi sapiente veritatis, qui enim
+                                suscipit harum magni eligendi earum saepe iure
+                              </p>
+                              <a href="#" class="btn btn-primary"
+                                >Find out more <i class="icon-long-right"></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="inspiration.html">Inspiration & Offers</a>
+
+                <div class="mega-dropdown">
+                  <div class="container-fluid">
+                    <div class="mega-menu-contents">
+                      <div class="row row-sp-col">
+                        <div class="col-md-6">
+                          <header class="heading mb-4">
+                            <h4 class="title text-heading">Inspiration</h4>
+                            <p>
+                              Quidem modi sapiente veritatis, qui enim suscipit
+                              harum magni
+                              <a href="#" class="text-primary">View all</a>
+                            </p>
+                          </header>
+
+                          <div class="row row-minus">
+                            <div class="col-md-4">
+                              <div class="inspi-image-block">
+                                <figure>
+                                  <img src="assets/inspiration1.jpg" />
+                                </figure>
+                                <h6 class="text-heading">Hot tub Holidays</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="inspi-image-block">
+                                <figure>
+                                  <img src="assets/inspiration2.jpg" />
+                                </figure>
+                                <h6 class="text-heading">Hot tub Holidays</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="inspi-image-block">
+                                <figure>
+                                  <img src="assets/inspiration3.jpg" />
+                                </figure>
+                                <h6 class="text-heading">Hot tub Holidays</h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-6">
+                          <header class="heading mb-4">
+                            <h4 class="title text-heading">Offers</h4>
+                            <p>
+                              Quidem modi sapiente veritatis, qui enim suscipit
+                              harum magni
+                              <a href="#" class="text-primary">View all</a>
+                            </p>
+                          </header>
+
+                          <div class="row row-minus">
+                            <div class="col-md-4">
+                              <div class="inspi-image-block">
+                                <figure>
+                                  <img src="assets/inspiration1.jpg" />
+                                </figure>
+                                <h6 class="text-heading">
+                                  <a href="#">Hot tub Holidays</a>
+                                </h6>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="inspi-image-block">
+                                <figure>
+                                  <img src="assets/inspiration2.jpg" />
+                                </figure>
+                                <h6 class="text-heading">
+                                  <a href="#">Hot tub Holidays</a>
+                                </h6>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="inspi-image-block">
+                                <figure>
+                                  <img src="assets/inspiration3.jpg" />
+                                </figure>
+                                <h6 class="text-heading">
+                                  <a href="#">Hot tub Holidays</a>
+                                </h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="about.html">About us</a>
+
+                <div class="mega-dropdown">
+                  <div class="container-fluid">
+                    <div class="mega-menu-contents">
+                      <div class="row row-sp-col">
+                        <div class="col-md-5">
+                          <div class="todo-block">
+                            <header class="heading mb-4">
+                              <h4 class="title text-heading">
+                                About Habitat Escapes
+                              </h4>
+                            </header>
+                            <p>
+                              Consectetur adipisicing elit itaque ducimus
+                              necessitatibus voluptate dolorem accusantium
+                              corporis eligendi molestias, laudantium amet ea
+                              provident odit earum veritatis quos unde suscipit
+                            </p>
+
+                            <p>
+                              Quidem modi sapiente veritatis, qui enim suscipit
+                              harum magni eligendi earum saepe iure
+                            </p>
+
+                            <img
+                              src="assets/blue-logo-2.png"
+                              alt="part of habitat first"
+                              class="mt-4"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="col-md-7">
+                          <div class="row full-height">
+                            <div class="col-md-6">
+                              <div class="todo-block">
+                                <header class="heading mb-5">
+                                  <h4 class="title text-heading">
+                                    Things to do
+                                  </h4>
+                                </header>
+                                <div class="row row-minus">
+                                  <div class="col-md-6 mb-4">
+                                    <a href="about.html">Our Story</a>
+                                  </div>
+                                  <div class="col-md-6 mb-4">
+                                    <a href="contactus.html">Contact Us</a>
+                                  </div>
+                                  <div class="col-md-6 mb-4">
+                                    <a href="inspiration.html"
+                                      >Why book with us</a
+                                    >
+                                  </div>
+                                  <div class="col-md-6 mb-4">
+                                    <a href="news.html">news</a>
+                                  </div>
+                                  <div class="col-md-6 mb-4">
+                                    <a href="faq.html">FAQ’s</a>
+                                  </div>
+                                  <div class="col-md-6 mb-4">
+                                    <a href="blog_list.html">Blog</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-md-6">
+                              <div class="todo-image-block">
+                                <div
+                                  class="todo-image"
+                                  style="
+                                    background-image: url(./assets/destination_img2.jpg);
+                                  "
+                                >
+                                  <header class="heading mb-4">
+                                    <h4 class="title text-heading">
+                                      Summer Tennis Season
+                                    </h4>
+                                  </header>
+                                  <p class="mb-4">
+                                    Quidem modi sapiente veritatis, qui enim
+                                    suscipit harum magni eligendi earum saepe
+                                    iure
+                                  </p>
+                                  <a href="#" class="btn btn-primary"
+                                    >Find out more
+                                    <i class="icon-long-right"></i
+                                  ></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li><a href="extra_booking_stage_1.html">My Bookings</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- //.site-header-wrap -->
+
+      <div>
+        <!-- Hero image starts -->
+
+        <div class="relative-container">
+          <img src="./assets/aquaactivity.jpg" class="full-width" />
+          <div class="center-text-image text-center pl-4">
+            <div class="center-text-image-h1 center-text-image-h1-lg">
+              About us
+            </div>
+            <div class="center-text-image-p">
+              Praesent congue erat at massa. Vivamus elementum semper nisi.
+              Praesent congue erat at massa.
+            </div>
+            <div class="center-text-image-p">
+              Nunc interdum lacus sit amet orci.
+            </div>
+          </div>
+        </div>
+        <!-- Hero image ends -->
+
+        <nav class="nav-quick-link-bar">
+          <div class="container-fluid">
+            <ul class="nav-quick-link" id="myTab" role="tablist">
+              <li role="presentation">
+                <a id="tnc-tab" href="about.html">Our Story</a>
+              </li>
+              <li role="presentation">
+                <a id="cookie-tab" href="team.html">Meeting the Team</a>
+              </li>
+              <li role="presentation">
+                <a id="privacy-policy-tab" href="inspiration.html"
+                  >Why book with us?</a
+                >
+              </li>
+              <li role="presentation">
+                <a id="modern-slavery-act-tab" href="faq.html">FAQ's</a>
+              </li>
+              <li role="presentation">
+                <a id="modern-slavery-act-tab" href="news.html">News</a>
+              </li>
+              <li role="presentation">
+                <a id="modern-slavery-act-tab" href="blog.html">Blog</a>
+              </li>
+              <li role="presentation">
+                <a id="modern-slavery-act-tab" href="contactus.html"
+                  >Contact us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="container-fluid pt-4 border-bottom">
+          <div class="row mt-4 mb-4 pb-4">
+            <div class="col-md-5 col-lg-4">
+              <div class="dual-image-holder mb-4">
+                <figure class="image-1">
+                  <img src="./assets/Activities2.png" alt="..." />
+                </figure>
+                <figure class="image-2">
+                  <img src="./assets/Activities3.png" alt="..." />
+                </figure>
               </div>
             </div>
 
+            <div class="col-md-7 col-lg-8">
+              <div class="about-block-text">
+                <header class="heading">
+                  <h3 class="text-heading">The story of Habitat</h3>
+                </header>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  The Hide, accessed from the garden, is an elegant modernist
+                  steel-and-glass structure, voted Britain’s best small building
+                  in 2009, standing in complete seclusion, overlooking one of
+                  the largest lakes in the Cotswolds Water Park.
+                </p>
+                <div class="intro-cta mt-4">
+                  <a href="#" class="btn btn-primary"
+                    >View more <i class="icon-long-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="container-fluid mt-4 py-4 about-why equal-width-container-2"
+        >
+          <header class="heading mb-5">
+            <h3 class="text-heading text-center">Why Habitat Resorts</h3>
+          </header>
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="about-block mb-4">
+                <figure class="iconic">
+                  <img src="assets/leaf_logo_dark.png" />
+                </figure>
+                <div class="text">
+                  <header class="heading">
+                    <h5 class="text-heading mb-1">Benefit</h5>
+                  </header>
+                  <p>
+                    Aliquam lobortis. Pellentesque egestas, neque sit amet
+                    convallis pulvinar.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="about-block mb-4">
+                <figure class="iconic">
+                  <img src="assets/leaf_logo_dark.png" />
+                </figure>
+                <div class="text">
+                  <header class="heading">
+                    <h5 class="text-heading mb-1">Benefit</h5>
+                  </header>
+                  <p>
+                    Aliquam lobortis. Pellentesque egestas, neque sit amet
+                    convallis pulvinar.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="about-block mb-4">
+                <figure class="iconic">
+                  <img src="assets/leaf_logo_dark.png" />
+                </figure>
+                <div class="text">
+                  <header class="heading">
+                    <h5 class="text-heading mb-1">Benefit</h5>
+                  </header>
+                  <p>
+                    Aliquam lobortis. Pellentesque egestas, neque sit amet
+                    convallis pulvinar.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="about-block mb-4">
+                <figure class="iconic">
+                  <img src="assets/leaf_logo_dark.png" />
+                </figure>
+                <div class="text">
+                  <header class="heading">
+                    <h5 class="text-heading mb-1">Benefit</h5>
+                  </header>
+                  <p>
+                    Aliquam lobortis. Pellentesque egestas, neque sit amet
+                    convallis pulvinar.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="about-block mb-4">
+                <figure class="iconic">
+                  <img src="assets/leaf_logo_dark.png" />
+                </figure>
+                <div class="text">
+                  <header class="heading">
+                    <h5 class="text-heading mb-1">Benefit</h5>
+                  </header>
+                  <p>
+                    Aliquam lobortis. Pellentesque egestas, neque sit amet
+                    convallis pulvinar.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="about-block mb-4">
+                <figure class="iconic">
+                  <img src="assets/leaf_logo_dark.png" />
+                </figure>
+                <div class="text">
+                  <header class="heading">
+                    <h5 class="text-heading mb-1">Benefit</h5>
+                  </header>
+                  <p>
+                    Aliquam lobortis. Pellentesque egestas, neque sit amet
+                    convallis pulvinar.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- WHY HABITAT RESORTS ENDS -->
+
+        <!--STORY SECTION-->
+        <!-- Virtual Tour section starts here -->
+        <div class="bg-blue-light pt-5 pb-5">
+          <div class="container-fluid">
+            <header class="heading mb-4 text-center">
+              <span class="mb-1"
+                ><img src="assets/leaf_logo_dark.png" alt="..."
+              /></span>
+              <h6 class="mb-2 mt-2">The story</h6>
+              <h1 class="title text-heading">Of Habitat</h1>
+            </header>
+
+            <div class="row justify-content-md-center mb-5">
+              <div class="col-md-8">
+                <div class="text-center">
+                  Pellentesque ut neque. Vestibulum ante ipsum primis in
+                  faucibus orci luctus et ultrices posuere cubilia Curae; Fusce
+                  id purus. Nullam vel sem. Phasellus accumsan cursus velit.
+                  Vivamus consectetuer hendrerit lacus.
+                </div>
+              </div>
+            </div>
+
+            <div class="property-section-margins">
+              <div class="row about-stor">
+                <div class="col-md-3 text-center mb-4">
+                  <div>
+                    <img class="story-tb" src="./assets/inspiration1.jpg" />
+                  </div>
+                  <div class="mt-2 text-heading story-date">Est 1984</div>
+                  <div class="mt-0">
+                    Lorem ipsum dolor sit amet telcus rist.
+                  </div>
+                  <i class="icon-long-right-dark timeline-right"></i>
+                </div>
+
+                <div class="col-md-3 text-center mb-4">
+                  <div>
+                    <img class="story-tb" src="./assets/inspiration1.jpg" />
+                  </div>
+                  <div class="mt-2 text-heading story-date">1997</div>
+                  <div class="mt-0">
+                    Lorem ipsum dolor sit amet telcus rist.
+                  </div>
+                  <i class="icon-long-right-dark timeline-right"></i>
+                </div>
+
+                <div class="col-md-3 text-center mb-4">
+                  <div>
+                    <img class="story-tb" src="./assets/inspiration1.jpg" />
+                  </div>
+                  <div class="mt-2 text-heading story-date">2017</div>
+                  <div class="mt-0">
+                    Lorem ipsum dolor sit amet telcus rist.
+                  </div>
+                  <i class="icon-long-right-dark timeline-right"></i>
+                </div>
+
+                <div class="col-md-3 text-center mb-4">
+                  <div>
+                    <img class="story-tb" src="./assets/inspiration1.jpg" />
+                  </div>
+                  <div class="mt-2 text-heading story-date">2020</div>
+                  <div class="mt-0">
+                    Lorem ipsum dolor sit amet telcus rist.
+                  </div>
+                </div>
+              </div>
+
+              <div class="intro-cta text-center mt-4 pt-4">
+                <a href="#" class="btn btn-primary"
+                  >Read our story <i class="icon-long-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Virtual Tour section ends here -->
+
+        <!-- NEWS CARDS START -->
+        <div
+          class="property-section-margins pt-5 pb-5 news-cards border-bottom"
+        >
+          <div class="container-fluid">
+            <header class="heading mb-4 text-center">
+              <h3 class="title text-heading">Habitat Resorts in the news</h3>
+            </header>
+
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card team-card">
+                  <img
+                    src="./assets/Activities1.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h1 class="team-name">Habitat Escapes</h1>
+                    <h1 class="team-desg team-date text-muted">
+                      Fri 28th May, 2020
+                    </h1>
+
+                    <p>
+                      Aenean imperdiet. Vestibulum suscipit nulla quis orci Nam
+                      pretium turpis et arcu. Suspendisse faucibus, nunc et
+                      pellentesque egestas, lacus ante convallis eul.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card team-card">
+                  <img
+                    src="./assets/Activities1.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h1 class="team-name">Resort Housing</h1>
+                    <h1 class="team-desg team-date text-muted">
+                      Fri 28th May, 2020
+                    </h1>
+
+                    <p>
+                      Aenean imperdiet. Vestibulum suscipit nulla quis orci Nam
+                      pretium turpis et arcu. Suspendisse faucibus, nunc et
+                      pellentesque egestas, lacus ante convallis eul.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card team-card">
+                  <img
+                    src="./assets/Activities1.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h1 class="team-name">Aenean Imperdiet</h1>
+                    <h1 class="team-desg team-date text-muted">
+                      Fri 28th May, 2020
+                    </h1>
+
+                    <p>
+                      Aenean imperdiet. Vestibulum suscipit nulla quis orci Nam
+                      pretium turpis et arcu. Suspendisse faucibus, nunc et
+                      pellentesque egestas, lacus ante convallis eul.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="intro-cta text-center mt-4">
+              <a href="#" class="btn btn-primary"
+                >Read our news <i class="icon-long-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- NEWS CARDS END -->
+
+        <section class="container-fluid mt-5 mb-5">
+          <header class="heading text-center mb-5">
+            <h3 class="text-heading">What our visitors say</h3>
+          </header>
+
+          <div
+            class="visitor-slider slider arrows-lg"
+            data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "dots": true}'
+          >
+            <div class="visitor-block text-center">
+              <img src="./assets/visitor1.png" />
+              <div class="property-visitor-name">Ben Sherman, Newcastle</div>
+              <div>
+                <i class="fas fa-star starred"></i>
+                <i class="fas fa-star starred"></i>
+                <i class="fas fa-star starred"></i>
+                <i class="fas fa-star starred"></i>
+                <i class="fas fa-star starred"></i>
+              </div>
+              <div class="property-visitorfeedback-carousel-comment">
+                Pellentesque ut neque. Vestibulum ante ipsum primis in faucibus
+                orci luctus et ultrices posuere cubilia Curae; Fusce id purus.
+                Nullam vel sem. Phasellus accumsan cursus velit. Vivamus
+                consectetuer hendrerit lacus.leo ligula, porttitor eu, consequat
+                vitae, eleifend ac, enim. Sed lectus.
+              </div>
+            </div>
+            <div class="visitor-block text-center">
+              <img src="./assets/visitor2.png" />
+              <div class="property-visitor-name">Ben Sherman 2, Newcastle</div>
+              <div>
+                <i class="fas fa-star starred"></i>
+                <i class="fas fa-star starred"></i>
+                <i class="fas fa-star starred"></i>
+                <i class="fas fa-star starred"></i>
+                <i class="fas fa-star dark-starred"></i>
+              </div>
+              <div class="property-visitorfeedback-carousel-comment">
+                Amet consectetur adipisicing elit. Impedit tempore fugiat, nemo
+                quas dolor aspernatur, tempora illo quod sequi ipsa at
+                recusandae. Pariatur numquam enim sunt facere, totam
+                voluptatibus velit?
+              </div>
+            </div>
+          </div>
+          <!-- Visitor Feedback Carousel ends here -->
+        </section>
+
+        <!-- FAQ Section Start-->
+        <div class="bg-red-light pt-5 pb-5">
+          <div class="container-fluid about-faq">
+            <div class="row">
+              <div class="col-md-7">
+                <header class="heading text-left">
+                  <h3 class="text-heading">Quick FAQ's</h3>
+                </header>
+                <p>
+                  Pellentesque 2 ut neque. Vestibulum ante ipsum primis in
+                  faucibus orci luctus et ultrices posuere cubilia Curae; Fusce
+                  id purus. Nullam vel sem. Phasellus accumsan cursus velit.
+                  Vivamus consectetuer hendrerit lacus.leo ligula, porttitor eu,
+                  consequat vitae, eleifend ac, enim. Sed lectus. <br />
+                  <br />
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  The Hide, accessed from the garden, is an elegant modernist
+                  steel-and-glass structure, voted Britain’s best small building
+                  in 2009, standing in complete seclusion, overlooking one of
+                  the largest lakes in the Cotswolds Water Park.
+                </p>
+              </div>
+              <div class="col-md-5">
+                <div id="accordion">
+                  <div class="card property-accordian">
+                    <div
+                      class="card-header property-accordian property-accordian-header-border"
+                      id="headingKeyFeatures"
+                    >
+                      <h5 class="mb-0">
+                        <a
+                          class="btn btn-link w-100"
+                          data-toggle="collapse"
+                          data-target="#collapseKeyFeatures"
+                          aria-expanded="true"
+                          aria-controls="collapseKeyFeatures"
+                        >
+                          <div class="row">
+                            <div
+                              class="col-11 text-left px-0 property_features_heading"
+                            >
+                              Key Features
+                            </div>
+                            <div class="col-1 text-right px-0">
+                              <i
+                                id="collapseKeyFeaturesMinus"
+                                class="icon-remove-hover"
+                              ></i>
+                              <i
+                                id="collapseKeyFeaturesPlus"
+                                class="icon-add-hover"
+                                style="display: none"
+                              ></i>
+                            </div>
+                          </div>
+                        </a>
+                      </h5>
+                    </div>
+
+                    <div
+                      id="collapseKeyFeatures"
+                      class="collapse accordion-item-content show"
+                      aria-labelledby="headingKeyFeatures"
+                      data-parent="#accordion"
+                    >
+                      <div class="card-body property-accordian-card-body">
+                        <div class="property-text">
+                          <p>
+                            Anim pariatur cliche reprehenderit, enim eiusmod
+                            high life accusamus terry richardson ad squid. 3
+                            wolf moon officia aute, non cupidatat skateboard
+                            dolor brunch. Food truck quinoa nesciunt laborum
+                            eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put
+                            a bird on it squid single-origin coffee nulla
+                            assumenda shoreditch et. Nihil anim keffiyeh
+                            helvetica, craft beer labore wes anderson cred
+                            nesciunt sapiente ea proident. Ad vegan excepteur
+                            butcher vice lomo. Leggings occaecat craft beer
+                            farm-to-table, raw denim aesthetic synth nesciunt
+                            you probably haven't heard of them accusamus labore
+                            sustainable VHS
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card property-accordian">
+                    <div
+                      class="card-header property-accordian property-accordian-header-border"
+                      id="headingAccommodation"
+                    >
+                      <h5 class="mb-0">
+                        <a
+                          class="btn btn-link w-100"
+                          data-toggle="collapse"
+                          data-target="#collapseAccommodation"
+                          aria-expanded="true"
+                          aria-controls="collapseKeyFeatures"
+                        >
+                          <div class="row">
+                            <div
+                              class="col-11 text-left px-0 property_features_heading"
+                            >
+                              Accommodation
+                            </div>
+                            <div class="col-1 text-right px-0">
+                              <i
+                                id="collapseAccommodationMinus"
+                                class="icon-remove-hover"
+                                style="display: none"
+                              ></i>
+                              <i
+                                id="collapseAccommodationPlus"
+                                class="icon-add-hover"
+                              ></i>
+                            </div>
+                          </div>
+                        </a>
+                      </h5>
+                    </div>
+                    <div
+                      id="collapseAccommodation"
+                      class="collapse accordion-item-content"
+                      aria-labelledby="headingAccommodation"
+                      data-parent="#accordion"
+                    >
+                      <div class="card-body property-accordian-card-body">
+                        <!-- Accomodation Detail here -->
+                        <div class="property-text">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card property-accordian">
+                    <div
+                      class="card-header property-accordian property-accordian-header-border"
+                      id="headingOutside"
+                    >
+                      <h5 class="mb-0">
+                        <a
+                          class="btn btn-link w-100"
+                          data-toggle="collapse"
+                          data-target="#collapseOutside"
+                          aria-expanded="true"
+                          aria-controls="collapseKeyFeatures"
+                        >
+                          <div class="row">
+                            <div
+                              class="col-11 text-left px-0 property_features_heading"
+                            >
+                              Outside
+                            </div>
+                            <div class="col-1 text-right px-0">
+                              <i
+                                id="collapseOutsideMinus"
+                                class="icon-remove-hover"
+                                style="display: none"
+                              ></i>
+                              <i
+                                id="collapseOutsidePlus"
+                                class="icon-add-hover"
+                              ></i>
+                            </div>
+                          </div>
+                        </a>
+                      </h5>
+                    </div>
+                    <div
+                      id="collapseOutside"
+                      class="collapse accordion-item-content"
+                      aria-labelledby="headingOutside"
+                      data-parent="#accordion"
+                    >
+                      <div class="card-body property-accordian-card-body">
+                        <div class="property-text">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high
+                          life accusamus terry richardson ad squid. 3 wolf moon
+                          officia aute, non cupidatat skateboard dolor brunch.
+                          Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                          wolf moon tempor, sunt aliqua put a bird on it squid
+                          single-origin coffee nulla assumenda shoreditch et.
+                          Nihil anim keffiyeh helvetica, craft beer labore wes
+                          anderson cred nesciunt sapiente ea proident. Ad vegan
+                          excepteur butcher vice lomo. Leggings occaecat craft
+                          beer farm-to-table, raw denim aesthetic synth nesciunt
+                          you probably haven't heard of them accusamus labore
+                          sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card property-accordian">
+                    <div
+                      class="card-header property-accordian property-accordian-header-border"
+                      id="headingLeisureFacilities"
+                    >
+                      <h5 class="mb-0">
+                        <a
+                          class="btn btn-link w-100"
+                          data-toggle="collapse"
+                          data-target="#collapseLeisureFacilities"
+                          aria-expanded="true"
+                          aria-controls="collapseKeyFeatures"
+                        >
+                          <div class="row">
+                            <div
+                              class="col-11 text-left px-0 property_features_heading"
+                            >
+                              Leisure Facilities
+                            </div>
+                            <div class="col-1 text-right px-0">
+                              <i
+                                id="collapseLeisureFacilitiesMinus"
+                                class="icon-remove-hover"
+                                style="display: none"
+                              ></i>
+                              <i
+                                id="collapseLeisureFacilitiesPlus"
+                                class="icon-add-hover"
+                              ></i>
+                            </div>
+                          </div>
+                        </a>
+                      </h5>
+                    </div>
+                    <div
+                      id="collapseLeisureFacilities"
+                      class="collapse accordion-item-content"
+                      aria-labelledby="headingLeisureFacilities"
+                      data-parent="#accordion"
+                    >
+                      <div class="card-body property-accordian-card-body">
+                        <div class="property-text">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card property-accordian">
+                    <div
+                      class="card-header property-accordian property-accordian-header-border"
+                      id="headingLocalInformation"
+                    >
+                      <h5 class="mb-0">
+                        <a
+                          class="btn btn-link w-100"
+                          data-toggle="collapse"
+                          data-target="#collapseLocalInformation"
+                          aria-expanded="true"
+                          aria-controls="collapseKeyFeatures"
+                        >
+                          <div class="row">
+                            <div
+                              class="col-11 text-left px-0 property_features_heading"
+                            >
+                              Local Information
+                            </div>
+                            <div class="col-1 text-right px-0">
+                              <i
+                                id="collapseLocalInformationMinus"
+                                class="icon-remove-hover"
+                                style="display: none"
+                              ></i>
+                              <i
+                                id="collapseLocalInformationPlus"
+                                class="icon-add-hover"
+                              ></i>
+                            </div>
+                          </div>
+                        </a>
+                      </h5>
+                    </div>
+                    <div
+                      id="collapseLocalInformation"
+                      class="collapse accordion-item-content"
+                      aria-labelledby="headingLocalInformation"
+                      data-parent="#accordion"
+                    >
+                      <div class="card-body property-accordian-card-body">
+                        <div class="property-text">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card property-accordian">
+                    <div
+                      class="card-header property-accordian property-accordian-header-border"
+                      id="headingParking"
+                    >
+                      <h5 class="mb-0">
+                        <a
+                          class="btn btn-link w-100"
+                          data-toggle="collapse"
+                          data-target="#collapseParking"
+                          aria-expanded="true"
+                          aria-controls="collapseKeyFeatures"
+                        >
+                          <div class="row">
+                            <div
+                              class="col-11 text-left px-0 property_features_heading"
+                            >
+                              Parking
+                            </div>
+                            <div class="col-1 text-right px-0">
+                              <i
+                                id="collapseParkingMinus"
+                                class="icon-remove-hover"
+                                style="display: none"
+                              ></i>
+                              <i
+                                id="collapseParkingPlus"
+                                class="icon-add-hover"
+                              ></i>
+                            </div>
+                          </div>
+                        </a>
+                      </h5>
+                    </div>
+                    <div
+                      id="collapseParking"
+                      class="collapse accordion-item-content"
+                      aria-labelledby="headingParking"
+                      data-parent="#accordion"
+                    >
+                      <div class="card-body property-accordian-card-body">
+                        <div class="property-text">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- row for accordian ends -->
+            </div>
           </div>
         </div>
       </div>
+    </div>
+    <!-- FAQ Section End-->
 
-      <div class="container-fluid mt-4 py-4 about-why equal-width-container-2">
-        <header class="heading mb-5">
-          <h3 class="text-heading text-center">Why Habitat Resorts</h3>
+    <div class="container-fluid mt-4 pt-4 border-bottom pb-4">
+      <div class="about-first row m-0 mt-4 mb-4 pb-4">
+        <div class="col-md-4 pt-4">
+          <img src="./assets/Activities2.png" class="" alt="..." />
+        </div>
+        <div class="col-md-8 pt-4 pl-4">
+          <div class="text-left">
+            <h3 class="text-heading">
+              Feel free to speak to us, get in touch today!
+            </h3>
+          </div>
+          <p class="pb-1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. The
+            Hide, accessed from the garden, is an elegant modernist
+            steel-and-glass structure, voted Britain’s best small building in
+            2009, standing in complete seclusion, overlooking one of the largest
+            lakes in the Cotswolds Water Park.
+          </p>
+          <div class="intro-cta mt-4">
+            <a href="#" class="btn btn-primary"
+              >Contact us <i class="icon-long-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="subscription-section pt-4 pb-4">
+      <div class="container">
+        <header class="heading mb-4">
+          <h2 class="text-heading text-center">
+            Sign up for exclusive<br />offers from us
+          </h2>
         </header>
 
         <div class="row">
           <div class="col-md-4">
-            <div class="about-block mb-4">
-              <figure class="iconic">
-                <img src="assets/leaf_logo_dark.png" />
-              </figure>
-              <div class="text">
-                <header class="heading">
-                  <h5 class="text-heading mb-1">Benefit</h5>
-                </header>
-                <p>
-                  Aliquam lobortis. Pellentesque egestas, neque sit amet
-                  convallis pulvinar.
-                </p>
-              </div>
-            </div>
+            <input class="form-control" placeholder="Your Name" />
           </div>
           <div class="col-md-4">
-            <div class="about-block mb-4">
-              <figure class="iconic">
-                <img src="assets/leaf_logo_dark.png" />
-              </figure>
-              <div class="text">
-                <header class="heading">
-                  <h5 class="text-heading mb-1">Benefit</h5>
-                </header>
-                <p>
-                  Aliquam lobortis. Pellentesque egestas, neque sit amet
-                  convallis pulvinar.
-                </p>
-              </div>
-            </div>
+            <input class="form-control" placeholder="Email" />
           </div>
           <div class="col-md-4">
-            <div class="about-block mb-4">
-              <figure class="iconic">
-                <img src="assets/leaf_logo_dark.png" />
-              </figure>
-              <div class="text">
-                <header class="heading">
-                  <h5 class="text-heading mb-1">Benefit</h5>
-                </header>
-                <p>
-                  Aliquam lobortis. Pellentesque egestas, neque sit amet
-                  convallis pulvinar.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="about-block mb-4">
-              <figure class="iconic">
-                <img src="assets/leaf_logo_dark.png" />
-              </figure>
-              <div class="text">
-                <header class="heading">
-                  <h5 class="text-heading mb-1">Benefit</h5>
-                </header>
-                <p>
-                  Aliquam lobortis. Pellentesque egestas, neque sit amet
-                  convallis pulvinar.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="about-block mb-4">
-              <figure class="iconic">
-                <img src="assets/leaf_logo_dark.png" />
-              </figure>
-              <div class="text">
-                <header class="heading">
-                  <h5 class="text-heading mb-1">Benefit</h5>
-                </header>
-                <p>
-                  Aliquam lobortis. Pellentesque egestas, neque sit amet
-                  convallis pulvinar.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="about-block mb-4">
-              <figure class="iconic">
-                <img src="assets/leaf_logo_dark.png" />
-              </figure>
-              <div class="text">
-                <header class="heading">
-                  <h5 class="text-heading mb-1">Benefit</h5>
-                </header>
-                <p>
-                  Aliquam lobortis. Pellentesque egestas, neque sit amet
-                  convallis pulvinar.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- WHY HABITAT RESORTS ENDS -->
-
-      <!--STORY SECTION-->
-      <!-- Virtual Tour section starts here -->
-      <div class="bg-blue-light pt-5 pb-5">
-        <div class="container-fluid">
-          <header class="heading mb-4 text-center">
-            <span class="mb-1"><img src="assets/leaf_logo_dark.png" alt="..."></span>
-            <h6 class="mb-2 mt-2">The story</h6>
-            <h1 class="title text-heading">Of Habitat</h1>
-          </header>
-
-          <div class="row justify-content-md-center mb-5">
-            <div class="col-md-8">
-              <div class="text-center">
-                Pellentesque ut neque. Vestibulum ante ipsum primis in
-                faucibus orci luctus et ultrices posuere cubilia Curae;
-                Fusce id purus. Nullam vel sem. Phasellus accumsan cursus
-                velit. Vivamus consectetuer hendrerit lacus.
-              </div>
-            </div>
-          </div>
-
-          <div class="property-section-margins">
-
-            <div class="row about-stor">
-              <div class="col-md-3 text-center mb-4">
-                <div><img class="story-tb" src="./assets/inspiration1.jpg"></div>
-                <div class="mt-2 text-heading  story-date">Est 1984</div>
-                <div class="mt-0">Lorem ipsum dolor sit amet telcus rist.</div>
-                <i class="icon-long-right-dark timeline-right"></i>
-              </div>
-
-              <div class="col-md-3 text-center mb-4">
-                <div><img class="story-tb" src="./assets/inspiration1.jpg"></div>
-                <div class="mt-2 text-heading story-date">1997</div>
-                <div class="mt-0">Lorem ipsum dolor sit amet telcus rist.</div>
-                <i class="icon-long-right-dark timeline-right"></i>
-              </div>
-
-              <div class="col-md-3 text-center mb-4">
-                <div><img class="story-tb" src="./assets/inspiration1.jpg"></div>
-                <div class="mt-2 text-heading  story-date">2017</div>
-                <div class="mt-0">Lorem ipsum dolor sit amet telcus rist.</div>
-                <i class="icon-long-right-dark timeline-right"></i>
-              </div>
-
-              <div class="col-md-3 text-center mb-4">
-                <div><img class="story-tb" src="./assets/inspiration1.jpg"></div>
-                <div class="mt-2  text-heading story-date">2020</div>
-                <div class="mt-0">Lorem ipsum dolor sit amet telcus rist.</div>
-              </div>
-            </div>
-
-            <div class="intro-cta text-center mt-4 pt-4">
-              <a href="#" class="btn btn-primary">Read our story <i class="icon-long-right"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Virtual Tour section ends here -->
-
-      <!-- NEWS CARDS START -->
-      <div class="property-section-margins pt-5 pb-5 news-cards border-bottom">
-        <div class="container-fluid">
-          <header class="heading mb-4 text-center">
-            <h3 class="title text-heading">Habitat Resorts in the news</h3>
-          </header>
-
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card team-card">
-                <img src="./assets/Activities1.png" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h1 class="team-name">Habitat Escapes</h1>
-                  <h1 class="team-desg team-date text-muted">
-                    Fri 28th May, 2020
-                  </h1>
-
-                  <p>
-                    Aenean imperdiet. Vestibulum suscipit nulla quis orci
-                    Nam pretium turpis et arcu. Suspendisse faucibus, nunc
-                    et pellentesque egestas, lacus ante convallis eul.
-                  </p>
-
-
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card team-card">
-                <img src="./assets/Activities1.png" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h1 class="team-name">Resort Housing</h1>
-                  <h1 class="team-desg team-date text-muted">
-                    Fri 28th May, 2020
-                  </h1>
-
-                  <p>
-                    Aenean imperdiet. Vestibulum suscipit nulla quis orci
-                    Nam pretium turpis et arcu. Suspendisse faucibus, nunc
-                    et pellentesque egestas, lacus ante convallis eul.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card team-card">
-                <img src="./assets/Activities1.png" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h1 class="team-name">Aenean Imperdiet</h1>
-                  <h1 class="team-desg team-date text-muted">
-                    Fri 28th May, 2020
-                  </h1>
-
-                  <p>
-                    Aenean imperdiet. Vestibulum suscipit nulla quis orci
-                    Nam pretium turpis et arcu. Suspendisse faucibus, nunc
-                    et pellentesque egestas, lacus ante convallis eul.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="intro-cta text-center mt-4">
-            <a href="#" class="btn btn-primary">Read our news <i class="icon-long-right"></i></a>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- NEWS CARDS END -->
-
-      <section class="container-fluid mt-5 mb-5">
-        <header class="heading text-center mb-5">
-          <h3 class="text-heading">What our visitors say</h3>
-        </header>
-
-        <div class="visitor-slider slider arrows-lg"
-          data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "dots": true}'>
-          <div class="visitor-block text-center">
-            <img src="./assets/visitor1.png" />
-            <div class="property-visitor-name">Ben Sherman, Newcastle</div>
-            <div>
-              <i class="fas fa-star starred"></i>
-              <i class="fas fa-star starred"></i>
-              <i class="fas fa-star starred"></i>
-              <i class="fas fa-star starred"></i>
-              <i class="fas fa-star starred"></i>
-            </div>
-            <div class="property-visitorfeedback-carousel-comment">Pellentesque ut neque. Vestibulum ante ipsum primis
-              in
-              faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Nullam vel sem. Phasellus accumsan
-              cursus velit. Vivamus consectetuer hendrerit lacus.leo ligula, porttitor eu, consequat vitae, eleifend ac,
-              enim. Sed lectus.</div>
-          </div>
-          <div class="visitor-block text-center">
-            <img src="./assets/visitor2.png" />
-            <div class="property-visitor-name">Ben Sherman 2, Newcastle</div>
-            <div>
-              <i class="fas fa-star starred"></i>
-              <i class="fas fa-star starred"></i>
-              <i class="fas fa-star starred"></i>
-              <i class="fas fa-star starred"></i>
-              <i class="fas fa-star dark-starred"></i>
-            </div>
-            <div class="property-visitorfeedback-carousel-comment">Amet consectetur adipisicing elit. Impedit tempore
-              fugiat, nemo quas dolor aspernatur, tempora illo quod sequi ipsa at recusandae. Pariatur numquam enim sunt
-              facere, totam voluptatibus velit?</div>
-          </div>
-        </div>
-        <!-- Visitor Feedback Carousel ends here -->
-      </section>
-
-      <!-- FAQ Section Start-->
-      <div class="bg-red-light pt-5 pb-5">
-        <div class="container-fluid about-faq">
-          <div class="row">
-            <div class="col-md-7">
-              <header class="heading text-left">
-                <h3 class="text-heading">Quick FAQ's</h3>
-              </header>
-              <p>
-                Pellentesque 2 ut neque. Vestibulum ante ipsum primis in
-                faucibus orci luctus et ultrices posuere cubilia Curae; Fusce
-                id purus. Nullam vel sem. Phasellus accumsan cursus velit.
-                Vivamus consectetuer hendrerit lacus.leo ligula, porttitor eu,
-                consequat vitae, eleifend ac, enim. Sed lectus. <br />
-                <br />
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                The Hide, accessed from the garden, is an elegant modernist
-                steel-and-glass structure, voted Britain’s best small building
-                in 2009, standing in complete seclusion, overlooking one of
-                the largest lakes in the Cotswolds Water Park.
-              </p>
-            </div>
-            <div class="col-md-5">
-
-              <div id="accordion">
-                <div class="card property-accordian">
-                  <div class="card-header property-accordian property-accordian-header-border" id="headingKeyFeatures">
-                    <h5 class="mb-0">
-                      <a class="btn btn-link w-100" data-toggle="collapse"
-                        data-target="#collapseKeyFeatures" aria-expanded="true" aria-controls="collapseKeyFeatures">
-                        <div class="row">
-                          <div class="col-11 text-left px-0 property_features_heading">
-                            Key Features
-                          </div>
-                          <div class="col-1 text-right px-0">
-                            <i id="collapseKeyFeaturesMinus" class="icon-remove-hover"></i>
-                            <i id="collapseKeyFeaturesPlus" class="icon-add-hover" style="display: none;"></i>
-                          </div>
-                        </div>
-                      </a>
-                    </h5>
-                  </div>
-  
-                  <div id="collapseKeyFeatures" class="collapse accordion-item-content show"
-                    aria-labelledby="headingKeyFeatures" data-parent="#accordion">
-                    <div class="card-body property-accordian-card-body">
-                      <div class="property-text">
-                        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                          beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-                          vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
-                          you probably haven't heard of them accusamus labore sustainable VHS</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card property-accordian">
-                  <div class="card-header property-accordian property-accordian-header-border" id="headingAccommodation">
-                    <h5 class="mb-0">
-                      <a class="btn btn-link w-100" data-toggle="collapse"
-                        data-target="#collapseAccommodation" aria-expanded="true" aria-controls="collapseKeyFeatures">
-                        <div class="row">
-                          <div class="col-11 text-left px-0 property_features_heading">
-                            Accommodation
-                          </div>
-                          <div class="col-1 text-right px-0">
-                            <i id="collapseAccommodationMinus" class="icon-remove-hover" style="display: none;"></i>
-                            <i id="collapseAccommodationPlus" class="icon-add-hover"></i>
-                          </div>
-                        </div>
-                      </a>
-                    </h5>
-                  </div>
-                  <div id="collapseAccommodation" class="collapse accordion-item-content"
-                    aria-labelledby="headingAccommodation" data-parent="#accordion">
-                    <div class="card-body property-accordian-card-body">
-                      <!-- Accomodation Detail here -->
-                      <div class="property-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card property-accordian">
-                  <div class="card-header property-accordian property-accordian-header-border" id="headingOutside">
-                    <h5 class="mb-0">
-                      <a class="btn btn-link w-100" data-toggle="collapse"
-                        data-target="#collapseOutside" aria-expanded="true" aria-controls="collapseKeyFeatures">
-                        <div class="row">
-                          <div class="col-11 text-left px-0 property_features_heading">
-                            Outside
-                          </div>
-                          <div class="col-1 text-right px-0">
-                            <i id="collapseOutsideMinus" class="icon-remove-hover" style="display: none;"></i>
-                            <i id="collapseOutsidePlus" class="icon-add-hover"></i>
-                          </div>
-                        </div>
-                      </a>
-                    </h5>
-                  </div>
-                  <div id="collapseOutside" class="collapse accordion-item-content" aria-labelledby="headingOutside"
-                    data-parent="#accordion">
-                    <div class="card-body property-accordian-card-body">
-                      <div class="property-text">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                        squid.
-                        3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-                        nesciunt
-                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                        single-origin
-                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                        Leggings
-                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
-                        heard
-                        of them accusamus labore sustainable VHS.</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card property-accordian">
-                  <div class="card-header property-accordian property-accordian-header-border"
-                    id="headingLeisureFacilities">
-                    <h5 class="mb-0">
-                      <a class="btn btn-link w-100" data-toggle="collapse"
-                        data-target="#collapseLeisureFacilities" aria-expanded="true" aria-controls="collapseKeyFeatures">
-                        <div class="row">
-                          <div class="col-11 text-left px-0 property_features_heading">
-                            Leisure Facilities
-                          </div>
-                          <div class="col-1 text-right px-0">
-                            <i id="collapseLeisureFacilitiesMinus" class="icon-remove-hover" style="display: none;"></i>
-                            <i id="collapseLeisureFacilitiesPlus" class="icon-add-hover"></i>
-                          </div>
-                        </div>
-                      </a>
-                    </h5>
-                  </div>
-                  <div id="collapseLeisureFacilities" class="collapse accordion-item-content"
-                    aria-labelledby="headingLeisureFacilities" data-parent="#accordion">
-                    <div class="card-body property-accordian-card-body">
-                      <div class="property-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card property-accordian">
-                  <div class="card-header property-accordian property-accordian-header-border"
-                    id="headingLocalInformation">
-                    <h5 class="mb-0">
-                      <a class="btn btn-link w-100" data-toggle="collapse"
-                        data-target="#collapseLocalInformation" aria-expanded="true" aria-controls="collapseKeyFeatures">
-                        <div class="row">
-                          <div class="col-11 text-left px-0 property_features_heading">
-                            Local Information
-                          </div>
-                          <div class="col-1 text-right px-0">
-                            <i id="collapseLocalInformationMinus" class="icon-remove-hover" style="display: none;"></i>
-                            <i id="collapseLocalInformationPlus" class="icon-add-hover"></i>
-                          </div>
-                        </div>
-                      </a>
-                    </h5>
-                  </div>
-                  <div id="collapseLocalInformation" class="collapse accordion-item-content"
-                    aria-labelledby="headingLocalInformation" data-parent="#accordion">
-                    <div class="card-body property-accordian-card-body">
-                      <div class="property-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card property-accordian">
-                  <div class="card-header property-accordian property-accordian-header-border" id="headingParking">
-                    <h5 class="mb-0">
-                      <a class="btn btn-link w-100" data-toggle="collapse"
-                        data-target="#collapseParking" aria-expanded="true" aria-controls="collapseKeyFeatures">
-                        <div class="row">
-                          <div class="col-11 text-left px-0 property_features_heading">
-                            Parking
-                          </div>
-                          <div class="col-1 text-right px-0">
-                            <i id="collapseParkingMinus" class="icon-remove-hover" style="display: none;"></i>
-                            <i id="collapseParkingPlus" class="icon-add-hover"></i>
-                          </div>
-                        </div>
-                      </a>
-                    </h5>
-                  </div>
-                  <div id="collapseParking" class="collapse accordion-item-content" aria-labelledby="headingParking"
-                    data-parent="#accordion">
-                    <div class="card-body property-accordian-card-body">
-                      <div class="property-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-            <!-- row for accordian ends -->
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- FAQ Section End-->
-
-  <div class="container-fluid mt-4 pt-4 border-bottom pb-4">
-    <div class="about-first row m-0 mt-4 mb-4 pb-4">
-      <div class="col-md-4 pt-4">
-        <img src="./assets/Activities2.png" class="" alt="..." />
-      </div>
-      <div class="col-md-8 pt-4 pl-4">
-        <div class="text-left">
-          <h3 class="text-heading">Feel free to speak to us, get in touch today!</h3>
-        </div>
-        <p class="pb-1">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. The
-          Hide, accessed from the garden, is an elegant modernist
-          steel-and-glass structure, voted Britain’s best small building
-          in 2009, standing in complete seclusion, overlooking one of the
-          largest lakes in the Cotswolds Water Park.
-        </p>
-        <div class="intro-cta mt-4">
-          <a href="#" class="btn btn-primary">Contact us <i class="icon-long-right"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <section class="subscription-section pt-4 pb-4">
-    <div class="container">
-
-      <header class="heading mb-4">
-        <h2 class="text-heading text-center">Sign up for exclusive</br>offers from us</h2>
-      </header>
-
-      <div class="row">
-
-        <div class="col-md-4">
-          <input class="form-control" placeholder="Your Name" />
-        </div>
-        <div class="col-md-4">
-          <input class="form-control" placeholder="Email" />
-        </div>
-        <div class="col-md-4">
-          <button class="btn btn-block btn-primary">
-            Subscribe Now <i class="icon-long-right ml-3"></i>
-          </button>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- FOOTER SECTION START -->
-  <div class="footer-section mt-4">
-    <div class="row justify-content-between footer-top">
-      <div class="col-lg-6 property-rate">
-        <p class="footer-top-number"><span class="side-text">Call us today: </span><a href="tel:+4401285869489"
-            class="num-link">+44 (0) 1285 869
-            489</a></p>
-      </div>
-      <div class="col-lg-6 justify-content-end text-right property-rooms">
-
-        <p class="social-icons">
-          <span class="side-text">Stay Connected &nbsp;&nbsp;</span>
-          <a href="#"><i class="icon-twitter px-2"></i></a> &nbsp;<a href="#"><i class="icon-fb px-2"></i></a>&nbsp;
-          <a href="#"><i class="icon-instagram px-2"></a></i>
-        </p>
-      </div>
-    </div>
-
-    <div class="row footer-main p-4">
-      <div class="col-lg-6 p-4">
-        <div class=" logo-container">
-          <a href="index.html"><img class="header-logo pb-4" src="assets/logo_white.png" /></a>
-        </div>
-        <p class="footer-number">+44 (0) 1285 869 489</p>
-        <p class="footer-details">
-          Aenean imperdiet. Vestibulum suscipit nulla quis orci Nam pretium
-          turpis et arcu. Suspendisse faucibus, nunc et pellentesque
-          egestas, lacus ante convallis eul. <br />
-          <br />
-          Vestibulum dapibus nunc ac augue Morbi mollis tellus ac sapien.
-          Cras varius. Aliquam lobortis. Pellentesque egestas, neque sit
-          amet convallis pulvinar, justo nulla eleifend augue, ac auctor
-          orci leo non est. Morbi mattis ullamcorper velit. Nullam accumsan
-          lorem in dui.
-        </p>
-        <div class="blue-logos mt-4">
-          <img src="assets/habitat-zero-mono.png">
-          <img class="pl-4 pt-4" src="assets/blue-logo-2.png">
-        </div>
-      </div>
-      <div class="col-lg-2 menu-col">
-        <h1>
-          <a class="accordian-head collapsed" type="button" data-toggle="collapse" data-target="#collapseAbout"
-            aria-expanded="false" aria-controls="collapseAbout" class="">About us <i
-              class="fas fa-chevron-down"></i></a>
-        </h1>
-        <div id="collapseAbout" class="collapse">
-          <p class="mt-4"><a href="about.html">Our Story</a></p>
-          <p><a href="inspiration.html">Why book with us</a></p>
-          <p><a href="faq.html">FAQ’s</a></p>
-          <p><a href="contactus.html">Contact us</a></p>
-          <p><a href="news.html">News</a></p>
-          <p><a href="blog_list.html">Blog</a></p>
-        </div>
-      </div>
-      <div class="col-lg-2  menu-col">
-        <h1>
-          <a class="accordian-head collapsed" type="button" data-toggle="collapse" data-target="#collapseLocation"
-            aria-expanded="false" aria-controls="collapseLocation" class="">Our locations <i
-              class="fas fa-chevron-down"></i></a>
-        </h1>
-        <div id="collapseLocation" class="collapse">
-          <p class="mt-4 bolded-text"><a href="#">The Cotswolds</a></p>
-          <p><a href="#">Lower Mill Estate</a></p>
-          <p class="mt-4 bolded-text"><a href="#">Devon</a></p>
-          <p><a href="#">Birchwood</a></p>
-
-          <p class="mt-4 bolded-text"><a href="#">Dorset</a></p>
-          <p><a href="#">Silverlake</a></p>
-        </div>
-      </div>
-      <div class="col-lg-2  menu-col">
-        <h1>
-          <a class="accordian-head collapsed" type="button" data-toggle="collapse" data-target="#collapseOwners"
-            aria-expanded="false" aria-controls="collapseOwners" class="">Owners <i class="fas fa-chevron-down"></i></a>
-        </h1>
-        <div id="collapseOwners" class="collapse">
-          <p class="mt-4 bolded-text">Are you an owner?</p>
-          <div class="intro-cta mt-2">
-            <button class="btn btn-primary btn-with-icon">
-              Log IN <i class="icon-long-right ml-3 mt-1-5"></i>
-            </button>
-          </div>
-          <p class="mt-4 bolded-text">Like to list a property?</p>
-          <div class="intro-cta mt-2">
-            <button class="btn btn-primary btn-with-icon">
-              List Now <i class="icon-long-right ml-3 mt-1-5"></i>
+            <button class="btn btn-block btn-primary">
+              Subscribe Now <i class="icon-long-right ml-3"></i>
             </button>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="row justify-content-between footer-bottom">
-      <div id="second" class="col-lg-4 roperty-rate">
-        <p>Copyright © 2020 Habitat Escapes</p>
+    <!-- FOOTER SECTION START -->
+    <div class="footer-section mt-4">
+      <div class="row justify-content-between footer-top">
+        <div class="col-lg-6 property-rate">
+          <p class="footer-top-number">
+            <span class="side-text">Call us today: </span
+            ><a href="tel:+4401285869489" class="num-link"
+              >+44 (0) 1285 869 489</a
+            >
+          </p>
+        </div>
+        <div class="col-lg-6 justify-content-end text-right property-rooms">
+          <p class="social-icons">
+            <span class="side-text">Stay Connected &nbsp;&nbsp;</span>
+            <a href="#"><i class="icon-twitter px-2"></i></a> &nbsp;<a href="#"
+              ><i class="icon-fb px-2"></i></a
+            >&nbsp;
+            <a href="#"><i class="icon-instagram px-2"></i></a>
+          </p>
+        </div>
       </div>
-      <div id="first" class="col-lg-8 justify-content-end text-right property-rooms">
-        <p>
-          <a href="tnc.html">Terms & Conditions</a>&nbsp; | &nbsp; <a href="tnc.html">Cookie Policy</a> &nbsp; |
-          &nbsp;
-          <a href="tnc.html">Privacy Policy</a> &nbsp; | &nbsp; <a href="tnc.html">Modern Slavery Act</a> &nbsp; |
-          &nbsp;
-          <a href="tnc.html">Sitemap</a>
-        </p>
+
+      <div class="row footer-main p-4">
+        <div class="col-lg-6 p-4">
+          <div class="logo-container">
+            <a href="index.html"
+              ><img class="header-logo pb-4" src="assets/logo_white.png"
+            /></a>
+          </div>
+          <p class="footer-number">+44 (0) 1285 869 489</p>
+          <p class="footer-details">
+            Aenean imperdiet. Vestibulum suscipit nulla quis orci Nam pretium
+            turpis et arcu. Suspendisse faucibus, nunc et pellentesque egestas,
+            lacus ante convallis eul. <br />
+            <br />
+            Vestibulum dapibus nunc ac augue Morbi mollis tellus ac sapien. Cras
+            varius. Aliquam lobortis. Pellentesque egestas, neque sit amet
+            convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo
+            non est. Morbi mattis ullamcorper velit. Nullam accumsan lorem in
+            dui.
+          </p>
+          <div class="blue-logos mt-4">
+            <img src="assets/habitat-zero-mono.png" />
+            <img class="pl-4 pt-4" src="assets/blue-logo-2.png" />
+          </div>
+        </div>
+        <div class="col-lg-2 menu-col">
+          <h1>
+            <a
+              class="accordian-head collapsed"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseAbout"
+              aria-expanded="false"
+              aria-controls="collapseAbout"
+              class=""
+              >About us <i class="fas fa-chevron-down"></i
+            ></a>
+          </h1>
+          <div id="collapseAbout" class="collapse">
+            <p class="mt-4"><a href="about.html">Our Story</a></p>
+            <p><a href="inspiration.html">Why book with us</a></p>
+            <p><a href="faq.html">FAQ’s</a></p>
+            <p><a href="contactus.html">Contact us</a></p>
+            <p><a href="news.html">News</a></p>
+            <p><a href="blog_list.html">Blog</a></p>
+          </div>
+        </div>
+        <div class="col-lg-2 menu-col">
+          <h1>
+            <a
+              class="accordian-head collapsed"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseLocation"
+              aria-expanded="false"
+              aria-controls="collapseLocation"
+              class=""
+              >Our locations <i class="fas fa-chevron-down"></i
+            ></a>
+          </h1>
+          <div id="collapseLocation" class="collapse">
+            <p class="mt-4 bolded-text"><a href="#">The Cotswolds</a></p>
+            <p><a href="#">Lower Mill Estate</a></p>
+            <p class="mt-4 bolded-text"><a href="#">Devon</a></p>
+            <p><a href="#">Birchwood</a></p>
+
+            <p class="mt-4 bolded-text"><a href="#">Dorset</a></p>
+            <p><a href="#">Silverlake</a></p>
+          </div>
+        </div>
+        <div class="col-lg-2 menu-col">
+          <h1>
+            <a
+              class="accordian-head collapsed"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseOwners"
+              aria-expanded="false"
+              aria-controls="collapseOwners"
+              class=""
+              >Owners <i class="fas fa-chevron-down"></i
+            ></a>
+          </h1>
+          <div id="collapseOwners" class="collapse">
+            <p class="mt-4 bolded-text">Are you an owner?</p>
+            <div class="intro-cta mt-2">
+              <button class="btn btn-primary btn-with-icon">
+                Log IN <i class="icon-long-right ml-3 mt-1-5"></i>
+              </button>
+            </div>
+            <p class="mt-4 bolded-text">Like to list a property?</p>
+            <div class="intro-cta mt-2">
+              <button class="btn btn-primary btn-with-icon">
+                List Now <i class="icon-long-right ml-3 mt-1-5"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-between footer-bottom">
+        <div id="second" class="col-lg-4 roperty-rate">
+          <p>Copyright © 2020 Habitat Escapes</p>
+        </div>
+        <div
+          id="first"
+          class="col-lg-8 justify-content-end text-right property-rooms"
+        >
+          <p>
+            <a href="tnc.html">Terms & Conditions</a>&nbsp; | &nbsp;
+            <a href="tnc.html">Cookie Policy</a> &nbsp; | &nbsp;
+            <a href="tnc.html">Privacy Policy</a> &nbsp; | &nbsp;
+            <a href="tnc.html">Modern Slavery Act</a> &nbsp; | &nbsp;
+            <a href="tnc.html">Sitemap</a>
+          </p>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- FOOTER SECTION END -->
-  </div>
-  </div>
+    <!-- FOOTER SECTION END -->
 
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-    crossorigin="anonymous"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="./scripts/slick.min.js"></script>
-  <script src="./scripts/bootstrap-datepicker.min.js"></script>
-  <script src="scripts/main.js"></script>
-  <script src="scripts/property_detail.js"></script>
-</body>
-
+    <script src="./scripts/slick.min.js"></script>
+    <script src="./scripts/bootstrap-datepicker.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/property_detail.js"></script>
+  </body>
 </html>
