@@ -417,6 +417,16 @@ h1 {
   background-image: url('../assets/icons/arrow-long-right.svg');
 }
 
+.icon-arrow-left {
+    width: 7px;
+    height: 13px;
+    background-image: url('../assets/icons/breadcrumb-arrow.png');
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+
+}
+
 .icon-fb,
 .icon-instagram,
 .icon-twitter {
@@ -1020,7 +1030,7 @@ h1 {
   text-decoration: underline;
 }
 .menu-section-title {
-  font-family: RotisSerifCE;
+  font-family: var(--font-headings);
   color: #50545b;
   font-weight: 600;
   font-size: 2rem;
@@ -1038,7 +1048,7 @@ h1 {
 }
 
 .img-grid-3 h3 {
-  font-family: RotisSerifCE;
+  font-family: var(--font-headings);
   font-size: 1.2rem;
 }
 
@@ -1204,19 +1214,45 @@ h1 {
 }
 
 /* FAQ page CSS starts here */
-.faq a {
-  font-family: RotisSerifCE;
+.navbar-vertical {
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+.nav-links-inherit a {
+  font-family: var(--font-headings);
   font-size: 1.2rem;
-  color: #50545b;
+  color: var(--color-default-text);
 }
 
-.faq a[aria-selected='true'] {
-  color: #86b7d9;
+.nav-links-inherit a.active,
+.nav-links-inherit a:hover {
+  color: var(--color-primary);
 }
 
-/* mouse over link */
-.faq a:hover {
-  color: #86b7d9;
+.nav-pills.nav-links-inherit .nav-link.active,
+.nav-pills.nav-links-inherit .nav-link.hover {
+  color: var(--color-primary);
+  background-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .navbar-vertical {
+    min-height: 100%;
+    margin-bottom: 0;
+    border-right: 1px solid #e1e1e1;
+    border-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .tab-content-vertical {
+    padding-right: 2rem;
+  }
+}
+@media (min-width: 1900px) {
+  .tab-content-vertical {
+    max-width: 50vw;
+  }
 }
 
 /* for FAQ page */
@@ -1261,13 +1297,6 @@ h1 {
 }
 .nav-quick-link a:hover {
   color: var(--color-primary);
-}
-
-.faq-tab-content {
-  border-left-style: solid;
-  border-color: #e1e1e1;
-  border-width: thin;
-  padding-left: 2rem;
 }
 
 .faq-question-answer {
@@ -1341,7 +1370,7 @@ h1 {
 }
 
 .contactus-address-label {
-  font-family: RotisSerifCE;
+  font-family: var(--font-headings);
   color: #50545b;
   font-size: 1.2rem;
 }
@@ -1411,14 +1440,14 @@ h1 {
 .benefit-text h3 {
   font-weight: 800;
   font-size: 1.35rem;
-  font-family: RotisSerifCE;
+  font-family: var(--font-headings);
   color: #72757b;
 }
 
 .about-story .story-date {
   font-weight: 400;
   font-size: 1.45rem;
-  font-family: RotisSerifCE;
+  font-family: var(--font-headings);
 }
 
 .team-card .team-date {
@@ -1431,7 +1460,7 @@ h1 {
 
 .about-faq .property_features_heading {
   font-size: 1.35rem;
-  font-family: RotisSerifCE;
+  font-family: var(--font-headings);
 }
 
 .about-faq-accordian {
@@ -2297,6 +2326,11 @@ a.num-link:hover {
        object-fit: cover;
   }
 
+  .page-banner-sm,
+  .page-banner-sm img {
+    min-height: 12rem;
+  }
+
   .card-deck .card {
     margin-top: 1rem;
   }
@@ -2417,34 +2451,6 @@ a.num-link:hover {
   }
 }
 
-@media (min-width: 576px) {
-  .faq.nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-@media (max-width: 575px) {
-  .faq-tab-content {
-    border-left-style: none;
-    padding-left: 0rem;
-    padding-top: 2rem;
-  }
-  .faq.nav {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-
-  .faq .nav-link {
-    display: block;
-    padding: 0.5rem 1rem;
-    border-right: solid #00000026 1px;
-  }
-}
 
 .pagination-nav .page-link {
   width: 2rem;
@@ -3277,6 +3283,10 @@ a.num-link:hover {
 .box-image {
   position: relative;
 }
+.box-image img {
+  width: 100%;
+  display: block;
+}
 .box-tag {
   padding: 0.25rem 1rem;
   font-size: 0.8rem;
@@ -3285,6 +3295,17 @@ a.num-link:hover {
   position: absolute;
   top: 1rem;
   left: 0;
+}
+
+.back-page-link {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  color: inherit;
+}
+.back-page-link:hover {
+  color: var(--color-primary);
 }
 
 /*** extra Block
@@ -3372,7 +3393,7 @@ a.num-link:hover {
   margin-right: 5px;
 }
 
-.booking-stats-block {
+.booking-stats-block:not(.no-shadow) {
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
@@ -3390,6 +3411,10 @@ a.num-link:hover {
 .booking-stats-block .card:first-of-type {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+.booking-stats-block.no-shadow .card-body {
+  padding-left: 0;
+  padding-right: 0;
 }
 .button-accordion {
   width: 100%;
@@ -4527,8 +4552,8 @@ a.text-inherit:hover,
   }
   .btn-pre-icon,
   .btn-post-icon {
-    padding-left: 0.2rem;
-    padding-right: 0.2rem;
+    /* padding-left: 0.2rem;
+    padding-right: 0.2rem; */
   }
   .property-block-text .button-bar .btn {
     -webkit-box-flex: 1;
