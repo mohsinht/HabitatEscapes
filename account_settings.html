@@ -791,7 +791,7 @@
             <img src="./assets/banner_thin.png" class="d-block w-100" alt="..." />
         </div>
         <header class="banner-header text-center">
-            <h1 class="text-heading text-white">Your Bookings</h1>
+            <h1 class="text-heading text-white">Account Settings</h1>
         </header>
     </div>
     <!-- /page-banner -->
@@ -802,9 +802,9 @@
           <div class="col-md-3 col-xl-2">
             <nav class="navbar-vertical">
               <ul class="navbar-nav nav-links-inherit">
-                <li><a class="nav-link active" id="bookings-tab" href="#">Your Bookings</a></li>
+                <li><a class="nav-link" id="bookings-tab" href="#">Your Bookings</a></li>
                 <li><a class="nav-link" href="favourites.html">Your Favourites</a></li>
-                <li><a class="nav-link" id="location-tab" href="account_settings.html" role="tab" aria-controls="v-pills-location">Account Setting</a></li>
+                <li><a class="nav-link  active" id="location-tab" href="#" role="tab" aria-controls="v-pills-location">Account Setting</a></li>
                 <li><a class="nav-link" id="v-pills-events-tab" href="#v-pills-events" role="tab" aria-controls="v-pills-events">Logout</a></li>
               </ul>
             </nav>
@@ -812,110 +812,76 @@
           <div class="col-md-9">
   
             <div class="tab-content tab-content-vertical">
-                <div class="back-link-bar mb-3">
-                    <a class="back-page-link" href="booking.html">
-                        <i class="icon-arrow-left mr-2"></i> Back to Your Bookings
-                    </a>
-                </div>
-                <div class="page-banner page-banner-sm">
-                    <div class="banner-image">
-                        <img src="./assets/banner-1.jpg" class="d-block w-100" alt="..." />
+              <header class="mb-3">
+                <h3 class="text-heading mb-0">Your Booking</h3>
+              </header>
+              
+              <div class="row row-minus">
+                <div class="col-md-9">
+
+                  <form action="#" class="account-settings-form">
+                    <div class="form-group">
+                      <label>First Name</label>
+                      <input type="text" class="form-control" placeholder="First Name">
                     </div>
-                    <header class="banner-header text-center">
-                        <h4 class="text-heading text-white">Kingfisher Lodge</h4>
-                        <p class="text-white">17 Aug - 21 Aug 2020</p>
-                    </header>
-                </div>
-
-                <div class="booking-stats-block no-shadow">
-                    <div class="card">
-                      <div class="card-body ">
-                        <header class="mb-3">
-                          <h5 class="text-heading mb-0">Your Booking</h5>
-                        </header>
-      
-                        <div class="stat mb-3">
-                          <p class="mb-0 text-bold"><strong>Location</strong></p>
-                          <p class="text-primary">Lower Mill Estate, Cotswolds</p>
+                    <div class="form-group">
+                      <label>Last Name</label>
+                      <input type="text" class="form-control" placeholder="Last Name">
+                    </div>
+                    <div class="form-group">
+                      <label>Phone Number</label>
+                      <input type="text" class="form-control" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                      <label>Email Address</label>
+                      <input type="email" class="form-control" placeholder="Email Address">
+                    </div>
+                    <div class="form-group">
+                      <label>Address Line 1</label>
+                      <input type="text" class="form-control" placeholder="Address Line 1">
+                    </div>
+                    <div class="form-group">
+                      <label>Address Line 2</label>
+                      <input type="text" class="form-control" placeholder="Address Line 2">
+                    </div>
+                    <div class="row row-minus">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Country</label>
+                          <input type="text" class="form-control" placeholder="Country">
                         </div>
-                        <div class="stat mb-3">
-                          <p class="mb-0"><strong>Property</strong></p>
-                          <p class="text-primary">Kingfisher Lodge</p>
-                        </div>
-      
-                        <div class="row row-minus mb-3">
-                          <div class="col-md-6">
-                            <div class="stat">
-                              <p class="mb-0"><strong>Check In</strong></p>
-                              <p class="text-primary">17 Aug 2020</p>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="stat">
-                              <p class="mb-0"><strong>Check Out</strong></p>
-                              <p class="text-primary">21 Aug 2020</p>
-                            </div>
-                          </div>
-                        </div>
-      
-                        <div class="stat mb-3">
-                          <p class="mb-0"><strong>Guests</strong></p>
-                          <p class="text-primary">2 Adults, 1 Child</p>
-                        </div>
-      
-                        <div class="stat mb-3">
-                          <p class="mb-0"><strong>Extras</strong></p>
-                          <p class="text-primary">Active Escapes Week Package</p>
-                        </div>
-      
-                        <div class="bar-stat">
-                          <header class="mt-2 mb-3">
-                            <h5 class="text-heading mb-0">Charges</h5>
-                          </header>
-      
-                          <div class="row row-minus">
-                            <div class="col-md-4">
-                              <strong>Accommodation</strong>
-                            </div>
-                            <div class="col-md-8">
-                              <span>£1,600</span>
-                            </div>
-                          </div>
-      
-                          <div class="row row-minus">
-                            <div class="col-md-4">
-                              <strong>Booking Fee</strong>
-                            </div>
-                            <div class="col-md-8">
-                              <span></span>
-                            </div>
-                          </div>
-      
-                          <div class="row row-minus">
-                            <div class="col-md-4">
-                              <strong>Extras</strong>
-                            </div>
-                            <div class="col-md-8">
-                              <span></span>
-                            </div>
-                          </div>
-      
-                        </div>
-      
-                        <div class="bar-e2e bg-primary mt-2 px-4 py-2">
-                          <strong>Total</strong>
-                          <span>£1,175</span>
-                        </div>
-      
                       </div>
-                    </div>      
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Post Code</label>
+                          <input type="text" class="form-control" placeholder="Post Code">
+                        </div>    
+                      </div>
+                    </div>
+    
+                    <div class="mt-4 mb-4"><br></div>
+    
+                    <div class="form-group">
+                      <label>Current Password</label>
+                      <input type="password" class="form-control" placeholder="Current Password">
+                    </div>
+                    <div class="form-group">
+                      <label>New Password</label>
+                      <input type="password" class="form-control" placeholder="New Password">
+                    </div>
+                    <div class="form-group">
+                      <label>Confirm Password</label>
+                      <input type="password" class="form-control" placeholder="Confirm Password">
+                    </div>
+    
+                    <div class="button-bar flex-end">
+                      <button class="btn btn-primary">Change Password <i class="icon-long-right ml-4"></i></button>
+                    </div>
+    
+                  </form>
+
                 </div>
-      
-
-
-
-
-
+              </div>
 
             </div>
   
