@@ -164,6 +164,7 @@ img {
   border-color: #464646;
   border-radius: 0;
 }
+.form-control.focused,
 .form-control:focus {
   border-color: var(--color-primary);
   -webkit-box-shadow: none;
@@ -541,6 +542,11 @@ h1 {
   width: 23px;
   height: 22px;
   background-image: url('../assets/icons/search_white.png');
+}
+.icon-lock {
+  width: 14px;
+  height: 18px;
+  background-image: url('../assets/icons/lock.png');
 }
 
 .header {
@@ -3498,9 +3504,12 @@ a.num-link:hover {
       -ms-flex-align: center;
           align-items: center;
 }
+.creditcard-icons img {
+  width: 60px;
+  margin-left: 5px;
+}
 .label-credit-card-icons .creditcard-icons img {
   width: 25px;
-  margin-left: 5px;
 }
 
 /*** Property Search Bar
@@ -3916,6 +3925,12 @@ a.num-link:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.flex-bar.flex-start {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .property-info-inner {
@@ -4433,6 +4448,22 @@ a.text-inherit:hover,
   .about-block .iconic {
     width: 40px;
   }
+
+  .heading-with-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media (min-width: 992px) {
@@ -4804,8 +4835,7 @@ a.text-inherit:hover,
        object-position: top;
   }
 
-  .activities-events-section .h3,
-  h3 {
+  .activities-events-section .h3 {
     font-size: 3rem;
   }
 }
