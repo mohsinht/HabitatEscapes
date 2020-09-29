@@ -787,12 +787,12 @@
 
     <!-- Hero image starts -->
     <div class="page-banner">
-      <div class="banner-image">
-        <img src="./assets/banner_thin.png" class="d-block w-100" alt="..." />
-      </div>
-      <header class="banner-header text-center">
-        <h1 class="text-heading text-white">Your Bookings</h1>
-      </header>
+        <div class="banner-image">
+            <img src="./assets/banner_thin.png" class="d-block w-100" alt="..." />
+        </div>
+        <header class="banner-header text-center">
+            <h1 class="text-heading text-white">Account Settings</h1>
+        </header>
     </div>
     <!-- /page-banner -->
 
@@ -802,144 +802,34 @@
           <div class="col-md-3 col-xl-2">
             <nav class="navbar-vertical">
               <ul class="navbar-nav nav-links-inherit">
-                <li><a class="nav-link active" href="booking.html">Your Bookings</a></li>
+                <li><a class="nav-link" id="bookings-tab" href="booking.html">Your Bookings</a></li>
                 <li><a class="nav-link" href="favourites.html">Your Favourites</a></li>
-                <li><a class="nav-link" href="account_settings.html">Account Settings</a></li>
-                <li><a class="nav-link" href="#" data-toggle="modal" data-target="#modal-signout">Logout</a></li>
+                <li><a class="nav-link  active" id="location-tab" href="#" role="tab" aria-controls="v-pills-location">Account Setting</a></li>
+                <li><a class="nav-link" id="v-pills-events-tab" href="#" data-toggle="modal" data-target="#modal-signout">Logout</a></li>
               </ul>
             </nav>
           </div>
           <div class="col-md-9">
-
+  
             <div class="tab-content tab-content-vertical">
-              <div class="back-link-bar mb-3">
-                <a class="back-page-link" href="booking.html">
-                  <i class="icon-arrow-left mr-2"></i> Back to Your Bookings
-                </a>
-              </div>
-              <div class="page-banner page-banner-sm">
-                <div class="banner-image">
-                  <img src="./assets/banner-1.jpg" class="d-block w-100" alt="..." />
-                </div>
-                <header class="banner-header text-center">
-                  <h4 class="text-heading text-white">Kingfisher Lodge</h4>
-                  <p class="text-white">17 Aug - 21 Aug 2020</p>
-                </header>
-              </div>
+              <header class="mb-3">
+                <h3 class="text-heading mb-0">Your Details</h3>
+              </header>
+              
+              <div class="row row-minus">
+                <div class="col-md-5">
 
-              <div class="booking-stats-block no-shadow">
-                <div class="card">
-                  <div class="card-body ">
-                    <header class="mb-3">
-                      <h4 class="text-heading mb-0">Your Booking</h4>
-                    </header>
+                  <button class="btn btn-primary" data-toggle="modal" data-target="#modal-signup">Sign up modal</button>
 
-                    <div class="stat mb-3">
-                      <p class="mb-0 text-bold"><strong>Location</strong></p>
-                      <p class="text-primary">Lower Mill Estate, Cotswolds</p>
-                    </div>
-                    <div class="stat mb-3">
-                      <p class="mb-0"><strong>Property</strong></p>
-                      <p class="text-primary">Kingfisher Lodge</p>
-                    </div>
-
-                    <div class="row row-minus mb-3">
-                      <div class="col-md-6">
-                        <div class="stat">
-                          <p class="mb-0"><strong>Check In</strong></p>
-                          <p class="text-primary">17 Aug 2020</p>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="stat">
-                          <p class="mb-0"><strong>Check Out</strong></p>
-                          <p class="text-primary">21 Aug 2020</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="stat mb-3">
-                      <p class="mb-0"><strong>Guests</strong></p>
-                      <p class="text-primary">2 Adults, 1 Child</p>
-                    </div>
-
-                    <div class="stat mb-3">
-                      <p class="mb-0"><strong>Extras</strong></p>
-                      <p class="text-primary">Active Escapes Week Package</p>
-                    </div>
-
-                    <div class="bar-stat">
-                      <header class="mt-2 mb-3">
-                        <h5 class="text-heading mb-0">Charges</h5>
-                      </header>
-
-                      <div class="row row-minus">
-                        <div class="col-md-4">
-                          <strong>Accommodation</strong>
-                        </div>
-                        <div class="col-md-8">
-                          <span>£1,600</span>
-                        </div>
-                      </div>
-
-                      <div class="row row-minus">
-                        <div class="col-md-4">
-                          <strong>Booking Fee</strong>
-                        </div>
-                        <div class="col-md-8">
-                          <span></span>
-                        </div>
-                      </div>
-
-                      <div class="row row-minus">
-                        <div class="col-md-4">
-                          <strong>Extras</strong>
-                        </div>
-                        <div class="col-md-8">
-                          <span></span>
-                        </div>
-                      </div>
-
-                    </div>
-
-                    <div class="bar-e2e bg-primary mt-2 px-4 py-2 mb-4">
-                      <strong>Total</strong>
-                      <span>£1,175</span>
-                    </div>
-
-                    <header class="mb-3">
-                      <h4 class="text-heading mb-0">Payment Details</h4>
-                    </header>
-
-                    <div class="stat">
-                      <p class="mb-0"><strong>Country</strong></p>
-                      <p class="text-primary">United States of America</p>
-                    </div>
-                    <div class="stat">
-                      <p class="mb-0"><strong>Name on card</strong></p>
-                      <p class="text-primary">John Doe</p>
-                    </div>
-                    <div class="stat">
-                      <p class="mb-0"><strong>Payment Method</strong></p>
-                      <p class="text-primary">Visa Debit</p>
-                    </div>
-
-                  </div>
                 </div>
               </div>
-
-
-
-
-
-
 
             </div>
-
+  
           </div>
         </div>
       </div>
-
+    
       <hr>
 
       <section class="subscription-section pt-4 pb-4">
@@ -1076,7 +966,7 @@
         </div>
       </div>
     </div>
-
+    
     <div class="modal fade" id="modal-signout">
       <div class="modal-dialog modal-sm">
         <div class="modal-content">
@@ -1090,10 +980,8 @@
             <p class="text-center mb-4">Are you sure you would like to log out of account?</p>
 
             <div class="buttons">
-              <button class="btn btn-outline-primary text-primary btn-block text-left btn-post-icon"
-                data-dismiss="modal">Stay logged in <i class="icon-long-right-primary ml-2"></i></button>
-              <button class="btn btn-primary btn-block text-left btn-post-icon" data-dismiss="modal">Log out <i
-                  class="icon-long-right ml-2"></i></button>
+              <button class="btn btn-outline-primary text-primary btn-block text-left btn-post-icon"  data-dismiss="modal">Stay logged in <i class="icon-long-right-primary ml-2"></i></button>
+              <button class="btn btn-primary btn-block text-left btn-post-icon"  data-dismiss="modal">Log out <i class="icon-long-right ml-2"></i></button>
             </div>
           </div>
         </div>
@@ -1146,6 +1034,111 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="modal fade" id="modal-signup">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header no-border">
+            <h4 class="modal-title text-heading">Sign up to my account</h4>
+            <button type="button" class="close close-modal text-primary" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <form class="signup-form">
+              <div class="form-group">
+                <label for="reference">
+                  Booking Reference (If Applicable)
+                  <span class="text-danger">*</span>
+                </label>
+                <input type="text" class="form-control" id="reference" placeholder="Booking Reference" />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email address <span class="text-danger">*</span></label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com" />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Password <span class="text-danger">*</span>
+                </label>
+                <input type="password" class="form-control" id="password" placeholder="Create Password" />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Confirm Password <span class="text-danger">*</span>
+                </label>
+                <input type="password" class="form-control" id="password2" placeholder="Confirm Password" />
+                <div class="text-sm mt-2">
+                  Your password must have at least 8 characters and feature one special character,one capital letter, one number and one
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="enquiryType">Title <span class="text-danger">*</span></label>
+                
+                <div class="select-box-primary">
+                  <select class="form-control" id="enquiryType">
+                    <option value="" selected disabled>Mr, Mrs</option>
+                    <option>Mr</option>
+                    <option>Mrs</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row p-0">
+                <div class="form-group col-md-6 pl-0">
+                  <label for="firstName">First Name
+                    <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="firstName" placeholder="First Name" />
+                </div>
+
+                <div class="form-group col-md-6 pr-0">
+                  <label for="lastName">Last Name
+                    <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="lastName" placeholder="Last Name" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="location">Location <span class="text-danger">*</span></label>
+                
+                <div class="select-box-primary">
+                  <select class="form-control" id="location">
+                    <option value="*">Select Country</option>
+                    <option value="usa">United States of America</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="pk">Pakistan</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-checkbox-wrapper">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                <label class="form-check-label" for="defaultCheck1">
+                  I Agree to <a href="#" class="text-underline text-inherit">Terms & Conditions</a>
+                </label>
+              </div>
+
+              <div class="form-checkbox-wrapper mt-2 mb-4">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" />
+                <label class="form-check-label" for="defaultCheck2">
+                  Sign-up to our newsletter to discover the latest officers
+                </label>
+              </div>
+
+              <div class="button-bar">
+                <button class="btn btn-primary">
+                  Sign UP <i class="icon-long-right ml-5"></i>
+                </button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER SECTION END -->
     </div>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
