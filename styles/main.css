@@ -123,6 +123,11 @@ img {
   background-color: var(--color-primary-hover);
   border-color: var(--color-primary-hover);
 }
+.btn-outline-primary.text-primary:hover,
+.btn-outline-primary.text-primary:not(:disabled):not(.disabled):active,
+.btn-outline-primary.text-primary:focus {
+  color: #fff !important;
+}
 .btn-success:hover,
 .btn-success:not(:disabled):not(.disabled):active,
 .btn-success:focus {
@@ -404,7 +409,8 @@ h1 {
 }
 
 .icon-long-right,
-.icon-long-right-dark {
+.icon-long-right-dark,
+.icon-long-right-primary {
   width: 16px;
   height: 10px;
   background-image: url('../assets/icons/arrow-long-right.svg');
@@ -412,9 +418,15 @@ h1 {
 .icon-long-right-dark {
   background-image: url('../assets/icons/arrow-long-right-dark.svg');
 }
+.icon-long-right-primary {
+  background-image: url('../assets/icons/arrow-long-right-primary.svg');
+}
 .btn-outline-primary:hover .icon-long-right-dark,
 .btn-outline-primary:focus .icon-long-right-dark,
-.btn-outline-primary:focus:active .icon-long-right-dark {
+.btn-outline-primary:focus:active .icon-long-right-dark,
+.btn-outline-primary:hover .icon-long-right-primary,
+.btn-outline-primary:focus .icon-long-right-primary,
+.btn-outline-primary:focus:active .icon-long-right-primary {
   background-image: url('../assets/icons/arrow-long-right.svg');
 }
 
@@ -4862,4 +4874,19 @@ a.text-inherit:hover,
   -webkit-appearance: none !important;
   -moz-appearance: none !important;
   appearance: none !important;
+}
+
+.modal-header.no-border {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+.modal-footer.no-border {
+  border-top: 0;
+}
+.modal-header .close {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+.close.close-modal {
+  opacity: 1;
 }

@@ -284,7 +284,7 @@
           <div class="col-md-12">
             <p class="mt-4 bolded-text">Are you an owner?</p>
             <div class="intro-cta mt-2">
-              <button class="btn btn-primary w-100 btn-with-icon">
+              <button class="btn btn-primary w-100 btn-with-icon" data-toggle="modal" data-target="#modal-signin">
                 Log IN <i class="icon-long-right ml-3 mt-1-5"></i>
               </button>
             </div>
@@ -803,7 +803,7 @@
                 <li><a class="nav-link" href="booking.html">Your Bookings</a></li>
                 <li><a class="nav-link active" href="#">Your Favourites</a></li>
                 <li><a class="nav-link" href="account_settings.html">Account Settings</a></li>
-                <li><a class="nav-link" href="#v-pills-events">Logout</a></li>
+                <li><a class="nav-link" href="#" data-toggle="modal" data-target="#modal-signout">Logout</a></li>
               </ul>
             </nav>
           </div>
@@ -896,7 +896,7 @@
           </div>
         </div>
       </div>
-      
+
       <hr>
 
       <section class="subscription-section pt-4 pb-4">
@@ -1005,7 +1005,7 @@
           <div id="collapseOwners" class="collapse">
             <p class="mt-4 bolded-text">Are you an owner?</p>
             <div class="intro-cta mt-2">
-              <button class="btn btn-primary btn-with-icon">
+              <button class="btn btn-primary btn-with-icon" data-toggle="modal" data-target="#modal-signin">
                 Log IN <i class="icon-long-right ml-3 mt-1-5"></i>
               </button>
             </div>
@@ -1035,6 +1035,77 @@
       </div>
     </div>
     <!-- FOOTER SECTION END -->
+  </div>
+
+  <div class="modal fade" id="modal-signout">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header no-border">
+          <button class="close close-modal text-primary" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <p class="text-center mb-4">Are you sure you would like to log out of account?</p>
+
+          <div class="buttons">
+            <button class="btn btn-outline-primary text-primary btn-block text-left btn-post-icon"
+              data-dismiss="modal">Stay logged in <i class="icon-long-right-primary ml-2"></i></button>
+            <button class="btn btn-primary btn-block text-left btn-post-icon" data-dismiss="modal">Log out <i
+                class="icon-long-right ml-2"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-signin">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header no-border">
+          <h4 class="modal-title text-heading">Sign in to my account</h4>
+          <button class="close close-modal text-primary" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <form class="signup-form">
+            <div class="form-group">
+              <div class="flex-bar">
+                <label>Email Address<span class="text-danger">*</span></label>
+                <small class="text-muted">
+                  <span class="text-danger">*</span>
+                  Required fields
+                </small>
+              </div>
+              <input type="email" class="form-control" placeholder="Your email address" />
+            </div>
+            <div class="form-group">
+              <label for="phone">Password <span class="text-danger">*</span>
+              </label>
+              <input type="password" class="form-control" id="password" placeholder="Your Password" />
+            </div>
+
+            <div class="form-group mb-4">
+              <div class="form-checkbox-wrapper">
+                <input type="checkbox" class="form-check-input" id="remember-check">
+                <label class="form-check-label" for="remember-check">Remember me</label>
+              </div>
+            </div>
+
+            <div class="buttons mb-2">
+              <button type="submit" class="btn btn-primary btn-block text-left btn-post-icon" data-dismiss="modal">Sign
+                in <i class="icon-long-right ml-2"></i></button>
+            </div>
+            <a href="#" class="text-underline text-inherit">Forgotten Password</a>
+          </form>
+
+
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

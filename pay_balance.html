@@ -293,7 +293,8 @@
                     <div class="col-md-12">
                         <p class="mt-4 bolded-text">Are you an owner?</p>
                         <div class="intro-cta mt-2">
-                            <button class="btn btn-primary w-100 btn-with-icon">
+                            <button class="btn btn-primary w-100 btn-with-icon" data-toggle="modal"
+                            data-target="#modal-signin">
                                 Log IN <i class="icon-long-right ml-3 mt-1-5"></i>
                             </button>
                         </div>
@@ -832,7 +833,8 @@
                                     <img src="./assets/icon-american-express.jpg" alt="...">
                                 </div>
                                 <div class="text-primary mt-1">
-                                    <span class="flex-bar flex-start"><i class="icon-lock mr-1"></i>Make a secure payment</span>
+                                    <span class="flex-bar flex-start"><i class="icon-lock mr-1"></i>Make a secure
+                                        payment</span>
                                 </div>
                             </div>
                         </header>
@@ -908,10 +910,11 @@
                                         <img src="./assets/icon-american-express.jpg" alt="...">
                                     </div>
                                     <div class="text-primary mt-1">
-                                        <span class="flex-bar flex-start"><i class="icon-lock mr-1"></i>Make a secure payment</span>
+                                        <span class="flex-bar flex-start"><i class="icon-lock mr-1"></i>Make a secure
+                                            payment</span>
                                     </div>
                                 </div>
-    
+
                             </header>
 
                             <div class="form-group">
@@ -938,7 +941,7 @@
                                 <label>Card number:</label>
                                 <input type="text" class="form-control" placeholder="Add your card number">
                             </div>
-                            
+
                             <label>Expiry Date (Optional)</label>
                             <div class="row row-minus">
                                 <div class="col-md-6">
@@ -960,7 +963,7 @@
                                                 <option value="dec">December</option>
                                             </select>
                                         </div>
-                                    </div>        
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
@@ -970,7 +973,7 @@
                                                 <option value="2020">2020</option>
                                                 <option value="2019">2019</option>
                                                 <option value="2018">2018</option>
-                                              </select>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
@@ -982,10 +985,10 @@
                                         <div class="flex-bar">
                                             <label>Security Code<span class="text-danger">*</span></label>
                                             <small class="text-muted">
-                                              Unsure of CCV?
-                                              <i class="icon-creditcard inline-vertical-middle"></i>
+                                                Unsure of CCV?
+                                                <i class="icon-creditcard inline-vertical-middle"></i>
                                             </small>
-                                          </div>
+                                        </div>
                                         <input type="text" class="form-control" placeholder="Add CCV">
                                     </div>
                                 </div>
@@ -998,7 +1001,7 @@
                             </div>
                             <div class="button-bar">
                                 <button class="btn btn-primary">Pay Now <i class="icon-long-right ml-4"></i></button>
-                              </div>
+                            </div>
 
                         </form>
 
@@ -1093,7 +1096,8 @@
                     <div id="collapseOwners" class="collapse">
                         <p class="mt-4 bolded-text">Are you an owner?</p>
                         <div class="intro-cta mt-2">
-                            <button class="btn btn-primary btn-with-icon" data-toggle="modal" data-target="#myModal">
+                            <button class="btn btn-primary btn-with-icon" data-toggle="modal"
+                                data-target="#modal-signin">
                                 Log IN <i class="icon-long-right ml-3 mt-1-5"></i>
                             </button>
                         </div>
@@ -1122,149 +1126,54 @@
                 </div>
             </div>
         </div>
-        <div class="modal" id="myModal">
+
+        <div class="modal fade" id="modal-signin">
             <div class="modal-dialog">
                 <div class="modal-content">
+                    <div class="modal-header no-border">
+                        <h4 class="modal-title text-heading">Sign in to my account</h4>
+                        <button class="close close-modal text-primary" type="button" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
 
-                    <!-- Modal Header -->
-
-
-                    <!-- Modal body -->
                     <div class="modal-body">
-                        <button type="button" class="close m-0 p-0 " style="font-size: 40px; color: blue"
-                            data-dismiss="modal">&times;</button>
-                        <header class="heading  ">
-
-                            <h3 class="text-heading mt-2 mb-2">Sign Up to My Account</h3>
-
-                        </header>
-
-                        <div>
-                            <form class="">
-
-
-
-
-
-                                <div class="form-group">
-                                    <label for="reference">Booking Reference (If Applicable)
-                                        <span style="color: #aa1e53">*</span></label>
-                                    <input type="text" class="form-control" id="reference"
-                                        placeholder="Booking Reference" />
-
-
+                        <form class="signup-form">
+                            <div class="form-group">
+                                <div class="flex-bar">
+                                    <label>Email Address<span class="text-danger">*</span></label>
+                                    <small class="text-muted">
+                                        <span class="text-danger">*</span>
+                                        Required fields
+                                    </small>
                                 </div>
+                                <input type="email" class="form-control" placeholder="Your email address" />
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Password <span class="text-danger">*</span>
+                                </label>
+                                <input type="password" class="form-control" id="password" placeholder="Your Password" />
+                            </div>
 
-
-                                <div class="form-group">
-                                    <label for="email">Email address
-                                        <span style="color: #aa1e53">*</span></label>
-                                    <input type="email" class="form-control" id="email"
-                                        placeholder="name@example.com" />
+                            <div class="form-group mb-4">
+                                <div class="form-checkbox-wrapper">
+                                    <input type="checkbox" class="form-check-input" id="remember-check">
+                                    <label class="form-check-label" for="remember-check">Remember me</label>
                                 </div>
+                            </div>
+
+                            <div class="buttons mb-2">
+                                <button type="submit" class="btn btn-primary btn-block text-left btn-post-icon"
+                                    data-dismiss="modal">Sign
+                                    in <i class="icon-long-right ml-2"></i></button>
+                            </div>
+                            <a href="#" class="text-underline text-inherit">Forgotten Password</a>
+                        </form>
 
 
-                                <div class="form-group">
-                                    <label for="phone">Password
-                                        <span style="color: #aa1e53">*</span>
-                                    </label>
-                                    <input type="password" class="form-control" id="password"
-                                        placeholder="Create Password" />
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="phone">Confirm Password
-                                        <span style="color: #aa1e53">*</span>
-                                    </label>
-                                    <input type="password" class="form-control" id="password2"
-                                        placeholder="Confirm Password" />
-                                    <label class="form-check-label mt-2" for="password1" style="font-size: 0.8rem">
-                                        Your password must have at least 8 characters and feature one special
-                                        character,one capital
-                                        letter,one number and one
-                                    </label>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="enquiryType">Title
-                                        <span style="color: #aa1e53">*</span></label>
-                                    <select class="form-control" id="enquiryType">
-                                        <option value="" selected disabled>Mr,Mrs</option>
-                                        <option>Mr</option>
-                                        <option>Mrs</option>
-
-                                    </select>
-                                </div>
-                                <div class="row p-0">
-                                    <div class="form-group col-md-6 pl-0">
-                                        <label for="firstName">First Name
-                                            <span style="color: #aa1e53">*</span></label>
-                                        <input type="text" class="form-control" id="firstName"
-                                            placeholder="First Name" />
-
-
-                                    </div>
-
-                                    <div class="form-group col-md-6 pr-0">
-                                        <label for="lastName">Last Name
-                                            <span style="color: #aa1e53">*</span></label>
-                                        <input type="text" class="form-control" id="lastName" placeholder="Last Name" />
-
-
-                                    </div>
-                                </div>
-
-
-
-                                <div class="form-group">
-                                    <label for="location">Location
-                                        <span style="color: #aa1e53">*</span></label>
-                                    <select class="form-control" id="location">
-
-                                        <option>UNITED KINGDOM</option>
-                                        <option>PAKISTAN</option>
-
-                                    </select>
-                                </div>
-
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        I Agree to <a href="" style="color: black; "><u>Terms & Conditions</u></a>
-                                    </label>
-                                </div>
-
-                                <div class="form-check mt-2">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" />
-                                    <label class="form-check-label" for="defaultCheck2">
-                                        Sign-up to our newsletter to discover the latest officers
-                                    </label>
-                                </div>
-
-
-
-
-
-
-
-                                <div class="intro-cta mt-2">
-                                    <button class="btn btn-primary btn-with-icon w-100 col-md-6 p-0 mt-1">
-                                        Sign UP <i class="icon-long-right ml-3 mt-1"></i>
-                                    </button>
-
-
-
-                                    <!-- <button type="submit">Submit</button> -->
-                                </div>
-
-
-                            </form>
-                        </div>
                     </div>
                 </div>
             </div>
-            <!-- FOOTER SECTION END -->
         </div>
 
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->

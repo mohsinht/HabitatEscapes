@@ -284,7 +284,7 @@
           <div class="col-md-12">
             <p class="mt-4 bolded-text">Are you an owner?</p>
             <div class="intro-cta mt-2">
-              <button class="btn btn-primary w-100 btn-with-icon">
+              <button class="btn btn-primary w-100 btn-with-icon" data-toggle="modal" data-target="#modal-signin">
                 Log IN <i class="icon-long-right ml-3 mt-1-5"></i>
               </button>
             </div>
@@ -802,10 +802,10 @@
           <div class="col-md-3 col-xl-2">
             <nav class="navbar-vertical">
               <ul class="navbar-nav nav-links-inherit">
-                <li><a class="nav-link" id="bookings-tab" href="#">Your Bookings</a></li>
+                <li><a class="nav-link" id="bookings-tab" href="booking.html">Your Bookings</a></li>
                 <li><a class="nav-link" href="favourites.html">Your Favourites</a></li>
                 <li><a class="nav-link  active" id="location-tab" href="#" role="tab" aria-controls="v-pills-location">Account Setting</a></li>
-                <li><a class="nav-link" id="v-pills-events-tab" href="#v-pills-events" role="tab" aria-controls="v-pills-events">Logout</a></li>
+                <li><a class="nav-link" id="v-pills-events-tab" href="#" data-toggle="modal" data-target="#modal-signout">Logout</a></li>
               </ul>
             </nav>
           </div>
@@ -996,7 +996,7 @@
           <div id="collapseOwners" class="collapse">
             <p class="mt-4 bolded-text">Are you an owner?</p>
             <div class="intro-cta mt-2">
-              <button class="btn btn-primary btn-with-icon" data-toggle="modal" data-target="#myModal">
+              <button class="btn btn-primary btn-with-icon" data-toggle="modal" data-target="#modal-signin">
                 Log IN <i class="icon-long-right ml-3 mt-1-5"></i>
               </button>
             </div>
@@ -1025,143 +1025,74 @@
         </div>
       </div>
     </div>
-    <div class="modal" id="myModal">
-      <div class="modal-dialog">
+    
+    <div class="modal fade" id="modal-signout">
+      <div class="modal-dialog modal-sm">
         <div class="modal-content">
+          <div class="modal-header no-border">
+            <button class="close close-modal text-primary" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
 
-          <!-- Modal Header -->
-
-
-          <!-- Modal body -->
           <div class="modal-body">
-            <button type="button" class="close m-0 p-0 " style="font-size: 40px; color: blue"
-              data-dismiss="modal">&times;</button>
-            <header class="heading  ">
+            <p class="text-center mb-4">Are you sure you would like to log out of account?</p>
 
-              <h3 class="text-heading mt-2 mb-2">Sign Up to My Account</h3>
-
-            </header>
-
-            <div>
-              <form class="">
-
-
-
-
-
-                <div class="form-group">
-                  <label for="reference">Booking Reference (If Applicable)
-                    <span style="color: #aa1e53">*</span></label>
-                  <input type="text" class="form-control" id="reference" placeholder="Booking Reference" />
-
-
-                </div>
-
-
-                <div class="form-group">
-                  <label for="email">Email address
-                    <span style="color: #aa1e53">*</span></label>
-                  <input type="email" class="form-control" id="email" placeholder="name@example.com" />
-                </div>
-
-
-                <div class="form-group">
-                  <label for="phone">Password
-                    <span style="color: #aa1e53">*</span>
-                  </label>
-                  <input type="password" class="form-control" id="password" placeholder="Create Password" />
-                </div>
-
-                <div class="form-group">
-                  <label for="phone">Confirm Password
-                    <span style="color: #aa1e53">*</span>
-                  </label>
-                  <input type="password" class="form-control" id="password2" placeholder="Confirm Password" />
-                  <label class="form-check-label mt-2" for="password1" style="font-size: 0.8rem">
-                    Your password must have at least 8 characters and feature one special character,one capital
-                    letter,one number and one
-                  </label>
-                </div>
-
-                <div class="form-group">
-                  <label for="enquiryType">Title
-                    <span style="color: #aa1e53">*</span></label>
-                  <select class="form-control" id="enquiryType">
-                    <option value="" selected disabled>Mr,Mrs</option>
-                    <option>Mr</option>
-                    <option>Mrs</option>
-
-                  </select>
-                </div>
-                <div class="row p-0">
-                  <div class="form-group col-md-6 pl-0">
-                    <label for="firstName">First Name
-                      <span style="color: #aa1e53">*</span></label>
-                    <input type="text" class="form-control" id="firstName" placeholder="First Name" />
-
-
-                  </div>
-
-                  <div class="form-group col-md-6 pr-0">
-                    <label for="lastName">Last Name
-                      <span style="color: #aa1e53">*</span></label>
-                    <input type="text" class="form-control" id="lastName" placeholder="Last Name" />
-
-
-                  </div>
-                </div>
-
-
-
-                <div class="form-group">
-                  <label for="location">Location
-                    <span style="color: #aa1e53">*</span></label>
-                  <select class="form-control" id="location">
-
-                    <option>UNITED KINGDOM</option>
-                    <option>PAKISTAN</option>
-
-                  </select>
-                </div>
-
-
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                  <label class="form-check-label" for="defaultCheck1">
-                    I Agree to <a href="" style="color: black; "><u>Terms & Conditions</u></a>
-                  </label>
-                </div>
-
-                <div class="form-check mt-2">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" />
-                  <label class="form-check-label" for="defaultCheck2">
-                    Sign-up to our newsletter to discover the latest officers
-                  </label>
-                </div>
-
-
-
-
-
-
-
-                <div class="intro-cta mt-2">
-                  <button class="btn btn-primary btn-with-icon w-100 col-md-6 p-0 mt-1">
-                    Sign UP <i class="icon-long-right ml-3 mt-1"></i>
-                  </button>
-
-
-
-                  <!-- <button type="submit">Submit</button> -->
-                </div>
-
-
-              </form>
+            <div class="buttons">
+              <button class="btn btn-outline-primary text-primary btn-block text-left btn-post-icon"  data-dismiss="modal">Stay logged in <i class="icon-long-right-primary ml-2"></i></button>
+              <button class="btn btn-primary btn-block text-left btn-post-icon"  data-dismiss="modal">Log out <i class="icon-long-right ml-2"></i></button>
             </div>
           </div>
         </div>
       </div>
-      <!-- FOOTER SECTION END -->
+    </div>
+
+    <div class="modal fade" id="modal-signin">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header no-border">
+            <h4 class="modal-title text-heading">Sign in to my account</h4>
+            <button class="close close-modal text-primary" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <form class="signup-form">
+              <div class="form-group">
+                <div class="flex-bar">
+                  <label>Email Address<span class="text-danger">*</span></label>
+                  <small class="text-muted">
+                    <span class="text-danger">*</span>
+                    Required fields
+                  </small>
+                </div>
+                <input type="email" class="form-control" placeholder="Your email address" />
+              </div>
+              <div class="form-group">
+                <label for="phone">Password <span class="text-danger">*</span>
+                </label>
+                <input type="password" class="form-control" id="password" placeholder="Your Password" />
+              </div>
+
+              <div class="form-group mb-4">
+                <div class="form-checkbox-wrapper">
+                  <input type="checkbox" class="form-check-input" id="remember-check">
+                  <label class="form-check-label" for="remember-check">Remember me</label>
+                </div>
+              </div>
+
+              <div class="buttons mb-2">
+                <button type="submit" class="btn btn-primary btn-block text-left btn-post-icon"
+                  data-dismiss="modal">Sign in <i class="icon-long-right ml-2"></i></button>
+              </div>
+              <a href="#" class="text-underline text-inherit">Forgotten Password</a>
+            </form>
+
+
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
